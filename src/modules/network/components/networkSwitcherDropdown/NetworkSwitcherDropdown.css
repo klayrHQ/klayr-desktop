@@ -13,7 +13,7 @@
       font-size: var(--font-size-h6);
       font-family: var(--heading-font);
       font-weight: var(--font-weight-bold);
-      color: var(--color-zodiac-blue);
+      color: var(--color-colecti-dark-blue);
       margin-bottom: 16px;
     }
   }
@@ -30,7 +30,7 @@
 
     & > span:last-of-type {
       font-size: var(--paragraph-font-size-s);
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
       cursor: pointer;
     }
   }
@@ -40,7 +40,7 @@
     display: flex;
     height: 48px;
     padding: 0 28px;
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
 
     &:hover {
       text-decoration: initial;

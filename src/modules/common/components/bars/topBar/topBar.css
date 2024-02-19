@@ -1,7 +1,7 @@
 @import '../../../../../../setup/react/app/mixins.css';
 
 .wrapper {
-  background: var(--color-zodiac-blue--satin-deep-black);
+  background: var(--color-colecti-dark-blue--satin-deep-black);
   display: flex;
   height: var(--header-height);
   justify-content: space-between;
@@ -33,7 +33,6 @@
   width: 60px;
   height: 24px;
   box-sizing: content-box;
-  filter: brightness(100);
 }
 
 .toggle {

@@ -56,14 +56,14 @@
     @mixin headingNormal;
 
     font-size: 28px;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     padding: 20px;
   }
 
   & > .stakesAvailableCounter {
     @mixin contentLarge;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     line-height: 15px;
     padding: 20px;
   }
@@ -77,7 +77,7 @@
 .amountColumn {
   padding: 0;
   width: 35%;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }
 
 .centerContent {
@@ -93,7 +93,7 @@
   margin-right: 15px;
   width: 30%;
   padding: 0;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }
 
 .validatorInfoContainer {
@@ -112,7 +112,7 @@
   margin-left: 10px;
 
   & span:first-child {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & span:nth-child(2) {
@@ -201,7 +201,7 @@
         margin-top: 6px;
         width: 60%;
         position: relative;
-        background-color: var(--color-white) !important;
+        background-color: var(--color-surface) !important;
         color: var(--color-slate-gray) !important;
         border: 1px solid var(--color-platinum);
         border-radius: var(--border-radius-standard);
@@ -214,7 +214,7 @@
         width: 10px;
         height: 10px;
         position: absolute;
-        background: var(--color-white);
+        background: var(--color-surface);
         left: 30%;
         transform: rotate(45deg);
         border-color: var(--color-platinum);

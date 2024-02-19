@@ -4,7 +4,7 @@
   max-width: 477px;
   width: calc(100% - var(--horizontal-margin));
   padding: 24px;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 
   & .title {
     margin: 0 0 24px 0;
@@ -49,7 +49,7 @@
   flex-direction: column;
 
   & > .spinner {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     margin: 10px 0px 20px 0px;
 
     & > span {

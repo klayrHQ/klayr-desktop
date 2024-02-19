@@ -59,7 +59,7 @@
   }
 
   & a {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     text-decoration: none;
   }
 }
@@ -76,7 +76,7 @@
   & span {
     font-weight: var(--font-weight-semi-bold) !important;
     font-size: var(--font-size-h6);
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     font-family: var(--content-font);
   }
 
@@ -104,7 +104,7 @@
 
       margin-top: 0;
       margin-bottom: 3px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       font-family: var(--content-font);
 
       & > span {

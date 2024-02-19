@@ -75,11 +75,11 @@
 
 .registered {
   background-color: #4070f41a;
-  color: var(--color-ultramarine-blue);
+  color: var(--color-primary);
 }
 
 .terminated {
-  background-color: var(--color-maastricht-blue);
+  background-color: var(--color-surface);
   color: var(--color-ghost-white);
 }
 

@@ -24,7 +24,7 @@
       & h2 {
         @mixin headingNormal bold;
 
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
         font-size: var(--font-size-h3);
         line-height: 26px;
         margin: 0;
@@ -144,7 +144,7 @@
           @mixin headingSmall;
 
           white-space: pre;
-          color: var(--color-maastricht-blue);
+          color: var(--color-content);
         }
 
         & > span:last-child {
@@ -166,7 +166,7 @@
         }
 
         & .cancelBtn {
-          color: var(--color-maastricht-blue);
+          color: var(--color-content);
         }
       }
 

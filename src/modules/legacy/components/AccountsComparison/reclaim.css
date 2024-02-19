@@ -17,13 +17,13 @@
 
       margin: 0;
       font-size: 28px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
     }
 
     & > p {
       @mixin contentLargest;
 
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       text-align: center;
       margin-bottom: 0;
     }
@@ -31,7 +31,7 @@
 }
 
 .box {
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   border-radius: var(--border-radius-box);
   width: 100%;
   margin: 20px 0 0 0;
@@ -46,7 +46,7 @@
 .listHeading {
   @mixin headingNormal;
 
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   margin: 0;
 }
 
@@ -85,7 +85,7 @@
       width: 4px;
       height: 4px;
       border-radius: 4px;
-      background: var(--color-ultramarine-blue);
+      background: var(--color-primary);
     }
 
     &.step::before {

@@ -36,7 +36,7 @@
       & .networkName {
         font-size: 16px;
         font-weight: var(--font-weight-semi-bold);
-        color: var(--color-zodiac-blue);
+        color: var(--color-colecti-dark-blue);
       }
 
       & .networkUrl {

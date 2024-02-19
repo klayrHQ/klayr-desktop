@@ -12,8 +12,8 @@
   animation: slideDown var(--animation-speed-fast) ease-in;
   animation-fill-mode: forwards;
   transform: translateX(-50%);
-  background: var(--color-white);
-  color: var(--color-ultramarine-blue);
+  background: var(--color-surface);
+  color: var(--color-primary);
   border-radius: 30px;
   box-shadow: var(--box-shadow-standard), 0 0 0 10px var(--color-body-bg);
   width: auto;

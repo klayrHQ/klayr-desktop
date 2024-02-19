@@ -10,7 +10,7 @@
   & .fieldLabel {
     @mixin contentNormal normal;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin-bottom: 8px;
     display: flex;
     flex-direction: row;
@@ -39,7 +39,7 @@
     }
 
     &.error {
-      color: var(--color-burnt-sienna);
+      color: var(--color-lobster);
     }
 
     &.referenceFeedback {
@@ -52,7 +52,7 @@
   }
 
   & .status {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     opacity: 0;
     position: absolute;
     right: 10px;
@@ -116,7 +116,7 @@
 .removeMessageButton {
   font-size: 14px;
   font-weight: 500;
-  color: var(--color-ultramarine-blue);
+  color: var(--color-primary);
   display: flex;
   flex-direction: row;
   align-items: center;

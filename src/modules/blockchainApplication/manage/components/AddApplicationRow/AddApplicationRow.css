@@ -18,7 +18,7 @@
   }
 
   & .chainName {
-    --content-font: 'gilroy';
+    --content-font: 'NeueMachina';
 
     padding: 2px 0;
     font-family: var(--content-font);

@@ -16,7 +16,7 @@
     font-weight: var(--font-weight-very-bold);
     margin: 20px 0 14px;
     letter-spacing: -1px;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & p {
@@ -26,7 +26,7 @@
     letter-spacing: 0.5px;
     text-align: center;
     line-height: 1.35em; /* stylelint-disable-line unit-whitelist */
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & .signatureButton {

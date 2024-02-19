@@ -1,11 +1,11 @@
 .dataContainer {
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   overflow: hidden;
   display: flex;
   flex-flow: row wrap;
 
   & .dataRow {
-    --content-font: 'gilroy';
+    --content-font: 'NeueMachina';
 
     height: 100px;
     border-bottom: 1px solid var(--color-platinum);
@@ -47,13 +47,13 @@
 
     & > span {
       padding-left: 5px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
     }
   }
 }
 
 h1 {
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }
 
 .wrapper {

@@ -9,7 +9,7 @@
   }
 
   & .active {
-    background-color: var(--color-ultramarine-blue);
+    background-color: var(--color-primary);
   }
 
   & .inactive {

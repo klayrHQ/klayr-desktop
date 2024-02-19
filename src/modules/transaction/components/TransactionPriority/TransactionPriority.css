@@ -12,7 +12,7 @@
   @mixin contentNormal bold;
 
   align-items: center;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   display: flex;
 }
 
@@ -23,12 +23,12 @@
   padding-bottom: 14px;
 
   & > span:first-child {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     padding-right: 10px;
   }
 
   & .spinner > span::after {
-    border-color: var(--color-maastricht-blue);
+    border-color: var(--color-content);
     border-bottom-color: transparent;
     justify-content: flex-end;
   }
@@ -51,10 +51,10 @@
       border-radius: 40px;
       width: fit-content;
       max-width: 85%;
-      border: solid 1px var(--color-ultramarine-blue-blurred);
+      border: solid 1px var(--color-primary-blurred);
 
       & > .priorityTitle {
-        background-color: var(--color-white);
+        background-color: var(--color-surface);
         color: var(--color-tx-priority-btn-default);
         font-family: var(--content-font);
         font-size: 16px;
@@ -72,8 +72,8 @@
 
         &.priorityTitleSelected {
           font-weight: 500;
-          background-color: var(--color-ultramarine-blue-blurred);
-          color: var(--color-ultramarine-blue);
+          background-color: var(--color-primary-blurred);
+          color: var(--color-primary);
         }
       }
     }
@@ -95,7 +95,7 @@
 
             & .feesHeader {
               font-weight: var(--font-weight-semi-bold);
-              color: var(--color-zodiac-blue);
+              color: var(--color-colecti-dark-blue);
             }
 
             & .feesDetails {
@@ -163,7 +163,7 @@
         justify-content: space-between;
 
         & p {
-          color: var(--color-ultramarine-blue);
+          color: var(--color-primary);
           width: 100%;
         }
 
@@ -190,6 +190,6 @@
   & > .feeRow span:first-child ~ span {
     font-size: 16px !important;
     font-weight: 500 !important;
-    color: var(--color-zodiac-blue) !important;
+    color: var(--color-colecti-dark-blue) !important;
   }
 }

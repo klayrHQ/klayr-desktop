@@ -58,6 +58,6 @@
   padding: 0px;
   position: sticky;
   top: -7px;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   z-index: 1;
 }

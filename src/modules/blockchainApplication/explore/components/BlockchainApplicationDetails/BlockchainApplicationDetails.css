@@ -15,10 +15,10 @@
   min-width: 450px;
   border-radius: 16px;
   overflow: hidden;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
 
   & .classNameBackgroundColorProp {
-    background: var(--color-ultramarine-blue);
+    background: var(--color-primary);
   }
 }
 
@@ -83,11 +83,11 @@
 
   & .registered {
     background-color: #4070f41a;
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
   }
 
   & .terminated {
-    background-color: var(--color-maastricht-blue);
+    background-color: var(--color-surface-blue);
     color: var(--color-ghost-white);
   }
 

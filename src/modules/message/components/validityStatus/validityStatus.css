@@ -11,7 +11,7 @@
   }
 
   & h1 {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin-top: 0;
     margin-bottom: 50px;
   }

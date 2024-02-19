@@ -67,7 +67,7 @@ describe('MenuBuilder', () => {
 
     const expectedOptions = {
       buttons: ['OK'],
-      icon: `${__dirname}/assets/images/LISK.png`,
+      icon: `${__dirname}/assets/images/logo/col-logo-no-text.png`,
       message: `${electron.app.getName()}\nVersion ${electron.app.getVersion()}\nCopyright © 2016 - 2018 Lisk Foundation`,
     };
 

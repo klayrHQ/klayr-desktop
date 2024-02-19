@@ -1,6 +1,6 @@
 ![Logo](./docs/assets/banner_desktop.png)
 
-# Lisk Desktop
+# Klayr Desktop
 
 [![Build Status](https://jenkins.lisk.com/buildStatus/icon?job=lisk-desktop/development)](https://jenkins.lisk.com/job/lisk-desktop/job/development)
 [![Coverage Status](https://coveralls.io/repos/github/LiskHQ/lisk-desktop/badge.svg?branch=development)](https://coveralls.io/github/LiskHQ/lisk-desktop?branch=development)

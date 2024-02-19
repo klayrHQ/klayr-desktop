@@ -101,7 +101,7 @@
     max-width: 228px;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   &:first-of-type {

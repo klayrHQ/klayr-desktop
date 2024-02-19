@@ -6,7 +6,7 @@
   padding: 32px;
   padding-bottom: 24px;
   border-radius: 16px;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   align-items: center;
 }
 
@@ -16,11 +16,11 @@
 }
 
 .textContent {
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   text-align: center;
 
   & .header {
-    --content-font: 'gilroy';
+    --content-font: 'NeueMachina';
 
     font-family: var(--content-font);
     font-size: 28px;

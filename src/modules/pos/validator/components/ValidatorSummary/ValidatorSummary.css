@@ -7,7 +7,7 @@
   box-shadow: var(--box-shadow-popover);
   border-radius: var(--border-radius-box);
   position: absolute;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
 
   & .validatorDetails {
     display: flex;
@@ -34,7 +34,7 @@
 
         margin-top: 0;
         margin-bottom: 5px;
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
         font-family: var(--content-font);
 
         & > span {

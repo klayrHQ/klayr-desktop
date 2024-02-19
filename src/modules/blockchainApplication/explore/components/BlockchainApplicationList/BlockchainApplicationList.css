@@ -7,12 +7,12 @@
 }
 
 .boxHeader {
-  --content-font: 'gilroy';
+  --content-font: 'NeueMachina';
 
   font-size: 20px;
   font-weight: 600;
   padding-bottom: 22px !important;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   font-family: var(--content-font);
 
   & .filterHolder {

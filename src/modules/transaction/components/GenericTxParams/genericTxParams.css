@@ -56,7 +56,7 @@
   & .label {
     @mixin contentLarge;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     line-height: 30px;
     text-transform: capitalize;
   }

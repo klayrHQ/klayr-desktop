@@ -5,7 +5,7 @@
 
   & > div:first-child {
     padding: 20px 22px 20px 0px;
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     font-weight: var(--font-weight-semi-bold);
   }
 
@@ -86,7 +86,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-decoration: none;
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
   }
 }
 

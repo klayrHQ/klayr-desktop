@@ -9,10 +9,10 @@
 }
 
 .bar {
-  stroke: var(--color-ultramarine-blue);
+  stroke: var(--color-primary);
   transition: stroke-dashoffset var(--animation-speed-fast) linear;
 
   &.error {
-    stroke: var(--color-burnt-sienna);
+    stroke: var(--color-lobster);
   }
 }

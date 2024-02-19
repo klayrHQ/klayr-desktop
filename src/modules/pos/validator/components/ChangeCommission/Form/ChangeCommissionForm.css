@@ -10,7 +10,7 @@
 
   & .header {
     text-align: center;
-    color: var(--color-zodiac-blue);
+    color: var(--color-colecti-dark-blue);
 
     & h2 {
       font-size: var(--font-size-h3);
@@ -46,7 +46,7 @@
     & > .link {
       @mixin contentLargest bold;
 
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
       margin-top: 18px;
       text-decoration: none;
     }
@@ -54,7 +54,7 @@
     & > .label {
       @mixin contentNormal;
 
-      color: var(--color-maastricht-blue);
+      color: var(--color-primary);
       margin: 22px 0 10px;
     }
 

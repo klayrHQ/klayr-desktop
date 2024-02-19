@@ -41,7 +41,7 @@ class TermsOfUse extends React.Component {
     return (
       <div className={styles.wrapper}>
         <header className={styles.header}>
-          <Icon name="liskLogo" />
+          <Icon name="colLogoNoText" />
         </header>
         <div className={styles.content}>
           <h1>{this.props.t('Lisk Terms of Use')}</h1>

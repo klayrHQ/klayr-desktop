@@ -40,7 +40,7 @@
     & > .label {
       @mixin contentNormal bold;
 
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       display: block;
       margin-bottom: 12px;
     }

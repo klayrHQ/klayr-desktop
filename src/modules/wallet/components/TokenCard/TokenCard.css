@@ -1,7 +1,7 @@
 @import '../../../../../setup/react/app/mixins.css';
 
 .wrapper {
-  --content-font: 'gilroy';
+  --content-font: 'NeueMachina';
 
   width: 260px;
   min-height: 96px;

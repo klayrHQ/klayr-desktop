@@ -35,7 +35,7 @@
   & .username {
     @mixin headingSmall;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     display: block;
   }
 

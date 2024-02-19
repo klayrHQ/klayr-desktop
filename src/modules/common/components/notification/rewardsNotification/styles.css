@@ -10,7 +10,7 @@
   .rewardLink {
     margin-top: 11px;
     margin-bottom: 0;
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     font-size: 15px;
     cursor: pointer;
   }
@@ -19,7 +19,7 @@
 .closeBtn {
   align-items: center;
   box-sizing: border-box;
-  color: var(--color-ultramarine-blue);
+  color: var(--color-primary);
   cursor: pointer;
   display: flex;
   height: 12px;

@@ -19,14 +19,14 @@
       font-family: var(--heading-font);
       font-size: var(--font-size-h5);
       font-weight: var(--font-weight-bold);
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
     }
 
     & .btnShowPubkey {
       margin-top: 12px;
       font-size: var(--button-font-size-s);
       cursor: pointer;
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
       font-weight: var(--font-weight-semi-bold);
       height: initial;
       padding: initial;

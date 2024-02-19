@@ -15,19 +15,19 @@
 }
 
 .new {
-  background-color: var(--color-ultramarine-blue);
+  background-color: var(--color-primary);
   padding: 2px 8px;
   border-radius: 2.5px;
   font-weight: 500;
   font-size: 12px;
-  color: var(--color-white);
+  color: var(--color-surface);
 }
 
 .tooltipContainer {
   white-space: normal;
   width: 230px;
   word-wrap: break-word;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
 }
 
 .accountWrapper {
@@ -40,7 +40,7 @@
   border: none;
   border-radius: 0px;
   justify-content: flex-start;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   border-bottom: 1px solid var(--color-button-outline-color);
   transition: opacity 100ms linear;
   cursor: pointer;

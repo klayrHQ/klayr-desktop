@@ -25,7 +25,7 @@ const addAboutMenuForNonMac = ({ template, electron }) => {
       if (focusedWindow) {
         const options = {
           buttons: ['OK'],
-          icon: `${__dirname}/assets/images/LISK.png`,
+          icon: `${__dirname}/assets/images/logo/col-logo-no-text.png`,
           message: `${i18n.t('Lisk')}\n${i18n.t(
             'Version'
           )} ${electron.app.getVersion()}\n${copyright}`,

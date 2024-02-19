@@ -28,7 +28,7 @@
       @mixin contentSmall bold;
 
       align-items: center;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       display: flex;
       justify-content: center;
       transition: color var(--animation-speed-fast) linear;
@@ -38,7 +38,7 @@
         cursor: pointer;
 
         &:hover {
-          color: var(--color-primary-standard);
+          color: var(--color-primary);
         }
       }
     }
@@ -78,7 +78,7 @@
     background: transparent;
     border: 0;
     box-sizing: border-box;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -88,7 +88,7 @@
     transition: color var(--animation-speed-fast) linear;
 
     &::before {
-      background: var(--color-primary-standard);
+      background: var(--color-primary);
       border-radius: var(--border-radius-standard);
       content: '';
       opacity: 0;

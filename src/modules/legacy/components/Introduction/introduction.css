@@ -22,7 +22,7 @@
   @mixin headingLarge;
 
   margin-bottom: 0px;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   font-size: 28px;
 }
 

@@ -70,7 +70,7 @@
 }
 
 @define-mixin buttonPrimary {
-  background-color: var(--color-ultramarine-blue);
+  background-color: var(--color-primary);
   color: var(--color-strong-white);
   border: none;
 
@@ -83,7 +83,7 @@
 @define-mixin buttonSecondary {
   background-color: transparent;
   border: solid 1px var(--dark-border-color);
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 
   &:global(.light) {
     color: var(--color-strong-white);
@@ -96,14 +96,14 @@
 
   &:focus,
   &:hover {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
   }
 }
 
 @define-mixin buttonTertiary {
   background-color: transparent;
   border: none;
-  color: var(--color-ultramarine-blue);
+  color: var(--color-primary);
   text-decoration: none;
 
   &:focus,
@@ -113,7 +113,7 @@
 }
 
 @define-mixin buttonWarning {
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   color: var(--color-burnt-sienna);
   border-color: var(--color-burnt-sienna);
 

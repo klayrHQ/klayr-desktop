@@ -53,7 +53,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   padding-top: 30px;
   box-sizing: border-box;
 
@@ -90,7 +90,7 @@
       }
 
       & > span {
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
         font-size: var(--font-size-small-secondary);
         padding-left: 15px;
         line-height: 35px;
@@ -111,7 +111,7 @@
   padding-left: 10px;
   padding-top: 5px;
   display: inline-block;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }
 
 .chartBox {
@@ -161,7 +161,7 @@
     }
 
     & p {
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       margin-top: 8px;
 
       &.blue {
@@ -194,7 +194,7 @@
     border-radius: 43px;
 
     &.dark {
-      background-color: var(--color-ultramarine-blue);
+      background-color: var(--color-primary);
     }
 
     &.light {

@@ -32,7 +32,7 @@
   }
 
   &.orange {
-    background: var(--color-ultramarine-blue);
+    background: var(--color-primary);
     clip: rect(radius, radius, diameter, 0px);
     width: diameter;
   }

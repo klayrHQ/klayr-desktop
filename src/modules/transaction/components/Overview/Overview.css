@@ -60,7 +60,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   max-height: 21px;
 }
 
@@ -75,7 +75,7 @@
   }
 
   & > span {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 }
 
@@ -121,7 +121,7 @@
 
     &.number {
       &::before {
-        background-color: var(--color-ultramarine-blue);
+        background-color: var(--color-primary);
       }
     }
   }

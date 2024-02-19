@@ -12,7 +12,7 @@
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 30px;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     font-size: var(--font-size-h3);
   }
 
@@ -33,13 +33,13 @@
   & .label {
     @mixin contentLarge;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & .label ~ p {
     font-weight: 400;
     font-size: 13px;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & .footerContent {
@@ -61,7 +61,7 @@
   }
 
   & .footerActionable {
-    color: var(--color-primary-standard);
+    color: var(--color-primary);
     cursor: pointer;
     font-weight: var(--font-weight-bold);
   }
@@ -80,7 +80,7 @@
   & .fieldLabel {
     @mixin contentNormal normal;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin-bottom: 8px;
     font-size: 14px;
   }
@@ -92,7 +92,7 @@
   }
 
   & .status {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     opacity: 0;
     position: absolute;
     right: 10px;
@@ -250,7 +250,7 @@
   opacity: 0;
 
   &.error {
-    color: var(--color-burnt-sienna);
+    color: var(--color-lobster);
   }
 }
 
@@ -268,7 +268,7 @@
   border: none;
   border-radius: 0px;
   justify-content: flex-start;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   transition: opacity 100ms linear;
   cursor: pointer;
 
@@ -317,5 +317,5 @@
   max-width: 228px;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }

@@ -28,7 +28,7 @@
 
   & .selectedInput,
   & .selectedInput:read-only {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     cursor: inherit;
   }
 

@@ -7,20 +7,20 @@
   min-width: 450px;
   border-radius: 16px;
   overflow: hidden;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 117px;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 
   & > img {
     margin-bottom: 32px;
   }
 
   & > img ~ p:first-of-type {
-    --content-font: 'gilroy';
+    --content-font: 'NeueMachina';
 
     font-family: var(--content-font);
     font-weight: 600;

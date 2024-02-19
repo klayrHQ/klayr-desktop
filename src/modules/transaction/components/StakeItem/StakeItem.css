@@ -23,13 +23,13 @@
 }
 
 .value {
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   display: flex;
 }
 
 .arrowIcon {
   margin: 0 5px;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }
 
 .confirmed {

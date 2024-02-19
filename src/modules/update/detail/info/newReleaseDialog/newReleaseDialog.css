@@ -8,7 +8,7 @@
   & > h3 {
     @mixin headingNormal;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin: 10px 0 16px;
   }
 }
@@ -28,7 +28,7 @@
   & strong {
     @mixin contentLargest bold;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin: 0 0 10px;
   }
 

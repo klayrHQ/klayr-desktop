@@ -3,7 +3,7 @@
   white-space: pre;
 
   & .label {
-    color: var(--color-white);
+    color: var(--color-surface);
   }
 
   & .resetButtonStyles {
@@ -16,14 +16,14 @@
     cursor: pointer;
     margin-left: 4px;
     text-decoration: underline;
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
   }
 
   & .closeIcon {
     margin-left: 12px;
     align-items: center;
     box-sizing: border-box;
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     cursor: pointer;
     display: flex;
     height: 16px;

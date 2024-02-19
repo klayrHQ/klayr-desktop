@@ -54,10 +54,7 @@ import iconLoader from '@setup/react/assets/images/icons/icon-loader.svg';
 import iconWarning from '@setup/react/assets/images/icons/icon-warning.svg';
 import incoming from '@setup/react/assets/images/icons/incoming.svg';
 import liskChat from '@setup/react/assets/images/icons/lisk-chat.svg';
-import liskLogo from '@setup/react/assets/images/lisk-logo-v2.svg';
-import liskLogoDark from '@setup/react/assets/images/lisk-logo-dark.svg';
-import liskLogoWhite from '@setup/react/assets/images/lisk-logo-white-v2.svg';
-import liskLogoWhiteNormalized from '@setup/react/assets/images/lisk-logo-white-v2-normalized.svg';
+import colLogoNoText from '@setup/react/assets/images/logo/col-logo-no-text.svg';
 import logout from '@setup/react/assets/images/icons/logout.svg';
 import logoutActive from '@setup/react/assets/images/icons/logout-active.svg';
 import lskIcon from '@setup/react/assets/images/icons/icon-lsk.svg';
@@ -264,6 +261,8 @@ export const icons = {
   checkboxFilled,
   checkboxCircleFilled,
   checkmarkBlue,
+  colLogoNoText,
+  colLogoNoTextDark: colLogoNoText,
   consecutiveMissedBlocks,
   consecutiveMissedBlocksDark,
   copy,
@@ -294,9 +293,6 @@ export const icons = {
   iconWarning,
   incoming,
   liskChat,
-  liskLogo,
-  liskLogoWhite,
-  liskLogoWhiteNormalized,
   logout,
   logoutActive,
   lskIcon,
@@ -341,7 +337,6 @@ export const icons = {
   qrCodeActive,
   copyActive,
   verifyWalletAddressActive,
-  liskLogoDark,
   balanceDark,
   fileOutlineDark,
   signMessage,

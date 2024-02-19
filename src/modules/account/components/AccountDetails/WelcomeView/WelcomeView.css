@@ -5,7 +5,7 @@
 .welcomeView {
   padding: 24px;
   border-radius: 16px;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   max-width: 1058px;
   margin: 84px auto;
 
@@ -31,7 +31,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: var(--color-ultramarine-blue);
+      background-color: var(--color-primary);
       height: 64px;
       width: 64px;
       border-radius: 50%;
@@ -57,7 +57,7 @@
         min-width: 180px;
 
         & div > a {
-          color: var(--color-zodiac-blue) !important;
+          color: var(--color-colecti-dark-blue) !important;
           font-size: 14px !important;
         }
       }
@@ -108,7 +108,7 @@
     align-items: center;
     border-radius: 50%;
     background: rgba(64, 112, 244, 0.05);
-    border: 1px solid var(--color-ultramarine-blue);
+    border: 1px solid var(--color-primary);
     font-weight: var(--font-weight-semi-bold);
   }
 

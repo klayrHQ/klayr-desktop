@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js';
-import liskLogo from '../../../../../setup/react/assets/images/LISK.png';
+import colLogo from '../../../../../setup/react/assets/images/logo/col-logo-no-text.svg';
 
-export const getLogo = ({ logo }) => logo?.svg || logo?.png || liskLogo;
+export const getLogo = ({ logo }) => logo?.svg || logo?.png || colLogo;
 
 BigNumber.config({ ERRORS: false });
 const BASE = 10;

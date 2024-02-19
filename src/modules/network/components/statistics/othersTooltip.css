@@ -11,7 +11,7 @@
   margin-bottom: 6px;
 
   & h4 {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     font-size: 13px;
     margin: 0;
     display: inline-block;

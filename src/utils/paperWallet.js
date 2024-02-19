@@ -38,7 +38,7 @@ class PaperWallet {
     this.doc
       .addFileToVFS('Gilroy-Bold.ttf', fonts.GilroyBold)
       .addFont('Gilroy-Bold.ttf', 'gilroy', 'normal', 'bold');
-    this.doc.setTextColor(48, 48, 48).setFont('gilroy');
+    this.doc.setTextColor(48, 48, 48).setFont('NeueMachina');
   }
 
   renderHeader() {
@@ -53,19 +53,19 @@ class PaperWallet {
     this.doc.addImage(logo, 'PNG', 32, 72, 67, 26);
 
     this.doc
-      .setFont('gilroy', 'normal', 'bold')
+      .setFont('NeueMachina', 'normal', 'bold')
       .setFontSize(16)
       .text(t('Paper wallet'), 135, 64, {
         ...textOptions,
         lineHeightFactor: 1.18,
       });
     this.doc
-      .setFont('gilroy', 'normal', 'normal')
+      .setFont('NeueMachina', 'normal', 'normal')
       .setFontSize(14)
       .text(t('Store this document in a safe place.'), 135, 84, textOptions);
 
     this.doc
-      .setFont('gilroy', 'normal', 'bold')
+      .setFont('NeueMachina', 'normal', 'bold')
       .setFontSize(16)
       .text(date.join('.'), 568, 75, {
         ...textOptions,
@@ -82,7 +82,7 @@ class PaperWallet {
     this.doc.addImage(printer, 'PNG', 32, 185, 36, 36);
     this.doc.addImage(usbStick, 'PNG', 32, 229, 36, 36);
 
-    this.doc.setFont('gilroy', 'normal', 'bold').setFontSize(14);
+    this.doc.setFont('NeueMachina', 'normal', 'bold').setFontSize(14);
     this.doc.text(t('How we recommend to store it.'), 32, 147, textOptions);
     this.doc.text(t('Print it on paper and store it in a safe place'), 76, 194, textOptions);
     this.doc.text(
@@ -101,11 +101,11 @@ class PaperWallet {
     const address = extractAddressFromPublicKey(this.publicKey);
 
     this.doc
-      .setFont('gilroy', 'normal', 'bold')
+      .setFont('NeueMachina', 'normal', 'bold')
       .setFontSize(14)
       .text(t('Wallet address:'), 32, 300, textOptions);
     this.doc
-      .setFont('gilroy', 'normal', 'bold')
+      .setFont('NeueMachina', 'normal', 'bold')
       .setFontSize(18)
       .text(address, 32, 340, {
         ...textOptions,
@@ -113,11 +113,11 @@ class PaperWallet {
       });
 
     this.doc
-      .setFont('gilroy', 'normal', 'bold')
+      .setFont('NeueMachina', 'normal', 'bold')
       .setFontSize(14)
       .text(t('Passphrase:'), 32, 406, textOptions);
     this.doc
-      .setFont('gilroy', 'normal', 'bold')
+      .setFont('NeueMachina', 'normal', 'bold')
       .setFontSize(18)
       .text(this.passphrase, 32.5, 464, {
         ...textOptions,
@@ -136,7 +136,7 @@ class PaperWallet {
     const { qrcode, t } = this.props;
     const textOptions = this.textOptions;
     const marginTop = this.passphrase.length * 45;
-    this.doc.setFont('gilroy', 'normal', 'bold').setFontSize(14);
+    this.doc.setFont('NeueMachina', 'normal', 'bold').setFontSize(14);
     this.doc.text(
       t('Access your account by scanning the QR code below with the Lisk Mobile App:'),
       32,

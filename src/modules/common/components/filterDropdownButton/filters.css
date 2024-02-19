@@ -12,7 +12,7 @@
   & .fieldLabel {
     @mixin contentNormal;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin: 16px 0 8px;
     text-align: initial;
   }
@@ -24,7 +24,7 @@
     width: 100%;
 
     & .status {
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
       opacity: 0;
       position: absolute;
       right: 10px;

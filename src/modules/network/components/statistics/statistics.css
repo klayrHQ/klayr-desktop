@@ -20,7 +20,7 @@
     display: inline-block;
     font-weight: var(--font-weight-bold);
     line-height: var(--font-size-h3);
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     font-size: var(--font-size-h3);
   }
 
@@ -73,7 +73,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   box-sizing: border-box;
   max-height: 21px;
 }
@@ -95,7 +95,7 @@
       }
 
       & > span {
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
         font-size: var(--font-size-small-secondary);
         padding-left: 15px;
         line-height: 35px;

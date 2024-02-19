@@ -62,7 +62,7 @@ export default function WelcomeView() {
       <section className={styles.welcomeView}>
         <header className={styles.welcomeHeader}>
           <div className={styles.logoContainer}>
-            <Icon name="liskLogoWhiteNormalized" height={32} />
+            <Icon name="colLogoNoText" height={32} />
           </div>
           <h1 className={styles.title}>{t('Welcome to Lisk')}</h1>
           <p className={styles.description}>

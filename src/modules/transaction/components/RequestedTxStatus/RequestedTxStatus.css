@@ -13,13 +13,13 @@
     @mixin headingLarge bold;
 
     margin-bottom: 20px;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & > h6 {
     font-weight: var(--font-weight-semi-bold);
     margin: 20px 0 0;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & a,

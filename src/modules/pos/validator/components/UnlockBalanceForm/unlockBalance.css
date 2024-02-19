@@ -51,14 +51,14 @@
       & > .columnTitle {
         @mixin contentNormal bold;
 
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
       }
 
       & > p {
         margin-top: 0px;
         margin-bottom: 20px;
         display: flex;
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
 
         & > img {
           margin-right: 11px;

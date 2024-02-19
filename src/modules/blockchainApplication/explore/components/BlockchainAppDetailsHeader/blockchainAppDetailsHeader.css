@@ -68,7 +68,7 @@
 
       & span {
         font-size: 14px;
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
       }
 
       &:first-child {
@@ -105,7 +105,7 @@
     font-family: var(--heading-font);
     font-size: 28px;
     font-weight: 700;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & > span ~ button {

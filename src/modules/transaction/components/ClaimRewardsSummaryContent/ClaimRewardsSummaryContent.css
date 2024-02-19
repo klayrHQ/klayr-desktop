@@ -1,7 +1,7 @@
 @import '../../../../../setup/react/app/mixins.css';
 
 .ClaimRewardsSummaryContent {
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 
   & .title {
     margin: 0 0 8px 0;

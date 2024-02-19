@@ -34,7 +34,7 @@
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
 
     &:not(:first-child) {
       border-top: 1px solid var(--color-platinum);
@@ -65,7 +65,7 @@
   & .checkboxLabel {
     @mixin contentNormal bold;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     display: flex;
     margin: 55px 0 -10px;
     align-items: center;
@@ -208,7 +208,7 @@
 
   & > div {
     width: 50%;
-    color: var(--color-zodiac-blue);
+    color: var(--color-colecti-dark-blue);
   }
 
   & > div:first-child > label ~ div {
@@ -237,7 +237,7 @@
     margin: 0;
     font-size: 14px;
     line-height: 18px;
-    color: var(--color-constant-zodiac-blue);
+    color: var(--color-constant-colecti-dark-blue);
     text-align: left;
   }
 

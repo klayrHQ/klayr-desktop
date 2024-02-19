@@ -12,7 +12,7 @@
   font-size: 18px;
 
   &:global(.dark) {
-    color: var(--color-constant-zodiac-blue);
+    color: var(--color-constant-colecti-dark-blue);
   }
 }
 
@@ -26,8 +26,8 @@
   padding: 15px 20px !important;
   margin-left: 12px;
   border-radius: 5px;
-  border-color: var(--color-zodiac-blue);
-  color: var(--color-constant-zodiac-blue);
+  border-color: var(--color-colecti-dark-blue);
+  color: var(--color-constant-colecti-dark-blue);
 
   &.primary {
     background-color: var(--color-ink-blue);
