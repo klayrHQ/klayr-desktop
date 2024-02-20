@@ -205,7 +205,7 @@ export const barChartOptions = (theme, options) =>
       },
       elements: {
         rectangle: {
-          backgroundColor: chartStyles.ultramarineBlue,
+          backgroundColor: chartStyles.azule,
           borderWidth: '0',
           borderColor: '',
           borderSkipped: 'bottom',

@@ -96,20 +96,24 @@ or "warn/action" ineastd of "red/green"
   /*************************
       Base Colors
   *************************/
-  --color-azule: 13, 117, 253;
-  --color-volt: 212, 255, 0;
-  --color-eerie: 26, 26, 26;
+  --color-azule: #0D75FD;
+  --color-azule-dark: #0C31E2;
+  --color-volt: #D4FF00;
+  --color-volt-dark: #B8FF01;
+  --color-eerie: #1A1A1A;
+  --color-sand: #EDEDCE;
+  --color-sand-dark: #DCDCA6;
   --color-white: #fff;
   --color-slate-gray: #70778b;
   --color-blue-gray: #8a8ca2;
   --color-manatee-gray: #9999a0;
-  --color-dark-blue: #19224d;
-  --color-ink-blue: #254898;
+  --color-dark-blue: var(--color-azule-dark);
   --color-ghost: #bec1cd;
   --color-platinum: #e1e3eb;
   --color-mystic: #edf0f5;
   --color-white-smoke: #f5f7fa;
-  --color-lobster: 255, 66, 45;
+  --color-lobster: #FF422D;
+  --color-lobster-dark: #FF1208;
   --color-ufo-green: #00a04b;
   --color-deep-green: #00d563;
   --color-jade-green: #2bd67b;
@@ -127,7 +131,7 @@ or "warn/action" ineastd of "red/green"
   --color-surface-1: rgb(243, 243, 240);
   --color-surface-blue: var(--color-colecti-dark-blue);
   --color-body-bg: var(--color-surface-1);
-  --color-error: rgb(var(--color-lobster));
+  --color-error: var(--color-lobster-dark);
   --light-border-color: rgba(255, 255, 255, 0.24);
   --overlay-color: rgba(255, 255, 255, 0.8);
   --dark-border-color: rgba(0, 0, 0, 0.08);
@@ -135,13 +139,13 @@ or "warn/action" ineastd of "red/green"
   --primary-background-color: rgba(64, 112, 244, 0.08);
   --error-background-color: var(--color-error);
   --color-dialog-bg: rgba(12, 21, 46, 0.52);
-  --color-primary: rgb(var(--color-azule));
-  --color-primary-blurred: rgba(var(--color-azule), 0.4);
+  --color-primary: var(--color-azule);
+  --color-primary-blurred: #0D75FD20;
   --color-primary-light: #9db8fa;
-  --color-secondary: rgb(var(--color-volt));
+  --color-secondary: var(--color-volt);
   --color-constant-white: #fff;
   --color-danger: #ff7721;
-  --color-red: rgb(255, 18, 8);
+  --color-red: var(--color-lobster-dark);
   --color-red-border: #ff455733;
   --color-red-background: rgb(255, 135, 141);
   --color-content: var(--color-colecti-dark-blue);
@@ -176,7 +180,7 @@ or "warn/action" ineastd of "red/green"
   --color-request-textarea: var(--color-white-smoke);
   --color-active-tab: rgba(64, 112, 244, 0.1);
   --tab-border-color: transparent;
-  --color-strong-ink-blue: var(--color-ink-blue);
+  --color-strong-ink-blue: var(--color-azule-dark);
   --color-satin-deep-black: #1c1c1e;
   --color-colecti-dark-blue: #0C0C16;
   --color-constant-colecti-dark-blue: #0C0C16;
@@ -192,14 +196,14 @@ or "warn/action" ineastd of "red/green"
   --color-jade-green-transparent: rgba(43, 214, 123, 0.1);
   --color-tooltip-bg: rgb(255, 255, 255, 0.7);
   --color-tooltip-arrow: rgb(255, 255, 255, 0.7);
-  --color-warning-border: #f7e36d;
+  --color-warning-border: #FFCC00;
   --color-warning-border-transparent: #f7e36d33;
   --color-warning-border-background-transparent: #f7e36d19;
   --color-warning-bg: #fffce8;
-  --color-tx-priority-btn-bg: var(--color-ink-blue);
+  --color-tx-priority-btn-bg: var(--color-azule-dark);
   --color-tx-priority-btn-default: var(--color-surface-blue);
-  --color-progress-bar: var(--color-ink-blue);
-  --color-progress-bar-text: var(--color-ink-blue);
+  --color-progress-bar: var(--color-azule-dark);
+  --color-progress-bar-text: var(--color-azule-dark);
   --color-ghost-white: #f7f9fb;
   --color-button-outline-color: var(--color-very-light-gray);
   --color-athens-white: rgba(247, 249, 251, 1);
@@ -207,7 +211,7 @@ or "warn/action" ineastd of "red/green"
   --color-node-border: var(--color-athens-white);
   --color-network-selected-background: #4070f41f;
   --color-menu-black: #030815;
-  --color-tx-pending-status-text: var(--color-ink-blue);
+  --color-tx-pending-status-text: var(--color-azule-dark);
   --color-tx-pending-status-bg: var(--color-active-tab);
   --color-tx-fail-status-text: var(--color-lobster);
   --color-tx-fail-status-bg: var(--color-red-transparent);
@@ -295,7 +299,7 @@ or "warn/action" ineastd of "red/green"
   --overlay-color: rgba(28, 28, 30, 0.8);
   --color-content: var(--color-white);
   --color-content-light: #fff;
-  --color-ink-blue: #fff;
+  --color-azule-dark: #fff;
   --color-flash-message: rgba(64, 112, 244, 0.25);
   --color-flash-message-border: rgba(64, 112, 244, 0.6);
   --color-strong-mystic: #edf0f5;

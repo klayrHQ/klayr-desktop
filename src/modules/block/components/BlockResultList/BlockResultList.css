@@ -66,7 +66,7 @@
   & .transactionMessage {
     @mixin contentLargest bold;
 
-    color: var(--color-ink-blue);
+    color: var(--color-azule-dark);
     box-sizing: border-box;
     margin-left: auto;
   }

@@ -30,7 +30,7 @@
   color: var(--color-constant-colecti-dark-blue);
 
   &.primary {
-    background-color: var(--color-ink-blue);
+    background-color: var(--color-azule-dark);
   }
 }
 

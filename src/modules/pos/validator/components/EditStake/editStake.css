@@ -2,7 +2,7 @@
 
 :root {
   --horizontal-margin: calc(var(--side-bar-shrunk-size) * 2);
-  --color-fait-value: var(--color-ink-blue);
+  --color-fait-value: var(--color-azule-dark);
   --color-balance-bg: transparent;
   --balance-border: 0.5px solid var(--color-extra-light-gray);
   --balance-shadow: 0 4px 10px rgba(234, 234, 234, 0.36);

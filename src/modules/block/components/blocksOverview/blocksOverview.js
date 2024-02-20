@@ -41,7 +41,7 @@ const BlocksOverview = () => {
     labels: [t('Empty'), t('Non empty')],
     datasets: [
       {
-        backgroundColor: [chartStyles.mystic, chartStyles.ultramarineBlue],
+        backgroundColor: [chartStyles.mystic, chartStyles.azule],
         data: blocks?.data?.reduce(
           (acc, block) => {
             if (block.numberOfTransactions) acc[1]++;
@@ -92,7 +92,7 @@ const BlocksOverview = () => {
                     {
                       label: t('block'),
                       data: blocks?.data?.map((block) => block.numberOfTransactions),
-                      backgroundColor: chartStyles.ultramarineBlue,
+                      backgroundColor: chartStyles.azule,
                     },
                   ],
                 }}
@@ -191,7 +191,7 @@ const BlocksOverview = () => {
             <div className="hideOnLargeViewPort">
               <GuideTooltip>
                 <GuideTooltipItem color={chartStyles.mystic} label={t('Empty')} />
-                <GuideTooltipItem color={chartStyles.ultramarineBlue} label={t('Non empty')} />
+                <GuideTooltipItem color={chartStyles.azule} label={t('Non empty')} />
               </GuideTooltip>
             </div>
           </div>

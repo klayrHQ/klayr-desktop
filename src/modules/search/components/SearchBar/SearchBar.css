@@ -15,12 +15,11 @@
   & input {
     border-width: 0 !important;
     border-radius: 40px;
-    background: var(--color-search-bar-background);
-    color: var(--color-athens-white);
+    background: var(--color-white);
   }
 
   & input::placeholder {
-    color: var(--color-periwinkle-blue--manatee-gray);
+    color: var(--color-slate-gray);
   }
 }
 

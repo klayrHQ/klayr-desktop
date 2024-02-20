@@ -156,7 +156,7 @@ import generatedBlocksDark from '@setup/react/assets/images/icons/generated-bloc
 import consecutiveMissedBlocks from '@setup/react/assets/images/icons/consecutive-missed-blocks.svg';
 import consecutiveMissedBlocksDark from '@setup/react/assets/images/icons/consecutive-missed-blocks-dark.svg';
 import lock from '@setup/react/assets/images/icons/lock.svg';
-import lockedBalance from '@setup/react/assets/images/icons/zodiac-blue-lock.svg';
+import lockedBalance from '@setup/react/assets/images/icons/dark-blue-lock.svg';
 import lockedBalanceDark from '@setup/react/assets/images/icons/white-lock.svg';
 import unlock from '@setup/react/assets/images/icons/unlock.svg';
 import loading from '@setup/react/assets/images/icons/loading.svg';

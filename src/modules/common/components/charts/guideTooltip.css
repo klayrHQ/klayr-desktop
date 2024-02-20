@@ -20,7 +20,7 @@
   height: diameter;
 
   &.green {
-    background: var(--color-ink-blue);
+    background: var(--color-azule-dark);
     clip: rect(0px, diameter, radius, radius);
     width: diameter;
   }

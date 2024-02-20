@@ -118,15 +118,15 @@
 }
 
 .selected {
-  background: var(--color-primary);
+  background: var(--color-secondary);
   border-radius: 10px;
 
   & img {
-    filter: brightness(100);
+    filter: brightness(0);
   }
 
   & .label {
-    color: var(--color-strong-white);
+    color: var(--color-eerie);
   }
 }
 

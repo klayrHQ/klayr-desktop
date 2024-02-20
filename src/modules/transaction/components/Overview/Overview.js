@@ -42,7 +42,7 @@ const options = {
         type: 'linear',
         position: 'left',
         ticks: {
-          fontColor: chartStyles.ultramarineBlue,
+          fontColor: chartStyles.azule,
           fontSize: chartStyles.fontSize,
           callback: (value) => kFormatter(value),
           gridLines: {
@@ -293,7 +293,7 @@ const Overview = () => {
                     data: txCountList.reverse(),
                     categoryPercentage: 0.5,
                     barPercentage: 0.8,
-                    backgroundColor: chartStyles.ultramarineBlue,
+                    backgroundColor: chartStyles.azule,
                   },
                   {
                     label: 'Volume',

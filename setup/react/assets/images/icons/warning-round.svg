@@ -7,9 +7,9 @@
         <g id="2.0.2---Save-Passphrase---Copied-to-clipboard" transform="translate(-762.000000, -441.000000)">
             <g id="Button---Ghost---XS" transform="translate(356.000000, 434.000000)">
                 <g id="warning" transform="translate(407.000000, 8.000000)">
-                    <circle id="Oval" stroke="#EC6868" cx="7.5" cy="7.5" r="7.5"></circle>
-                    <rect id="Rectangle" fill="#EC6868" x="7" y="3" width="1" height="5" rx="0.5"></rect>
-                    <rect id="Rectangle" fill="#EC6868" x="7" y="10" width="1" height="2" rx="0.5"></rect>
+                    <circle id="Oval" stroke="#FF422D" cx="7.5" cy="7.5" r="7.5"></circle>
+                    <rect id="Rectangle" fill="#FF422D" x="7" y="3" width="1" height="5" rx="0.5"></rect>
+                    <rect id="Rectangle" fill="#FF422D" x="7" y="10" width="1" height="2" rx="0.5"></rect>
                 </g>
             </g>
         </g>

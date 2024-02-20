@@ -232,7 +232,7 @@ header {
 
   &.standby {
     &.light {
-      color: var(--color-ink-blue);
+      color: var(--color-azule-dark);
       background-color: var(--color-active-tab);
     }
 

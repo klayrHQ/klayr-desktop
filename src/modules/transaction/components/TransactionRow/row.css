@@ -65,7 +65,7 @@
   & .primaryText {
     @mixin contentNormal semi-bold;
 
-    color: var(--color-ink-blue);
+    color: var(--color-azule-dark);
     margin-right: 10px;
   }
 

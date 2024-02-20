@@ -10,8 +10,8 @@ export const chartStyles = {
   blueGray: '#8a8ca2',
   manateeGray: '#9999a0',
   maastrichtBlue: '#0c152e',
-  ultramarineBlue: '#4070f4',
-  darkBlue: '#254898',
+  azule: '#0D75FD',
+  azuleDark: '#0C31E2',
   ufoGreen: '#2bd67b',
   deepGreen: '#00d563',
   linthPink: '#f8d2d2',
@@ -30,13 +30,13 @@ export const chartStyles = {
   lightBlue: '#bde3ff',
   paleYellow: '#ffcd29',
   transparent: 'rgba(0, 0, 0, 0)',
-  contentFontFamily: "'basier-circle', sans-serif",
+  contentFontFamily: "'inter', sans-serif",
   fontSize: 13,
 };
 
 export const colorPalette = [
   chartStyles.ufoGreen,
-  chartStyles.ultramarineBlue,
+  chartStyles.azule,
   chartStyles.slateGray,
   chartStyles.deepGreen,
   chartStyles.maastrichtBlue,
@@ -44,7 +44,7 @@ export const colorPalette = [
   chartStyles.lightPurple,
   chartStyles.palePink,
   chartStyles.deepPurple,
-  chartStyles.darkBlue,
+  chartStyles.azuleDark,
   chartStyles.blueGray,
   chartStyles.burntSienna,
   chartStyles.manateeGray,
@@ -58,7 +58,7 @@ export const colorPalette = [
 
 export const colorPaletteDark = [
   chartStyles.ufoGreen,
-  chartStyles.ultramarineBlue,
+  chartStyles.azule,
   chartStyles.slateGray,
   chartStyles.deepGreen,
   chartStyles.warningBorder,
