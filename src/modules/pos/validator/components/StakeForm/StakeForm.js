@@ -278,7 +278,7 @@ const StakeForm = ({ t, stakes, account, isStakingTxPending, nextStep, history, 
                       token: posToken,
                     }}
                     headerClassName={styles.tableHeader}
-                    emptyState={{ illustration: 'emptyStakingQueueIllustration' }}
+                    emptyState={{}}
                   />
                 </div>
               </BoxContent>

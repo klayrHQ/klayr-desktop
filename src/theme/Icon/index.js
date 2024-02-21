@@ -23,8 +23,6 @@ import arrowUpCircle from '@setup/react/assets/images/icons/click-to-update.svg'
 import arrowWhiteDown from '@setup/react/assets/images/icons/arrow-white-down.svg';
 import balance from '@setup/react/assets/images/icons/balance.svg';
 import balanceDark from '@setup/react/assets/images/icons/balance-dark.svg';
-import bookmarksIconEmptyState from '@setup/react/assets/images/icons/bookmarks-empty-state.svg';
-import bookmarksIconEmptyStateDark from '@setup/react/assets/images/icons/bookmarks-empty-state-dark.svg';
 import checkboxFilled from '@setup/react/assets/images/icons/checkmark-filled.svg';
 import checkboxCircleFilled from '@setup/react/assets/images/icons/checkmark-circle-filled.svg';
 import checkmarkBlue from '@setup/react/assets/images/icons/checkmark-blue.svg';
@@ -46,10 +44,7 @@ import helpCenterArrow from '@setup/react/assets/images/icons/arrow.svg';
 import hidePassphraseIcon from '@setup/react/assets/images/icons/icon-hide-passphrase.svg';
 import hwWalletIcon from '@setup/react/assets/images/icons/hw-wallet.svg';
 import edit from '@setup/react/assets/images/icons/edit.svg';
-import iconEmptyRecentTransactions from '@setup/react/assets/images/icons/empty-recent-transactions.svg';
-import iconEmptyRecentTransactionsDark from '@setup/react/assets/images/icons/empty-recent-transactions-dark.svg';
 import iconFilter from '@setup/react/assets/images/icons/icon-filter.svg';
-import iconLedgerDevice from '@setup/react/assets/images/icons/icon-ledger-device.svg';
 import iconLoader from '@setup/react/assets/images/icons/icon-loader.svg';
 import iconWarning from '@setup/react/assets/images/icons/icon-warning.svg';
 import incoming from '@setup/react/assets/images/icons/incoming.svg';
@@ -57,7 +52,6 @@ import liskChat from '@setup/react/assets/images/icons/lisk-chat.svg';
 import colLogoNoText from '@setup/react/assets/images/logo/col-logo-no-text.svg';
 import logout from '@setup/react/assets/images/icons/logout.svg';
 import logoutActive from '@setup/react/assets/images/icons/logout-active.svg';
-import lskIcon from '@setup/react/assets/images/icons/icon-lsk.svg';
 import okIcon from '@setup/react/assets/images/icons/icon-checkmark.svg';
 import outgoing from '@setup/react/assets/images/icons/outgoing.svg';
 import pending from '@setup/react/assets/images/icons/pending.svg';
@@ -145,14 +139,6 @@ import calendarDark from '@setup/react/assets/images/icons/calendar-dark.svg';
 import validatorName from '@setup/react/assets/images/icons/validator-name.svg';
 import weight from '@setup/react/assets/images/icons/weight.svg';
 import weightDark from '@setup/react/assets/images/icons/weight-dark.svg';
-import reward from '@setup/react/assets/images/icons/generated-lsk.svg';
-import rewardDark from '@setup/react/assets/images/icons/generated-lsk-dark.svg';
-import productivity from '@setup/react/assets/images/icons/productivity.svg';
-import productivityDark from '@setup/react/assets/images/icons/productivity-dark.svg';
-import missedBlocks from '@setup/react/assets/images/icons/missed-blocks.svg';
-import missedBlocksDark from '@setup/react/assets/images/icons/missed-blocks-dark.svg';
-import generatedBlocks from '@setup/react/assets/images/icons/generated-blocks.svg';
-import generatedBlocksDark from '@setup/react/assets/images/icons/generated-blocks-dark.svg';
 import consecutiveMissedBlocks from '@setup/react/assets/images/icons/consecutive-missed-blocks.svg';
 import consecutiveMissedBlocksDark from '@setup/react/assets/images/icons/consecutive-missed-blocks-dark.svg';
 import lock from '@setup/react/assets/images/icons/lock.svg';
@@ -183,21 +169,9 @@ import validatorMissedDark from '@setup/react/assets/images/icons/validator-miss
 import validatorWarning from '@setup/react/assets/images/icons/validator-warning.svg';
 import validatorAwaiting from '@setup/react/assets/images/icons/validator-awaiting.svg';
 import validatorAwaitingDark from '@setup/react/assets/images/icons/validator-awaiting-dark.svg';
-import validatorActive from '@setup/react/assets/images/icons/validator-active.svg';
-import validatorActiveDark from '@setup/react/assets/images/icons/validator-active-dark.svg';
-import validatorStandby from '@setup/react/assets/images/icons/validator-standby.svg';
-import validatorStandbyDark from '@setup/react/assets/images/icons/validator-standby-dark.svg';
-import validatorIneligible from '@setup/react/assets/images/icons/validator-ineligible.svg';
-import validatorIneligibleDark from '@setup/react/assets/images/icons/validator-ineligible-dark.svg';
-import validatorPunished from '@setup/react/assets/images/icons/validator-punished.svg';
-import validatorPunishedDark from '@setup/react/assets/images/icons/validator-punished-dark.svg';
-import validatorBanned from '@setup/react/assets/images/icons/validator-banned.svg';
-import validatorBannedDark from '@setup/react/assets/images/icons/validator-banned-dark.svg';
 import eyeInactive from '@setup/react/assets/images/icons/eye-inactive.svg';
 import eyeActive from '@setup/react/assets/images/icons/eye-active.svg';
-import liskIcon from '@setup/react/assets/images/icons/lisk-icon.svg';
 import initialiseIcon from '@setup/react/assets/images/icons/initialise-icon.svg';
-import initialiseRegistration from '@setup/react/assets/images/icons/initialise-registration.svg';
 import warningYellow from '@setup/react/assets/images/icons/warning-yellow.svg';
 import reset from '@setup/react/assets/images/icons/reset.svg';
 import linkIcon from '@setup/react/assets/images/icons/link-icon.svg';
@@ -205,17 +179,12 @@ import refresh from '@setup/react/assets/images/icons/refresh.svg';
 import refreshActive from '@setup/react/assets/images/icons/refresh-active.svg';
 import reportValidatorMisbehavior from '@setup/react/assets/images/icons/reportValidatorMisbehavior.svg';
 import reportValidatorMisbehaviorDark from '@setup/react/assets/images/icons/reportValidatorMisbehavior-dark.svg';
-import downloadUpdateFinish from '@setup/react/assets/images/icons/download-update-finish.svg';
-import downloadUpdateProgress from '@setup/react/assets/images/icons/download-update-progress.svg';
 import whiteLinkIcon from '@setup/react/assets/images/icons/white-link-icon.svg';
 import personIcon from '@setup/react/assets/images/icons/person-blue.svg';
 import verticalDots from '@setup/react/assets/images/icons/vertical-dots.svg';
 import switchIcon from '@setup/react/assets/images/icons/switch.svg';
 import secretPassphrase from '@setup/react/assets/images/icons/secret-passphrase.svg';
 import accountUpload from '@setup/react/assets/images/icons/account-upload.svg';
-import accountRemoved from '@setup/react/assets/images/icons/account-removed.svg';
-import stakedToken from '@setup/react/assets/images/icons/staked-token.svg';
-import totalSupplyToken from '@setup/react/assets/images/icons/total-supply-token.svg';
 import unpinnedIcon from '@setup/react/assets/images/icons/unpinned.svg';
 import pinnedIcon from '@setup/react/assets/images/icons/pinned.svg';
 import chainLinkIcon from '@setup/react/assets/images/icons/chain-link.svg';
@@ -255,7 +224,6 @@ export const icons = {
   arrowRightCircle,
   arrowWhiteDown,
   balance,
-  bookmarksIconEmptyState,
   calendar,
   calendarDark,
   checkboxFilled,
@@ -275,10 +243,6 @@ export const icons = {
   feedbackActive,
   filePlain,
   fileOutline,
-  generatedBlocks,
-  generatedBlocksDark,
-  reward,
-  rewardDark,
   help,
   helpActive,
   helpCenter,
@@ -286,16 +250,13 @@ export const icons = {
   hidePassphraseIcon,
   hwWalletIcon,
   edit,
-  iconEmptyRecentTransactions,
   iconFilter,
-  iconLedgerDevice,
   iconLoader,
   iconWarning,
   incoming,
   liskChat,
   logout,
   logoutActive,
-  lskIcon,
   okIcon,
   outgoing,
   pending,
@@ -343,12 +304,8 @@ export const icons = {
   signMessageActive,
   verifyMessage,
   verifyMessageActive,
-  iconEmptyRecentTransactionsDark,
-  bookmarksIconEmptyStateDark,
   multiSignatureOutline,
   registerMultisignature,
-  missedBlocks,
-  missedBlocksDark,
   bookmark,
   bookmarkActive,
   toggleSidebar,
@@ -389,8 +346,6 @@ export const icons = {
   weight,
   weightDark,
   validatorName,
-  productivity,
-  productivityDark,
   lock,
   unlock,
   loading,
@@ -408,21 +363,9 @@ export const icons = {
   validatorWarning,
   validatorAwaiting,
   validatorAwaitingDark,
-  validatorActive,
-  validatorStandby,
-  validatorIneligible,
-  validatorPunished,
-  validatorBanned,
-  validatorActiveDark,
-  validatorStandbyDark,
-  validatorIneligibleDark,
-  validatorPunishedDark,
-  validatorBannedDark,
   eyeActive,
   eyeInactive,
-  liskIcon,
   initialiseIcon,
-  initialiseRegistration,
   warningYellow,
   reset,
   linkIcon,
@@ -436,8 +379,6 @@ export const icons = {
   reportValidatorMisbehaviorDark,
   lockedBalance,
   lockedBalanceDark,
-  downloadUpdateProgress,
-  downloadUpdateFinish,
   whiteLinkIcon,
   personIcon,
   verticalDots,
@@ -445,9 +386,6 @@ export const icons = {
   deleteRedIcon,
   secretPassphrase,
   accountUpload,
-  accountRemoved,
-  stakedToken,
-  totalSupplyToken,
   unpinnedIcon,
   pinnedIcon,
   chainLinkIcon,

@@ -156,7 +156,6 @@ const Transactions = () => {
           currentSort={sort}
           emptyState={{
             message: t('There are no transactions for this chain.'),
-            illustration: 'emptyTransactionsIllustration',
           }}
           scrollToSelector=".transactions-box"
         />

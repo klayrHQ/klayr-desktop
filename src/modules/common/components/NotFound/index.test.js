@@ -19,7 +19,6 @@ describe('notFound', () => {
   it('should render correctly', () => {
     const wrapper = mount(<NotFound {...props} />);
     expect(wrapper.find('section')).toHaveLength(1);
-    expect(wrapper).toContainMatchingElement('Illustration');
     expect(wrapper).toContainMatchingElement('.go-to-wallet-button');
   });
 

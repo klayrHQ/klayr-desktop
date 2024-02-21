@@ -9,7 +9,6 @@ export const INFO_BANNERS = {
       t(
         'This announcement is intended for all validators and node operators. Please ensure that you correctly migrate your nodes to the new network to avoid missing any blocks after the network hard fork.'
       ),
-    illustrationName: 'liskMigrationIllustration',
     infoLink: 'https://lisk.com/documentation/lisk-core/v4/management/migration.html',
     infoLinkText: 'Migration guide',
   },
@@ -19,7 +18,6 @@ export const INFO_BANNERS = {
       t(
         'Enhancing the blockchain consensus mechanism with PoS, and providing increased decentralization, scalability, and energy efficiency, empowering users to participate in securing the network, and earning rewards based on their token holdings.'
       ),
-    illustrationName: 'proofOfStake',
   },
   accountManagement: {
     infoMessage: (t) => t('Introducing account management'),
@@ -27,7 +25,6 @@ export const INFO_BANNERS = {
       t(
         'Effortlessly manage multiple accounts in one interface with enhanced privacy and security. Seamlessly switch between accounts, allocate funds, and monitor balances.'
       ),
-    illustrationName: 'accountManagement',
     infoLink: routes.wallet.path,
     infoLinkText: 'Explore',
   },
@@ -37,7 +34,6 @@ export const INFO_BANNERS = {
       t(
         'A new management feature allows you to seamlessly add and switch between applications. The dedicated application tab provides a comprehensive overview of registered, active, and terminated blockchain applications, and statistics.'
       ),
-    illustrationName: 'applicationManagement',
     infoLink: routes.blockchainApplications.path,
     infoLinkText: 'Explore',
   },
@@ -47,7 +43,6 @@ export const INFO_BANNERS = {
       t(
         'Explore multiple hardware wallet devices simultaneously. Seamlessly access your accounts through the integrated functionality of our new account management feature.'
       ),
-    illustrationName: 'hardwareWalletManagement',
     infoLink: routes.wallet.path,
     infoLinkText: 'Explore',
   },
@@ -57,7 +52,6 @@ export const INFO_BANNERS = {
       t(
         'Enjoy a streamlined and secure experience of signing transactions for external applications. Unlock a world of possibilities with Wallet Connect Integration, and take full control of your digital assets.'
       ),
-    illustrationName: 'walletConnect',
     infoLink: `${routes.blockchainApplications.path}?tab=SessionManager`,
     infoLinkText: 'Explore',
   },
@@ -67,7 +61,6 @@ export const INFO_BANNERS = {
       t(
         'Stay informed in real-time about crucial blockchain activities. With this new feature, track the end to end execution and its results for all transactions and blocks.'
       ),
-    illustrationName: 'transactionEvents',
     infoLink: routes.wallet.path,
     infoLinkText: 'Explore',
   },
@@ -77,7 +70,6 @@ export const INFO_BANNERS = {
       t(
         'With Lisk interoperability, you can now store, manage, and transact with a variety of tokens within a single wallet interface. Seamlessly switch between different digital assets and diversify your portfolio effortlessly. Enjoy the convenience and flexibility of Multi-Tokens.'
       ),
-    illustrationName: 'multiTokenBalances',
     infoLink: routes.allTokens.path,
     infoLinkText: 'Explore',
   },
@@ -87,7 +79,6 @@ export const INFO_BANNERS = {
       t(
         'Flawlessly move your assets within a specific blockchain application. Experience the power of cross-chain transfers, enabling you to expand your reach and optimize your asset management strategies.'
       ),
-    illustrationName: 'crossApplicationsSendRequestTokens',
   },
   sendAndRequestTokenCrossChain: {
     infoMessage: (t) => t('Introducing sending and requesting token across applications'),
@@ -95,7 +86,6 @@ export const INFO_BANNERS = {
       t(
         'Flawlessly move your assets across different blockchain applications. Experience the power of cross-chain transfers, enabling you to expand your reach and optimize your asset management strategies.'
       ),
-    illustrationName: 'withinAndCrossApplicationsSendRequestTokens',
   },
   networkAndApplicationManagement: {
     infoMessage: (t) => t('Introducing Network and Application management'),
@@ -103,7 +93,6 @@ export const INFO_BANNERS = {
       t(
         'Take control of your blockchain network settings. Now you can customize your network preferences according to your specific needs.'
       ),
-    illustrationName: 'networkManagement',
     infoLink: `${routes.wallet.path}?modal=manageApplications`,
     infoLinkText: 'Explore',
   },

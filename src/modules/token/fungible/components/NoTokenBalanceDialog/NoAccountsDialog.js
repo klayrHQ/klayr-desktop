@@ -11,7 +11,6 @@ const modes = (history) => ({
     message: i18n.t(
       'Please add an account to your wallet before connecting external applications.'
     ),
-    illustrationName: 'emptyValidatorsIllustration',
     buttonTitle: 'Add account',
     onClick: () => history.push(routes.addAccountOptions.path),
   },
@@ -19,7 +18,6 @@ const modes = (history) => ({
     message: i18n.t(
       'Please select a current account on your wallet before connecting external applications.'
     ),
-    illustrationName: 'emptyValidatorsIllustration',
     buttonTitle: 'Select account',
     onClick: () => addSearchParamsToUrl(history, { modal: 'switchAccount' }),
   },
@@ -37,7 +35,6 @@ const NoAccountDialog = () => {
     <Dialog hasClose size="sm">
       <NoActionView
         message={currentMode.message}
-        illustrationName={currentMode.illustrationName}
         buttonTitle={currentMode.buttonTitle}
         onClick={currentMode.onClick}
       />

@@ -13,7 +13,6 @@ import Tooltip from '@theme/Tooltip';
 import { parseSearchParams, removeSearchParamsFromUrl } from 'src/utils/searchParams';
 import { getLogo } from '@token/fungible/utils/helpers';
 import Skeleton from '@common/components/skeleton/Skeleton';
-import Illustration from 'src/modules/common/components/illustration';
 import { useBlockchainApplicationExplore } from '../../../explore/hooks/queries/useBlockchainApplicationExplore';
 import { useBlockchainApplicationMeta } from '../../hooks/queries/useBlockchainApplicationMeta';
 import { useApplicationManagement } from '../../hooks/useApplicationManagement';
@@ -99,7 +98,6 @@ const RemoveApplicationDetails = ({ location, onCancel, nextStep, history }) => 
     return (
       <Dialog hasClose className={`${grid.row} ${grid['center-xs']}`}>
         <div className={`${styles.wrapper} ${styles.errorWrapper}`}>
-          <Illustration name="applicationDetailsError" />
           <div className={styles.errorText}>{t('Error loading application data')}</div>
           <div className={styles.retryBtn}>
             <TertiaryButton onClick={reloadAppDetails}>{t('Try again')}</TertiaryButton>

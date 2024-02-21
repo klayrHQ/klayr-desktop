@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import Box from 'src/theme/box';
 import { TertiaryButton } from 'src/theme/buttons';
-import Illustration from 'src/modules/common/components/illustration';
 import styles from './NetworkError.css';
 
 const NetworkError = ({ onRetry, error }) => {
@@ -27,7 +26,6 @@ const NetworkError = ({ onRetry, error }) => {
   return (
     <Box className={styles.container}>
       <section>
-        <Illustration name="networkErrorIllustration" className={styles.illustration} />
         <b>{t('Network Connection Issues')}</b>
         <p className={styles.message}>
           {t(

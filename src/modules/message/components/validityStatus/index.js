@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { PrimaryButton } from 'src/theme/buttons';
 import BoxFooter from 'src/theme/box/footer';
-import Illustration from 'src/modules/common/components/illustration';
 import routes from 'src/routes/routes';
 import useVerifyMessageValidator from '../../hooks/useVerifyMessageValidator';
 import styles from './validityStatus.css';
@@ -15,10 +14,6 @@ export default function ValidityStatus({ inputs, history, t }) {
 
   return (
     <div className={styles.result}>
-      <Illustration
-        name={isCorrect ? 'verifyMessageSuccess' : 'verifyMessageError'}
-        className={styles.illustration}
-      />
       <h1>{isCorrect ? t('Signature is correct') : t('Signature is incorrect')}</h1>
       <BoxFooter direction="horizontal">
         <PrimaryButton onClick={closeModal} className="go-back">

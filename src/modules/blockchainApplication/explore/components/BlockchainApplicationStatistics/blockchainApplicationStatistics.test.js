@@ -15,8 +15,8 @@ describe('BlockchainApplicationStatistics', () => {
 
     expect(screen.getByText('Total supply')).toBeInTheDocument();
     expect(screen.getByText('Staked')).toBeInTheDocument();
-    expect(screen.getByText('5,000,000 LSK')).toBeInTheDocument();
-    expect(screen.getByText('300,000 LSK')).toBeInTheDocument();
+    expect(screen.getByText('5,000,000 KLY')).toBeInTheDocument();
+    expect(screen.getByText('300,000 KLY')).toBeInTheDocument();
   });
 
   it('should render default supply and staked details if data is unavailable', () => {
@@ -25,6 +25,6 @@ describe('BlockchainApplicationStatistics', () => {
 
     expect(screen.getByText('Total supply')).toBeInTheDocument();
     expect(screen.getByText('Staked')).toBeInTheDocument();
-    expect(screen.getAllByText('0 LSK')).toHaveLength(2);
+    expect(screen.getAllByText('0 KLY')).toHaveLength(2);
   });
 });

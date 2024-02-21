@@ -106,7 +106,6 @@ const ValidatorsTable = ({ setActiveTab, activeTab, blocks, filters }) => {
       currentSort={sort}
       emptyState={{
         message: t('No {{activeTab}} validators found.', { activeTab }),
-        illustration: 'emptyValidatorsIllustration',
       }}
       additionalRowProps={{
         t,

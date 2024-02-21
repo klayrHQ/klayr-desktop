@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import CheckBox from '@theme/CheckBox';
-import Icon from '@theme/Icon';
 import { selectCurrentHWDevicePath } from '@hardwareWallet/store/selectors/hwSelectors';
 import { setCurrentHWDevice } from '@hardwareWallet/store/actions';
 import { getPubKey } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication';
@@ -27,7 +26,6 @@ function HwDeviceItem({ hwDevice }) {
 
   return (
     <div className={styles.hwDevice}>
-      <Icon name="iconLedgerDevice" className={styles.hwWalletIcon} />
       <div className={styles.infoContainer}>
         <h5 className={styles.modelInfo}>{`${manufacturer} ${product}`}</h5>
         <TertiaryButton

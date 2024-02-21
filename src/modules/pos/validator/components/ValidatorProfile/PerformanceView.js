@@ -26,9 +26,9 @@ const Item = ({ icon, title, children }) => {
         <div className={`${styles.title} ${theme}`}>{title}</div>
         {children}
       </div>
-      <div className={`${styles.highlightIcon} ${styles[icon]}`}>
-        <Icon name={icon} />
-      </div>
+      {icon && <div className={`${styles.highlightIcon} ${styles[icon]}`}>
+        <Icon name={icon}/>
+      </div>}
     </BoxContent>
   );
 };
@@ -138,7 +138,7 @@ const PerformanceView = ({ data }) => {
           </FullItem>
         </Box>
         <Box className={`${grid.col} ${grid['col-xs-4']} ${grid['col-md-4']} ${styles.column}`}>
-          <Item title={t('Last generated block height')} icon="productivity">
+          <Item title={t('Last generated block height')}>
             {data?.lastGeneratedHeight && data?.generatedBlocks > 0 ? (
               <NavLink
                 to={`${routes.block.path}?height=${data.lastGeneratedHeight}`}
@@ -152,7 +152,7 @@ const PerformanceView = ({ data }) => {
               <span className={styles.performanceValue}>-</span>
             )}
           </Item>
-          <Item title={t('Blocks generated')} icon="generatedBlocks">
+          <Item title={t('Blocks generated')}>
             <div className={styles.performanceValue}>{data?.producedBlocks ?? '-'}</div>
           </Item>
         </Box>
@@ -167,9 +167,6 @@ const PerformanceView = ({ data }) => {
                       <FormattedNumber val={Number(rewardValue || 0).toFixed(4)} />
                     </div>
                     <div className={styles.separator} />
-                  </div>
-                  <div className={`${grid['col-md-6']} ${styles.highlightIcon}`}>
-                    <Icon name="reward" />
                   </div>
                 </div>
               </div>

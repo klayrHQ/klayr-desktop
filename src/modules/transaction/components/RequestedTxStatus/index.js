@@ -3,14 +3,12 @@ import copyToClipboard from 'copy-to-clipboard';
 
 import Icon from 'src/theme/Icon';
 import { PrimaryButton, SecondaryButton } from 'src/theme/buttons';
-import Illustration from 'src/modules/common/components/illustration';
 import { txStatusTypes } from '@transaction/configuration/txStatus';
 import { getErrorReportMailto } from 'src/utils/helpers';
 import { useSession } from '@libs/wcm/hooks/useSession';
 import ConnectionContext from '@libs/wcm/context/connectionContext';
 import { EVENTS } from '@libs/wcm/constants/lifeCycle';
 import { encodeTransaction, toTransactionJSON } from '../../utils/encoding';
-import getIllustration from '../TxBroadcaster/illustrationsMap';
 import styles from './RequestedTxStatus.css';
 
 export const SuccessActions = ({ onClick, t, copied }) => (
@@ -72,10 +70,6 @@ const RequestedTxStatus = ({
 
   return (
     <div className={`${styles.wrapper} ${className}`}>
-      <Illustration
-        name={getIllustration(status.code, 'signMultisignature')}
-        data-testid="illustration"
-      />
       <h6 className="result-box-header">{title}</h6>
       <p className="transaction-status body-message">{message}</p>
 

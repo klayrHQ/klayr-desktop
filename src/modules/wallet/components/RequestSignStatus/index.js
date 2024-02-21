@@ -6,13 +6,11 @@ import { useSession } from '@libs/wcm/hooks/useSession';
 import Box from 'src/theme/box';
 import Icon from 'src/theme/Icon';
 import { TertiaryButton, PrimaryButton } from 'src/theme/buttons';
-import Illustration from '@common/components/illustration';
 import { toTransactionJSON } from '@transaction/utils';
 import styles from './styles.css';
 
 const errorData = (t) => ({
   error: true,
-  illustration: 'transactionError',
   title: t('Transaction signature failure'),
   description: t(
     'There was an error signing your transaction. please close this dialog and try again.'
@@ -21,7 +19,6 @@ const errorData = (t) => ({
 
 const successData = (t) => ({
   error: false,
-  illustration: 'transactionSuccess',
   title: t('Transaction signature successful'),
   description: t(
     'Your transaction has been signed. Please copy the signed transaction and return to application.'
@@ -64,7 +61,6 @@ const RequestSignStatus = (props) => {
 
   return (
     <Box className={`${styles.wrapper} transaction-status`}>
-      <Illustration name={data.illustration} className={styles.illustration} />
       <h5 className="result-box-header">{data.title}</h5>
       <p>{data.description}</p>
       {!data.error && (

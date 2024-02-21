@@ -16,7 +16,7 @@
       justify-content: normal;
 
       & > span {
-        --content-font: 'NeueMachina';
+        --content-font: 'Utendo', 'Helvetica', 'Arial', 'Lucida', sans-serif;
 
         font-family: var(--content-font);
         font-weight: 600;

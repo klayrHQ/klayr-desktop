@@ -62,7 +62,6 @@ describe('Table', () => {
         header: [],
         emptyState: {
           message: 'custom_message',
-          illustration: 'emptyBookmarksList',
         },
       };
       const wrapper = mount(<Table {...customProps} />);

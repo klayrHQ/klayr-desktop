@@ -6,7 +6,6 @@ import BoxHeader from 'src/theme/box/header';
 import { PrimaryButton } from 'src/theme/buttons';
 import BoxContent from 'src/theme/box/content';
 import BoxFooter from 'src/theme/box/footer';
-import Illustration from 'src/modules/common/components/illustration';
 import styles from './StakeSuccessfulModal.css';
 
 function StakeSuccessfulModal({ history, statusMessage }) {
@@ -22,7 +21,6 @@ function StakeSuccessfulModal({ history, statusMessage }) {
         <h2>{t('Staking confirmed')}</h2>
       </BoxHeader>
       <BoxContent>
-        <Illustration className={styles.illustration} name="stakingSuccess" />
         <p className={styles.messageLabel}>{statusMessage.message}</p>
       </BoxContent>
       <BoxFooter className={styles.footer}>

@@ -139,7 +139,6 @@ const SentStakes = ({ history }) => {
           }}
           headerClassName={styles.tableHeader}
           emptyState={{
-            illustration: 'emptyTransactionsIllustration',
             message: 'There are no stakes for this account.',
           }}
         />

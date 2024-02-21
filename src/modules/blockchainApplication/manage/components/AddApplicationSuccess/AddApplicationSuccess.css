@@ -20,7 +20,7 @@
   text-align: center;
 
   & .header {
-    --content-font: 'NeueMachina';
+    --content-font: 'Utendo', 'Helvetica', 'Arial', 'Lucida', sans-serif;
 
     font-family: var(--content-font);
     font-size: 28px;

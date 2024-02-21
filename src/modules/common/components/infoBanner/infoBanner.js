@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { useCurrentAccount } from 'src/modules/account/hooks';
 import Icon from '@theme/Icon';
-import Illustration from '@common/components/illustration';
 import styles from './infoBanner.css';
 
 // eslint-disable-next-line complexity
@@ -15,7 +14,6 @@ const InfoBanner = ({
   infoDescription,
   infoLink,
   infoLinkText,
-  illustrationName,
   className,
   handleSliderBannerClose,
   show,
@@ -77,9 +75,6 @@ const InfoBanner = ({
             </p>
           </section>
         </div>
-      </div>
-      <div className={styles.bannerImg}>
-        <Illustration name={illustrationName} />
       </div>
     </div>
   );

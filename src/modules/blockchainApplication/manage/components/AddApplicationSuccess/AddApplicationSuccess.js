@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Box from 'src/theme/box';
 import { PrimaryButton } from 'src/theme/buttons';
-import Illustration from 'src/modules/common/components/illustration';
 import { removeThenAppendSearchParamsToUrl } from 'src/utils/searchParams';
 import Dialog from 'src/theme/dialog/dialog';
 import styles from './AddApplicationSuccess.css';
@@ -16,7 +15,6 @@ const AddApplicationSuccess = ({ history }) => {
   return (
     <Dialog hasClose>
       <Box className={styles.wrapper}>
-        <Illustration name="addApplicationSuccess" className={styles.illustration} />
         <Box className={styles.textContent}>
           <div className={`${styles.header} add-application-success-header`}>
             {t('Perfect! Application has now been added')}

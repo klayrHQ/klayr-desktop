@@ -1,6 +1,5 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
-import Icon from 'src/theme/Icon';
 import { PrimaryButton } from 'src/theme/buttons';
 import styles from './updateIndicator.css';
 
@@ -13,7 +12,6 @@ const UpdateIndicator = ({
   closeToast,
 }) => (
   <div className={styles.container}>
-    <Icon name={completed ? 'downloadUpdateFinish' : 'downloadUpdateProgress'} />
     {completed ? (
       <>
         <p className={styles.completedContent}>

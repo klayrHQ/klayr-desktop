@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { PrimaryButton, SecondaryButton, TertiaryButton } from 'src/theme/buttons';
 import { cryptography } from '@liskhq/lisk-client';
-import Illustration from 'src/modules/common/components/illustration';
 import routes from 'src/routes/routes';
 import { txStatusTypes } from '@transaction/configuration/txStatus';
 import { getErrorReportMailto } from 'src/utils/helpers';
@@ -18,7 +17,6 @@ import AccountRow from '@account/components/AccountRow';
 import classNames from 'classnames';
 import { getNextAccountToSign } from '@transaction/utils/multisignatureUtils';
 import generateUniqueId from 'src/utils/generateUniqueId';
-import getIllustration from '../TxBroadcaster/illustrationsMap';
 import styles from './Multisignature.css';
 import useTxInitiatorAccount from '../../hooks/useTxInitiatorAccount';
 import {
@@ -128,7 +126,6 @@ const Multisignature = ({
   reset,
   children,
   account,
-  illustration,
 }) => {
   const [copied, setCopied] = useState(false);
   const ref = useRef();
@@ -182,14 +179,13 @@ const Multisignature = ({
     if (status.code !== txStatusTypes.broadcastSuccess) return null;
 
     if (typeof children === 'function')
-      children({ transactions, network, account, status, illustration });
+      children({ transactions, network, account, status });
 
     return children;
   };
 
   return (
     <div className={`${styles.wrapper} ${className}`}>
-      <Illustration name={getIllustration(status.code, 'signMultisignature')} />
       <h6 className="result-box-header">{title}</h6>
       {!nextAccountToSign && <p className="transaction-status body-message">{message}</p>}
       {getChildrentToRender()}

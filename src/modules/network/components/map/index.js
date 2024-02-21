@@ -92,7 +92,6 @@ const FullMap = () => {
           <div className={styles.wrapper}>
             <div id="mapContainer" />
             <Empty
-              data={{ illustration: 'emptyConnectedPeersIllustration' }}
               error={error}
               isLoading={isLoading}
               isListEmpty={peers.length !== 0}

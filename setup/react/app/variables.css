@@ -46,7 +46,7 @@ or "warn/action" ineastd of "red/green"
   --font-size-h6: 16px;
   --font-size-small: 10px;
   --font-size-large: 24px;
-  --heading-font: 'NeueMachina', 'Open Sans', sans-serif;
+  --heading-font: 'Utendo', 'Helvetica' ,'Arial', 'Lucida', sans-serif;
   --content-font: 'Inter', sans-serif;
   --font-weight-normal: 400;
   --font-weight-semi-bold: 500;
@@ -128,7 +128,7 @@ or "warn/action" ineastd of "red/green"
       Other Colors
   *************************/
   --color-surface: var(--color-white);
-  --color-surface-1: rgb(243, 243, 240);
+  --color-surface-1: var(--color-mystic);
   --color-surface-blue: var(--color-colecti-dark-blue);
   --color-body-bg: var(--color-surface-1);
   --color-error: var(--color-lobster-dark);

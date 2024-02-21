@@ -47,12 +47,10 @@ describe('Onboarding component', () => {
       {
         title: 'Title',
         content: 'content',
-        illustration: 'test.svg',
       },
       {
         title: 'Title',
         content: 'content',
-        illustration: 'test.svg',
       },
     ];
 

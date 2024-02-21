@@ -93,7 +93,6 @@ const AllTokens = ({ history }) => {
           headerClassName={`${styles.tableHeader} token-table-header`}
           emptyState={{
             message: t('You do not have any tokens yet.'),
-            illustration: 'emptyTokensIllustration',
           }}
         />
       </BoxContent>

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { useTranslation, withTranslation } from 'react-i18next';
 import { PrimaryButton, SecondaryButton } from '@theme/buttons';
-import Illustration from 'src/modules/common/components/illustration';
 import styles from './onboarding.css';
 
 const getOnboardingSlides = (t) => [
@@ -12,26 +11,22 @@ const getOnboardingSlides = (t) => [
     content: t(
       'The ultimate gateway to the ecosystem. Lisk’s new design lets you easily manage your LSK (and much, much more).'
     ),
-    illustration: 'hubReadyToGo',
   },
   {
     title: t('Stay informed'),
     content: t(
       'Keep up-to-date with announcements from the Lisk Foundation. Check what network validators have been up to with dedicated profile pages.'
     ),
-    illustration: 'builtAroundCommunity',
   },
   {
     title: t('Effortlessly send and receive tokens'),
     content: t('Personalize each transaction with a custom message.'),
-    illustration: 'sendLSKTokens',
   },
   {
     title: t('Get involved'),
     content: t(
       'Community is key. Stake for validators, or register as one yourself. Feel like a feature is missing? Request it directly from the Lisk.'
     ),
-    illustration: 'timeToContribute',
   },
 ];
 
@@ -80,15 +75,6 @@ const Onboarding = ({
   return (
     <div className={`${styles.onboarding} ${className}`}>
       <span className={`closeOnboarding ${styles.closeBtn}`} onClick={handleDiscard} />
-      <div className={styles.illustrations}>
-        {slides.map(({ illustration }, i) => (
-          <Illustration
-            className={`${i === currentSlide ? styles.active : ''}`}
-            key={`illustration-${i}`}
-            name={illustration}
-          />
-        ))}
-      </div>
 
       <div className={styles.content}>
         {slides.length > 1 ? (

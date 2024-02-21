@@ -30,7 +30,6 @@ function SwippableInfoBanner({ banners, className, name }) {
           const {
             infoMessage,
             infoDescription,
-            illustrationName,
             infoLink,
             infoLinkText,
             infoLabel,
@@ -45,7 +44,6 @@ function SwippableInfoBanner({ banners, className, name }) {
                 infoLabel={infoLabel?.(t) || t('New')}
                 infoMessage={infoMessage(t)}
                 infoDescription={infoDescription(t)}
-                illustrationName={illustrationName}
                 handleSliderBannerClose={handleSliderBannerClose}
                 infoLink={infoLink}
                 infoLinkText={infoLinkText}

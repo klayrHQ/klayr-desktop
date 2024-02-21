@@ -5,7 +5,7 @@
   flex-flow: row wrap;
 
   & .dataRow {
-    --content-font: 'NeueMachina';
+    --content-font: 'Utendo', 'Helvetica', 'Arial', 'Lucida', sans-serif;
 
     height: 100px;
     border-bottom: 1px solid var(--color-platinum);

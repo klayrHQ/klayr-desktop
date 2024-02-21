@@ -5,11 +5,9 @@ import { getErrorReportMailto, isEmpty } from 'src/utils/helpers';
 import { PrimaryButton, TertiaryButton } from 'src/theme/buttons';
 import routes from 'src/routes/routes';
 import { txStatusTypes } from '@transaction/configuration/txStatus';
-import Illustration from 'src/modules/common/components/illustration';
 import { LEGACY } from 'src/const/queries';
 
 import { isTxStatusError } from '@transaction/configuration/statusConfig';
-import getIllustration from '../TxBroadcaster/illustrationsMap';
 import styles from './Regular.css';
 import { joinModuleAndCommand } from '../../utils';
 import { MODULE_COMMANDS_NAME_MAP } from '../../configuration/moduleCommand';
@@ -33,7 +31,6 @@ const Regular = ({
   status,
   history,
   children,
-  illustration,
   className,
   resetTransactionResult,
   transactionBroadcasted,
@@ -64,15 +61,10 @@ const Regular = ({
 
   return (
     <div className={`${styles.wrapper} ${className}`}>
-      {typeof illustration === 'string' ? (
-        <Illustration name={getIllustration(status.code, illustration)} />
-      ) : (
-        React.cloneElement(illustration)
-      )}
       <h1 className="result-box-header">{title}</h1>
       <p className="transaction-status body-message">{message}</p>
       {typeof children === 'function'
-        ? children({ transactions, network, account, status, illustration })
+        ? children({ transactions, network, account, status })
         : children}
       {successTypes.includes(status.code) && !noBackButton && (
         <TertiaryButton

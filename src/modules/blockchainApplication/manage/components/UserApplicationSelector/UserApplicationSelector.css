@@ -13,7 +13,7 @@
   }
 
   & .applicationListContainer {
-    --content-font: 'NeueMachina';
+    --content-font: 'Utendo', 'Helvetica', 'Arial', 'Lucida', sans-serif;
 
     max-height: 160px;
     overflow: auto;

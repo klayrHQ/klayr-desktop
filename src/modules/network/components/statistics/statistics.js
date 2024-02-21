@@ -297,7 +297,6 @@ const Statistics = () => {
       <BoxContent className={styles.content}>
         <ChartsWithData {...networkStatistics?.data} t={t} />
         <Empty
-          data={{ illustration: 'emptyNetworkStatisticsIllustration' }}
           isLoading={isLoading}
           isListEmpty={(networkStatistics?.data || []).length === 0}
           className={styles.emptyState}

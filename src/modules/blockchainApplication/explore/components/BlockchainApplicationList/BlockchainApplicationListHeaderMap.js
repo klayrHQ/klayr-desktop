@@ -14,7 +14,7 @@ export default (t) => [
     classList: grid['col-xs-2'],
   },
   {
-    title: t('LSK deposited'),
+    title: t('KLY deposited'),
     classList: grid['col-xs-3'],
   },
 ];

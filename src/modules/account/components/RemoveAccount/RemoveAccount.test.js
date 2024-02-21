@@ -43,7 +43,6 @@ describe('Remove account', () => {
 
     await waitFor(() => {
       expect(screen.getByText('Account was removed')).toBeTruthy();
-      expect(screen.getByTestId('accountRemovedIcon')).toBeTruthy();
       expect(screen.getByText('Continue to manage accounts')).toBeTruthy();
 
       fireEvent.click(screen.getByText('Continue to manage accounts'));

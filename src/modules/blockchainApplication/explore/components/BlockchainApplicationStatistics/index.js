@@ -8,7 +8,6 @@ import BoxContent from 'src/theme/box/content';
 import TokenAmount from '@token/fungible/components/tokenAmount';
 import { DoughnutChart } from '@common/components/charts';
 import Tooltip from 'src/theme/Tooltip';
-import Icon from 'src/theme/Icon';
 import { useTheme } from 'src/theme/Theme';
 import { getColorPalette } from '@common/components/charts/chartOptions';
 import GuideTooltip, { GuideTooltipItem } from '@common/components/charts/guideTooltip';
@@ -33,18 +32,16 @@ const BlockchainApplicationStatistics = () => {
     () => [
       {
         title: t('Total supply'),
-        description: t('Total LSK tokens in circulation'),
+        description: t('Total KLY tokens in circulation'),
         amount: statistics?.data?.totalSupplyLSK || 0,
-        icon: 'totalSupplyToken',
         tooltipSize: 'maxContent',
       },
       {
         title: t('Staked'),
         description: t(
-          'Amount of LSK tokens staked by validators and nominators for PoS governance'
+          'Amount of KLY tokens staked by validators and nominators for PoS governance'
         ),
         amount: statistics?.data?.totalStakedLSK || 0,
-        icon: 'stakedToken',
         tooltipSize: 'm',
       },
     ],
@@ -75,8 +72,8 @@ const BlockchainApplicationStatistics = () => {
           </GuideTooltip>
         </div>
       </BoxContent>
-      {cardsMap.map(({ title, description, amount, icon, tooltipSize }) => (
-        <BoxContent key={`app-stats-card-${icon}`} className={styles.statsBox}>
+      {cardsMap.map(({ title, description, amount, tooltipSize }) => (
+        <BoxContent key="app-stats-card" className={styles.statsBox}>
           <div>
             <div>
               <span className={styles.statsInfoTitle}>{title}</span>
@@ -87,9 +84,6 @@ const BlockchainApplicationStatistics = () => {
             <div className={`${styles.statsInfo} stats-info-value`}>
               <TokenAmount isLsk val={amount} showRounded={2} />
             </div>
-          </div>
-          <div>
-            <Icon name={icon} />
           </div>
         </BoxContent>
       ))}

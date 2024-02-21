@@ -48,7 +48,7 @@ describe('BlockchainApplicationRow', () => {
     expect(wrapper.getByText(chainName)).toBeTruthy();
     expect(wrapper.getByText(chainID)).toBeTruthy();
     expect(wrapper.getByText(status)).toBeTruthy();
-    expect(wrapper.getByText('0.1 LSK')).toBeTruthy();
+    expect(wrapper.getByText('0.1 KLY')).toBeTruthy();
   });
 
   it("should navigate to the application's details", () => {

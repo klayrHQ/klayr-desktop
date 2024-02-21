@@ -4,7 +4,6 @@ import Box from '@theme/box';
 import BoxHeader from '@theme/box/header';
 import { TertiaryButton } from '@theme/buttons';
 import BoxContent from '@theme/box/content';
-import Illustration from '@common/components/illustration';
 import Tooltip from '@theme/Tooltip';
 import { tokenMap } from '@token/fungible/consts/tokens';
 import Icon from '@theme/Icon';
@@ -84,12 +83,6 @@ const TxSummarizer = ({
         </BoxHeader>
       )}
       <BoxContent className={`${styles.content} summary-content`}>
-        {wallet.loginType ? (
-          <Illustration
-            name={wallet.loginType}
-            className={`${styles.illustrationWrapper} illustration`}
-          />
-        ) : null}
         {children}
         <TransactionInfo
           token={token}

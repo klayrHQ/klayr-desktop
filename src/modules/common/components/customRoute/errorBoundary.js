@@ -4,7 +4,6 @@ import { withTranslation } from 'react-i18next';
 import Piwik from 'src/utils/piwik';
 import { IPC_RELOAD_URL } from 'src/const/ipcGlobal';
 import { PrimaryButton, TertiaryButton } from 'src/theme/buttons';
-import Illustration from 'src/modules/common/components/illustration';
 import styles from './errorBoundary.css';
 
 /* eslint-disable class-methods-use-this, no-unused-vars */
@@ -37,7 +36,6 @@ class ErrorBoundary extends React.Component {
     const renderErrorSection = () => (
       <section className={styles.errorBoundaryPage}>
         <div className={`${styles.errorMessageContainer} error-boundary-container`}>
-          <Illustration name="errorBoundaryPage" />
           <h2>{t('An error occurred.')}</h2>
           <p>
             {t(

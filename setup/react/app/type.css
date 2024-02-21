@@ -23,18 +23,22 @@ avaialble application-wide
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 @font-face {
-  font-family: 'NeueMachina';
-  src: url('../assets/fonts/neueMachina/PPNeueMachina-PlainRegular.otf');
+  font-family: 'Utendo';
+  src: url('../assets/fonts/utendo/Utendo-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeueMachina';
-  src:
-    url('../assets/fonts/neueMachina/PPNeueMachina-PlainBold.woff2') format('woff2'),
-    url('../assets/fonts/neueMachina/PPNeueMachina-PlainBold.woff') format('woff'),
-    url('../assets/fonts/neueMachina/PPNeueMachina-PlainBold.ttf') format('truetype');
+  font-family: 'Utendo';
+  src: url('../assets/fonts/utendo/Utendo-SemiBold.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Utendo';
+  src: url('../assets/fonts/utendo/Utendo-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }

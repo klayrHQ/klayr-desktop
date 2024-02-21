@@ -4,24 +4,20 @@ import { useHistory } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import BoxContent from 'src/theme/box/content';
 import BoxFooter from 'src/theme/box/footer';
-import Illustration from 'src/modules/common/components/illustration';
 import { AutoResizeTextarea } from 'src/theme';
 import { PrimaryButton, SecondaryButton } from 'src/theme/buttons';
 import { removeSearchParamsFromUrl } from 'src/utils/searchParams';
 import { statusMessages } from '@transaction/configuration/statusConfig';
-import getIllustration from '@transaction/components/TxBroadcaster/illustrationsMap';
 import Icon from '@theme/Icon';
 import { useSession } from '@libs/wcm/hooks/useSession';
 import styles from './signedMessage.css';
 
 const Error = ({ t, error, reset }) => {
   const status = statusMessages(t)[error.hwTxStatusType];
-  const illustrationName = getIllustration(error.hwTxStatusType, 'default');
 
   return (
     <BoxContent className={styles.statusWrapper}>
       <Icon name="arrowLeftTailed" className={styles.backBtn} onClick={reset} />
-      <Illustration className={styles.illustration} name={illustrationName || 'hwRejection'} />
       <h3>{status?.title || t('Transaction aborted on device')}</h3>
       <p className={styles.errorInfoText}>
         {status?.message || t('You have cancelled the transaction on your hardware wallet.')}

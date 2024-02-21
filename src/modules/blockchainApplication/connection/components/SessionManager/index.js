@@ -49,7 +49,6 @@ const SessionManager = () => {
           }}
           emptyState={{
             message: t("You haven't paired with any applications yet."),
-            illustration: 'emptyWalletConnectionsIllustration',
           }}
         />
       </BoxContent>

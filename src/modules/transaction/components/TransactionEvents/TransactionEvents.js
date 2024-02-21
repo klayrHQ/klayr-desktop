@@ -117,7 +117,6 @@ const TransactionEvents = ({ address, transactionID = '', blockID = '', isWallet
           retry={refetch}
           emptyState={{
             message: t('There are no events for this account.'),
-            illustration: 'emptyEventsIllustration',
           }}
         />
       </BoxContent>

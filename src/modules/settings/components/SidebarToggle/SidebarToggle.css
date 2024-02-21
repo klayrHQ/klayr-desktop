@@ -18,7 +18,7 @@
   height: 12px;
   display: flex;
   padding: 10px 8px;
-  background-color: var(--color-strong-ink-blue);
+  background-color: var(--color-primary);
   margin-right: 0;
   cursor: pointer;
   border-radius: 0 16px 16px 0;

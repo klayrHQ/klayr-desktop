@@ -55,7 +55,6 @@ export default function WelcomeView() {
         infoLabel={INFO_BANNERS.liskMigration.infoLabel(t)}
         infoMessage={INFO_BANNERS.liskMigration.infoMessage(t)}
         infoDescription={INFO_BANNERS.liskMigration.infoDescription(t)}
-        illustrationName={INFO_BANNERS.liskMigration.illustrationName}
         infoLink={INFO_BANNERS.liskMigration.infoLink}
         infoLinkText={INFO_BANNERS.liskMigration.infoLinkText}
       />
