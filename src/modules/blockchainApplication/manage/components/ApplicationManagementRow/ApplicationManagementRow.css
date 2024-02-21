@@ -50,7 +50,7 @@
 
 .disabledWarningTooltip main {
   & > p {
-    --content-font: 'basier-circle';
+    --content-font: 'Inter';
 
     width: 200px;
     font-size: 12px;

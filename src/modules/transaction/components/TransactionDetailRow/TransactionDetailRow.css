@@ -65,7 +65,7 @@
 }
 
 .expandToggle {
-  --content-font: 'basier-circle';
+  --content-font: 'Inter';
 
   height: initial !important;
   padding-left: 5px !important;
