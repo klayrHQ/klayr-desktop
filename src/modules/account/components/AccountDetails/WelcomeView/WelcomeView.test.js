@@ -6,6 +6,6 @@ import WelcomeView from './index';
 describe('WelcomeView', () => {
   it('should render properly', async () => {
     render(<WelcomeView />);
-    expect(screen.getByText('Welcome to Lisk')).toBeTruthy();
+    expect(screen.getByText('Welcome to Klayr')).toBeTruthy();
   });
 });

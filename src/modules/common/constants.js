@@ -68,7 +68,7 @@ export const INFO_BANNERS = {
     infoMessage: (t) => t('Introducing Multi-tokens'),
     infoDescription: (t) =>
       t(
-        'With Lisk interoperability, you can now store, manage, and transact with a variety of tokens within a single wallet interface. Seamlessly switch between different digital assets and diversify your portfolio effortlessly. Enjoy the convenience and flexibility of Multi-Tokens.'
+        'With Klayr interoperability, you can now store, manage, and transact with a variety of tokens within a single wallet interface. Seamlessly switch between different digital assets and diversify your portfolio effortlessly. Enjoy the convenience and flexibility of Multi-Tokens.'
       ),
     infoLink: routes.allTokens.path,
     infoLinkText: 'Explore',

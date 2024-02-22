@@ -46,7 +46,7 @@ describe('DialogAddNetwork', () => {
     expect(screen.getAllByText('Add network')[0]).toBeInTheDocument();
     expect(
       screen.getByText(
-        '"Lisk" will be the default mainchain application, please enter your custom network to be added to the wallet.'
+        '"Klayr" will be the default mainchain application, please enter your custom network to be added to the wallet.'
       )
     ).toBeInTheDocument();
   });

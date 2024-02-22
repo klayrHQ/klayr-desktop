@@ -15,7 +15,7 @@ const NewReleaseMessage = ({ t, version, releaseSummary, updateNow, readMore, ..
       <FlashMessage.Content>
         <div className={styles.container}>
           <Icon name="warningFolder" />
-          {t('Lisk {{version}}', { version })}
+          {t('Klayr {{version}}', { version })}
           {t(' is out. ')}
           {releaseSummary}
           <div className={styles.btnContainer}>

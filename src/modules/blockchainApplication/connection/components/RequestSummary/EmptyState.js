@@ -23,7 +23,7 @@ const EmptyState = ({ history }) => {
 
   return (
     <BoxEmptyState className={styles.emptyState}>
-      <p>{t('There are no transactions requested from Lisk Desktop yet.')}</p>
+      <p>{t('There are no transactions requested from Klayr Desktop yet.')}</p>
     </BoxEmptyState>
   );
 };

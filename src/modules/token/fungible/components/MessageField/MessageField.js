@@ -85,7 +85,7 @@ function MessageField({
           {!!feedback && !error && (
             <Tooltip position="right" title={t('Bytes counter')}>
               <p className={styles.tooltipText}>
-                {t(`Lisk counts your message in bytes, so keep in mind
+                {t(`Klayr counts your message in bytes, so keep in mind
                 that the length of your message may vary in different languages.
                 Different characters may consume a varying amount of bytes.`)}
               </p>

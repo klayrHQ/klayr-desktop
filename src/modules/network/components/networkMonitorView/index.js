@@ -21,7 +21,7 @@ const Network = () => {
             <Tooltip position="right">
               <p>
                 {t(
-                  'The list shown only contains peers connected to the current Lisk Service node.'
+                  'The list shown only contains peers connected to the current Klayr Service node.'
                 )}
               </p>
             </Tooltip>

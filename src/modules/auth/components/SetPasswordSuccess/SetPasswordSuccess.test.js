@@ -21,7 +21,7 @@ describe('Setup password success and JSON download component', () => {
     expect(wrapper).toContainMatchingElement('.container');
     expect(wrapper).toContainMatchingElement('.content');
     expect(wrapper).toContainMatchingElement('.subHeader');
-    expect(wrapper).toContainMatchingElement('.downloadLisk');
+    expect(wrapper).toContainMatchingElement('.downloadKlayr');
     expect(wrapper).toContainMatchingElement('.downloadBtn');
     expect(wrapper).toContainMatchingElement('.continueButton');
   });

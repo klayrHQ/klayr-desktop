@@ -62,7 +62,7 @@ const RemoveApplicationDetails = ({ location, onCancel, nextStep, history }) => 
     {
       header: {
         text: t('Chain ID'),
-        toolTipText: t('The chain ID uniquely identifies a chain in the Lisk ecosystem'),
+        toolTipText: t('The chain ID uniquely identifies a chain in the Klayr ecosystem'),
       },
       className: `${styles.detailContentText} ${styles.chainId} chain-id`,
       content: chainId,

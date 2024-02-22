@@ -20,7 +20,7 @@ const getErrorMessage = (code) => {
   const errors = {
     [LEDGER_CUSTOM_ERRORS.openDevicePath.return_code]: LEDGER_CUSTOM_ERRORS.openDevicePath.match,
     65535: 'Device is disconnected',
-    28161: 'Lisk app is not open',
+    28161: 'Klayr app is not open',
     27014: 'Transaction rejected',
     27011: 'Data to sign is too large',
   };

@@ -8,7 +8,7 @@ window.open = jest.fn();
 describe('Reclaim balance Introduction screen', () => {
   const props = { nextStep: jest.fn() };
 
-  it('Opens lisk blog windows', () => {
+  it('Opens klayr blog windows', () => {
     const wrapper = mount(<Introduction {...props} />);
     wrapper.find('.link').first().simulate('click');
     expect(window.open).toHaveBeenCalledWith(

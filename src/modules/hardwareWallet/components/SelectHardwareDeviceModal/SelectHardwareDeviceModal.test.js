@@ -26,7 +26,7 @@ describe('SelectHardwareDeviceModal', () => {
     expect(screen.getByText('Select hardware wallet device')).toBeTruthy();
     expect(
       screen.getByText(
-        'Choose a hardware wallet to perform your transactions on add to your Lisk Desktop'
+        'Choose a hardware wallet to perform your transactions on add to your Klayr Desktop'
       )
     ).toBeTruthy();
     expect(screen.getByText('Back to wallet')).toBeTruthy();

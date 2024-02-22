@@ -138,7 +138,7 @@ class PaperWallet {
     const marginTop = this.passphrase.length * 45;
     this.doc.setFont('Utendo', 'normal', 'bold').setFontSize(14);
     this.doc.text(
-      t('Access your account by scanning the QR code below with the Lisk Mobile App:'),
+      t('Access your account by scanning the QR code below with the Klayr Mobile App:'),
       32,
       495 + marginTop,
       textOptions

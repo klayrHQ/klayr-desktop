@@ -177,7 +177,7 @@ export const tokenBalancesTop = [
     address: 'lsko4uo4fgkv53wvon82697asfy5hojw7yzs9ptjg',
     balance: 4028137240093105,
     knowledge: {
-      owner: 'Lisk Foundation Adviser Assets',
+      owner: 'Klayr Adviser Assets',
       description: '',
     },
   },
@@ -217,7 +217,7 @@ export const tokenBalancesTop = [
     address: 'lskr963op3rpzd8p356cw6jdbzphnoob82v2hgya7',
     balance: 2748677376339204,
     knowledge: {
-      owner: 'Lisk Foundation Bounty Assets',
+      owner: 'Klayr Bounty Assets',
       description: 'from Betanet',
     },
   },

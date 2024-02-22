@@ -1,8 +1,8 @@
 export const tokenMap = {
   LSK: {
-    key: 'KLY',
-    label: 'Klayr',
-    icon: 'kly',
+    key: 'LSK',
+    label: 'Lisk',
+    icon: 'lsk',
   },
 };
 

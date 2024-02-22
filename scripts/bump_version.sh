@@ -28,7 +28,7 @@ if [ -z "${changes}" ]; then
   bump ".../package.json"
   bump ".../old_structure/app/package.json"
 
-  git commit -m "Bump Lisk to ${release}"
+  git commit -m "Bump Klayr to ${release}"
   git tag "v${release}"
   git push origin
   git push origin --tags

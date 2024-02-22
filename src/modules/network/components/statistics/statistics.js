@@ -288,7 +288,7 @@ const Statistics = () => {
           <Tooltip position="bottom right" indent>
             <p>
               {t(
-                'The statistics shown only reflects peers connected to the current Lisk Service node.'
+                'The statistics shown only reflects peers connected to the current Klayr Service node.'
               )}
             </p>
           </Tooltip>

@@ -205,7 +205,7 @@ describe('RequestSummary', () => {
     ).toBeTruthy();
     expect(
       screen.getByText(
-        '” to Lisk Desktop and re-initiate the transaction signing from the external application.'
+        '” to Klayr Desktop and re-initiate the transaction signing from the external application.'
       )
     ).toBeTruthy();
   });

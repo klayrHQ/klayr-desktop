@@ -52,7 +52,7 @@ export const statusMessages = (t) => ({
   [txStatusTypes.hwMemorySizeLimitRejection]: {
     title: t('Transaction rejected'),
     message: t(
-      'Your ledger device cannot process this transaction due to device size limitation. Please connect a ledger device with a larger memory size or add your account to Lisk Desktop to complete this transaction.'
+      'Your ledger device cannot process this transaction due to device size limitation. Please connect a ledger device with a larger memory size or add your account to Klayr Desktop to complete this transaction.'
     ),
   },
   [txStatusTypes.hwCannotOpenPath]: {
@@ -64,8 +64,8 @@ export const statusMessages = (t) => ({
     message: t('You have disconnected the device'),
   },
   [txStatusTypes.hwLiskAppClosed]: {
-    title: t('The Lisk application is closed'),
-    message: t('The lisk app needs to be open to perform transactions from the ledger'),
+    title: t('The Klayr application is closed'),
+    message: t('The Klayr app needs to be open to perform transactions from the ledger'),
   },
 });
 

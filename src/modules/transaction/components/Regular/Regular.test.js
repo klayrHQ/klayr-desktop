@@ -69,7 +69,7 @@ describe('TransactionResult Regular', () => {
     expect(wrapper.find('.report-error-link')).toHaveText('Report the error via email');
     expect(wrapper.find('.report-error-link')).toHaveProp(
       'href',
-      'mailto:desktopdev@lisk.com?&subject=User Reported Error - Lisk - &body=%0A%20%20%20%20%0AImportant%20metadata%20for%20the%20team%2C%20please%20do%20not%20edit%3A%0A%20%20%20%20%0D%0A%20%20%20%20Chain%20Name%3A%20lisk%2C%20Chain%20ID%3A%2004000000%2C%20Network%3A%20devnet%2C%20ServiceURL%3A%20http%3A%2F%2Fdevnet-service.liskdev.net%3A9901%0A%20%20%20%20%0D%0A%20%20%20%20Transaction%20Error%3A%20undefined%0A%20%20%20%20%0D%0A%20%20%20%20Transaction%3A%20undefined%0A%20%20%20%20%0D%0A%20%20%20%20API%20Error%20Message%3A%20lorem%20ipsum%0A%20%20'
+      'mailto:desktopdev@lisk.com?&subject=User Reported Error - Klayr - &body=%0A%20%20%20%20%0AImportant%20metadata%20for%20the%20team%2C%20please%20do%20not%20edit%3A%0A%20%20%20%20%0D%0A%20%20%20%20Chain%20Name%3A%20lisk%2C%20Chain%20ID%3A%2004000000%2C%20Network%3A%20devnet%2C%20ServiceURL%3A%20http%3A%2F%2Fdevnet-service.liskdev.net%3A9901%0A%20%20%20%20%0D%0A%20%20%20%20Transaction%20Error%3A%20undefined%0A%20%20%20%20%0D%0A%20%20%20%20Transaction%3A%20undefined%0A%20%20%20%20%0D%0A%20%20%20%20API%20Error%20Message%3A%20lorem%20ipsum%0A%20%20'
     );
   });
 

@@ -52,7 +52,7 @@ function SettingDialog() {
               <Toggle isCheckbox setting={settingsConst.keys.statistics} />
               <div>
                 <span className={styles.labelName}>{t('Anonymous analytics collection')}</span>
-                <p>{t('Help improve Lisk by sending anonymous usage data.')}</p>
+                <p>{t('Help improve Klayr by sending anonymous usage data.')}</p>
               </div>
             </label>
             <a

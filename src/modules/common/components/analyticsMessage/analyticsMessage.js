@@ -15,7 +15,7 @@ const AnalyticsMessage = ({ t }) => {
           action: () => addSearchParamsToUrl(history, { modal: 'analytics' }),
         }}
       >
-        {t('Opt-in to sharing anonymous data in order to improve Lisk.')}
+        {t('Opt-in to sharing anonymous data in order to improve Klayr.')}
       </FlashMessage.Content>
     </FlashMessage>
   );

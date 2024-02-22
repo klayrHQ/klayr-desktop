@@ -44,9 +44,9 @@ class TermsOfUse extends React.Component {
           <Icon name="colLogoNoText" />
         </header>
         <div className={styles.content}>
-          <h1>{this.props.t('Lisk Terms of Use')}</h1>
+          <h1>{this.props.t('Klayr Terms of Use')}</h1>
           <p>
-            {this.props.t('Before you continue using Lisk, please read and accept the')}
+            {this.props.t('Before you continue using Klayr, please read and accept the')}
             <a
               onClick={this.checkTermsOfUse}
               href="https://lisk.com/policies/terms-and-conditions"

@@ -25,7 +25,7 @@ const RequestWrapper = ({ t, children, copyLabel, copyValue, title, className, d
       </section>
       <section className={`${styles.qrSection} qrcode-section`}>
         <span className={`${styles.label}`}>
-          {t('Simply scan the QR code using the Lisk Mobile app or any other QR code reader.')}
+          {t('Simply scan the QR code using the Klayr Mobile app or any other QR code reader.')}
         </span>
         <div
           data-testid="qrContainer"

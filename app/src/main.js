@@ -97,8 +97,8 @@ app.on('window-all-closed', () => {
 
 // This will override the values defined in the app’s .plist file (macOS)
 if (process.platform === 'darwin') {
-  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Lisk Foundation`;
-  app.setAboutPanelOptions({ applicationName: 'Lisk', copyright });
+  const copyright = `Copyright © 2024 - ${new Date().getFullYear()} Klayr`;
+  app.setAboutPanelOptions({ applicationName: 'Klayr', copyright });
 }
 
 app.on('activate', () => {

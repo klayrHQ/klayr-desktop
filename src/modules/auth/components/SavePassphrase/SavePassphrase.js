@@ -38,7 +38,7 @@ const SavePassphrase = ({ passphrase, title, prevStep, nextStep, isJsonBackup = 
         <PassphraseBackup
           passphrase={passphrase}
           t={t}
-          paperWalletName={isJsonBackup || 'Lisk_passphrase_store_safely'}
+          paperWalletName={isJsonBackup || 'Klayr_passphrase_store_safely'}
           jsonBackup={isJsonBackup}
         />
       </div>

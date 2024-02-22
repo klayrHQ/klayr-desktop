@@ -264,7 +264,7 @@ const RequestSummary = ({ nextStep, history, message }) => {
                           <b>{signingAccountDetails}</b>
                           <span>
                             {t(
-                              '” to Lisk Desktop and re-initiate the transaction signing from the external application.'
+                              '” to Klayr Desktop and re-initiate the transaction signing from the external application.'
                             )}
                           </span>
                         </>

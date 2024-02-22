@@ -54,7 +54,7 @@ const Footer = ({ confirmButton, cancelButton, footerClassName, t }) => {
     >
       {isHW && !isAppOpen && (
         <div className={styles.errorLabel}>
-          <span>{t('Open the Lisk app on Ledger device to continue')}</span>
+          <span>{t('Open the Klayr app on Ledger device to continue')}</span>
         </div>
       )}
       <Actions

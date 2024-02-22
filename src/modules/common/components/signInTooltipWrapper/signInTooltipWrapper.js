@@ -24,7 +24,7 @@ const SignInTooltipWrapper = ({ children, account, t, history, position = 'botto
         </Link>
       }
     >
-      <p>{t('In order to use this feature you need to sign in to your Lisk account.')}</p>
+      <p>{t('In order to use this feature you need to sign in to your Klayr account.')}</p>
     </Tooltip>
   );
 };

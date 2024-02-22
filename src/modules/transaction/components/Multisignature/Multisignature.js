@@ -201,7 +201,7 @@ const Multisignature = ({
                   {truncateAddress(nextAccountToSign?.metadata?.address)})
                 </b>{' '}
                 {t(
-                  'to complete this transaction has been found on your Lisk Desktop. Please click on “Switch account” to complete this transaction.'
+                  'to complete this transaction has been found on your Klayr Desktop. Please click on “Switch account” to complete this transaction.'
                 )}
               </span>
             }

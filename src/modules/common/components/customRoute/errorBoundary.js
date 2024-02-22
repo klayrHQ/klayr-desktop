@@ -26,7 +26,7 @@ class ErrorBoundary extends React.Component {
     const { t, history } = this.props;
     const getMailReference = () => {
       const recipient = 'desktopdev@lisk.com';
-      const subject = `User Reported Error - Lisk - ${VERSION}`; // eslint-disable-line no-undef
+      const subject = `User Reported Error - Klayr - ${VERSION}`; // eslint-disable-line no-undef
       const body = `${this.state.error} found on route "${
         history.location.pathname
       }":%0A${this.state.info.componentStack.replace(/\s{4}/g, '%0A')}`;

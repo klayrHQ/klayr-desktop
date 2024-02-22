@@ -32,7 +32,7 @@ describe('ErrorBoundary:', () => {
       expect(wrapper.find(PrimaryButton)).toHaveText('Reload the page');
       expect(wrapper.find(TertiaryButton)).toHaveText('Report the error via email');
       expect(wrapper.find('a').at(0).props().href).toEqual(
-        'mailto:desktopdev@lisk.com?&subject=User Reported Error - Lisk - &body=Error: Error thrown from problem child found on route "/":%0A%0A in ProblematicChild%0A in ErrorBoundary%0A in Unknown (created by Context.Consumer)%0A in withRouter()%0A in Router (created by MemoryRouter)%0A in MemoryRouter (created by WrapperComponent)%0A in WrapperComponent'
+        'mailto:desktopdev@lisk.com?&subject=User Reported Error - Klayr - &body=Error: Error thrown from problem child found on route "/":%0A%0A in ProblematicChild%0A in ErrorBoundary%0A in Unknown (created by Context.Consumer)%0A in withRouter()%0A in Router (created by MemoryRouter)%0A in MemoryRouter (created by WrapperComponent)%0A in WrapperComponent'
       );
     });
 

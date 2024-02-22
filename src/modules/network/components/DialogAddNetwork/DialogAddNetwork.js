@@ -108,7 +108,7 @@ const DialogAddNetwork = () => {
         </BoxHeader>
         <p className={classNames(styles.description)}>
           {t(
-            '"Lisk" will be the default mainchain application, please enter your custom network to be added to the wallet.'
+            '"Klayr" will be the default mainchain application, please enter your custom network to be added to the wallet.'
           )}
         </p>
         <BoxContent className={`${styles.content}`}>
