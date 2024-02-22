@@ -129,7 +129,7 @@ describe('EditStake', () => {
         'Input your Stake amount. This value shows how much trust you have in this validator.'
       )
     ).toBeTruthy();
-    expect(screen.getByText('Stake amount (LSK)')).toBeTruthy();
+    expect(screen.getByText('Stake amount (KLY)')).toBeTruthy();
   });
 
   it('should add stake to the stakes queue', async () => {
@@ -175,7 +175,7 @@ describe('EditStake', () => {
     expect(
       screen.getByText('Edit your stake by modifying stake amount or removing existing stake.')
     ).toBeTruthy();
-    expect(screen.getByText('Stake amount (LSK)')).toBeTruthy();
+    expect(screen.getByText('Stake amount (KLY)')).toBeTruthy();
 
     fireEvent.click(screen.getByText('Remove stake'));
 
@@ -207,7 +207,7 @@ describe('EditStake', () => {
     expect(
       screen.getByText('Edit your stake by modifying stake amount or removing existing stake.')
     ).toBeTruthy();
-    expect(screen.getByText('Stake amount (LSK)')).toBeTruthy();
+    expect(screen.getByText('Stake amount (KLY)')).toBeTruthy();
 
     const stakingField = screen.getByTestId('stake');
 
@@ -324,14 +324,14 @@ describe('EditStake', () => {
 
       await waitFor(() => {
         expect(screen.queryByText('Confirm')).toHaveAttribute('disabled');
-        expect(screen.queryByText(`You can only stake in multiplies of 10 LSK.`)).toBeTruthy();
+        expect(screen.queryByText(`You can only stake in multiplies of 10 KLY.`)).toBeTruthy();
       });
 
       fireEvent.change(stakingField, { target: { value: 9 } });
 
       await waitFor(() => {
         expect(screen.queryByText('Confirm')).toHaveAttribute('disabled');
-        expect(screen.queryByText(`You can only stake in multiplies of 10 LSK.`)).toBeTruthy();
+        expect(screen.queryByText(`You can only stake in multiplies of 10 KLY.`)).toBeTruthy();
       });
 
       fireEvent.change(stakingField, { target: { value: 20 } });

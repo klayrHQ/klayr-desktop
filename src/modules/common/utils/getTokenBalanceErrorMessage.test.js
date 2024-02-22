@@ -21,7 +21,7 @@ describe('getTokenBalanceErrorMessage', () => {
       t: mockTranslationFn,
       hasAvailableTokenBalance: true,
       hasSufficientBalanceForFee: true,
-      feeTokenSymbol: 'LSK',
+      feeTokenSymbol: 'KLY',
     });
 
     expect(result).toEqual({});
@@ -31,11 +31,11 @@ describe('getTokenBalanceErrorMessage', () => {
       t: mockTranslationFn,
       hasAvailableTokenBalance: true,
       hasSufficientBalanceForFee: false,
-      feeTokenSymbol: 'LSK',
+      feeTokenSymbol: 'KLY',
     });
 
     expect(result).toEqual({
-      message: 'There are no LSK tokens to pay for fees.',
+      message: 'There are no KLY tokens to pay for fees.',
     });
   });
   it('Should return an insufficent token balance error message if error type is provided', () => {
@@ -43,7 +43,7 @@ describe('getTokenBalanceErrorMessage', () => {
       t: mockTranslationFn,
       hasAvailableTokenBalance: false,
       hasSufficientBalanceForFee: false,
-      feeTokenSymbol: 'LSK',
+      feeTokenSymbol: 'KLY',
       errorType: 'registerValidator',
     });
 
@@ -57,7 +57,7 @@ describe('getTokenBalanceErrorMessage', () => {
       t: mockTranslationFn,
       hasAvailableTokenBalance: false,
       hasSufficientBalanceForFee: false,
-      feeTokenSymbol: 'LSK',
+      feeTokenSymbol: 'KLY',
     });
 
     expect(result).toEqual({

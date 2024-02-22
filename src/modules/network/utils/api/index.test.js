@@ -13,7 +13,7 @@ const resetApiMock = () => {
   http.mockClear();
 };
 
-describe('API: LSK Network', () => {
+describe('API: KLY Network', () => {
   const network = { serviceUrl: 'http://testnet.io' };
 
   describe('getPeers', () => {

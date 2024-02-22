@@ -15,7 +15,7 @@ describe('Converter', () => {
     className: 'test',
     token: tokenMap.LSK.key,
     priceTicker: { LSK: { USD: 123, EUR: 12 } },
-    tokenSymbol: 'LSK',
+    tokenSymbol: 'KLY',
   };
 
   useFiatRates.mockReturnValue(props.priceTicker);

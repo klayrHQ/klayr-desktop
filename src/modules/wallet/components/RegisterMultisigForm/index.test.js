@@ -49,7 +49,7 @@ jest.mock('@settings/hooks/useSettings');
 jest.mock('@auth/hooks/queries');
 jest.mock('@token/fungible/hooks/queries/useTokenBalances', () => ({
   useTokenBalances: jest.fn(() => ({
-    data: { data: [{ chainID: '04000000', symbol: 'LSK', availableBalance: 40000000 }] },
+    data: { data: [{ chainID: '04000000', symbol: 'KLY', availableBalance: 40000000 }] },
   })),
 }));
 

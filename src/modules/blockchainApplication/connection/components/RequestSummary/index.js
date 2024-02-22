@@ -38,7 +38,7 @@ import styles from './requestSummary.css';
 
 const getTitle = (key, t) =>
   Object.values(SIGNING_METHODS).find((item) => item.key === key)?.title ?? t('Method not found.');
-const defaultToken = { symbol: 'LSK' };
+const defaultToken = { symbol: 'KLY' };
 
 // eslint-disable-next-line max-statements
 const RequestSummary = ({ nextStep, history, message }) => {

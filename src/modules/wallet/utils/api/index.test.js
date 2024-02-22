@@ -15,7 +15,7 @@ jest.mock('@liskhq/lisk-client', () => ({
   },
 }));
 
-describe.skip('API: LSK Account', () => {
+describe.skip('API: KLY Account', () => {
   const network = {
     networks: {
       LSK: { serviceUrl: 'http://sample.com/' },

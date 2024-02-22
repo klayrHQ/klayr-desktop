@@ -330,7 +330,7 @@ describe('Form', () => {
       amountField = wrapper.find('.fieldGroup').at(1);
 
       expect(amountField.find('.feedback.error')).toHaveClassName('error');
-      expect(wrapper.find('.amount Feedback')).toHaveText('Provide a correct amount of LSK');
+      expect(wrapper.find('.amount Feedback')).toHaveText('Provide a correct amount of KLY');
 
       amountField
         .find('input[name="amount"]')
@@ -343,7 +343,7 @@ describe('Form', () => {
       amountField = wrapper.find('.fieldGroup').at(1);
 
       expect(amountField.find('.feedback.error')).toHaveClassName('error');
-      expect(wrapper.find('.amount Feedback')).toHaveText('Provide a correct amount of LSK');
+      expect(wrapper.find('.amount Feedback')).toHaveText('Provide a correct amount of KLY');
 
       amountField.find('input').simulate('change', {
         target: { name: 'amount', value: props.account.token?.balance + 2 },
@@ -389,7 +389,7 @@ describe('Form', () => {
       expect(wrapper.find('.confirm-btn').at(0)).toBeDisabled();
     });
 
-    it('Should allow to send 0 LSK amount', () => {
+    it('Should allow to send 0 KLY amount', () => {
       const wrapper = mountWithQueryClient(Form, props);
       const recipient = {
         target: { name: 'recipient', value: 'lsks6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6' },

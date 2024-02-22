@@ -11,7 +11,7 @@ describe('MigrationDetails component', () => {
   const props = {
     wallet: {
       ...wallets.empty_wallet,
-      token: [{ name: 'Lisk', symbol: 'LSK', availableBalance: 0, ...mockAppsTokens.data[0] }],
+      token: [{ name: 'Klayr', symbol: 'KLY', availableBalance: 0, ...mockAppsTokens.data[0] }],
     },
     showBalance: true,
   };
@@ -23,7 +23,7 @@ describe('MigrationDetails component', () => {
     const html = wrapper.html();
     expect(html).toContain(wallets.empty_wallet.legacy.address);
     expect(html).toContain(truncateAddress(wallets.empty_wallet.summary.address, 'medium'));
-    expect(html).toContain('98,970,000 LSK');
+    expect(html).toContain('98,970,000 KLY');
   });
 
   it('should not render balance', () => {

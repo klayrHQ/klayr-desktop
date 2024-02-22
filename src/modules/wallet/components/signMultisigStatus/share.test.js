@@ -42,7 +42,7 @@ describe('Sign Multisignature Tx Status component', () => {
     },
     account: accounts.multiSig,
     bookmarks: { LSK: [] },
-    token: 'LSK',
+    token: 'KLY',
   };
 
   const signedTransaction = {

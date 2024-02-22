@@ -5,13 +5,13 @@ import { txStatusTypes } from '@transaction/configuration/txStatus';
 const reclaimBalanceMessages = (t) => ({
   ...statusMessages(t),
   [txStatusTypes.broadcastSuccess]: {
-    title: t('Reclaimed LSK tokens'),
+    title: t('Reclaimed KLY tokens'),
     message: t('Your tokens will be deposited to your account.'),
   },
   [txStatusTypes.broadcastError]: {
-    title: t('Reclaim LSK tokens failed'),
+    title: t('Reclaim KLY tokens failed'),
     message: t(
-      'Your LSK tokens could not be reclaimed, you can try again or report to us via email'
+      'Your KLY tokens could not be reclaimed, you can try again or report to us via email'
     ),
   },
 });

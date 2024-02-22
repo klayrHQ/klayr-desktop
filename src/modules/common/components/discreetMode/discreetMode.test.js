@@ -6,7 +6,7 @@ describe('DiscreetMode Component', () => {
   let wrapper;
 
   const props = {
-    token: 'LSK',
+    token: 'KLY',
     account: {
       info: {
         LSK: { summary: { address: 'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy' } },

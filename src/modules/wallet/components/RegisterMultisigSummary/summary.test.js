@@ -146,7 +146,7 @@ describe('Multisignature Summary component', () => {
       props.transactionJSON.params.mandatoryKeys.length +
         props.transactionJSON.params.optionalKeys.length
     );
-    expect(screen.getByText('0.02 LSK')).toBeInTheDocument();
+    expect(screen.getByText('0.02 KLY')).toBeInTheDocument();
   });
 
   it('Should be in edit mode', () => {

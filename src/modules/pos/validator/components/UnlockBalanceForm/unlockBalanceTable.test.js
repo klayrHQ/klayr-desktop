@@ -38,8 +38,8 @@ describe('unlockBalanceTable', () => {
   it('renders properly', () => {
     wrapper = mountWithRouter(BalanceTable, props);
     expect(wrapper).toContainMatchingElement('.lock-balance-amount-container');
-    expect(wrapper.find('.locked-balance').text()).toEqual('280 LSK');
-    expect(wrapper.find('.available-balance').text()).toEqual('4,550 LSK');
+    expect(wrapper.find('.locked-balance').text()).toEqual('280 KLY');
+    expect(wrapper.find('.available-balance').text()).toEqual('4,550 KLY');
     expect(wrapper.find('.unlocking-balance')).toHaveLength(lockedPendingUnlocks.length);
   });
 

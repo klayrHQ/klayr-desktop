@@ -38,7 +38,7 @@ export const getState = () => ({
   },
   settings: {},
   token: {
-    active: 'LSK',
+    active: 'KLY',
     list: {
       LSK: true,
     },

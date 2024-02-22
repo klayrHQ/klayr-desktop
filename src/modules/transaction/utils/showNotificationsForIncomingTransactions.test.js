@@ -57,7 +57,7 @@ describe('showNotificationsForIncomingTransactions', () => {
     showNotificationsForIncomingTransactions(txns, currAcct, mockToken);
 
     expect(toast.info).toHaveBeenCalledTimes(1);
-    expect(toast.info).toHaveBeenCalledWith('Your account just received 0.000002 LSK ');
+    expect(toast.info).toHaveBeenCalledWith('Your account just received 0.000002 KLY ');
   });
 
   it('should display notifications with additional info for transactions related to current account', () => {
@@ -83,7 +83,7 @@ describe('showNotificationsForIncomingTransactions', () => {
 
     expect(toast.info).toHaveBeenCalledTimes(1);
     expect(toast.info).toHaveBeenCalledWith(
-      'Your account just received 0.0000015 LSK with message test'
+      'Your account just received 0.0000015 KLY with message test'
     );
   });
 

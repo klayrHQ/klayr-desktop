@@ -51,7 +51,7 @@ jest.mock('@network/hooks/queries/useNetworkStatus');
 jest.mock('@transaction/hooks/queries/useTransactionEstimateFees');
 jest.mock('@settings/hooks/useSettings');
 
-describe('Unlock LSK modal', () => {
+describe('Unlock KLY modal', () => {
   let wrapper;
   useTransactionPriority.mockImplementation(() => [
     { selectedIndex: 1 },
@@ -220,9 +220,9 @@ describe('Unlock LSK modal', () => {
     await flushPromises();
     const feeToken = {
       availableBalance: '1000000000',
-      chainName: 'Lisk',
+      chainName: 'Klayr',
       lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-      symbol: 'LSK',
+      symbol: 'KLY',
       tokenID: '0000000100000000',
     };
     expect(props.nextStep).toBeCalledWith({
@@ -271,9 +271,9 @@ describe('Unlock LSK modal', () => {
               value: 96000n,
               feeToken: {
                 availableBalance: '1000000000',
-                chainName: 'Lisk',
+                chainName: 'Klayr',
                 lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-                symbol: 'LSK',
+                symbol: 'KLY',
                 tokenID: '0000000100000000',
               },
             },
@@ -298,9 +298,9 @@ describe('Unlock LSK modal', () => {
     await flushPromises();
     const feeToken = {
       availableBalance: '1000000000',
-      chainName: 'Lisk',
+      chainName: 'Klayr',
       lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-      symbol: 'LSK',
+      symbol: 'KLY',
       tokenID: '0000000100000000',
     };
 
@@ -336,9 +336,9 @@ describe('Unlock LSK modal', () => {
                 {
                   feeToken: {
                     availableBalance: '1000000000',
-                    chainName: 'Lisk',
+                    chainName: 'Klayr',
                     lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-                    symbol: 'LSK',
+                    symbol: 'KLY',
                     tokenID: '0000000100000000',
                   },
                   type: 'bytesFee',
@@ -363,9 +363,9 @@ describe('Unlock LSK modal', () => {
           fields: {
             token: {
               availableBalance: '1000000000',
-              chainName: 'Lisk',
+              chainName: 'Klayr',
               lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-              symbol: 'LSK',
+              symbol: 'KLY',
               tokenID: '0000000100000000',
             },
           },

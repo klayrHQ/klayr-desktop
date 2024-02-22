@@ -7,7 +7,7 @@ describe('TxDetail WalletInfo', () => {
   const props = {
     label: 'Label test',
     address: wallets.genesis.summary.address,
-    token: 'LSK',
+    token: 'KLY',
     network: {
       name: 'Mainnet',
     },

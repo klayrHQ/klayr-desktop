@@ -27,7 +27,7 @@ jest.mock('src/utils/api/ws', () =>
   jest.fn().mockImplementation(() => Promise.resolve({ data: [{ type: 0 }] }))
 );
 
-describe('API: LSK Transactions', () => {
+describe('API: KLY Transactions', () => {
   const baseTx = {
     nonce: '6',
     senderPublicKey: 'c094ebee7ec0c50ebee32918655e089f6e1a604b83bcaa760293c61e0f18ab6f',

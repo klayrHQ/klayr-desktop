@@ -90,7 +90,7 @@ describe('Validator Profile', () => {
 
     expect(screen.getByText('Last generated block height')).toBeTruthy();
     expect(screen.getByText('Blocks generated')).toBeTruthy();
-    expect(screen.getByText('Rewards (LSK)')).toBeTruthy();
+    expect(screen.getByText('Rewards (KLY)')).toBeTruthy();
     expect(screen.getByText('Self stake')).toBeTruthy();
     expect(screen.getAllByText('Commission')[1]).toBeTruthy();
     expect(screen.getByText('Consecutive missed blocks')).toBeTruthy();
@@ -110,7 +110,7 @@ describe('Validator Profile', () => {
       screen.getByText(
         `${numeral(
           convertFromBaseDenom(mockValidators.data[0].validatorWeight, mockAppsTokens.data[0])
-        ).format('0,0.[0000000000000]')} LSK`
+        ).format('0,0.[0000000000000]')} KLY`
       )
     ).toBeTruthy();
     expect(screen.getByTestId('date-timestamp')).toBeTruthy();
@@ -137,7 +137,7 @@ describe('Validator Profile', () => {
 
     expect(
       screen.getByText(
-        'The validator weight is below 1,000 LSK meaning that the validator is not eligible to generate.'
+        'The validator weight is below 1,000 KLY meaning that the validator is not eligible to generate.'
       )
     ).toBeTruthy();
   });
@@ -159,7 +159,7 @@ describe('Validator Profile', () => {
 
     expect(
       screen.getByText(
-        'The validator has at least 1,000 LSK validator weight, but is not among the top 101 by validator weight.'
+        'The validator has at least 1,000 KLY validator weight, but is not among the top 101 by validator weight.'
       )
     ).toBeTruthy();
     expect(

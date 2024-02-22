@@ -49,7 +49,7 @@ describe('Bookmarks', () => {
     it('gets the index based on the address', () => {
       const data = {
         address: accounts.LSK[0].address,
-        token: 'LSK',
+        token: 'KLY',
       };
       expect(getIndexOfBookmark(accounts, data)).to.equal(0);
     });
@@ -66,7 +66,7 @@ describe('Bookmarks', () => {
     it('gets the index based on the label', () => {
       const data = {
         label: accounts.LSK[1].title,
-        token: 'LSK',
+        token: 'KLY',
       };
       expect(getIndexOfLabel(accounts, data)).to.equal(1);
     });
@@ -82,64 +82,64 @@ describe('Bookmarks', () => {
   describe('validateBookmarkLabel', () => {
     it('returns feedback on invalid labels', () => {
       const value = 'an invalid bookmark name';
-      expect(validateBookmarkLabel('LSK', value, accounts, t)).to.equal(
+      expect(validateBookmarkLabel('KLY', value, accounts, t)).to.equal(
         'Label can be alphanumeric with either !,@,$,&,_,. as special characters.'
       );
     });
 
     it('returns feedback on very short labels', () => {
       const value = 'bk';
-      expect(validateBookmarkLabel('LSK', value, accounts, t)).to.equal(
+      expect(validateBookmarkLabel('KLY', value, accounts, t)).to.equal(
         'Label is too short, Min. 3 characters.'
       );
     });
 
     it('returns feedback on very long labels', () => {
       const value = 'really_long_bookmark_name';
-      expect(validateBookmarkLabel('LSK', value, accounts, t)).to.equal(
+      expect(validateBookmarkLabel('KLY', value, accounts, t)).to.equal(
         'Label is too long, Max. 20 characters.'
       );
     });
 
     it('returns feedback for duplicate labels', () => {
       const value = 'lisker';
-      expect(validateBookmarkLabel('LSK', value, accounts, t)).to.equal(
+      expect(validateBookmarkLabel('KLY', value, accounts, t)).to.equal(
         `Bookmark with name "${value}" already exists.`
       );
     });
 
     it('returns no feedback for valid labels', () => {
       const value = 'validator';
-      expect(validateBookmarkLabel('LSK', value, accounts, t)).to.equal('');
+      expect(validateBookmarkLabel('KLY', value, accounts, t)).to.equal('');
     });
 
     it('returns no feedback for default label value', () => {
       const value = undefined;
-      expect(validateBookmarkLabel('LSK', value, accounts, t)).to.equal('');
+      expect(validateBookmarkLabel('KLY', value, accounts, t)).to.equal('');
     });
   });
 
   describe('validateBookmarkAddress', () => {
     it('returns feedback on invalid address', () => {
       const value = 'lsk789';
-      expect(validateBookmarkAddress('LSK', value, accounts, t, false)).to.equal('Invalid address');
+      expect(validateBookmarkAddress('KLY', value, accounts, t, false)).to.equal('Invalid address');
     });
 
     it('returns feedback for duplicate addresses', () => {
       const value = accounts.LSK[0].address;
-      expect(validateBookmarkAddress('LSK', value, accounts, t, true)).to.equal(
+      expect(validateBookmarkAddress('KLY', value, accounts, t, true)).to.equal(
         'Address already bookmarked'
       );
     });
 
     it('returns no feedback for valid addresses', () => {
       const value = 'lskp9gw6rtqejqjoq3nzhpdxkx9mondjky3prphyx';
-      expect(validateBookmarkAddress('LSK', value, accounts, t, false)).to.equal('');
+      expect(validateBookmarkAddress('KLY', value, accounts, t, false)).to.equal('');
     });
 
     it('returns no feedback for default address value', () => {
       const value = undefined;
-      expect(validateBookmarkAddress('LSK', value, accounts, t)).to.equal('');
+      expect(validateBookmarkAddress('KLY', value, accounts, t)).to.equal('');
     });
   });
 });

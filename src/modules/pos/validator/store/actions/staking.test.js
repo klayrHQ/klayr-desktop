@@ -63,7 +63,7 @@ describe('actions: staking', () => {
       },
     },
     token: {
-      active: 'LSK',
+      active: 'KLY',
     },
     blockChainApplications: {
       current: { chainID: mockBlockchainApp.data[0].chainID },

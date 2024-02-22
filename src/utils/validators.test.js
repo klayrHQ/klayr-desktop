@@ -11,7 +11,7 @@ describe('Validate Address', () => {
     expect(validateAddress('')).toBe(-1);
   });
 
-  it('Should validate LSK address', () => {
+  it('Should validate KLY address', () => {
     expect(validateAddress(accounts.genesis.summary.address)).toBe(0);
     expect(validateAddress('12345')).toBe(1);
   });
@@ -32,7 +32,7 @@ describe('Validate Public Key', () => {
 describe('Validate Amount Format', () => {
   const errors = {
     ZERO: i18n.t("Amount can't be zero."),
-    INVALID: i18n.t('Provide a correct amount of {{token}}', { token: 'LSK' }),
+    INVALID: i18n.t('Provide a correct amount of {{token}}', { token: 'KLY' }),
     FLOATING_POINT: i18n.t('Maximum allowed decimal point is {{decimal}}.', {
       decimal: getTokenDecimals(mockToken),
     }),

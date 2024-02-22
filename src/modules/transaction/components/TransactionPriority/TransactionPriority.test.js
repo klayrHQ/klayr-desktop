@@ -45,14 +45,14 @@ describe('TransactionPriority', () => {
     composedFees: [
       {
         title: 'Transaction',
-        value: '0 LSK',
+        value: '0 KLY',
         label: 'transactionFee',
         token: mockToken,
         components: [],
       },
       {
         title: 'Message',
-        value: '0 LSK',
+        value: '0 KLY',
         isHidden: true,
         label: 'messageFee',
         token: mockToken,

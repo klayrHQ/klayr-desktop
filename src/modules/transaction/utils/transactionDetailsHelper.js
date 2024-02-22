@@ -1,5 +1,5 @@
 export const getValidatorName = (transaction, activeToken) =>
-  activeToken === 'LSK' && transaction.params && transaction.params.username
+  activeToken === 'KLY' && transaction.params && transaction.params.username
     ? transaction.params.username
     : null;
 

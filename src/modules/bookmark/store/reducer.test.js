@@ -26,7 +26,7 @@ describe('Reducer: bookmarks(state, action)', () => {
     };
 
     const state = { LSK: [wallet, wallet2] };
-    const action = bookmarkAdded({ wallet: wallet3, token: 'LSK' });
+    const action = bookmarkAdded({ wallet: wallet3, token: 'KLY' });
     const changedState = bookmarks(state, action);
     expect(changedState.LSK[0]).toEqual(wallet3);
     expect(changedState.LSK[1]).toEqual(wallet);
@@ -46,7 +46,7 @@ describe('Reducer: bookmarks(state, action)', () => {
         ...wallet3,
         title: `     ${wallet3.title}    `,
       },
-      token: 'LSK',
+      token: 'KLY',
     });
     const changedState = bookmarks(state, action);
     expect(changedState.LSK[0]).toEqual(wallet3);
@@ -93,7 +93,7 @@ describe('Reducer: bookmarks(state, action)', () => {
 
   it(`should return wallets without deleted wallet if action.type is ${actionTypes.bookmarkRemoved}`, () => {
     const state = { LSK: [wallet, wallet2] };
-    const action = bookmarkRemoved({ address: wallet2.address, token: 'LSK' });
+    const action = bookmarkRemoved({ address: wallet2.address, token: 'KLY' });
 
     const changedState = bookmarks(state, action);
 

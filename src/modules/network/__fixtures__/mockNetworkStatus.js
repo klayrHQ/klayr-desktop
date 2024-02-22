@@ -10,7 +10,7 @@ export const mockNetworkStatus = {
     syncing: false,
     unconfirmedTransactions: 0,
     genesis: {
-      communityIdentifier: 'Lisk',
+      communityIdentifier: 'Klayr',
       maxTransactionsSize: 15360,
       minFeePerByte: 1000,
       blockTime: 10,

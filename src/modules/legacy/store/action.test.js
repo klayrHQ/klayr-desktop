@@ -34,7 +34,7 @@ describe('actions: legacy', () => {
           LSK: wallets.non_migrated,
         },
       },
-      token: { active: 'LSK' },
+      token: { active: 'KLY' },
       network: {
         networks: {
           LSK: {

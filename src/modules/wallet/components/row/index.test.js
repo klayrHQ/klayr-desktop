@@ -12,13 +12,13 @@ const props = {
     balance: 100000000000000,
     knowledge: {
       owner: 'Max Kordex',
-      description: 'from Lisk',
+      description: 'from Klayr',
     },
   },
   token: {
-    displayDenom: 'lsk',
-    denomUnits: [{ denom: 'lsk', decimals: 8, aliases: ['Lisk'] }],
-    symbol: 'LSK',
+    displayDenom: 'kly',
+    denomUnits: [{ denom: 'kly', decimals: 8, aliases: ['Klayr'] }],
+    symbol: 'KLY',
   },
   tokenSupply: {
     amount: '11036090880452566',
@@ -30,9 +30,9 @@ describe('WalletRow', () => {
   it('renders properly', () => {
     smartRender(WalletRow, props, config);
     expect(screen.getByText('lsk3szyzzh78tvw5yufsqcvsck5me2rp3fcsdv7s7')).toBeInTheDocument();
-    expect(screen.getByText('1,000,000 LSK')).toBeInTheDocument();
+    expect(screen.getByText('1,000,000 KLY')).toBeInTheDocument();
     expect(screen.getByText('0.91%')).toBeInTheDocument();
-    expect(screen.getByText('Max Kordex from Lisk')).toBeInTheDocument();
+    expect(screen.getByText('Max Kordex from Klayr')).toBeInTheDocument();
   });
 
   it('displays fallback supply value', () => {

@@ -35,7 +35,7 @@ jest.mock('@legacy/hooks/queries');
 describe('CustomRoute', () => {
   const mockAppState = {
     token: {
-      active: 'LSK',
+      active: 'KLY',
     },
     blockChainApplications: {
       current: blockchainApplicationsManage[2],
@@ -99,6 +99,6 @@ describe('CustomRoute', () => {
   it('should redirect to reclaim path if user is not migrated', () => {
     useCheckLegacyAccount.mockImplementation(() => ({ isMigrated: false }));
     isAuth({ isPrivate: true });
-    expect(screen.getByText('Reclaim LSK tokens')).toBeInTheDocument();
+    expect(screen.getByText('Reclaim KLY tokens')).toBeInTheDocument();
   });
 });

@@ -61,7 +61,7 @@ useNetworkSupportedTokens.mockReturnValue({ data: mockAppsTokens.data });
 describe('Transaction Row', () => {
   const t = (str) => str;
   const avatarSize = 40;
-  const activeToken = 'LSK';
+  const activeToken = 'KLY';
   const currentBlockHeight = 14000000;
   const host = accounts.genesis.summary.address;
   const baseProps = {

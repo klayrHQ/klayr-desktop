@@ -45,7 +45,7 @@ describe('SideBar', () => {
     mockAppState = {
       settings: {},
       token: {
-        active: 'LSK',
+        active: 'KLY',
       },
       wallet: {
         info: {},

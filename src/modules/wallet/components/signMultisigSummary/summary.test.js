@@ -47,7 +47,7 @@ describe('Sign Multisignature Tx Review component', () => {
     formProps: {
       isValid: true,
       moduleCommand: MODULE_COMMANDS_NAME_MAP.transfer,
-      composedFees: { Transaction: '1 LSK', CCM: '1 LSK', Initialisation: '1 LSK' },
+      composedFees: { Transaction: '1 KLY', CCM: '1 KLY', Initialisation: '1 KLY' },
       fields: {
         sendingChain: mockBlockchainApplications[0],
         recipientChain: blockchainApplicationsExplore[0],
@@ -156,7 +156,7 @@ describe('Sign Multisignature Tx Review component', () => {
     const { params } = newProps.transactionJSON;
     const expectedLength = params.mandatoryKeys.length + params.optionalKeys.length;
     expect(screen.queryAllByTestId('member-info').length).toEqual(expectedLength);
-    expect(screen.getByText('0.00196 LSK')).toBeInTheDocument();
+    expect(screen.getByText('0.00196 KLY')).toBeInTheDocument();
   });
 
   it('Should render properly when senderAccount is empty', () => {

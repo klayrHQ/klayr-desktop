@@ -93,7 +93,7 @@ export const validateAmount = ({
       fn: () => maxDecimals(token).test(amount),
     },
     STAKE_10X: {
-      message: i18n.t('You can only stake in multiplies of 10 LSK.'),
+      message: i18n.t('You can only stake in multiplies of 10 KLY.'),
       fn: () => amount % 10 !== 0,
     },
     INSUFFICIENT_FUNDS: {

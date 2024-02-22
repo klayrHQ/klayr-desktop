@@ -22,7 +22,7 @@ describe('reducers: service', () => {
       type: actionTypes.pricesRetrieved,
       data: {
         priceTicker,
-        activeToken: 'LSK',
+        activeToken: 'KLY',
       },
     };
 

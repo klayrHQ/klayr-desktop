@@ -43,11 +43,11 @@ describe('AddApplicationList', () => {
     expect(screen.getByText('Add application')).toBeTruthy();
     expect(screen.getByPlaceholderText('Search by name')).toBeTruthy();
 
-    expect(screen.getByText('Lisk')).toBeTruthy();
-    expect(screen.getByText('5 LSK')).toBeTruthy();
+    expect(screen.getByText('Klayr')).toBeTruthy();
+    expect(screen.getByText('5 KLY')).toBeTruthy();
 
     expect(screen.getByText('Colecti')).toBeTruthy();
-    expect(screen.getByText('0.5 LSK')).toBeTruthy();
+    expect(screen.getByText('0.5 KLY')).toBeTruthy();
   });
 
   it('displays loading screen', () => {
@@ -82,7 +82,7 @@ describe('AddApplicationList', () => {
     expect(screen.getByPlaceholderText('Search by name')).toBeTruthy();
 
     expect(screen.getByText('Colecti')).toBeTruthy();
-    expect(screen.getByText('0.5 LSK')).toBeTruthy();
+    expect(screen.getByText('0.5 KLY')).toBeTruthy();
   });
 
   // skipping this test for now because it hasn't be implemented
@@ -90,6 +90,6 @@ describe('AddApplicationList', () => {
     renderWithRouterAndQueryClient(AddApplicationList);
 
     expect(screen.getByText('External test app')).toBeTruthy();
-    expect(screen.getByText('8.2 LSK')).toBeTruthy();
+    expect(screen.getByText('8.2 KLY')).toBeTruthy();
   });
 });

@@ -123,7 +123,7 @@ describe('Reclaim balance Summary', () => {
     // Assert
     expect(html).toContain(accounts.non_migrated.legacy.address);
     expect(html).toContain(truncateAddress(accounts.non_migrated.summary.address, 'medium'));
-    expect(html).toContain('136 LSK');
+    expect(html).toContain('136 KLY');
     expect(wrapper).toContainMatchingElement('.tx-fee-section');
     expect(html).toContain('confirm-button');
   });

@@ -5,7 +5,7 @@ import styles from './introduction.css';
 
 const Introduction = ({ t, nextStep }) => (
   <div className={styles.container}>
-    <p className={styles.header}>{t('Reclaim LSK tokens')}</p>
+    <p className={styles.header}>{t('Reclaim KLY tokens')}</p>
     <p className={styles.text}>
       {t('Your tokens associated with your secret recovery phrase are available to be reclaimed.')}
       <br />

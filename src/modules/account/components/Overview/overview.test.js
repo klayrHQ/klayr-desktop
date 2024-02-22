@@ -34,7 +34,7 @@ describe('Overview', () => {
     const updatedProps = { ...props, tokenData: { data: [] } };
     smartRender(Overview, updatedProps, config);
 
-    expect(screen.getByTestId('selected-menu-item')).not.toHaveTextContent('LSK');
+    expect(screen.getByTestId('selected-menu-item')).not.toHaveTextContent('KLY');
     expect(screen.queryByTestId('dropdown-options')).not.toBeInTheDocument();
   });
 
@@ -50,7 +50,7 @@ describe('Overview', () => {
     props.tokenData.data = undefined;
     smartRender(Overview, props, config);
 
-    expect(screen.getByTestId('selected-menu-item')).not.toHaveTextContent('LSK');
+    expect(screen.getByTestId('selected-menu-item')).not.toHaveTextContent('KLY');
   });
 
   it('updates the filter when the search input is changed', async () => {

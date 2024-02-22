@@ -48,7 +48,7 @@ const LatestStakes = ({ filters }) => {
       additionalRowProps={{
         t,
         validators: validatorsMap,
-        activeToken: token ?? { symbol: 'LSK' },
+        activeToken: token ?? { symbol: 'KLY' },
         layout: 'stake',
       }}
     />

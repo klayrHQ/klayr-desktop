@@ -123,12 +123,12 @@ const props = {
     composedFees: [
       {
         title: 'Transaction',
-        value: '0 LSK',
+        value: '0 KLY',
         components: [],
       },
       {
         title: 'Message',
-        value: '0 LSK',
+        value: '0 KLY',
         isHidden: true,
         components: [],
       },
@@ -200,9 +200,9 @@ describe('StakingQueue.Summary', () => {
     const addedItemList = wrapper.find('[data-testid="stake-item"]').at(0);
     const editedItemList = wrapper.find('[data-testid="stake-item"]').at(4);
     const removedItemList = wrapper.find('[data-testid="stake-item"]').at(9);
-    expect(addedItemList).toHaveText('test110 LSKReward:  0.001 LSK');
-    expect(editedItemList).toHaveText('test310.0000001 LSK0.0000002 LSKReward:  0.002 LSK');
-    expect(removedItemList).toHaveText('test220 LSKReward:  0.003 LSK');
+    expect(addedItemList).toHaveText('test110 KLYReward:  0.001 KLY');
+    expect(editedItemList).toHaveText('test310.0000001 KLY0.0000002 KLYReward:  0.002 KLY');
+    expect(removedItemList).toHaveText('test220 KLYReward:  0.003 KLY');
   });
 
   it('calls props.nextStep with properties when confirm button is clicked', () => {

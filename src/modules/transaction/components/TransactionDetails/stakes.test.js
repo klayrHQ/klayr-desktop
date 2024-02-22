@@ -36,9 +36,9 @@ describe('Transaction stakes', () => {
     wrapper = mountWithRouter(StakesPure, props);
     expect(wrapper).toContainMatchingElements(2, '.stake-item-address');
     expect(wrapper.find('.primaryText').at(0).text()).toEqual('lsk123');
-    expect(wrapper.find('.stake-item-value').at(0).text()).toEqual('10 LSK');
+    expect(wrapper.find('.stake-item-value').at(0).text()).toEqual('10 KLY');
     expect(wrapper.find('.primaryText').at(1).text()).toEqual(name);
-    expect(wrapper.find('.stake-item-value').at(1).text()).toEqual('-20 LSK');
+    expect(wrapper.find('.stake-item-value').at(1).text()).toEqual('-20 KLY');
   });
 
   it('Should fetch and render validator name when validator API responds', () => {

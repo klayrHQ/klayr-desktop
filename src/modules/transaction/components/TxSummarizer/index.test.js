@@ -31,7 +31,7 @@ describe('TxSummarizer', () => {
     props = {
       title: 'mock title',
       wallet: wallets.genesis,
-      token: 'LSK',
+      token: 'KLY',
       confirmButton: {
         label: 'Confirm',
         onClick: jest.fn(),
@@ -50,7 +50,7 @@ describe('TxSummarizer', () => {
       formProps: {
         isValid: true,
         moduleCommand: MODULE_COMMANDS_NAME_MAP.transfer,
-        composedFees: [{ isHidden: false, title: 'test', value: '1 LSK' }],
+        composedFees: [{ isHidden: false, title: 'test', value: '1 KLY' }],
         fields: {
           sendingChain: mockBlockchainApplications[0],
           recipientChain: { ...blockchainApplicationsExplore[0], logo: { png: '', svg: '' } },
@@ -122,7 +122,7 @@ describe('TxSummarizer', () => {
     useNonceSync.mockReturnValue({ onChainNonce: '2' });
     const wrapper = smartRender(TxSummarizer, props, config).wrapper;
     expect(wrapper.find('.fee-value-test')).toExist();
-    expect(wrapper.find('.fee-value-test').text()).toContain('1 LSK');
+    expect(wrapper.find('.fee-value-test').text()).toContain('1 KLY');
 
     // multisig account
     const newProps = {
@@ -149,7 +149,7 @@ describe('TxSummarizer', () => {
       formProps: {
         isValid: true,
         moduleCommand: MODULE_COMMANDS_NAME_MAP.registerMultisignature,
-        composedFees: { 'Initialization Fee': '1 LSK', Transaction: '1 LSK' },
+        composedFees: { 'Initialization Fee': '1 KLY', Transaction: '1 KLY' },
         fields: {
           token: mockTokensBalance.data[0],
         },
@@ -182,7 +182,7 @@ describe('TxSummarizer', () => {
         composedFees: [
           {
             label: 'TransactionFee',
-            value: '0.0023 LSK',
+            value: '0.0023 KLY',
           },
         ],
         fields: {

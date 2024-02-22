@@ -29,7 +29,7 @@ describe('Reducer: network(state, action)', () => {
       type: actionTypes.networkConfigSet,
       data: {
         name: 'Custom Node',
-        token: 'LSK',
+        token: 'KLY',
         network: state.networks.LSK,
       },
     };

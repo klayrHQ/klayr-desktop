@@ -103,7 +103,7 @@ describe('Status', () => {
         code: 'BROADCAST_ERROR',
         message: { error: 'error:test', transaction: legacyReclaimLSK },
       },
-      title: 'Reclaim LSK tokens failed',
+      title: 'Reclaim KLY tokens failed',
       className: 'content',
     });
   });
@@ -124,7 +124,7 @@ describe('Status', () => {
     expect(wrapper.find(TxBroadcaster).props()).toMatchObject({
       illustration: 'default',
       status: { code: 'BROADCAST_SUCCESS' },
-      title: 'Reclaimed LSK tokens',
+      title: 'Reclaimed KLY tokens',
       className: 'content',
     });
   });

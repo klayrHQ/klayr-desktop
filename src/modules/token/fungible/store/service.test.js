@@ -7,7 +7,7 @@ import { pricesRetrieved } from './service';
 describe('actions: service', () => {
   const getState = () => ({
     token: {
-      active: 'LSK',
+      active: 'KLY',
     },
   });
   const dispatch = jest.fn();

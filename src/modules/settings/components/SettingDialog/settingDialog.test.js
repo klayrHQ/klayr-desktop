@@ -49,7 +49,7 @@ describe('Setting', () => {
 
   const props = {
     transactions: { pending: [] },
-    account: { token: 'LSK', passphrase: 'sample_passphrase' },
+    account: { token: 'KLY', passphrase: 'sample_passphrase' },
     settingsUpdated: jest.fn(),
     settings,
     t,

@@ -33,7 +33,7 @@ describe('Sent token Status', () => {
     bookmarks: {
       LSK: [],
     },
-    token: 'LSK',
+    token: 'KLY',
     transactionJSON: {
       nonce: '19n',
       module: 'token',

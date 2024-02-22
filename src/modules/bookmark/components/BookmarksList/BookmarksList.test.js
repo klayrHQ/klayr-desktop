@@ -40,7 +40,7 @@ describe('BookmarksList', () => {
     expect(wrapper).not.toContainMatchingElement(EmptyState);
   });
 
-  it('should render LSK bookmarks ONLY', () => {
+  it('should render KLY bookmarks ONLY', () => {
     wrapper = mountWithRouterAndStore(BookmarksList, props, {}, store);
     expect(wrapper).toContainMatchingElement('.bookmark-list-container');
     expect(wrapper).toContainMatchingElements(props.limit, 'a.bookmark-list-row');

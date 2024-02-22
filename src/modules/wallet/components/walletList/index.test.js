@@ -20,9 +20,9 @@ const props = {
     data: [
       {
         tokenID: '0000000100000000',
-        displayDenom: 'lsk',
-        denomUnits: [{ denom: 'lsk', decimals: 8, aliases: ['Lisk'] }],
-        symbol: 'LSK',
+        displayDenom: 'kly',
+        denomUnits: [{ denom: 'kly', decimals: 8, aliases: ['Klayr'] }],
+        symbol: 'KLY',
       },
     ],
   },

@@ -144,7 +144,7 @@ describe('StakeForm', () => {
     });
     expect(wrapper.find('.available-stakes-num').text()).toBe('8/');
     expect(wrapper.find('.feedback').at(0).text()).toBe(
-      "You don't have enough LSK in your account."
+      "You don't have enough KLY in your account."
     );
   });
 
@@ -162,7 +162,7 @@ describe('StakeForm', () => {
     });
     expect(wrapper.find('.available-stakes-num').text()).toBe('8/');
     expect(wrapper.find('.feedback').at(0).text()).toBe(
-      "You don't have enough LSK in your account."
+      "You don't have enough KLY in your account."
     );
   });
 });

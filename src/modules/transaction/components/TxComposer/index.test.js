@@ -41,7 +41,7 @@ describe('TxComposer', () => {
     formProps: {
       feedback: [],
       moduleCommand: MODULE_COMMANDS_NAME_MAP.transfer,
-      fields: { token: { availableBalance: 10000, symbol: 'LSK' } },
+      fields: { token: { availableBalance: 10000, symbol: 'KLY' } },
     },
     commandParams: {
       recipient: { address: accounts.genesis.summary.address },
@@ -115,12 +115,12 @@ describe('TxComposer', () => {
         fields: {
           token: {
             availableBalance: 100,
-            symbol: 'LSK',
+            symbol: 'KLY',
             denomUnits: [
               {
-                denom: 'lsk',
+                denom: 'kly',
                 decimals: 8,
-                aliases: ['Lisk'],
+                aliases: ['Klayr'],
               },
             ],
           },
