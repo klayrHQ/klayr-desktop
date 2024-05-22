@@ -74,9 +74,7 @@
     },
     "win": {
       "target": "nsis",
-      "publisherName": "Klayr holding",
-      "sign": "./scripts/sign.js",
-      "certificateSubjectName": "key_480054267"
+      "publisherName": "Klayr holding"
     },
     "mac": {
       "hardenedRuntime": true,
