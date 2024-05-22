@@ -4,10 +4,12 @@ on:
   push:
     tags:
       - v3.*
+    branches: [feature/*]
 
 jobs:
   release:
     runs-on: ${{ matrix.os }}
+    environment: MACOS
 
     strategy:
       matrix:
@@ -22,36 +24,15 @@ jobs:
         id: nvm
 
       - name: Setup node js runtime
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
 
-      - uses: actions/setup-python@v4 #Install awscli on all platform
-        with:
-          python-version: '3.10'
-      - name: Install AWSCLI Package
-        run: |
-          python -m pip install --upgrade pip
-          pip install --upgrade pip
-          pip install awscli
-
-      - name: Configure AWS cli
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
-
-      - name: Download fonts from S3
-        run: |
-          aws s3 sync s3://klayr-desktop-files/fonts ./setup/react/assets/fonts/
-
-      - name: Prepare for mac os app notarization
+      - name: Update package.json
         if: startsWith(matrix.os, 'macos')
-        # Import Apple API key for app notarization on macOS
         run: |
-          mkdir -p ~/private_keys/
-          echo '${{ secrets.api_key }}' > ~/private_keys/AuthKey_${{ secrets.api_key_id }}.p8
+          jq '.build.mac.notarize.teamId = "${{ secrets.APPLE_TEAM_ID }}"' package.json > package_temp.json
+          mv package_temp.json package.json
 
       - name: Install cpx
         if: startsWith(matrix.os, 'desktop-build')
@@ -73,6 +54,12 @@ jobs:
           mac_certs_password: ${{ secrets.mac_certs_password }}
           github_token: ${{ secrets.github_token }}
         env:
-          # macOS notarization API key
-          API_KEY_ID: ${{ secrets.api_key_id }}
-          API_KEY_ISSUER_ID: ${{ secrets.api_key_issuer_id }}
+          # macOS for notarization API key
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+
+      - name: Output Notarization Error Log
+        if: failure() && startsWith(matrix.os, 'macos')
+        run: |
+          echo "Notarization failed. Outputting notarization-error.log..."
+          cat /Users/runner/work/klayr-desktop/klayr-desktop/notarization-error.log
