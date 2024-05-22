@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
 #        os: [desktop-build, macos-latest]
-        os: [desktop-build]
+        os: [windows-latest]
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v1
@@ -39,11 +39,11 @@ jobs:
           mv package_temp.json package.json
 
       - name: Install cpx
-        if: startsWith(matrix.os, 'desktop-build')
+        if: startsWith(matrix.os, 'windows-latest')
         run: npm install -g cpx
 
       - name: Build and pack windows app
-        if: startsWith(matrix.os, 'desktop-build')
+        if: startsWith(matrix.os, 'windows-latest')
         uses: samuelmeuli/action-electron-builder@v1
         with:
           build_script_name: pack:win
