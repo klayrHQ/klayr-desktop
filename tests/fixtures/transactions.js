@@ -1,5 +1,5 @@
 /* eslint-disable max-lines */
-import { cryptography, transactions } from '@liskhq/lisk-client';
+import { cryptography, transactions } from '@klayr/client';
 import { fromTransactionJSON } from 'src/modules/transaction/utils';
 import wallets from '@tests/constants/wallets';
 import moduleCommandSchemas from '@tests/constants/schemas';
@@ -9,9 +9,9 @@ export const getState = () => ({
   wallet: {
     passphrase: 'test',
     info: {
-      LSK: {
+      KLY: {
         summary: {
-          address: 'lskwnxvy7wmgbt8y3mh7fcs4u4cwj7f48eh58kga9',
+          address: 'klywnxvy7wmgbt8y3mh7fcs4u4cwj7f48eh58kga9',
           publicKey: '205688492bc52ddabfdc10fa7728b8bcb5942ad17c68ab5c20e96153fd1ac657',
           privateKey:
             'ae7522b1fd7a24886b1396b392368fe6c9b2e0e40cf86ecf193e46babe3cbe8a0fe9a3f1a21b5530f27f87a414b549e79a940bf24fdf2b2f05e7f22aeeecc86a',
@@ -25,7 +25,7 @@ export const getState = () => ({
     status: { online: true },
     name: 'Mainnet',
     networks: {
-      LSK: {
+      KLY: {
         serviceUrl: 'http://localhost:4000',
         networkIdentifier: '198f2b61a8eb95fbeed58b8216780b68f697f26b849acf00c8c93bb9b24f783d',
         ...moduleCommandSchemas,
@@ -38,9 +38,9 @@ export const getState = () => ({
   },
   settings: {},
   token: {
-    active: 'LSK',
+    active: 'KLY',
     list: {
-      LSK: true,
+      KLY: true,
     },
   },
 });
@@ -54,7 +54,7 @@ export const transformedAccountTransaction = {
     '4bfc0ab5e1b3c3fb1ca7362acc917775ce6345f26a261d592d83c62ad156e90221269a3b423516c2b84c1ebdd285d3bf83be688f5a158c1daf7245fecea0350a',
   ],
   sender: {
-    address: 'lsks6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6',
+    address: 'klys6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6',
     publicKey: '205688492bc52ddabfdc10fa7728b8bcb5942ad17c68ab5c20e96153fd1ac657',
   },
 };
@@ -114,7 +114,7 @@ export const tokenTransfer = {
   params: {
     tokenID: '1e362cc6d65bdbb1',
     amount: '9140968487542404274',
-    recipientAddress: 'lskr8xo6fkzg2m3fhgsofbnfozcn7nnsdgbma6e42',
+    recipientAddress: 'klyr8xo6fkzg2m3fhgsofbnfozcn7nnsdgbma6e42',
     data: 'survey twist collect recipe morning reunion crop loyal celery',
   },
   signatures: [cryptography.utils.getRandomBytes(64).toString('hex')],
@@ -131,7 +131,7 @@ export const tokenTransferCrossChain = {
     tokenID: '5d0c516a0237dacc',
     amount: '14974766695292105195',
     receivingChainID: '2a00807e',
-    recipientAddress: 'lsk5zkdr7cqjjcka78unjoeb4gjsdxhdfdprk42qb',
+    recipientAddress: 'kly5zkdr7cqjjcka78unjoeb4gjsdxhdfdprk42qb',
     data: 'language picnic embark day table spoon garage cook magic trigger',
     messageFee: '1110588655856176923',
     messageFeeTokenID: '90db54e472205ad0',
@@ -226,27 +226,27 @@ export const posStake = {
   params: {
     stakes: [
       {
-        validatorAddress: 'lskra6k42jaxwd9t9zqeqvpak59rjjvbzwgb9uq7p',
+        validatorAddress: 'klyra6k42jaxwd9t9zqeqvpak59rjjvbzwgb9uq7p',
         amount: '17327853400584947023',
       },
       {
-        validatorAddress: 'lskfx9fxra5f2snqazmkct9wj2ebd2xtxwbuv8u2h',
+        validatorAddress: 'klyfx9fxra5f2snqazmkct9wj2ebd2xtxwbuv8u2h',
         amount: '9256453989320740233',
       },
       {
-        validatorAddress: 'lskqhfa6kvyzve9jd9ksrmfq76f9hs2wc8rs4ttby',
+        validatorAddress: 'klyqhfa6kvyzve9jd9ksrmfq76f9hs2wc8rs4ttby',
         amount: '3016875510246164037',
       },
       {
-        validatorAddress: 'lsk53pjmwwvpd35tce76oj7s66b84d4rpw78kjrqc',
+        validatorAddress: 'kly53pjmwwvpd35tce76oj7s66b84d4rpw78kjrqc',
         amount: '12577337036362243932',
       },
       {
-        validatorAddress: 'lskcv4y3cpcv5zp6szzmgzzu84mmxdxwrx3jze6ej',
+        validatorAddress: 'klycv4y3cpcv5zp6szzmgzzu84mmxdxwrx3jze6ej',
         amount: '9803057464568916176',
       },
       {
-        validatorAddress: 'lsk37tf9gcfev27z6nh34dfokp6nsvfqfehdyrdah',
+        validatorAddress: 'kly37tf9gcfev27z6nh34dfokp6nsvfqfehdyrdah',
         amount: '18376337929163665175',
       },
     ],
@@ -306,9 +306,9 @@ export const posReportMisbehavior = {
   id: '',
 };
 
-export const legacyReclaimLSK = {
+export const legacyReclaimKLY = {
   module: 'legacy',
-  command: 'reclaimLSK',
+  command: 'reclaimKLY',
   nonce: '2984799992651295337',
   fee: '10326756795033427101',
   senderPublicKey: 'bfbef2a36e17ca75b66fd56adea8dd04ed234cd4188aca42fc8a7299d8eaadd8',

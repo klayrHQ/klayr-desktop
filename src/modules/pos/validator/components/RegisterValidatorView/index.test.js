@@ -25,7 +25,7 @@ describe('RegisterValidator', () => {
   const props = {
     account: {
       info: {
-        LSK: {
+        KLY: {
           summary: {
             address: '123456789L',
             balance: 11000,
@@ -40,7 +40,7 @@ describe('RegisterValidator', () => {
     },
     prevState: {},
     validator: {},
-    liskAPIClient: {
+    klayrAPIClient: {
       validators: {
         get: jest.fn(),
       },
@@ -54,8 +54,8 @@ describe('RegisterValidator', () => {
   };
 
   beforeEach(() => {
-    props.liskAPIClient.validators.get.mockClear();
-    debounce.mockReturnValue((name, error) => !error && props.liskAPIClient.validators.get(name));
+    props.klayrAPIClient.validators.get.mockClear();
+    debounce.mockReturnValue((name, error) => !error && props.klayrAPIClient.validators.get(name));
   });
 
   it('renders properly SelectName component', () => {

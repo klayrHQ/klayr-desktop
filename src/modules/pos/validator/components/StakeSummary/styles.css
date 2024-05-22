@@ -23,6 +23,6 @@
     @mixin headingNormal;
 
     font-size: var(--font-size-h5);
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 }

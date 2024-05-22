@@ -65,12 +65,12 @@
   & .primaryText {
     @mixin contentNormal semi-bold;
 
-    color: var(--color-ink-blue);
+    color: var(--color-azule-dark);
     margin-right: 10px;
   }
 
   & .value {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
 
     & div {
       display: inline;
@@ -116,7 +116,7 @@
 
       margin-top: 0;
       margin-bottom: 10px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       font-family: var(--content-font);
 
       & > span {

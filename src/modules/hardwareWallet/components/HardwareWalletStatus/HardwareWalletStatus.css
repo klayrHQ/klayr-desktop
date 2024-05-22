@@ -68,7 +68,7 @@
     font-size: 12px;
     margin-top: 10px;
     cursor: pointer;
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     font-weight: var(--font-weight-semi-bold);
     height: initial;
     padding: initial;
@@ -129,7 +129,7 @@
   &.standby {
     border-color: var(--color-warning-border-transparent);
     background-color: var(--color-warning-border-background-transparent);
-    color: var(--color-zodiac-blue) !important;
+    color: var(--color-colecti-dark-blue) !important;
 
     &::before {
       background-color: var(--color-warning-border);
@@ -151,5 +151,5 @@
   width: fit-content;
   padding: 0px;
   transform: translate(30px, -6px) !important;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
 }

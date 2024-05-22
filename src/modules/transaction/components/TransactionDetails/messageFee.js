@@ -14,7 +14,7 @@ const Fee = ({ t }) => {
   return (
     <ValueAndLabel label={t('Message Fee')} className={styles.messageFee}>
       <span className="tx-message-fee">
-        <TokenAmount val={messageFee} isLsk />
+        <TokenAmount val={messageFee} isKly />
       </span>
     </ValueAndLabel>
   );

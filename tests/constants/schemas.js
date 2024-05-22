@@ -85,7 +85,7 @@ const moduleCommandSchemas = {
     },
   },
   'pos:unlock': {
-    $id: '/lisk/empty',
+    $id: '/klayr/empty',
     type: 'object',
     properties: {},
   },
@@ -165,7 +165,7 @@ const moduleCommandSchemas = {
             validatorAddress: {
               dataType: 'bytes',
               fieldNumber: 1,
-              format: 'lisk32',
+              format: 'klayr32',
             },
             amount: {
               dataType: 'sint64',
@@ -227,8 +227,8 @@ const moduleCommandSchemas = {
       },
     },
   },
-  'legacy:reclaimLSK': {
-    $id: 'lisk/legacy/reclaim',
+  'legacy:reclaimKLY': {
+    $id: 'klayr/legacy/reclaim',
     type: 'object',
     required: ['amount'],
     properties: {
@@ -239,7 +239,7 @@ const moduleCommandSchemas = {
     },
   },
   'legacy:registerKeys': {
-    $id: 'lisk/legacy/registerKeys',
+    $id: 'klayr/legacy/registerKeys',
     type: 'object',
     required: ['blsKey', 'proofOfPossession', 'generatorKey'],
     properties: {
@@ -264,7 +264,7 @@ const moduleCommandSchemas = {
     },
   },
   'token:transfer': {
-    $id: '/lisk/transferParams',
+    $id: '/klayr/transferParams',
     title: 'Transfer transaction params',
     type: 'object',
     required: ['tokenID', 'amount', 'recipientAddress', 'data'],
@@ -282,7 +282,7 @@ const moduleCommandSchemas = {
       recipientAddress: {
         dataType: 'bytes',
         fieldNumber: 3,
-        format: 'lisk32',
+        format: 'klayr32',
       },
       data: {
         dataType: 'string',
@@ -293,7 +293,7 @@ const moduleCommandSchemas = {
     },
   },
   'token:crossChaintransfer': {
-    $id: '/lisk/ccTransferParams',
+    $id: '/klayr/ccTransferParams',
     type: 'object',
     required: ['tokenID', 'amount', 'receivingChainID', 'recipientAddress', 'data', 'messageFee'],
     properties: {
@@ -316,7 +316,7 @@ const moduleCommandSchemas = {
       recipientAddress: {
         dataType: 'bytes',
         fieldNumber: 4,
-        format: 'lisk32',
+        format: 'klayr32',
       },
       data: {
         dataType: 'string',

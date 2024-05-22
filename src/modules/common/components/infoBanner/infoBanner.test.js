@@ -12,7 +12,7 @@ describe('InfoBanner component', () => {
     name: 'info banner name',
     infoLabel: 'update',
     infoMessage: 'info banner message',
-    infoLink: 'https://lisk.io',
+    infoLink: 'https://klayr.io',
     className: '',
     show: true,
     t: (v) => v,
@@ -44,7 +44,7 @@ describe('InfoBanner component', () => {
   it('should open external infoLink in a new tab when clicked', () => {
     const wrapper = mountWithProps();
     wrapper.find('.link').first().simulate('click');
-    expect(window.open).toHaveBeenCalledWith('https://lisk.io');
+    expect(window.open).toHaveBeenCalledWith('https://klayr.xyz');
   });
 
   it('should open internal infoLink in a new tab when clicked', () => {

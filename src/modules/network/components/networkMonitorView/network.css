@@ -6,7 +6,7 @@
   display: inline-block;
   font-weight: var(--font-weight-bold);
   line-height: var(--font-size-large);
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   font-size: var(--font-size-large);
   margin-top: var(--horizontal-modal-padding-l);
   margin-bottom: var(--horizontal-modal-padding-l);
@@ -61,7 +61,7 @@
   border: 0;
   background-image: url('../../../../../setup/react/assets/images/marker-group.svg');
   text-align: center;
-  color: var(--color-strong-mystic);
+  color: var(--color-eerie);
   font-size: 13px;
 }
 

@@ -11,7 +11,7 @@
       "params": {
         "tokenID": "1e362cc6d65bdbb1",
         "amount": "9140968487542404274",
-        "recipientAddress": "lskr8xo6fkzg2m3fhgsofbnfozcn7nnsdgbma6e42",
+        "recipientAddress": "klyr8xo6fkzg2m3fhgsofbnfozcn7nnsdgbma6e42",
         "data": "survey twist collect recipe morning reunion crop loyal celery"
       },
       "signatures": []
@@ -26,7 +26,7 @@
         "tokenID": "5d0c516a0237dacc",
         "amount": "14974766695292105195",
         "receivingChainID": "2a00807e",
-        "recipientAddress": "lsk5zkdr7cqjjcka78unjoeb4gjsdxhdfdprk42qb",
+        "recipientAddress": "kly5zkdr7cqjjcka78unjoeb4gjsdxhdfdprk42qb",
         "data": "language picnic embark day table spoon garage cook magic trigger",
         "messageFee": "1110588655856176923",
         "messageFeeTokenID": "90db54e472205ad0"
@@ -106,7 +106,7 @@
     },
     {
       "module": "legacy",
-      "command": "reclaimLSK",
+      "command": "reclaimKLY",
       "nonce": "2984799992651295337",
       "fee": "10326756795033427101",
       "senderPublicKey": "bfbef2a36e17ca75b66fd56adea8dd04ed234cd4188aca42fc8a7299d8eaadd8",
@@ -124,27 +124,27 @@
       "params": {
         "stakes": [
           {
-            "validatorAddress": "lskra6k42jaxwd9t9zqeqvpak59rjjvbzwgb9uq7p",
+            "validatorAddress": "klyra6k42jaxwd9t9zqeqvpak59rjjvbzwgb9uq7p",
             "amount": "17327853400584947023"
           },
           {
-            "validatorAddress": "lskfx9fxra5f2snqazmkct9wj2ebd2xtxwbuv8u2h",
+            "validatorAddress": "klyfx9fxra5f2snqazmkct9wj2ebd2xtxwbuv8u2h",
             "amount": "9256453989320740233"
           },
           {
-            "validatorAddress": "lskqhfa6kvyzve9jd9ksrmfq76f9hs2wc8rs4ttby",
+            "validatorAddress": "klyqhfa6kvyzve9jd9ksrmfq76f9hs2wc8rs4ttby",
             "amount": "3016875510246164037"
           },
           {
-            "validatorAddress": "lsk53pjmwwvpd35tce76oj7s66b84d4rpw78kjrqc",
+            "validatorAddress": "kly53pjmwwvpd35tce76oj7s66b84d4rpw78kjrqc",
             "amount": "12577337036362243932"
           },
           {
-            "validatorAddress": "lskcv4y3cpcv5zp6szzmgzzu84mmxdxwrx3jze6ej",
+            "validatorAddress": "klycv4y3cpcv5zp6szzmgzzu84mmxdxwrx3jze6ej",
             "amount": "9803057464568916176"
           },
           {
-            "validatorAddress": "lsk37tf9gcfev27z6nh34dfokp6nsvfqfehdyrdah",
+            "validatorAddress": "kly37tf9gcfev27z6nh34dfokp6nsvfqfehdyrdah",
             "amount": "18376337929163665175"
           }
         ]

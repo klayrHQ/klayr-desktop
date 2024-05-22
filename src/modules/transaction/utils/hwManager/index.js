@@ -1,5 +1,5 @@
-import { transactions } from '@liskhq/lisk-client';
-import { getSignedTransaction } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication';
+import { transactions } from '@klayr/client';
+import { getSignedTransaction } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
 import { signMessageUsingHW } from '@wallet/utils/signMessage';
 import {
   getAccountKeys,
@@ -56,7 +56,7 @@ const signTransaction = async ({ wallet: account, schema, chainID, transaction }
 
 /**
  * Insert transaction signature at appropriate index for regular and multisignature accounts.
- * The signature insertion logic is copied from Lisk SDK https://github.com/LiskHQ/lisk-sdk/blob/2593d1fe70154a9209b713994a252c494cad7123/elements/lisk-transactions/src/sign.ts#L228-L297
+ * The signature insertion logic is copied from Klayr SDK https://github.com/KlayrHQ/klayr-sdk/blob/2593d1fe70154a9209b713994a252c494cad7123/elements/klayr-transactions/src/sign.ts#L228-L297
  */
 /* eslint-disable max-statements, complexity */
 const updateTransactionSignatures = (wallet, senderAccount, transaction, signature, options) => {

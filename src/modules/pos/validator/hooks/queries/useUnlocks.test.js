@@ -14,7 +14,7 @@ jest.mock('@pos/validator/hooks/queries/usePosConstants');
 
 describe('useUnlocks hook', () => {
   const limit = 15;
-  const config = { params: { limit, address: 'lsktzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg' } };
+  const config = { params: { limit, address: 'klytzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg' } };
 
   usePosConstants.mockReturnValue({ data: mockPosConstants, isSuccess: true });
 

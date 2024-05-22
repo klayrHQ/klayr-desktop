@@ -67,7 +67,7 @@
       top: 100%;
 
       & div > a {
-        color: var(--color-zodiac-blue) !important;
+        color: var(--color-content) !important;
         font-size: 14px !important;
       }
     }
@@ -79,13 +79,13 @@
   min-width: 270px;
   height: 218px;
   border-radius: 16px;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   transition: opacity 200ms linear;
   border: none;
   cursor: pointer;
 
   & > span {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     font-size: 20px;
     line-height: 130%;
     font-weight: 600;
@@ -98,7 +98,7 @@
 
   &:hover {
     box-sizing: border-box;
-    border: 2px solid var(--color-ultramarine-blue);
+    border: 2px solid var(--color-primary);
     opacity: 0.7;
   }
 }

@@ -7,10 +7,10 @@
 export const mockBlockchainApp = {
   data: [
     {
-      name: 'Lisk',
+      name: 'Klayr',
       chainID: '00000001',
       status: 'active',
-      address: 'lsk123bhithjdq8szo3poyqe5dsxwrnazyqnzqhsy',
+      address: 'kly123bhithjdq8szo3poyqe5dsxwrnazyqnzqhsy',
       isDefault: true,
       lastCertificateHeight: 900,
       lastUpdated: 123456789,
@@ -19,7 +19,7 @@ export const mockBlockchainApp = {
       name: 'Colecti',
       chainID: '00000002',
       status: 'active',
-      address: 'lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
+      address: 'kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
       isDefault: false,
       lastCertificateHeight: 1000,
       lastUpdated: 123456789,

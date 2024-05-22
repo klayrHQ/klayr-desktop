@@ -72,7 +72,7 @@ describe('Sign Message Input Component', () => {
     const wrapper = mountWithRouterAndStore(SignMessageInput, props, {}, store);
 
     expect(wrapper.find('span[data-testid="hwError"]')).toHaveText(
-      'Open the Lisk app on Ledger device to continue'
+      'Open the Klayr app on Ledger device to continue'
     );
     expect(wrapper.find('button').at(0)).toBeDisabled();
   });

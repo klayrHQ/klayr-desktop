@@ -57,7 +57,7 @@ class ChooseAvatar extends React.Component {
       <>
         <div className={registerStyles.titleHolder}>
           <h1 className={styles.title}>{t('Choose your avatar')}</h1>
-          <p>{t('This avatar will be linked to your new Lisk address.')}</p>
+          <p>{t('This avatar will be linked to your new Klayr address.')}</p>
         </div>
         <div
           ref={this.setWrapperRef}

@@ -1,4 +1,4 @@
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 
 const verifyMessageValidator = (inputs) => {
   let isCorrect = false;

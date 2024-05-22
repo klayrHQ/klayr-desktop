@@ -31,9 +31,9 @@ describe('Sent token Status', () => {
       signedTransaction: { signatures: ['123'], params: {} },
     },
     bookmarks: {
-      LSK: [],
+      KLY: [],
     },
-    token: 'LSK',
+    token: 'KLY',
     transactionJSON: {
       nonce: '19n',
       module: 'token',
@@ -80,7 +80,7 @@ describe('Sent token Status', () => {
     expect(wrapper.find(DialogLink).props()).toMatchObject({
       component: 'addBookmark',
       data: {
-        formAddress: 'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
+        formAddress: 'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
         isValidator: true,
         label: 'gr33ndrag0n_0',
       },
@@ -152,7 +152,7 @@ describe('Sent token Status', () => {
     expect(wrapper.find(DialogLink).props()).toMatchObject({
       component: 'addBookmark',
       data: {
-        formAddress: 'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
+        formAddress: 'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
         isValidator: true,
         label: 'gr33ndrag0n_0',
       },
@@ -173,7 +173,7 @@ describe('Sent token Status', () => {
     const propsWithBookmarks = {
       ...props,
       bookmarks: {
-        LSK: [{ address: accounts.validator.summary.address }],
+        KLY: [{ address: accounts.validator.summary.address }],
       },
     };
 

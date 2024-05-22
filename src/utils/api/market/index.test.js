@@ -14,13 +14,13 @@ describe('API: Market', () => {
       http.mockImplementation(() => Promise.resolve(expectedResponse));
       await expect(
         market.getPrices({
-          network: { networks: { LSK: { serviceUrl: 'example.com' } } },
+          network: { networks: { KLY: { serviceUrl: 'example.com' } } },
         })
       ).resolves.toEqual(expectedResponse);
 
       expect(http).toHaveBeenCalledWith({
         path: market.httpPaths.prices,
-        network: { networks: { LSK: { serviceUrl: 'example.com' } } },
+        network: { networks: { KLY: { serviceUrl: 'example.com' } } },
       });
     });
 
@@ -29,7 +29,7 @@ describe('API: Market', () => {
       http.mockImplementation(() => Promise.reject(new Error(expectedResponse.message)));
       await expect(
         market.getPrices({
-          network: { networks: { LSK: { serviceUrl: 'example.com' } } },
+          network: { networks: { KLY: { serviceUrl: 'example.com' } } },
         })
       ).rejects.toEqual(expectedResponse);
     });

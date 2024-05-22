@@ -14,11 +14,11 @@ export async function getPubKey({ devicePath, accountIndex, showOnDevice }) {
   let transport;
   try {
     transport = await TransportNodeHid.open(devicePath);
-    const liskLedger = new LiskApp(transport);
+    const klayrLedger = new LiskApp(transport);
     const ledgerAccount = getLedgerAccount(accountIndex);
     const response = showOnDevice
-      ? await liskLedger.showAddressAndPubKey(ledgerAccount.derivePath())
-      : await liskLedger.getAddressAndPubKey(ledgerAccount.derivePath());
+      ? await klayrLedger.showAddressAndPubKey(ledgerAccount.derivePath())
+      : await klayrLedger.getAddressAndPubKey(ledgerAccount.derivePath());
     await transport?.close();
     if (response?.error_message === 'No errors') {
       return response?.pubKey;
@@ -34,8 +34,8 @@ export async function getMultipleAddresses({ devicePath, accountIndexes }) {
   let transport;
   try {
     transport = await TransportNodeHid.open(devicePath);
-    const liskLedger = new LiskApp(transport);
-    const response = await liskLedger.getMultipleAddresses(accountIndexes);
+    const klayrLedger = new LiskApp(transport);
+    const response = await klayrLedger.getMultipleAddresses(accountIndexes);
     await transport?.close();
     if (response?.error_message === 'No errors') {
       return response?.addr;
@@ -51,9 +51,9 @@ export async function getSignedTransaction({ devicePath, accountIndex, unsignedM
   let transport;
   try {
     transport = await TransportNodeHid.open(devicePath);
-    const liskLedger = new LiskApp(transport);
+    const klayrLedger = new LiskApp(transport);
     const ledgerAccount = getLedgerAccount(accountIndex);
-    const response = await liskLedger.sign(
+    const response = await klayrLedger.sign(
       ledgerAccount.derivePath(),
       Buffer.from(unsignedMessage, 'hex')
     );
@@ -72,12 +72,12 @@ export async function getSignedMessage({ devicePath, accountIndex, unsignedMessa
   let transport;
   try {
     transport = await TransportNodeHid.open(devicePath);
-    const liskLedger = new LiskApp(transport);
+    const klayrLedger = new LiskApp(transport);
     const ledgerAccount = getLedgerAccount(accountIndex);
     const message = isHexString(unsignedMessage)
       ? Buffer.from(unsignedMessage, 'hex')
       : Buffer.from(unsignedMessage);
-    const response = await liskLedger.signMessage(ledgerAccount.derivePath(), message);
+    const response = await klayrLedger.signMessage(ledgerAccount.derivePath(), message);
     await transport?.close();
 
     if (response?.error_message === 'No errors') {

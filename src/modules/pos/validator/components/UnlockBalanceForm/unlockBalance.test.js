@@ -51,7 +51,7 @@ jest.mock('@network/hooks/queries/useNetworkStatus');
 jest.mock('@transaction/hooks/queries/useTransactionEstimateFees');
 jest.mock('@settings/hooks/useSettings');
 
-describe('Unlock LSK modal', () => {
+describe('Unlock KLY modal', () => {
   let wrapper;
   useTransactionPriority.mockImplementation(() => [
     { selectedIndex: 1 },
@@ -87,28 +87,28 @@ describe('Unlock LSK modal', () => {
   };
 
   const initStakes = [
-    { amount: '500000000000', validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11' },
-    { amount: '3000000000', validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y13' },
-    { amount: '2000000000', validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11' },
+    { amount: '500000000000', validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11' },
+    { amount: '3000000000', validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y13' },
+    { amount: '2000000000', validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11' },
   ];
   const initUnlocking = [
     {
       amount: '1000000000',
       unstakeHeight: 4900,
       expectedUnlockableHeight: 5900,
-      validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+      validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
     },
     {
       amount: '3000000000',
       unstakeHeight: 100,
       expectedUnlockableHeight: 200,
-      validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+      validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
     },
     {
       amount: '1000000000',
       unstakeHeight: 3000,
       expectedUnlockableHeight: 4000,
-      validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y13',
+      validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y13',
     },
   ];
 
@@ -116,7 +116,7 @@ describe('Unlock LSK modal', () => {
     wallet: {
       ...wallets.genesis,
       info: {
-        LSK: {
+        KLY: {
           ...wallets.genesis,
           pos: {
             pendingUnlocks: initUnlocking,
@@ -128,13 +128,13 @@ describe('Unlock LSK modal', () => {
     },
     settings: {},
     token: {
-      active: tokenMap.LSK.key,
-      list: { LSK: true },
+      active: tokenMap.KLY.key,
+      list: { KLY: true },
     },
     network: {
       name: networks.customNode.name,
       networks: {
-        LSK: {
+        KLY: {
           nodeUrl: networks.customNode.address,
           nethash: '23jh4g',
         },
@@ -220,9 +220,9 @@ describe('Unlock LSK modal', () => {
     await flushPromises();
     const feeToken = {
       availableBalance: '1000000000',
-      chainName: 'Lisk',
+      chainName: 'Klayr',
       lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-      symbol: 'LSK',
+      symbol: 'KLY',
       tokenID: '0000000100000000',
     };
     expect(props.nextStep).toBeCalledWith({
@@ -271,9 +271,9 @@ describe('Unlock LSK modal', () => {
               value: 96000n,
               feeToken: {
                 availableBalance: '1000000000',
-                chainName: 'Lisk',
+                chainName: 'Klayr',
                 lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-                symbol: 'LSK',
+                symbol: 'KLY',
                 tokenID: '0000000100000000',
               },
             },
@@ -298,9 +298,9 @@ describe('Unlock LSK modal', () => {
     await flushPromises();
     const feeToken = {
       availableBalance: '1000000000',
-      chainName: 'Lisk',
+      chainName: 'Klayr',
       lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-      symbol: 'LSK',
+      symbol: 'KLY',
       tokenID: '0000000100000000',
     };
 
@@ -336,9 +336,9 @@ describe('Unlock LSK modal', () => {
                 {
                   feeToken: {
                     availableBalance: '1000000000',
-                    chainName: 'Lisk',
+                    chainName: 'Klayr',
                     lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-                    symbol: 'LSK',
+                    symbol: 'KLY',
                     tokenID: '0000000100000000',
                   },
                   type: 'bytesFee',
@@ -363,9 +363,9 @@ describe('Unlock LSK modal', () => {
           fields: {
             token: {
               availableBalance: '1000000000',
-              chainName: 'Lisk',
+              chainName: 'Klayr',
               lockedBalances: [{ amount: '10000000000', moduleID: '5' }],
-              symbol: 'LSK',
+              symbol: 'KLY',
               tokenID: '0000000100000000',
             },
           },
@@ -391,7 +391,7 @@ describe('Unlock LSK modal', () => {
     const newStore = {
       wallet: {
         info: {
-          LSK: {
+          KLY: {
             summary: wallets.genesis.summary,
             sequence: wallets.genesis.sequence,
             token: wallets.genesis.token,

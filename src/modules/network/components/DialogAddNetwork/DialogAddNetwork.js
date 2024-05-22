@@ -108,7 +108,7 @@ const DialogAddNetwork = () => {
         </BoxHeader>
         <p className={classNames(styles.description)}>
           {t(
-            '"Lisk" will be the default mainchain application, please enter your custom network to be added to the wallet.'
+            '"Klayr" will be the default mainchain application, please enter your custom network to be added to the wallet.'
           )}
         </p>
         <BoxContent className={`${styles.content}`}>
@@ -127,7 +127,7 @@ const DialogAddNetwork = () => {
             <Input
               size="l"
               label="Service URL"
-              placeholder={t('Enter service URL, e.g. https://testnet-service.lisk.com')}
+              placeholder={t('Enter service URL, e.g. https://testnet-service.klayr.xyz')}
               value={formValues.serviceUrl}
               feedback={errors.serviceUrl?.message}
               status={errors.serviceUrl?.message ? 'error' : undefined}
@@ -159,7 +159,7 @@ const DialogAddNetwork = () => {
             <Input
               size="l"
               label="Websocket URL (Optional)"
-              placeholder={t('Enter websocket service URL, e.g. wss://testnet-service.lisk.com')}
+              placeholder={t('Enter websocket service URL, e.g. wss://testnet-service.klayr.xyz')}
               feedback={errors.wsServiceUrl?.message}
               status={errors.wsServiceUrl?.message ? 'error' : undefined}
               {...register('wsServiceUrl', {

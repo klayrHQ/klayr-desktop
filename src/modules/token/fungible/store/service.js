@@ -14,7 +14,7 @@ const tickerReducer = (acc, key) => ({
 
 export const pricesRetrieved = () => (dispatch, getState) => {
   const { network } = getState();
-  const activeToken = tokenMap.LSK.key;
+  const activeToken = tokenMap.KLY.key;
 
   return getPrices({ network })
     ?.then(({ data }) => {

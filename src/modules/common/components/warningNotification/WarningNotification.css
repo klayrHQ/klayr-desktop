@@ -22,7 +22,7 @@
   & > span {
     @mixin contentSmall normal;
 
-    color: var(--color-constant-zodiac-blue);
+    color: var(--color-constant-colecti-dark-blue);
   }
 
   & > .closeBtn {
@@ -35,7 +35,7 @@
     &::before,
     &::after {
       background-color: currentColor;
-      color: var(--color-constant-zodiac-blue);
+      color: var(--color-constant-colecti-dark-blue);
       content: '';
       height: 13px;
       position: absolute;

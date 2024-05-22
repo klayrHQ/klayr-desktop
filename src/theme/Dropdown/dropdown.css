@@ -1,7 +1,7 @@
 @import '../../../setup/react/app/mixins.css';
 
 .dropdown {
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   border: 1px solid var(--color-platinum);
   border-radius: var(--border-radius-box);
   box-shadow: var(--box-shadow-standard);
@@ -49,7 +49,7 @@
   }
 
   & .dropdownArrow {
-    color: var(--color-white);
+    color: var(--color-surface);
     height: 9px;
     font-size: 0;
     position: absolute;
@@ -91,21 +91,21 @@
   }
 
   &:global(.dark) {
-    background: var(--color-maastricht-blue);
+    background: var(--color-surface-blue);
     border: 1px solid var(--light-border-color);
 
     & .dropdownContent {
       & .option {
-        background: var(--color-maastricht-blue);
+        background: var(--color-surface-blue);
 
         &.active {
           background-color: var(--color-rows-hover);
-          color: var(--color-ultramarine-blue);
+          color: var(--color-primary);
         }
 
         &:hover {
           background-color: var(--color-rows-hover);
-          color: var(--color-ultramarine-blue);
+          color: var(--color-primary);
         }
       }
     }
@@ -135,7 +135,7 @@
   & .option:not(.separator) {
     @mixin contentNormal;
 
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     box-sizing: border-box;
     color: var(--color-slate-gray);
     cursor: pointer;
@@ -144,12 +144,12 @@
 
     &:hover {
       background-color: var(--color-rows-hover);
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
       text-decoration: none;
     }
 
     &.active {
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
     }
   }
 }

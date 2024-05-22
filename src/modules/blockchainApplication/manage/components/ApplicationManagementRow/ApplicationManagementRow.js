@@ -32,7 +32,7 @@ const RightRowComponent = ({
           <p>
             {t('Application is terminated and can no longer be managed.')}
             <a
-              href="https://lisk.com/blog/posts/lifecycle-sidechain-lisk-ecosystem"
+              href="https://klayr.xyz/blog/posts/lifecycle-sidechain-klayr-ecosystem"
               rel="noopener noreferrer"
               target="_blank"
             >

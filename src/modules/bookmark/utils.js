@@ -20,10 +20,10 @@ export const validateBookmarks = (data) => {
   return data;
 };
 
-export const getIndexOfBookmark = (bookmarks, { address, token = tokenMap.LSK.key }) =>
+export const getIndexOfBookmark = (bookmarks, { address, token = tokenMap.KLY.key }) =>
   bookmarks[token].findIndex((bookmark) => bookmark.address === address);
 
-export const getIndexOfLabel = (bookmarks, { label, token = tokenMap.LSK.key }) =>
+export const getIndexOfLabel = (bookmarks, { label, token = tokenMap.KLY.key }) =>
   bookmarks[token].findIndex((item) => item.title.toLowerCase() === label.toLowerCase());
 
 /**

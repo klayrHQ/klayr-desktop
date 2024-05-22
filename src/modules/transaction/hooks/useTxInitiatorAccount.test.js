@@ -7,7 +7,7 @@ import useTxInitiatorAccount from './useTxInitiatorAccount';
 jest.mock('@auth/hooks/queries');
 jest
   .spyOn(accountUtils, 'extractAddressFromPublicKey')
-  .mockReturnValue('lsk93msac7pppaqaxy2w84fcpfvq45caxtguednsp');
+  .mockReturnValue('kly93msac7pppaqaxy2w84fcpfvq45caxtguednsp');
 
 describe('useTxInitiatorAccount', () => {
   const senderPublicKey = 'c094ebee7ec0c50ebee32918655e089f6e1a604b83bcaa760293c61e0f18ab6f';

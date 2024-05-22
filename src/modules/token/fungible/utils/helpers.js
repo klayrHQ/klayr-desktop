@@ -1,13 +1,13 @@
 import BigNumber from 'bignumber.js';
-import liskLogo from '../../../../../setup/react/assets/images/LISK.png';
+import klayrLogo from '../../../../../setup/react/assets/images/logo/klayr-logo-no-text.svg';
 
-export const getLogo = ({ logo }) => logo?.svg || logo?.png || liskLogo;
+export const getLogo = ({ logo }) => `${logo?.png}?test=23` || logo?.svg || klayrLogo;
 
 BigNumber.config({ ERRORS: false });
 const BASE = 10;
 
 const defaultTokenMeta = {
-  displayDenom: 'lsk',
+  displayDenom: 'kly',
   denomUnits: [
     {
       denom: 'beddows',
@@ -15,9 +15,9 @@ const defaultTokenMeta = {
       aliases: ['Beddows'],
     },
     {
-      denom: 'lsk',
+      denom: 'kly',
       decimals: 8,
-      aliases: ['Lisk'],
+      aliases: ['Klayr'],
     },
   ],
 };

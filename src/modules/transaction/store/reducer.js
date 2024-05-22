@@ -45,7 +45,7 @@ const transactions = (state = initialState, action) => {
       };
 
     // Stores the transaction signature error. This error is thrown at the time of
-    // creating the raw transaction object or signing it using Lisk Element.
+    // creating the raw transaction object or signing it using Klayr Element.
     case actionTypes.transactionSignError:
       return {
         ...state,

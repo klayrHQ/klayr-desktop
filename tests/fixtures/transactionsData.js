@@ -12,7 +12,7 @@ export default [
       timestamp: 1629456796,
     },
     sender: {
-      address: 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
+      address: 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
       publicKey: '0fe9a3f1a21b5530f27f87a414b549e79a940bf24fdf2b2f05e7f22aeeecc86a',
     },
     signatures: [
@@ -22,7 +22,7 @@ export default [
       amount: '2000000000',
       data: '',
       recipient: {
-        address: 'lsk769d7rrnxtvme2egazc8uc8d77uzwnmgzqyp53',
+        address: 'kly769d7rrnxtvme2egazc8uc8d77uzwnmgzqyp53',
         publicKey: 'd517f9d9ac10a61b57d1959b88f8b5c6e8824d27a5349ec7ece44c4a027c41cb',
       },
     },
@@ -41,7 +41,7 @@ export default [
       timestamp: 1629113716,
     },
     sender: {
-      address: 'lskatchyvyh9y3tz3mmpu9z3kptw56c6qcw4k7fks',
+      address: 'klyatchyvyh9y3tz3mmpu9z3kptw56c6qcw4k7fks',
       publicKey: '2f3dfb37326c6c42af28d04e6b6a76865430ade3d26969f1b86e3987b500bbaf',
       username: 'multisig_validatoracc',
     },
@@ -68,7 +68,7 @@ export default [
       timestamp: 1629113576,
     },
     sender: {
-      address: 'lskatchyvyh9y3tz3mmpu9z3kptw56c6qcw4k7fks',
+      address: 'klyatchyvyh9y3tz3mmpu9z3kptw56c6qcw4k7fks',
       publicKey: '2f3dfb37326c6c42af28d04e6b6a76865430ade3d26969f1b86e3987b500bbaf',
       username: 'multisig_validatoracc',
     },
@@ -101,7 +101,7 @@ export default [
       timestamp: 1641422866,
     },
     sender: {
-      address: 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
+      address: 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
       publicKey: '0fe9a3f1a21b5530f27f87a414b549e79a940bf24fdf2b2f05e7f22aeeecc86a',
     },
     signatures: [
@@ -110,7 +110,7 @@ export default [
     params: {
       stakes: [
         {
-          validatorAddress: 'lsk9gf9y56k8emm4byye44c92av2fzd65om95kxp8',
+          validatorAddress: 'kly9gf9y56k8emm4byye44c92av2fzd65om95kxp8',
           amount: '-30000000000',
         },
       ],
@@ -130,7 +130,7 @@ export default [
       timestamp: 1641018190,
     },
     sender: {
-      address: 'lskhtpeyg2944gcjwubrc7vwp52qoshtu4fs9wmfn',
+      address: 'klyhtpeyg2944gcjwubrc7vwp52qoshtu4fs9wmfn',
       publicKey: 'd1d951c46376e108bab5e7a9f1dce725bb33f9823442a4a34841b6774bbb5b2f',
     },
     signatures: [

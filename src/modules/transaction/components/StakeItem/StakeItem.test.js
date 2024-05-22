@@ -10,7 +10,7 @@ describe('StakeItem', () => {
       stake: {
         confirmed: '10',
       },
-      address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+      address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
       truncate: true,
     };
     const wrapper = mountWithRouter(StakeItem, props);

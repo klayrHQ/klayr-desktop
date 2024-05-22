@@ -38,7 +38,7 @@ describe('externalLinks', () => {
     };
 
     externalLinks.init();
-    callbacks[IPC_OPEN_URL]({}, 'lisk://register');
+    callbacks[IPC_OPEN_URL]({}, 'klayr://register');
     expect(history.push).not.toHaveBeenCalledWith(routes.register.path);
   });
 
@@ -51,7 +51,7 @@ describe('externalLinks', () => {
     };
 
     externalLinks.init();
-    callbacks[IPC_OPEN_URL]({}, 'lisk://wallet');
+    callbacks[IPC_OPEN_URL]({}, 'klayr://wallet');
     expect(history.push).not.toHaveBeenCalledWith('/wallet?modal=send');
   });
 
@@ -66,10 +66,10 @@ describe('externalLinks', () => {
     externalLinks.init();
     callbacks[IPC_OPEN_URL](
       {},
-      'lisk://wallet?modal=send&recipient=lskbgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp&amount=1&token=0200000000000000&recipientChain=02000000'
+      'klayr://wallet?modal=send&recipient=klybgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp&amount=1&token=0200000000000000&recipientChain=02000000'
     );
     expect(history.push).toHaveBeenCalledWith(
-      '?modal=send&recipient=lskbgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp&amount=1&token=0200000000000000&recipientChain=02000000'
+      '?modal=send&recipient=klybgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp&amount=1&token=0200000000000000&recipientChain=02000000'
     );
   });
 });

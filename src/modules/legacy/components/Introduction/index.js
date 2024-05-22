@@ -7,7 +7,7 @@ import styles from './introduction.css';
 const Introduction = ({ t, nextStep }) => (
   <div className={styles.container}>
     <Illustration className={styles.illustration} name="reclaimTokensIntro" />
-    <p className={styles.header}>{t('Reclaim LSK tokens')}</p>
+    <p className={styles.header}>{t('Reclaim KLY tokens')}</p>
     <p className={styles.text}>
       {t('Your tokens associated with your secret recovery phrase are available to be reclaimed.')}
       <br />
@@ -17,7 +17,7 @@ const Introduction = ({ t, nextStep }) => (
         className={styles.link}
         onClick={() => {
           window.open(
-            'https://lisk.com/blog/posts/announcing-lisk-mainnet-v4-migration',
+            'https://klayr.xyz/blog/posts/announcing-klayr-mainnet-v4-migration',
             '_blank',
             'rel=noopener noreferrer'
           );

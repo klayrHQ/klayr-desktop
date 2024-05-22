@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import wallets from '@tests/constants/wallets';
 import ChooseAvatar from './chooseAvatar';
 import { getPassphraseAndAddress } from '../../hooks/useCreateAccounts';

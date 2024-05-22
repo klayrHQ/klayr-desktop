@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from 'src/theme/Theme';
-import welcomeLiskValidators from '@setup/react/assets/images/illustrations/illustration-welcome-to-lisk-validators-dark.svg';
+import welcomeKlayrValidators from '@setup/react/assets/images/illustrations/illustration-welcome-to-klayr-validators-dark.svg';
 import yourVoiceMatters from '@setup/react/assets/images/illustrations/illustration-your-voice-matters-dark.svg';
 import getRewarded from '@setup/react/assets/images/illustrations/illustration-get-rewarded-dark.svg';
 import expandYourKnowledge from '@setup/react/assets/images/illustrations/illustration-expand-your-knowledge-dark.svg';
@@ -23,7 +23,7 @@ import errorBoundaryPage from '@setup/react/assets/images/illustrations/illustra
 import errorBoundaryPageDark from '@setup/react/assets/images/illustrations/illustration-error-boundary-page-dark.svg';
 import hubReadyToGo from '@setup/react/assets/images/illustrations/hub-ready-togo.svg';
 import builtAroundCommunity from '@setup/react/assets/images/illustrations/built-around-community.svg';
-import sendLSKTokens from '@setup/react/assets/images/illustrations/send-lsk-tokens.svg';
+import sendKLYTokens from '@setup/react/assets/images/illustrations/send-kly-tokens.svg';
 import timeToContribute from '@setup/react/assets/images/illustrations/time-to-contribute.svg';
 import emptyBookmarkFiler from '@setup/react/assets/images/illustrations/empty-bookmark-filter.svg';
 import emptyBookmarkFilerDark from '@setup/react/assets/images/illustrations/empty-bookmark-filter-dark.svg';
@@ -33,7 +33,7 @@ import helpCenter from '@setup/react/assets/images/illustrations/help-center.svg
 import emptyWallet from '@setup/react/assets/images/illustrations/empty-wallet.svg';
 import emptyWalletDark from '@setup/react/assets/images/illustrations/empty-wallet-dark.svg';
 import diveIntoDetails from '@setup/react/assets/images/illustrations/diveIntoDetails.svg';
-import manageYourLSK from '@setup/react/assets/images/illustrations/manageYourLSK.svg';
+import manageYourKLY from '@setup/react/assets/images/illustrations/manageYourKLY.svg';
 import verifyMessageError from '@setup/react/assets/images/illustrations/verify-message-error.svg';
 import verifyMessageErrorDark from '@setup/react/assets/images/illustrations/verify-message-error-dark.svg';
 import verifyMessageSuccess from '@setup/react/assets/images/illustrations/verify-message-success.svg';
@@ -82,10 +82,10 @@ import emptyTransactionsIllustration from '@setup/react/assets/images/illustrati
 import emptyValidatorsIllustration from '@setup/react/assets/images/illustrations/emptyStates/validators-empty-illustration.svg';
 import emptyWalletConnectionsIllustration from '@setup/react/assets/images/illustrations/emptyStates/wallet-connections-illustration.svg';
 import emptyStakingQueueIllustration from '@setup/react/assets/images/illustrations/emptyStates/staking-queue-empty-illustration.svg';
-import liskMigrationIllustration from '@setup/react/assets/images/illustrations/lisk_migration_illustration.svg';
+import klayrMigrationIllustration from '@setup/react/assets/images/illustrations/klayr_migration_illustration.svg';
 
 export const illustrations = {
-  welcomeLiskValidators,
+  welcomeKlayrValidators,
   yourVoiceMatters,
   getRewarded,
   expandYourKnowledge,
@@ -99,14 +99,14 @@ export const illustrations = {
   errorBoundaryPage,
   hubReadyToGo,
   builtAroundCommunity,
-  sendLSKTokens,
+  sendKLYTokens,
   timeToContribute,
   emptyBookmarkFiler,
   emptyBookmarksList,
   emptyWallet,
   helpCenter,
   diveIntoDetails,
-  manageYourLSK,
+  manageYourKLY,
   verifyMessageError,
   verifyMessageSuccess,
   registrationSuccess,
@@ -166,7 +166,7 @@ export const illustrations = {
   emptyValidatorsIllustration,
   emptyWalletConnectionsIllustration,
   emptyStakingQueueIllustration,
-  liskMigrationIllustration,
+  klayrMigrationIllustration,
 };
 
 const Illustration = ({ name, className, noTheme, ...props }) => {

@@ -18,7 +18,7 @@
   }
 
   & .chainName {
-    --content-font: 'gilroy';
+    --content-font: 'Utendo', 'Helvetica', 'Arial', 'Lucida', sans-serif;
 
     padding: 2px 0;
     font-family: var(--content-font);
@@ -36,7 +36,7 @@
 
   & .amount {
     text-align: right;
-    color: var(--color-ink-blue);
+    color: var(--color-azule-dark);
     font-size: 14px;
     font-weight: 600;
   }

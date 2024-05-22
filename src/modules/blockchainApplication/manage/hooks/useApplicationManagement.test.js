@@ -106,7 +106,7 @@ describe('useApplicationManagement hook', () => {
     expect(mockDispatch).toHaveBeenCalledWith(expectedAction);
   });
 
-  it('deleteApplicationByChainId should dispatch an action and set application to Lisk if current application is being deleted', async () => {
+  it('deleteApplicationByChainId should dispatch an action and set application to Klayr if current application is being deleted', async () => {
     const { deleteApplicationByChainId } = result.current;
     const expectedAction = {
       type: actionTypes.deleteApplicationByChainId,

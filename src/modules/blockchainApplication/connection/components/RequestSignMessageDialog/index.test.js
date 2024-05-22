@@ -14,7 +14,7 @@ import { mountWithRouterAndQueryClient } from 'src/utils/testHelpers';
 import mockSavedAccounts from '@tests/fixtures/accounts';
 import mockApplicationsManage from '@tests/fixtures/blockchainApplicationsManage';
 import { useAccounts, useCurrentAccount } from '@account/hooks';
-import { codec, cryptography } from '@liskhq/lisk-client';
+import { codec, cryptography } from '@klayr/client';
 import * as accountUtils from '@wallet/utils/account';
 import { useBlockchainApplicationMeta } from '@blockchainApplication/manage/hooks/queries/useBlockchainApplicationMeta';
 import wallets from '@tests/constants/wallets';
@@ -27,7 +27,7 @@ const mockCurrentAccount = mockSavedAccounts[0];
 const reject = jest.fn();
 
 jest.spyOn(codec.codec, 'decode');
-jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 jest.mock('@account/hooks/useCurrentAccount');
 
 jest.mock('@blockchainApplication/manage/hooks/queries/useBlockchainApplicationMeta');
@@ -67,7 +67,7 @@ useEvents.mockReturnValue({
       meta: {
         id: '1',
         params: {
-          chainId: 'lisk:00000001',
+          chainId: 'klayr:00000001',
           request: {
             params: {
               recipientChainID: '00000001',
@@ -112,7 +112,7 @@ describe('RequestSignMessageDialog', () => {
           name: EVENTS.SESSION_REQUEST,
           meta: {
             params: {
-              chainId: 'lisk:00000001',
+              chainId: 'klayr:00000001',
               request: {
                 method: 'sign_transaction',
                 params: {

@@ -24,7 +24,7 @@ const MigrationDetails = ({ wallet, showBalance }) => {
         {showBalance && (
           <p className={styles.accountBalance}>
             <span>{`${t('Wallet balance')}: `}</span>
-            <TokenAmount val={Number(wallet.legacy?.balance)} isLsk />
+            <TokenAmount val={Number(wallet.legacy?.balance)} isKly />
           </p>
         )}
       </div>
@@ -45,7 +45,7 @@ const MigrationDetails = ({ wallet, showBalance }) => {
         {showBalance && (
           <p className={styles.accountBalance}>
             <span>{`${t('Wallet balance')}: `}</span>
-            <TokenAmount val={Number(wallet.token?.[0]?.availableBalance)} isLsk />
+            <TokenAmount val={Number(wallet.token?.[0]?.availableBalance)} isKly />
           </p>
         )}
       </div>

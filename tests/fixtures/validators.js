@@ -1,6 +1,6 @@
 export default {
   summary: {
-    address: 'lskyrwej7xuxeo39ptuyff5b524dsmnmuyvcaxkag',
+    address: 'klyyrwej7xuxeo39ptuyff5b524dsmnmuyvcaxkag',
     balance: '61453881719',
     username: 'kc',
     publicKey: '04bb8d1f6a76614913622ddaf3fb08ba778bb43e6475f298c13f111a82bb813f',
@@ -37,7 +37,7 @@ export default {
     },
     sentStakes: [
       {
-        validatorAddress: 'lskyrwej7xuxeo39ptuyff5b524dsmnmuyvcaxkag',
+        validatorAddress: 'klyyrwej7xuxeo39ptuyff5b524dsmnmuyvcaxkag',
         amount: '1626000000000',
       },
     ],

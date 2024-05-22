@@ -134,7 +134,7 @@ export const signatureSkipped =
   ({ formProps, transactionJSON }) =>
   (dispatch, getState) => {
     const { network } = getState();
-    const schema = network.networks.LSK.moduleCommandSchemas[formProps.moduleCommand];
+    const schema = network.networks.KLY.moduleCommandSchemas[formProps.moduleCommand];
     const transactionObject = fromTransactionJSON(transactionJSON, schema);
 
     dispatch({

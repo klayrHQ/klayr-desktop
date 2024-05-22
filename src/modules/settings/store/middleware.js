@@ -10,7 +10,7 @@ const settings = (store) => (next) => (action) => {
         settingsUpdated({
           network: {
             name: action.data.name,
-            address: action.data.networks.LSK?.serviceUrl,
+            address: action.data.networks.KLY?.serviceUrl,
           },
         })
       );

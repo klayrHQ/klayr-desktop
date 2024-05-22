@@ -55,7 +55,7 @@ export function useApplicationManagement({ queryClient } = {}) {
 
     dispatch(deleteApplication(chainID, mainChainNetwork.name));
     if (currentApplication.chainID === chainID) {
-      // Set Lisk as default if application in use is being deleted
+      // Set Klayr as default if application in use is being deleted
       setCurrentApplication(defaultApplications[0]);
     }
   }, []);

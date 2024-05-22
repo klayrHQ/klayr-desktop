@@ -1,7 +1,7 @@
 import { withTranslation } from 'react-i18next';
 import React from 'react';
 import moment from 'moment';
-import { liskGenesisBlockTime } from '@block/const';
+import { klayrGenesisBlockTime } from '@block/const';
 import { getDateTimestampFromFirstBlock, formatInputToDate } from 'src/utils/dateTime';
 import Feedback from 'src/theme/feedback/feedback';
 import DateField from './dateField';
@@ -66,7 +66,7 @@ class DateFieldGroup extends React.Component {
       feedback = t('Invalid dates');
     } else if (date.isValid() && getDateTimestampFromFirstBlock(value, this.dateFormat) < 0) {
       feedback = t('Date must be after {{firstBlock}}', {
-        firstBlock: moment(liskGenesisBlockTime).format(this.dateFormat),
+        firstBlock: moment(klayrGenesisBlockTime).format(this.dateFormat),
       });
     }
     return feedback;

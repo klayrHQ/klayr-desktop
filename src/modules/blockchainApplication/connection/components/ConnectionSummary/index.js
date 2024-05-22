@@ -99,7 +99,7 @@ const ConnectionSummary = () => {
     },
   };
 
-  const liskChainIds = requiredNamespaces.lisk.chains.map((chain) => chain.replace(/\D+/g, ''));
+  const klayrChainIds = requiredNamespaces.klayr.chains.map((chain) => chain.replace(/\D+/g, ''));
 
   const connectHandler = async () => {
     const result = await approve(addresses);
@@ -135,14 +135,14 @@ const ConnectionSummary = () => {
         application={application}
         clipboardCopyItems={[{ label: t('Connection ID'), value: pairingTopic }]}
         description={t(
-          'This is a request from wallet connect to establish session with Lisk Desktop, please review the following information carefully before approving.'
+          'This is a request from wallet connect to establish session with Klayr Desktop, please review the following information carefully before approving.'
         )}
         classNameDescription={styles.description}
       />
       <div className={styles.wrapper}>
         <section className={styles.section}>
           <CollapsableRow label={t('Chains connecting')}>
-            <ChainListing chainIds={liskChainIds} />
+            <ChainListing chainIds={klayrChainIds} />
           </CollapsableRow>
         </section>
         <section className={styles.section}>
@@ -155,7 +155,7 @@ const ConnectionSummary = () => {
           <div className={styles.twoColumn}>
             <ValueAndLabel label={t('Methods')}>
               <div className={`${styles.items} methods`}>
-                {requiredNamespaces.lisk.methods.map((method) => (
+                {requiredNamespaces.klayr.methods.map((method) => (
                   <span key={method} className={classNames(styles.label, styles.colorSlateGray)}>
                     {method}
                   </span>
@@ -164,8 +164,8 @@ const ConnectionSummary = () => {
             </ValueAndLabel>
             <ValueAndLabel label={t('Events')}>
               <div className={`${styles.items} events`}>
-                {requiredNamespaces.lisk.events.length ? (
-                  requiredNamespaces.lisk.events.map((event) => (
+                {requiredNamespaces.klayr.events.length ? (
+                  requiredNamespaces.klayr.events.map((event) => (
                     <span key={event} className={styles.label}>
                       {event}
                     </span>

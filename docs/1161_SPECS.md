@@ -1,6 +1,6 @@
 ### Specification
 
-This document describes how showing and gathering feedback data from lisk-service will he handled by Lisk application logic.
+This document describes how showing and gathering feedback data from klayr-service will he handled by Klayr application logic.
 
 - Each component will have a uniqueID
 - uniqueID should be formed by componentName.

@@ -17,22 +17,22 @@ jest.mock('@account/hooks', () => ({
 jest.mock('@pos/validator/hooks/usePosToken');
 
 const added = {
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11: {
     name: 'test11',
     confirmed: 0,
     unconfirmed: 10,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y12: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y12: {
     name: 'test12',
     confirmed: 0,
     unconfirmed: 20,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y13: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y13: {
     name: 'test13',
     confirmed: 0,
     unconfirmed: 30,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y44: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y44: {
     name: 'test14',
     confirmed: 0,
     unconfirmed: 40,
@@ -40,22 +40,22 @@ const added = {
 };
 
 const removed = {
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y21: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y21: {
     name: 'test21',
     confirmed: 10,
     unconfirmed: 0,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y22: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y22: {
     name: 'test22',
     confirmed: 20,
     unconfirmed: 0,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y23: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y23: {
     name: 'test23',
     confirmed: 30,
     unconfirmed: 0,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y24: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y24: {
     name: 'test24',
     confirmed: 40,
     unconfirmed: 0,
@@ -63,22 +63,22 @@ const removed = {
 };
 
 const edited = {
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y31: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y31: {
     name: 'test31',
     confirmed: 10,
     unconfirmed: 20,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y32: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y32: {
     name: 'test32',
     confirmed: 20,
     unconfirmed: 30,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y33: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y33: {
     name: 'test33',
     confirmed: 30,
     unconfirmed: 10,
   },
-  lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y34: {
+  klydwsyfmcko6mcd357446yatromr9vzgu7eb8y34: {
     name: 'test34',
     confirmed: 40,
     unconfirmed: 20,
@@ -115,7 +115,7 @@ const props = {
   stakesSubmitted: jest.fn(),
   nextStep: jest.fn(),
   transactions: { txSignatureError: null, signedTransaction: transaction },
-  normalizedStakes: { lsk123: {} },
+  normalizedStakes: { kly123: {} },
   selectedPriority: { title: 'Normal', value: 1 },
   formProps: {
     isValid: true,
@@ -123,20 +123,20 @@ const props = {
     composedFees: [
       {
         title: 'Transaction',
-        value: '0 LSK',
+        value: '0 KLY',
         components: [],
       },
       {
         title: 'Message',
-        value: '0 LSK',
+        value: '0 KLY',
         isHidden: true,
         components: [],
       },
     ],
     rewards: {
-      lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11: { amount: 100000 },
-      lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y31: { amount: 200000 },
-      lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y22: { amount: 300000 },
+      klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11: { amount: 100000 },
+      klydwsyfmcko6mcd357446yatromr9vzgu7eb8y31: { amount: 200000 },
+      klydwsyfmcko6mcd357446yatromr9vzgu7eb8y22: { amount: 300000 },
       total: 600000,
     },
   },
@@ -200,9 +200,9 @@ describe('StakingQueue.Summary', () => {
     const addedItemList = wrapper.find('[data-testid="stake-item"]').at(0);
     const editedItemList = wrapper.find('[data-testid="stake-item"]').at(4);
     const removedItemList = wrapper.find('[data-testid="stake-item"]').at(9);
-    expect(addedItemList).toHaveText('test110 LSKReward:  0.001 LSK');
-    expect(editedItemList).toHaveText('test310.0000001 LSK0.0000002 LSKReward:  0.002 LSK');
-    expect(removedItemList).toHaveText('test220 LSKReward:  0.003 LSK');
+    expect(addedItemList).toHaveText('test110 KLYReward:  0.001 KLY');
+    expect(editedItemList).toHaveText('test310.0000001 KLY0.0000002 KLYReward:  0.002 KLY');
+    expect(removedItemList).toHaveText('test220 KLYReward:  0.003 KLY');
   });
 
   it('calls props.nextStep with properties when confirm button is clicked', () => {

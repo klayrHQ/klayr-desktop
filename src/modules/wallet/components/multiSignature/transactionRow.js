@@ -40,11 +40,11 @@ const TransactionRow = ({ data, t, host, className }) => {
         <WalletVisual address={sender.address} className={styles.avatar} />
         <div className={styles.signDetails}>
           <p className={styles.addressTitle}>
-            {sender.title || sender.address.replace(regex.lskAddressTrunk, '$1...$3')}
+            {sender.title || sender.address.replace(regex.klyAddressTrunk, '$1...$3')}
           </p>
           {sender.publicKey && (
             <p className={styles.key}>
-              {sender.publicKey.replace(regex.lskAddressTrunk, '$1...$3')}
+              {sender.publicKey.replace(regex.klyAddressTrunk, '$1...$3')}
             </p>
           )}
         </div>
@@ -52,12 +52,12 @@ const TransactionRow = ({ data, t, host, className }) => {
       <span className={grid['col-xs-4']}>
         <WalletVisual address={recipient.address} className={styles.avatar} />
         <p className={styles.addressTitle}>
-          {recipient.address.replace(regex.lskAddressTrunk, '$1...$3')}
+          {recipient.address.replace(regex.klyAddressTrunk, '$1...$3')}
         </p>
       </span>
       <span className={grid['col-xs-2']}>
         <TransactionAmount
-          token={tokenMap.LSK.key}
+          token={tokenMap.KLY.key}
           showRounded
           sender={sender.address}
           recipient={recipient.address}

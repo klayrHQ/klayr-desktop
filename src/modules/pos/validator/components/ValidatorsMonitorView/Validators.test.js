@@ -50,7 +50,7 @@ describe('Validators monitor page', () => {
       isLoading: false,
       data: [
         {
-          address: 'lsktaa9xuys6hztyaryvx6msu279mpkn9sz6w5or2',
+          address: 'klytaa9xuys6hztyaryvx6msu279mpkn9sz6w5or2',
           consecutiveMissedBlocks: 220,
           isBanned: true,
           lastGeneratedHeight: 16695471,
@@ -64,7 +64,7 @@ describe('Validators monitor page', () => {
           validatorWeight: '0',
         },
         {
-          address: 'lsksaca4v9r3uotdzdhje3smwa49rvj2h2sn5yskt',
+          address: 'klysaca4v9r3uotdzdhje3smwa49rvj2h2sn5yskt',
           consecutiveMissedBlocks: 0,
           isBanned: false,
           lastGeneratedHeight: 16784595,
@@ -74,11 +74,11 @@ describe('Validators monitor page', () => {
           earnedRewards: '491800000000',
           status: 'punished',
           totalStakeReceived: '8771000000000',
-          username: 'liskjp',
+          username: 'klayrjp',
           validatorWeight: '0',
         },
         {
-          address: 'lskr39gqjxhepd9o5txgmups9zjhjaadfjgm5dc87',
+          address: 'klyr39gqjxhepd9o5txgmups9zjhjaadfjgm5dc87',
           consecutiveMissedBlocks: 229,
           isBanned: true,
           lastGeneratedHeight: 16739690,
@@ -161,7 +161,7 @@ describe('Validators monitor page', () => {
             params: {
               stakes: [
                 {
-                  validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+                  validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
                   amount: '100000000',
                 },
               ],
@@ -172,7 +172,7 @@ describe('Validators monitor page', () => {
               timestamp: 1653519360,
             },
             sender: {
-              address: 'lskd6yo4kkzrbjadh3tx6kz2qt5o3vy5zdnuwycmw',
+              address: 'klyd6yo4kkzrbjadh3tx6kz2qt5o3vy5zdnuwycmw',
               publicKey: 'ea62fbdd5731a748a63b593db2c22129462f47db0f066d4ed3fc70957a456ebc',
               username: 'test_del',
             },
@@ -184,7 +184,7 @@ describe('Validators monitor page', () => {
       },
       stakedValidators: {
         isLoading: false,
-        data: [{ address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11', username: 'test_del' }],
+        data: [{ address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11', username: 'test_del' }],
         loadData: jest.fn(),
         clearData: jest.fn(),
         urlSearchParams: {},
@@ -244,7 +244,7 @@ describe('Validators monitor page', () => {
 
   it.skip('displays watched validators once the watch list is populated', () => {
     wrapper = setup(props);
-    const updatedProps = { ...props, watchList: ['lsktaa9xuys6hztyaryvx6msu279mpkn9sz6w5or2'] };
+    const updatedProps = { ...props, watchList: ['klytaa9xuys6hztyaryvx6msu279mpkn9sz6w5or2'] };
     wrapper = setup(updatedProps);
     expect(props.watchedValidators.loadData).toHaveBeenCalledTimes(1);
   });
@@ -265,16 +265,16 @@ describe('Validators monitor page', () => {
     const expectedArgs = {
       limit: 100,
       offset: 0,
-      search: 'lisk',
+      search: 'klayr',
       tab: 'active',
     };
-    const updatedProps = { ...props, watchList: ['lsktaa9xuys6hztyaryvx6msu279mpkn9sz6w5or2'] };
+    const updatedProps = { ...props, watchList: ['klytaa9xuys6hztyaryvx6msu279mpkn9sz6w5or2'] };
 
     switchTab('sanctioned');
     wrapper
       .find('.filter-by-name')
       .last()
-      .simulate('change', { target: { value: 'lisk' } });
+      .simulate('change', { target: { value: 'klayr' } });
     expect(props.applyFilters).toHaveBeenCalledWith(expectedArgs, 'sanctionedValidators');
 
     wrapper = setup(updatedProps);
@@ -292,7 +292,7 @@ describe('Validators monitor page', () => {
     wrapper
       .find('.filter-by-name')
       .last()
-      .simulate('change', { target: { value: 'lisk' } });
+      .simulate('change', { target: { value: 'klayr' } });
     expect(props.applyFilters).toHaveBeenCalledWith(expectedArgs, 'standByValidators');
   });
 });

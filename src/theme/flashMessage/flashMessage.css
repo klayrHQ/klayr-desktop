@@ -64,7 +64,7 @@
 
     &::before,
     &::after {
-      background-color: var(--color-white);
+      background-color: var(--color-surface);
       content: "";
       height: 14px;
       position: absolute;

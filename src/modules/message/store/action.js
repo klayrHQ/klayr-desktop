@@ -1,5 +1,5 @@
 import { to } from 'await-to-js';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { signMessageUsingHW } from '@wallet/utils/signMessage';
 import { signMessageWithPrivateKey } from '../utils/signMessageWithPrivateKey';
 

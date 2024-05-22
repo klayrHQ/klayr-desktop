@@ -35,7 +35,7 @@ const {
   registerValidator,
   registerMultisignature,
   reportMisbehavior,
-  reclaimLSK,
+  reclaimKLY,
   claimRewards,
 } = MODULE_COMMANDS_NAME_MAP;
 
@@ -117,9 +117,9 @@ export const LayoutSchema = {
     components: [...baseComponents, ...timeComponents, PrettyJson],
     className: styles.reportValidatorMisbehavior,
   },
-  [reclaimLSK]: {
+  [reclaimKLY]: {
     components: [...baseComponents, ...timeComponents, Amount, PrettyJson],
-    className: styles.reclaimLSK,
+    className: styles.reclaimKLY,
   },
   structuredGeneralLayout: {
     components: [Module, Command, Sender, TransactionId, Fee, Nonce, GenericParams],

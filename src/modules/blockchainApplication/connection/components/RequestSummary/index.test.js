@@ -1,4 +1,4 @@
-import { codec, cryptography, validator } from '@liskhq/lisk-client';
+import { codec, cryptography, validator } from '@klayr/client';
 import { renderWithQueryClientAndWC } from 'src/utils/testHelpers';
 import { screen, fireEvent } from '@testing-library/react';
 import { useSession } from '@libs/wcm/hooks/useSession';
@@ -57,7 +57,7 @@ jest.mock('@transaction/hooks/queries/useSchemas', () => ({
   useSchemas: jest.fn(),
 }));
 jest.spyOn(codec.codec, 'decode');
-jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 jest.spyOn(validator.validator, 'validate').mockReturnValue(true);
 jest.mock('@account/hooks/useCurrentAccount');
 
@@ -80,7 +80,7 @@ useEvents.mockReturnValue({
       meta: {
         id: '1',
         params: {
-          chainId: 'lisk:00000001',
+          chainId: 'klayr:00000001',
           request: {
             params: {
               recipientChainID: '00000001',
@@ -194,7 +194,7 @@ describe('RequestSummary', () => {
     ).toBeTruthy();
     expect(
       screen.getByText(
-        '” to Lisk Desktop and re-initiate the transaction signing from the external application.'
+        '” to Klayr Desktop and re-initiate the transaction signing from the external application.'
       )
     ).toBeTruthy();
   });

@@ -23,7 +23,7 @@
     & .name {
       margin: 0;
       font-size: var(--font-size-title);
-      color: var(--color-zodiac-blue);
+      color: var(--color-colecti-dark-blue);
       font-weight: var(--font-weight-bold);
     }
 
@@ -55,7 +55,7 @@
     padding: 0;
     font-weight: 400;
     font-size: 14px;
-    color: var(--color-zodiac-blue);
+    color: var(--color-colecti-dark-blue);
 
     &.marginBottom {
       margin-bottom: 18px;
@@ -111,7 +111,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16.1px;
-    color: var(--color-zodiac-blue);
+    color: var(--color-colecti-dark-blue);
   }
 
   & .colorSlateGray {
@@ -123,7 +123,7 @@
       margin-bottom: 16px;
       font-weight: 400;
       font-size: 14px;
-      color: var(--color-zodiac-blue);
+      color: var(--color-colecti-dark-blue);
       line-height: 16.1px;
     }
   }

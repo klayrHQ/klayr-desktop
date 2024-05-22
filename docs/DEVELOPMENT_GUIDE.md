@@ -1,4 +1,4 @@
-# Lisk Development Guidelines
+# Klayr Development Guidelines
 
 Please review the different sections of our guidelines to ensure your contribution meets our standards.
 This is a live document, please expect updates and unfinished content.
@@ -14,11 +14,11 @@ This is a live document, please expect updates and unfinished content.
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[Lisk Code of Conduct](https://github.com/LiskHQ/lisk/blob/development/docs/CODE_OF_CONDUCT.md). By participating, you are
+[Klayr Code of Conduct](https://github.com/KlayrHQ/klayr/blob/development/docs/CODE_OF_CONDUCT.md). By participating, you are
 expected to uphold this code. Please report the unacceptable behavior to
-[admin@lisk.com](mailto:admin@lisk.com).
+[admin@klayr.xyz](mailto:admin@klayr.xyz).
 
 ## Project License
 
-Every repository within LiskHQ comes with a LICENSE file. Please read it
+Every repository within KlayrHQ comes with a LICENSE file. Please read it
 carefully before committing your code to one of the repositories.

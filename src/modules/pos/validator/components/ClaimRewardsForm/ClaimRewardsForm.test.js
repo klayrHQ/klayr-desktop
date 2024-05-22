@@ -72,7 +72,7 @@ describe('ClaimRewardsForm', () => {
     ],
   ]);
   useFiatRates.mockReturnValue({
-    LSK: {
+    KLY: {
       BTC: '0.00003313',
       EUR: '0.8882',
       USD: usdRate,
@@ -100,7 +100,7 @@ describe('ClaimRewardsForm', () => {
     toggleSetting: jest.fn(),
   });
   useTokenBalances.mockReturnValue({
-    data: { data: [{ chainID: '04000000', symbol: 'LSK', availableBalance: 40000000 }] },
+    data: { data: [{ chainID: '04000000', symbol: 'KLY', availableBalance: 40000000 }] },
   });
 
   const nextStep = jest.fn();

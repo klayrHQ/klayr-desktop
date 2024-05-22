@@ -33,7 +33,7 @@ class MultiStep extends React.Component {
   };
 
   prev = (moves = -1) => {
-    // On Lisk Desktop this function is not passed a number by default
+    // On Klayr Desktop this function is not passed a number by default
     const stepsBack = typeof moves === 'number' ? moves : -1;
     this.move({ moves: stepsBack });
   };

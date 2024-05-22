@@ -9,7 +9,7 @@ jest.mock('@pos/validator/hooks/queries');
 
 describe('StakeCount', () => {
   const props = {
-    address: 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
+    address: 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
     hideIcon: false,
   };
 

@@ -15,8 +15,8 @@ const TransactionTypeFigure = ({ moduleCommand, className = '', address, iconOnl
       <span>
         <TransactionAddress
           address={address}
-          bookmarks={{ LSK: [] }} // @todo why bookmarks are empty?
-          token={tokenMap.LSK.key} // @todo why this is hardcoded?
+          bookmarks={{ KLY: [] }} // @todo why bookmarks are empty?
+          token={tokenMap.KLY.key} // @todo why this is hardcoded?
           moduleCommand={moduleCommand}
         />
       </span>

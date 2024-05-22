@@ -16,7 +16,7 @@ describe('BookmarksList', () => {
 
   const store = {
     token: {
-      active: tokenMap.LSK.key,
+      active: tokenMap.KLY.key,
     },
     bookmarks,
   };
@@ -25,7 +25,7 @@ describe('BookmarksList', () => {
     const updatedStore = {
       ...store,
       bookmarks: {
-        LSK: [],
+        KLY: [],
       },
     };
     wrapper = mountWithRouterAndStore(BookmarksList, props, {}, updatedStore);
@@ -40,7 +40,7 @@ describe('BookmarksList', () => {
     expect(wrapper).not.toContainMatchingElement(EmptyState);
   });
 
-  it('should render LSK bookmarks ONLY', () => {
+  it('should render KLY bookmarks ONLY', () => {
     wrapper = mountWithRouterAndStore(BookmarksList, props, {}, store);
     expect(wrapper).toContainMatchingElement('.bookmark-list-container');
     expect(wrapper).toContainMatchingElements(props.limit, 'a.bookmark-list-row');

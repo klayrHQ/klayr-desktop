@@ -17,10 +17,10 @@ const txns = [
     moduleCommand: 'token:transfer',
     fee: '10000000',
     isPending: false,
-    sender: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11' },
+    sender: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11' },
     params: {
       amount: '200',
-      recipientAddress: 'lsk8nxtxs9ekqc3c2jjtcsusmfj2498qyjbk35teh',
+      recipientAddress: 'kly8nxtxs9ekqc3c2jjtcsusmfj2498qyjbk35teh',
       data: 'test',
     },
     block: {
@@ -34,10 +34,10 @@ const txns = [
     moduleCommand: 'token:transfer',
     fee: '10000000',
     isPending: false,
-    sender: { address: 'lskqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
+    sender: { address: 'klyqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
     params: {
       amount: '200',
-      recipientAddress: 'lsk3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
+      recipientAddress: 'kly3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
       data: '',
     },
     block: {
@@ -57,7 +57,7 @@ describe('showNotificationsForIncomingTransactions', () => {
     showNotificationsForIncomingTransactions(txns, currAcct, mockToken);
 
     expect(toast.info).toHaveBeenCalledTimes(1);
-    expect(toast.info).toHaveBeenCalledWith('Your account just received 0.000002 LSK ');
+    expect(toast.info).toHaveBeenCalledWith('Your account just received 0.000002 KLY ');
   });
 
   it('should display notifications with additional info for transactions related to current account', () => {
@@ -68,10 +68,10 @@ describe('showNotificationsForIncomingTransactions', () => {
       moduleCommand: 'token:transfer',
       fee: '10000000',
       isPending: false,
-      sender: { address: 'lskqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
+      sender: { address: 'klyqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
       params: {
         amount: '150',
-        recipientAddress: 'lsk3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
+        recipientAddress: 'kly3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
         data: 'test',
       },
       block: {
@@ -83,7 +83,7 @@ describe('showNotificationsForIncomingTransactions', () => {
 
     expect(toast.info).toHaveBeenCalledTimes(1);
     expect(toast.info).toHaveBeenCalledWith(
-      'Your account just received 0.0000015 LSK with message test'
+      'Your account just received 0.0000015 KLY with message test'
     );
   });
 
@@ -95,10 +95,10 @@ describe('showNotificationsForIncomingTransactions', () => {
         moduleCommand: 'token:transfer',
         fee: '10000000',
         isPending: false,
-        sender: { address: 'lskqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
+        sender: { address: 'klyqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
         params: {
           amount: '0',
-          recipientAddress: 'lsk3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
+          recipientAddress: 'kly3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
           data: 'test',
         },
         block: {
@@ -121,7 +121,7 @@ describe('showNotificationsForIncomingTransactions', () => {
         moduleCommand: 'pos:registerValidator',
         fee: '10000000',
         isPending: false,
-        sender: { address: 'lskqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
+        sender: { address: 'klyqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
         params: {
           name: 'test',
         },

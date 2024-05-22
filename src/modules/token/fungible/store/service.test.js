@@ -7,7 +7,7 @@ import { pricesRetrieved } from './service';
 describe('actions: service', () => {
   const getState = () => ({
     token: {
-      active: 'LSK',
+      active: 'KLY',
     },
   });
   const dispatch = jest.fn();
@@ -21,7 +21,7 @@ describe('actions: service', () => {
   describe('pricesRetrieved', () => {
     it('should dispatch pricesRetrieved action with given data', async () => {
       const tickers = {
-        LSK: {
+        KLY: {
           USD: prices.find(({ to }) => to === 'USD').rate,
           EUR: prices.find(({ to }) => to === 'EUR').rate,
           CHF: prices.find(({ to }) => to === 'CHF').rate,

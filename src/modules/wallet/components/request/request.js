@@ -101,7 +101,7 @@ const Request = () => {
               fieldName === 'recipientChain' ? field.value.chainID : field.value
             )}`
           : link;
-      }, `${LISK_DOMAIN}/send?recipient=${address}`),
+      }, `${KLAYR_DOMAIN}/send?recipient=${address}`),
     [address, state]
   );
   const mainChainApplication = useMemo(
@@ -198,7 +198,7 @@ const Request = () => {
     >
       <span className={`${styles.label}`}>
         {t(
-          'Use the sharing link to easily request any amount of tokens from Lisk Desktop or Lisk Mobile users.'
+          'Use the sharing link to easily request any amount of tokens from Klayr Desktop or Klayr Mobile users.'
         )}
       </span>
       <p>{t('Account')}</p>

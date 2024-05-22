@@ -56,8 +56,8 @@ const network = (state = initialState, action) => {
         ...state,
         networks: {
           ...state.networks,
-          LSK: {
-            ...state.networks.LSK,
+          KLY: {
+            ...state.networks.KLY,
             schemas: {
               ...action.data,
             },

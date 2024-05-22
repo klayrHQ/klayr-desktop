@@ -11,7 +11,7 @@ import styles from './summary.css';
 const Summary = ({ balanceReclaimed, nextStep, wallet, t, fees }) => {
   const history = useHistory();
   const formProps = {
-    moduleCommand: MODULE_COMMANDS_NAME_MAP.reclaimLSK,
+    moduleCommand: MODULE_COMMANDS_NAME_MAP.reclaimKLY,
   };
 
   const commandParams = {

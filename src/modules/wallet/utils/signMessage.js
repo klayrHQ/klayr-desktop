@@ -1,6 +1,6 @@
 import i18next from 'i18next';
-import { getSignedMessage } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication';
-import { IPCLedgerError } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication/utils';
+import { getSignedMessage } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
+import { IPCLedgerError } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication/utils';
 import { txStatusTypes } from '@transaction/configuration/txStatus';
 
 export const signMessageUsingHW = async ({ account, message }) => {

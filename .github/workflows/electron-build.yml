@@ -44,7 +44,7 @@ jobs:
 
       - name: Download fonts from S3
         run: |
-          aws s3 sync s3://lisk-desktop-files/fonts ./setup/react/assets/fonts/
+          aws s3 sync s3://klayr-desktop-files/fonts ./setup/react/assets/fonts/
 
       - name: Prepare for mac os app notarization
         if: startsWith(matrix.os, 'macos')

@@ -13,7 +13,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: var(--color-ultramarine-blue);
+  background: var(--color-primary);
 
   & > img.logo {
     position: absolute;
@@ -28,7 +28,7 @@
   }
 
   & > h2 {
-    color: var(--color-white-smoke);
+    color: var(--color-surface);
   }
 }
 
@@ -52,7 +52,7 @@
 .chainNameWrapper {
   & > h3 {
     font-weight: 700;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin-bottom: 0;
   }
 
@@ -90,7 +90,7 @@
   & span:last-child {
     font-size: 16px;
     font-weight: 400;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 }
 
@@ -163,7 +163,7 @@
   justify-content: space-between;
 
   & > button {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     font-family: var(--heading-font) !important;
     padding: 0px 0px !important;
     height: fit-content !important;

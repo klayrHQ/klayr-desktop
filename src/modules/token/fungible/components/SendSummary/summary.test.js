@@ -30,7 +30,7 @@ describe('Summary', () => {
       resetTransactionResult: jest.fn(),
       prevStep: jest.fn(),
       nextStep: jest.fn(),
-      token: tokenMap.LSK.key,
+      token: tokenMap.KLY.key,
       transactionJSON: {
         params: {
           recipientAddress: wallets.genesis.summary.address,
@@ -45,12 +45,12 @@ describe('Summary', () => {
       t: i18n.t,
       selectedPriority: { title: 'Normal', value: 1 },
       fees: {
-        Transaction: '1 LSK',
-        CCM: '1 LSK',
-        Initialisation: '1 LSK',
+        Transaction: '1 KLY',
+        CCM: '1 KLY',
+        Initialisation: '1 KLY',
       },
       transactionData: {
-        recipient: { value: 'lskyrwej7xuxeo39ptuyff5b524dsmnmuyvcaxkag' },
+        recipient: { value: 'klyyrwej7xuxeo39ptuyff5b524dsmnmuyvcaxkag' },
         amount: 10,
         data: 'message',
       },
@@ -84,7 +84,7 @@ describe('Summary', () => {
     expect(wrapper).toContainMatchingElement('.summary-content');
     expect(wrapper).toContainMatchingElement('.summary-footer');
     expect(wrapper.find('button.confirm-button')).toHaveText('Send');
-    expect(wrapper.find('.amount-summary')).toIncludeText('1.123 LSK');
+    expect(wrapper.find('.amount-summary')).toIncludeText('1.123 KLY');
   });
 
   it('should going to previous page', () => {

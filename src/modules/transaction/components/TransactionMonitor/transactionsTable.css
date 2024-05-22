@@ -1,7 +1,7 @@
 .tableHeader {
   position: sticky;
   top: 80px;
-  background: var(--color-white);
+  background: var(--color-surface);
   z-index: 3;
 
   & ~ a:first-of-type::before {

@@ -75,7 +75,7 @@ const AccountDetails = () => {
   const isMyAccount = queryAddress === currentAccount.metadata?.address;
   const accountName = isMyAccount ? currentAccount.metadata?.name : name;
   const appendAccountName = `-${accountName}`;
-  const fileName = `${address}${accountName ? appendAccountName : ''}-lisk-account`;
+  const fileName = `${address}${accountName ? appendAccountName : ''}-klayr-account`;
   const truncatedFilename = `${truncateAddress(fileName)}.json`;
 
   const { data: validatorData } = useValidators({

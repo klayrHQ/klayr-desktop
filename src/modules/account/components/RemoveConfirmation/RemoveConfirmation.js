@@ -13,7 +13,7 @@ const RemoveConfirmation = ({ history, location, account, onRemoveAccount }) => 
   const isHw = account?.metadata?.isHW;
   const appendAccountName = `-${accountName}`;
   const address = account?.metadata?.address;
-  const fileName = `${address}${accountName ? appendAccountName : ''}-lisk-account`;
+  const fileName = `${address}${accountName ? appendAccountName : ''}-klayr-account`;
 
   const handleCancelDialog = useCallback(() => {
     if (/modal=/g.test(location.hash)) {

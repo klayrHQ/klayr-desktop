@@ -6,10 +6,10 @@ describe('DiscreetMode Component', () => {
   let wrapper;
 
   const props = {
-    token: 'LSK',
+    token: 'KLY',
     account: {
       info: {
-        LSK: { summary: { address: 'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy' } },
+        KLY: { summary: { address: 'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy' } },
       },
     },
     isDiscreetMode: true,
@@ -37,8 +37,8 @@ describe('DiscreetMode Component', () => {
         pathname: '/explorer/transactions',
       },
       addresses: [
-        'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
-        'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
+        'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
+        'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
       ],
     };
     wrapper = setup(newProps);
@@ -51,7 +51,7 @@ describe('DiscreetMode Component', () => {
       ...props,
       location: {
         pathname: '/explorer',
-        search: '?address=lskgonvfdxt3m6mm7jaeojrj5fnxx7vwmkxq72v79',
+        search: '?address=klygonvfdxt3m6mm7jaeojrj5fnxx7vwmkxq72v79',
       },
       shouldEvaluateForOtherAccounts: true,
     };
@@ -67,8 +67,8 @@ describe('DiscreetMode Component', () => {
         pathname: '/explorer/transactions',
       },
       addresses: [
-        'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
-        'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
+        'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
+        'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
       ],
       shouldEvaluateForOtherAccounts: true,
     };

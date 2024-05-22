@@ -54,7 +54,7 @@ describe('useTokenBalances hook', () => {
   });
 
   it.skip('returns error if address is invalid', async () => {
-    const errorConfig = { params: { address: 'lsk8dwx2xdagos9v7vq6h2qnv4jnbjc95hxs7nckc' } };
+    const errorConfig = { params: { address: 'kly8dwx2xdagos9v7vq6h2qnv4jnbjc95hxs7nckc' } };
     hookResult = renderHook(() => useTokenBalances({ config: errorConfig }), { wrapper });
     const { result, waitFor } = hookResult;
 
@@ -89,7 +89,7 @@ describe('useTokenBalances hook', () => {
   });
 
   it.skip('returns error if no tokens are found', async () => {
-    const errorConfig = { params: { address: 'lsk8dwx2xdagos9v7vq6h2qnv4jnbjc95hxs7nckc' } };
+    const errorConfig = { params: { address: 'kly8dwx2xdagos9v7vq6h2qnv4jnbjc95hxs7nckc' } };
     hookResult = renderHook(() => useTokenBalances({ config: errorConfig }), { wrapper });
     const { result, waitFor } = hookResult;
 
@@ -98,7 +98,7 @@ describe('useTokenBalances hook', () => {
     expect(result.current.isSuccess).toBeTruthy();
     const expectedResponse = {
       error: true,
-      message: 'Tokens for lsk8dwx2xdagos9v7vq6h2qnv4jnbjc95hxs7nckc not found.',
+      message: 'Tokens for kly8dwx2xdagos9v7vq6h2qnv4jnbjc95hxs7nckc not found.',
     };
 
     expect(result.current.error).toEqual(expectedResponse);

@@ -45,14 +45,14 @@ describe('TransactionPriority', () => {
     composedFees: [
       {
         title: 'Transaction',
-        value: '0 LSK',
+        value: '0 KLY',
         label: 'transactionFee',
         token: mockToken,
         components: [],
       },
       {
         title: 'Message',
-        value: '0 LSK',
+        value: '0 KLY',
         isHidden: true,
         label: 'messageFee',
         token: mockToken,
@@ -154,7 +154,7 @@ describe('TransactionPriority', () => {
     expect(wrapper.find('.option-Custom')).not.toBeDisabled();
   });
 
-  it('Options buttons should be enabled/disabled correctly with loading lsk tx fee had an error', () => {
+  it('Options buttons should be enabled/disabled correctly with loading kly tx fee had an error', () => {
     wrapper.setProps({ ...props, token: mockToken, loadError: 'Error' });
     expect(wrapper.find('.option-Medium')).toBeDisabled();
     expect(wrapper.find('.option-High')).toBeDisabled();

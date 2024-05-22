@@ -14,8 +14,8 @@ import {
 } from '@hardwareWallet/store/selectors/hwSelectors';
 import {
   getConnectedHWDevices,
-  getIsInsideLiskApp,
-} from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication';
+  getIsInsideKlayrApp,
+} from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
 import { usePrevious } from 'src/utils/usePrevious';
 import DeviceToast from '@hardwareWallet/components/DeviceToast/DeviceToast';
 import { CHECK_STATUS_INTERVAL } from '@libs/hardwareWallet/ledger/constants';
@@ -31,7 +31,7 @@ export function useLedgerDeviceListener() {
   // eslint-disable-next-line consistent-return
   useEffect(() => {
     async function checkStatus() {
-      const pubKey = await getIsInsideLiskApp(currentHwDevice?.path, currentHwDevice?.accountIndex);
+      const pubKey = await getIsInsideKlayrApp(currentHwDevice?.path, currentHwDevice?.accountIndex);
       const isInsideApp = !!pubKey;
       dispatch(setCurrentHWDevice({ ...currentHwDevice, isAppOpen: isInsideApp }));
     }

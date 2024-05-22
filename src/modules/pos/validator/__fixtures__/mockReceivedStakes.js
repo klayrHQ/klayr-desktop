@@ -1,9 +1,9 @@
 /* eslint-disable import/prefer-default-export */
 
 const generateStakes = (index) => ({
-  address: `lsktzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg`,
+  address: `klytzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg`,
   amount: `1000${index}`,
-  name: `liskhq-${index}`,
+  name: `klayrhq-${index}`,
 });
 
 const data = {
@@ -11,7 +11,7 @@ const data = {
     .fill(1)
     .map((_, idx) => generateStakes(idx)),
   account: {
-    address: 'lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
+    address: 'kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
     publicKey: 'aq02qkbb35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
     name: 'genesis_56',
   },

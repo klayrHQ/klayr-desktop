@@ -15,20 +15,20 @@ describe('reducers: service', () => {
 
   it('should return updated state in case of actionTypes.pricesRetrieved', () => {
     const priceTicker = {
-      LSK: { USD: 1, EUR: 1 },
+      KLY: { USD: 1, EUR: 1 },
     };
 
     const action = {
       type: actionTypes.pricesRetrieved,
       data: {
         priceTicker,
-        activeToken: 'LSK',
+        activeToken: 'KLY',
       },
     };
 
     expect(service(state, action)).toEqual({
       priceTicker: {
-        LSK: { EUR: 1, USD: 1 },
+        KLY: { EUR: 1, USD: 1 },
       },
     });
   });

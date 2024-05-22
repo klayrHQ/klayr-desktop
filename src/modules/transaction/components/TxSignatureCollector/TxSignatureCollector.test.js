@@ -1,4 +1,4 @@
-import { cryptography, codec } from '@liskhq/lisk-client';
+import { cryptography, codec } from '@klayr/client';
 import { screen, fireEvent, waitFor } from '@testing-library/react';
 import { smartRender } from 'src/utils/testHelpers';
 import { useCurrentAccount } from 'src/modules/account/hooks';
@@ -93,7 +93,7 @@ jest.mock('@account/hooks', () => ({
     setNonceByAccount: jest.fn(),
   })),
 }));
-jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 jest.spyOn(codec.codec, 'encode');
 
 const config = {

@@ -68,14 +68,14 @@ describe('BlockchainApplications', () => {
     expect(screen.queryAllByText('name')).toBeTruthy();
     expect(screen.getByText('Chain ID')).toBeTruthy();
     expect(screen.getByText('Status')).toBeTruthy();
-    expect(screen.getByText('LSK deposited')).toBeTruthy();
+    expect(screen.getByText('KLY deposited')).toBeTruthy();
     expect(screen.getByText('Explore applications')).toBeTruthy();
     expect(screen.getByText('Wallet connections')).toBeTruthy();
 
     expect(screen.getByText('Total supply')).toBeTruthy();
     expect(screen.getByText('Staked')).toBeTruthy();
-    expect(screen.getByText('5,000,000 LSK')).toBeTruthy();
-    expect(screen.getByText('300,000 LSK')).toBeTruthy();
+    expect(screen.getByText('5,000,000 KLY')).toBeTruthy();
+    expect(screen.getByText('300,000 KLY')).toBeTruthy();
   });
 
   it('hides the banner after it is closed', () => {

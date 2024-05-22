@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { TertiaryButton } from '@theme/buttons';
 import { useCommandSchema } from '@network/hooks';
 import Icon from '@theme/Icon';

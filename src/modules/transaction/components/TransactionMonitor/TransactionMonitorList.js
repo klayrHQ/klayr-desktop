@@ -26,7 +26,7 @@ const getFields = (t) => [
   },
   {
     label: t('Sender address'),
-    placeholder: t('e.g. lskzmeyea4ead534jnq9dho5vsust6h9x552zqtor'),
+    placeholder: t('e.g. klyzmeyea4ead534jnq9dho5vsust6h9x552zqtor'),
     name: 'senderAddress',
     type: 'address',
   },

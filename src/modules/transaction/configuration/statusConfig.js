@@ -1,5 +1,5 @@
 /* eslint-disable complexity */
-import { transactions as LiskTransaction } from '@liskhq/lisk-client';
+import { transactions as KlayrTransaction } from '@klayr/client';
 import { isEmpty } from 'src/utils/helpers';
 import { txStatusTypes } from '@transaction/configuration/txStatus';
 import { calculateRemainingAndSignedMembers } from '@wallet/utils/account';
@@ -52,7 +52,7 @@ export const statusMessages = (t) => ({
   [txStatusTypes.hwMemorySizeLimitRejection]: {
     title: t('Transaction rejected'),
     message: t(
-      'Your ledger device cannot process this transaction due to device size limitation. Please connect a ledger device with a larger memory size or add your account to Lisk Desktop to complete this transaction.'
+      'Your ledger device cannot process this transaction due to device size limitation. Please connect a ledger device with a larger memory size or add your account to Klayr Desktop to complete this transaction.'
     ),
   },
   [txStatusTypes.hwCannotOpenPath]: {
@@ -63,16 +63,16 @@ export const statusMessages = (t) => ({
     title: t('Device disconnected'),
     message: t('You have disconnected the device'),
   },
-  [txStatusTypes.hwLiskAppClosed]: {
-    title: t('The Lisk application is closed'),
-    message: t('The lisk app needs to be open to perform transactions from the ledger'),
+  [txStatusTypes.hwKlayrAppClosed]: {
+    title: t('The Klayr application is closed'),
+    message: t('The klayr app needs to be open to perform transactions from the ledger'),
   },
 });
 
 const getErrorMessage = (transaction, paramSchema, errorMessage) => {
   let transactionJSON;
   try {
-    LiskTransaction.validateTransaction(transaction, paramSchema);
+    KlayrTransaction.validateTransaction(transaction, paramSchema);
 
     transactionJSON = toTransactionJSON(transaction, paramSchema);
   } catch (error) {

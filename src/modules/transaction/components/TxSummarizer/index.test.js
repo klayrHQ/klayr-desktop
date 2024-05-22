@@ -1,6 +1,6 @@
 import React from 'react';
 import { smartRender } from 'src/utils/testHelpers';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { MODULE_COMMANDS_NAME_MAP } from 'src/modules/transaction/configuration/moduleCommand';
 import mockBlockchainApplications from '@tests/fixtures/blockchainApplicationsManage';
 import wallets from '@tests/constants/wallets';
@@ -24,14 +24,14 @@ jest.mock('src/modules/auth/hooks/useNonceSync');
 
 describe('TxSummarizer', () => {
   let props;
-  const address = 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
-  jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+  const address = 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
+  jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 
   beforeEach(() => {
     props = {
       title: 'mock title',
       wallet: wallets.genesis,
-      token: 'LSK',
+      token: 'KLY',
       confirmButton: {
         label: 'Confirm',
         onClick: jest.fn(),
@@ -43,14 +43,14 @@ describe('TxSummarizer', () => {
       t: (key) => key,
       selectedPriority: { title: 'Normal', value: 1 },
       transactionData: {
-        recipient: { value: 'lskyrwej7xuxeo39ptuyff5b524dsmnmuyvcaxkag' },
+        recipient: { value: 'klyyrwej7xuxeo39ptuyff5b524dsmnmuyvcaxkag' },
         amount: 10,
         data: 'test message',
       },
       formProps: {
         isValid: true,
         moduleCommand: MODULE_COMMANDS_NAME_MAP.transfer,
-        composedFees: [{ isHidden: false, title: 'test', value: '1 LSK' }],
+        composedFees: [{ isHidden: false, title: 'test', value: '1 KLY' }],
         fields: {
           sendingChain: mockBlockchainApplications[0],
           recipientChain: { ...blockchainApplicationsExplore[0], logo: { png: '', svg: '' } },
@@ -122,7 +122,7 @@ describe('TxSummarizer', () => {
     useNonceSync.mockReturnValue({ onChainNonce: '2' });
     const wrapper = smartRender(TxSummarizer, props, config).wrapper;
     expect(wrapper.find('.fee-value-test')).toExist();
-    expect(wrapper.find('.fee-value-test').text()).toContain('1 LSK');
+    expect(wrapper.find('.fee-value-test').text()).toContain('1 KLY');
 
     // multisig account
     const newProps = {
@@ -149,7 +149,7 @@ describe('TxSummarizer', () => {
       formProps: {
         isValid: true,
         moduleCommand: MODULE_COMMANDS_NAME_MAP.registerMultisignature,
-        composedFees: { 'Initialization Fee': '1 LSK', Transaction: '1 LSK' },
+        composedFees: { 'Initialization Fee': '1 KLY', Transaction: '1 KLY' },
         fields: {
           token: mockTokensBalance.data[0],
         },
@@ -182,7 +182,7 @@ describe('TxSummarizer', () => {
         composedFees: [
           {
             label: 'TransactionFee',
-            value: '0.0023 LSK',
+            value: '0.0023 KLY',
           },
         ],
         fields: {

@@ -55,7 +55,7 @@ const Regular = ({
   const goToWallet = async () => {
     // this is buggy at the moment
     if (
-      joinModuleAndCommand(transactions.signedTransaction) === MODULE_COMMANDS_NAME_MAP.reclaimLSK
+      joinModuleAndCommand(transactions.signedTransaction) === MODULE_COMMANDS_NAME_MAP.reclaimKLY
     ) {
       await queryClient.invalidateQueries({ queryKey: [LEGACY] });
     }
@@ -96,7 +96,7 @@ const Regular = ({
               error: status.message,
               errorMessage: message,
               serviceUrl: network.serviceUrl,
-              liskCoreVersion: network.networkVersion,
+              klayrCoreVersion: network.networkVersion,
               application,
             })}
             target="_top"

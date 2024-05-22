@@ -55,7 +55,7 @@ describe('SessionManager', () => {
   });
 
   useAccounts.mockReturnValue({
-    accounts: [{ metadata: { address: 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt' } }],
+    accounts: [{ metadata: { address: 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt' } }],
   });
 
   it('Displays a button to add a new connection', () => {

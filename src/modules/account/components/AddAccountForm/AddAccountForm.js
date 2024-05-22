@@ -122,11 +122,11 @@ const AddAccountFormWithDerivationPath = (props) => {
         <label className={`${styles.fieldGroup} ${styles.checkboxField}`}>
           <Toggle isCheckbox setting={settingsConst.keys.enableAccessToLegacyAccounts} />
           <span className={styles.labelName}>
-            {t('Enable access to legacy Lisk accounts')}
+            {t('Enable access to legacy Klayr accounts')}
             <Tooltip position="bottom">
               <span>
                 {t(
-                  'Enable this option to access your Lisk accounts created using Lisk v3 protocol or older.'
+                  'Enable this option to access your Klayr accounts created using Klayr v3 protocol or older.'
                 )}
               </span>
             </Tooltip>

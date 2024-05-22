@@ -33,7 +33,7 @@ describe('TransactionResult RequestedTxStatus', () => {
         params: {
           amount: BigInt('1000000000000'),
           data: '',
-          recipientAddress: Buffer.from('lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy', 'hex'),
+          recipientAddress: Buffer.from('klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy', 'hex'),
           tokenID: Buffer.from('0000000000000000', 'hex'),
         },
         id: Buffer.from('3d49adde25a12ca34c5893f645ceed395220d1a936e46b9412a2bb77b68e3583', 'hex'),
@@ -50,10 +50,10 @@ describe('TransactionResult RequestedTxStatus', () => {
     resetTransactionResult: jest.fn(),
     account: accounts.multiSig,
     application: {
-      chainName: 'lisk',
+      chainName: 'klayr',
       chainID: '04000000',
       networkType: 'devnet',
-      serviceURLs: [{ http: 'http://devnet-service.liskdev.net:9901' }],
+      serviceURLs: [{ http: 'http://devnet-service.klayr.xyz:9901' }],
     },
   };
   const transaction = {
@@ -66,7 +66,7 @@ describe('TransactionResult RequestedTxStatus', () => {
     params: {
       amount: '1000000000000',
       data: '',
-      recipientAddress: 'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
+      recipientAddress: 'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
       tokenID: '0000000000000000',
     },
   };

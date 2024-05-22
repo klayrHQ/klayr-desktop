@@ -19,8 +19,8 @@ jest.mock('src/modules/search/hooks/useSearch', () => ({
 }));
 jest.mock('@token/fungible/hooks/queries');
 
-const accountAddress = 'lskgtrrftvoxhtknhamjab5wenfauk32z9pzk79uj';
-const secondAccountAddress = 'lskwcumkptb6vk964qcxkb2h9gxsznaa8sqmyeqf6';
+const accountAddress = 'klygtrrftvoxhtknhamjab5wenfauk32z9pzk79uj';
+const secondAccountAddress = 'klywcumkptb6vk964qcxkb2h9gxsznaa8sqmyeqf6';
 
 describe('SearchBar', () => {
   const config = {
@@ -67,7 +67,7 @@ describe('SearchBar', () => {
 
   it('should render accounts data properly based on user data input', () => {
     useSearch.mockReturnValueOnce({
-      addresses: { address: accountAddress, name: 'lisker' },
+      addresses: { address: accountAddress, name: 'klayrer' },
       validators: [],
       transactions: [],
       blocks: [],
@@ -158,7 +158,7 @@ describe('SearchBar', () => {
 
   it('should use keyboard navigation to select search result for address', () => {
     useSearch.mockReturnValue({
-      addresses: { address: accountAddress, name: 'lisker' },
+      addresses: { address: accountAddress, name: 'klayrer' },
       validators: [],
       transactions: [],
       blocks: [],
@@ -232,7 +232,7 @@ describe('SearchBar', () => {
 
   it('should redirect to a different page if user do a click on selected row for address', () => {
     useSearch.mockReturnValueOnce({
-      addresses: { address: accountAddress, name: 'lisker' },
+      addresses: { address: accountAddress, name: 'klayrer' },
       validators: [],
       transactions: [],
       blocks: [],

@@ -2,7 +2,7 @@
 /* eslint-disable max-lines */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { transactions, cryptography, codec } from '@liskhq/lisk-client';
+import { transactions, cryptography, codec } from '@klayr/client';
 import { to } from 'await-to-js';
 import { MODULE_COMMANDS_NAME_MAP } from 'src/modules/transaction/configuration/moduleCommand';
 import { DEFAULT_NUMBER_OF_SIGNATURES } from '@transaction/configuration/transactions';
@@ -17,10 +17,10 @@ import { signTransactionByHW } from './hwManager';
 import { fromTransactionJSON } from './encoding';
 import { joinModuleAndCommand, splitModuleAndCommand } from './moduleCommand';
 
-const { transfer, transferCrossChain, stake, reclaimLSK, registerMultisignature } =
+const { transfer, transferCrossChain, stake, reclaimKLY, registerMultisignature } =
   MODULE_COMMANDS_NAME_MAP;
 
-export const MESSAGE_TAG_MULTISIG_REG = 'LSK_RMSG_';
+export const MESSAGE_TAG_MULTISIG_REG = 'KLY_RMSG_';
 
 export const convertStringToBinary = (value) => Buffer.from(value, 'hex');
 export const convertBinaryToString = (value) => {
@@ -91,7 +91,7 @@ const getTransactionAmount = ({ module, command, params = {} }) => {
   if (
     moduleCommand === transfer ||
     moduleCommand === transferCrossChain ||
-    moduleCommand === reclaimLSK
+    moduleCommand === reclaimKLY
   ) {
     return params.amount;
   }
@@ -128,7 +128,7 @@ export const getTransactionValue = (transactionJSON, feeToken, appsMetaTokens) =
         `${routes.transactionDetails.path}?transactionID=${id}&showParams=true`
       ),
     [MODULE_COMMANDS_NAME_MAP.registerValidator]: () => params.name,
-    [MODULE_COMMANDS_NAME_MAP.reclaimLSK]: (data) =>
+    [MODULE_COMMANDS_NAME_MAP.reclaimKLY]: (data) =>
       getTokenWithSymbol(getTransactionAmount(data), feeToken),
     [MODULE_COMMANDS_NAME_MAP.stake]: (data) =>
       getTokenWithSymbol(getTransactionAmount(data), feeToken),

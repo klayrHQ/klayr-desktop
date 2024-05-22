@@ -84,7 +84,7 @@ describe('RemoveConfirmationScreen', () => {
   });
 
   it('should download JSON when download button is clicked', () => {
-    props.account.metadata.address = 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
+    props.account.metadata.address = 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
 
     const spyOnJSONDownload = jest.spyOn(txUtils, 'downloadJSON');
     const wrapper = renderWithRouter(RemoveConfirmationScreen, props);
@@ -94,7 +94,7 @@ describe('RemoveConfirmationScreen', () => {
 
     expect(spyOnJSONDownload).toHaveBeenCalledWith(
       props.account,
-      `${address}-${name}-lisk-account`
+      `${address}-${name}-klayr-account`
     );
   });
 });

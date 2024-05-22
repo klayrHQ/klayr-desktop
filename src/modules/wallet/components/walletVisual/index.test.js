@@ -5,7 +5,7 @@ import WalletVisual from './index';
 
 describe('WalletVisual', () => {
   it.skip('should create account visual of an address', () => {
-    const wrapper = mount(<WalletVisual address="lsks6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6" />);
+    const wrapper = mount(<WalletVisual address="klys6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6" />);
 
     // should render an svg element
     expect(wrapper.find('svg')).toHaveLength(1);

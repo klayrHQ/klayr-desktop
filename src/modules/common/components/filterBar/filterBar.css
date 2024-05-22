@@ -17,12 +17,12 @@
 
 .filter {
   align-items: center;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   border: 1px solid var(--color-platinum);
   border-radius: var(--border-radius-standard);
   box-shadow: var(--box-shadow-standard);
   box-sizing: border-box;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   display: flex;
   height: 32px;
   margin: 4px 10px 4px 0;
@@ -73,7 +73,7 @@
   @mixin contentSmallest;
 
   align-items: center;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   display: flex;
   height: 32px;
   margin: 4px 15px 4px 0;

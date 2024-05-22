@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { validateAmount } from 'src/utils/validators';
 import { convertFromBaseDenom, convertToBaseDenom } from '@token/fungible/utils/helpers';
 import { selectSearchParamValue } from 'src/utils/searchParams';
-import { selectLSKAddress } from 'src/redux/selectors';
+import { selectKLYAddress } from 'src/redux/selectors';
 import { regex } from 'src/const/regex';
 import usePosToken from './usePosToken';
 
@@ -56,7 +56,7 @@ const useStakeAmountField = (initialValue) => {
 
   const { i18n } = useTranslation();
   const balance = Number(token?.availableBalance);
-  const host = useSelector(selectLSKAddress);
+  const host = useSelector(selectKLYAddress);
   const searchDetails = window.location.href.replace(/.*[?]/, '');
   const address = selectSearchParamValue(`?${searchDetails}`, 'validatorAddress');
   const staking = useSelector((state) => state.staking);

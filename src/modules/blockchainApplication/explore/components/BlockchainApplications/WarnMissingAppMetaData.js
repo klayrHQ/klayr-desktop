@@ -7,7 +7,7 @@ import Icon from 'src/theme/Icon';
 import styles from './WarnMissingAppMetaData.css';
 
 const sideChainRegistrationLink =
-  'https://lisk.com/documentation/beta/build-blockchain/register-sidechain.html#register-off-chain-data-in-the-app-registry';
+  'https://klayr.xyz/documentation/build-blockchain/register-sidechain.html#register-off-chain-data-in-the-app-registry';
 
 const WarnMissingAppMetaData = (props) => {
   const theme = useTheme();

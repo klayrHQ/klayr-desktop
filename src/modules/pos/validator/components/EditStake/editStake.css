@@ -2,7 +2,7 @@
 
 :root {
   --horizontal-margin: calc(var(--side-bar-shrunk-size) * 2);
-  --color-fait-value: var(--color-ink-blue);
+  --color-fait-value: var(--color-azule-dark);
   --color-balance-bg: transparent;
   --balance-border: 0.5px solid var(--color-extra-light-gray);
   --balance-shadow: 0 4px 10px rgba(234, 234, 234, 0.36);
@@ -10,7 +10,7 @@
 
 :root [data-theme="dark"] {
   --color-fait-value: #8c8c8f;
-  --color-balance-bg: var(--color-zodiac-blue--satin-deep-black);
+  --color-balance-bg: var(--color-colecti-dark-blue--satin-deep-black);
   --balance-border: none;
   --balance-shadow: none;
 }
@@ -140,7 +140,7 @@
   & > span:last-child {
     @mixin contentSmall semi-bold;
 
-    color: var(--color-ultramarine-blue) !important;
+    color: var(--color-primary) !important;
     font-size: var(--paragraph-font-size-s);
   }
 }

@@ -1,4 +1,4 @@
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { createEvent, fireEvent, screen, waitFor } from '@testing-library/react';
 import { smartRender } from 'src/utils/testHelpers';
 import mockSavedAccounts from '@tests/fixtures/accounts';

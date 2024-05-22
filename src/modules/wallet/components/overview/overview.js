@@ -80,7 +80,7 @@ const Overview = ({ isWalletRoute, history }) => {
         isBanned,
         pomHeight: pomHeights ? pomHeights[pomHeights.length - 1] : 0,
         readMore: () => {
-          const url = 'https://lisk.com/blog/posts/lisk-staking-process';
+          const url = 'https://klayr.xyz/blog/posts/klayr-staking-process';
           window.open(url, 'rel="noopener noreferrer"');
         },
       });

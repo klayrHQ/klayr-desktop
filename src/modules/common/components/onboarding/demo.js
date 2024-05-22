@@ -8,15 +8,15 @@ const finalCallback = console.log;
 
 const getOnboardingSlides = () => [
   {
-    title: 'Welcome to Lisk Validators!',
+    title: 'Welcome to Klayr Validators!',
     content:
-      'Lisk blockchain network is based on a Proof of Stake consensus algorithm, in which 101 validators are chosen to run the network by the community.',
-    illustration: 'welcomeLiskValidators',
+      'Klayr blockchain network is based on a Proof of Stake consensus algorithm, in which 101 validators are chosen to run the network by the community.',
+    illustration: 'welcomeKlayrValidators',
   },
   {
     title: 'Your voice matters',
     content:
-      'In this section of Lisk you can stake for up to 101 validators to run Lisk’s blockchain network, and by doing so have a real impact on the Lisk ecosystem.',
+      'In this section of Klayr you can stake for up to 101 validators to run Klayr’s blockchain network, and by doing so have a real impact on the Klayr ecosystem.',
     illustration: 'yourVoiceMatters',
   },
 ];

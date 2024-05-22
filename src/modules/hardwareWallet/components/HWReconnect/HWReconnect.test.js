@@ -17,6 +17,6 @@ describe('HWReconnect', () => {
       screen.getByText('Please reconnect your hardware wallet to sign this transaction')
     ).toBeInTheDocument();
     expect(screen.getByText(mockSavedAccounts[0].metadata.name)).toBeInTheDocument();
-    expect(screen.getByText('lsk3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d')).toBeInTheDocument();
+    expect(screen.getByText('kly3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d')).toBeInTheDocument();
   });
 });

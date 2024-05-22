@@ -28,13 +28,13 @@ Then(
 );
 
 Then('the first transaction row should contain latest transaction details', async () => {
-  // Fix this with https://github.com/LiskHQ/lisk-desktop/issues/5547
+  // Fix this with https://github.com/KlayrHQ/klayr-desktop/issues/5547
   // await expect(fixture.page.locator('.transactions-row').nth(0)).toContainText(/Token transfer/i);
   // await expect(fixture.page.locator('.transactions-row').nth(0)).toContainText(/Today at/i);
 });
 
 Then('I should see event table details', async () => {
-  // Fix this with https://github.com/LiskHQ/lisk-desktop/issues/5547
+  // Fix this with https://github.com/KlayrHQ/klayr-desktop/issues/5547
   // await expect(
   //   fixture.page.locator('.transaction-events-header').filter({ hasText: 'Block height' })
   // ).toBeVisible();

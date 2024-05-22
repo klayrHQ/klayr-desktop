@@ -36,10 +36,10 @@ describe('Setting', () => {
 
   const account = {
     info: {
-      LSK: {
+      KLY: {
         ...wallets.genesis,
         isValidator: false,
-        username: 'lisk-desktop',
+        username: 'klayr-desktop',
       },
     },
   };
@@ -49,7 +49,7 @@ describe('Setting', () => {
 
   const props = {
     transactions: { pending: [] },
-    account: { token: 'LSK', passphrase: 'sample_passphrase' },
+    account: { token: 'KLY', passphrase: 'sample_passphrase' },
     settingsUpdated: jest.fn(),
     settings,
     t,

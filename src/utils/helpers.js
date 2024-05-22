@@ -46,8 +46,8 @@ export const getErrorReportMailto = ({
   errorMessage,
   application,
 }) => {
-  const recipient = 'desktopdev@lisk.com';
-  const subject = `User Reported Error - Lisk - ${VERSION}`; // eslint-disable-line no-undef
+  const recipient = 'dev@klayr.xyz';
+  const subject = `User Reported Error - Klayr - ${VERSION}`; // eslint-disable-line no-undef
   const transaction = JSON.stringify(error?.transaction, undefined, 2);
   const transactionError = JSON.stringify(error?.error, undefined, 2);
   const { chainName, chainID, networkType, serviceURLs } = application;

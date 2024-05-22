@@ -9,7 +9,7 @@ jest.useRealTimers();
 jest.spyOn(useCustomQuerySpy, 'useCustomQuery');
 
 describe('useRewardsClaimable', () => {
-  const config = { params: { address: 'lsktzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg' } };
+  const config = { params: { address: 'klytzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg' } };
 
   it('fetching data correctly', async () => {
     const { result, waitFor } = renderHook(() => useRewardsClaimable({ config }), { wrapper });

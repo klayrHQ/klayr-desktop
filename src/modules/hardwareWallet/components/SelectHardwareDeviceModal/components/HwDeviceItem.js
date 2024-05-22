@@ -4,7 +4,7 @@ import CheckBox from '@theme/CheckBox';
 import Icon from '@theme/Icon';
 import { selectCurrentHWDevicePath } from '@hardwareWallet/store/selectors/hwSelectors';
 import { setCurrentHWDevice } from '@hardwareWallet/store/actions';
-import { getPubKey } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication';
+import { getPubKey } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
 import { TertiaryButton } from '@theme/buttons';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';

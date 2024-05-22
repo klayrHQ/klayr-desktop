@@ -128,7 +128,7 @@ const signAndDispatchTransaction = async (
     signTransaction({
       transactionJSON,
       wallet,
-      schema: state.network.networks.LSK.moduleCommandSchemas[formProps.moduleCommand],
+      schema: state.network.networks.KLY.moduleCommandSchemas[formProps.moduleCommand],
       chainID: selectCurrentApplicationChainID(state),
       privateKey,
       senderAccount,

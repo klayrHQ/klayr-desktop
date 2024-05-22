@@ -12,7 +12,7 @@ describe('Web socket', () => {
       const requests = [
         {
           method: 'account.get',
-          params: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
+          params: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
         },
       ];
       const emit = jest.fn().mockImplementation((evtName, params, callback) => {
@@ -31,7 +31,7 @@ describe('Web socket', () => {
         [
           {
             method: 'account.get',
-            params: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
+            params: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
           },
         ],
         expect.anything() // callback function

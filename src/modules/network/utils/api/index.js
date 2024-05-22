@@ -54,7 +54,7 @@ const peerFilters = {
 
 /**
  * Retrieves list of peers which
- * are discoverable by Lisk Service
+ * are discoverable by Klayr Service
  */
 export const getPeers = ({ network, params }) => {
   const normParams = {};

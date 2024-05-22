@@ -2,7 +2,7 @@
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   font-size: 13px;
 
   &:last-child {
@@ -31,6 +31,6 @@
   }
 
   & .fiatBalance {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 }

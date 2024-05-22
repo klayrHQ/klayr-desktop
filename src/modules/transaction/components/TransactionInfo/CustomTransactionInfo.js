@@ -12,7 +12,7 @@ import GenericTxParams from '../GenericTxParams';
 
 export default (props) => {
   switch (props.formProps.moduleCommand) {
-    case MODULE_COMMANDS_NAME_MAP.reclaimLSK:
+    case MODULE_COMMANDS_NAME_MAP.reclaimKLY:
       return <Reclaim {...props} />;
     case MODULE_COMMANDS_NAME_MAP.registerValidator:
       return <RegisterValidator {...props} />;

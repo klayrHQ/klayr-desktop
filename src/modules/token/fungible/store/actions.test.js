@@ -20,7 +20,7 @@ describe('actions: transactions', () => {
     const state = getState();
 
     const activeAccount = {
-      ...state.wallet.info.LSK,
+      ...state.wallet.info.KLY,
       hwInfo: {
         deviceModel: 'Ledger Nano S',
       },
@@ -30,7 +30,7 @@ describe('actions: transactions', () => {
       ...state,
       wallet: {
         info: {
-          LSK: activeAccount,
+          KLY: activeAccount,
         },
         hwInfo: {
           deviceModel: 'Ledger Nano S',

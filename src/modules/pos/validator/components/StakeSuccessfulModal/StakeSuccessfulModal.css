@@ -19,7 +19,7 @@
   }
 
   & .messageLabel {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin-top: 25px;
     text-align: center;
     column-gap: 2px;
@@ -27,7 +27,7 @@
   }
 
   & .stakedHeader {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & .footer {

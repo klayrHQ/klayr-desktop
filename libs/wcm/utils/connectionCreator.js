@@ -10,7 +10,7 @@ export async function createSignClient() {
         name: pkg.name,
         description: pkg.description,
         url: pkg.homepage,
-        icons: ['https://lisk.com/documentation/_/img/lisk-symbol.svg'],
+        icons: ['https://klayr.xyz/documentation/_/img/klayr-symbol.svg'],
       },
     })
   );

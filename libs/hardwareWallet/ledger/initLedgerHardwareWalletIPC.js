@@ -1,7 +1,7 @@
 import { ledgerDeviceListener } from '@libs/hardwareWallet/ledger/ledgerDeviceListener';
-import { ledgerLiskAppIPCChannel } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel';
+import { ledgerKlayrAppIPCChannel } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel';
 
 export function initLedgerHardwareWalletIPC(win) {
   ledgerDeviceListener(win);
-  ledgerLiskAppIPCChannel();
+  ledgerKlayrAppIPCChannel();
 }

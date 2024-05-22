@@ -31,7 +31,7 @@ const win = {
     // Enables DevTools
     const { DEBUG } = process.env();
 
-    if (LISK_ENABLE_DEV_TOOL || DEBUG) {
+    if (KLAYR_ENABLE_DEV_TOOL || DEBUG) {
       win.browser.devtools = true;
       electronLocalshortcut.register(win.browser, 'CmdOrCtrl+Shift+I', () => {
         win.browser.webContents.toggleDevTools();

@@ -8,7 +8,7 @@ jest.mock('../actions/staking', () => ({ stakesConfirmed: jest.fn() }));
 
 describe('Middleware: Validators', () => {
   const next = jest.fn();
-  const watchList = ['lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11'];
+  const watchList = ['klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11'];
   const store = {
     dispatch: jest.fn(),
     getState: () => ({
@@ -27,11 +27,11 @@ describe('Middleware: Validators', () => {
     const actions = [
       {
         type: actionTypes.addedToWatchList,
-        data: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y12' },
+        data: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y12' },
       },
       {
         type: actionTypes.removedFromWatchList,
-        data: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y13' },
+        data: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y13' },
       },
     ];
     actions.map((action) => middleware(store)(next)(action));

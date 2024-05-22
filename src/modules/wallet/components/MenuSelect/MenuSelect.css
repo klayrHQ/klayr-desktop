@@ -51,7 +51,7 @@
 }
 
 .loading {
-  color: var(--color-ultramarine-blue);
+  color: var(--color-primary);
   margin-right: 16px;
 
   & > span {

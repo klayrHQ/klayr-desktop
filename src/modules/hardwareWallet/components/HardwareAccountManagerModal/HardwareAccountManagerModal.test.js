@@ -40,7 +40,7 @@ describe('HardwareAccountManagerModal', () => {
     expect(screen.getByText('Import account from hardware wallet')).toBeTruthy();
     expect(
       screen.getByText(
-        'Please open the Lisk app on your hardware wallet device to see your accounts.'
+        'Please open the Klayr app on your hardware wallet device to see your accounts.'
       )
     ).toBeTruthy();
   });

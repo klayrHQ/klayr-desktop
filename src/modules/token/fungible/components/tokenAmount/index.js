@@ -16,10 +16,10 @@ const trim = (value) => {
 const getInt = (value) => value.replace(IntegerReg, '');
 
 /**
- * Displays the LSK amount with Token sign next to the value
+ * Displays the KLY amount with Token sign next to the value
  */
 const TokenAmount = ({
-  isLsk,
+  isKly,
   className,
   val,
   showRounded,
@@ -31,7 +31,7 @@ const TokenAmount = ({
 }) => {
   if (val === undefined) return <span />;
 
-  const converted = isLsk ? convertFromBaseDenom(val) : convertFromBaseDenom(val, token);
+  const converted = isKly ? convertFromBaseDenom(val) : convertFromBaseDenom(val, token);
 
   const amountValue = useMemo(() => {
     let value = !convert ? val : converted;
@@ -47,7 +47,7 @@ const TokenAmount = ({
   return (
     <Wrapper {...(className && { className })}>
       <FormattedNumber val={amountValue} />
-      {isLsk ? ' LSK' : ` ${token?.symbol || ''}`}
+      {isKly ? ' KLY' : ` ${token?.symbol || ''}`}
     </Wrapper>
   );
 };

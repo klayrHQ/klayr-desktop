@@ -26,12 +26,12 @@ describe('ClaimRewardsSummary', () => {
       composedFees: [
         {
           title: 'Transaction',
-          value: '0 LSK',
+          value: '0 KLY',
           components: [],
         },
         {
           title: 'Message',
-          value: '0 LSK',
+          value: '0 KLY',
           isHidden: true,
           components: [],
         },

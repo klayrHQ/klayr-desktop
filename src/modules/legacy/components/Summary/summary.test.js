@@ -82,9 +82,9 @@ useTransactionEstimateFees.mockReturnValue({
 });
 
 describe('Reclaim balance Summary', () => {
-  const wallet = { info: { LSK: accounts.non_migrated } };
-  const token = { active: tokenMap.LSK.key };
-  const network = { networks: { LSK: { networkIdentifier: 'sample_identifier' } } };
+  const wallet = { info: { KLY: accounts.non_migrated } };
+  const token = { active: tokenMap.KLY.key };
+  const network = { networks: { KLY: { networkIdentifier: 'sample_identifier' } } };
   const state = {
     wallet,
     token,
@@ -98,7 +98,7 @@ describe('Reclaim balance Summary', () => {
       location: { search: '' },
     },
     t: (key) => key,
-    wallet: wallet.info.LSK,
+    wallet: wallet.info.KLY,
     token,
     network,
     balanceReclaimed: jest.fn(),
@@ -123,7 +123,7 @@ describe('Reclaim balance Summary', () => {
     // Assert
     expect(html).toContain(accounts.non_migrated.legacy.address);
     expect(html).toContain(truncateAddress(accounts.non_migrated.summary.address, 'medium'));
-    expect(html).toContain('136 LSK');
+    expect(html).toContain('136 KLY');
     expect(wrapper).toContainMatchingElement('.tx-fee-section');
     expect(html).toContain('confirm-button');
   });
@@ -142,11 +142,11 @@ describe('Reclaim balance Summary', () => {
     // Assert
     expect(props.nextStep).toBeCalledWith({
       formProps: {
-        moduleCommand: 'legacy:reclaimLSK',
+        moduleCommand: 'legacy:reclaimKLY',
       },
       transactionJSON: {
         module: 'legacy',
-        command: 'reclaimLSK',
+        command: 'reclaimKLY',
         params: {
           amount: accounts.non_migrated.legacy.balance,
         },

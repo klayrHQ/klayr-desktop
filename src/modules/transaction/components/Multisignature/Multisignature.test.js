@@ -13,12 +13,12 @@ import { toTransactionJSON } from '../../utils/encoding';
 jest.mock('copy-to-clipboard');
 jest.mock('../../utils/encoding');
 
-jest.mock('@liskhq/lisk-client', () => ({
-  ...jest.requireActual('@liskhq/lisk-client'),
+jest.mock('@klayr/client', () => ({
+  ...jest.requireActual('@klayr/client'),
   cryptography: {
-    ...jest.requireActual('@liskhq/lisk-client').cryptography,
+    ...jest.requireActual('@klayr/client').cryptography,
     address: {
-      getLisk32AddressFromPublicKey: jest.fn(() => 'lskdgtenb76rf93bzd56cqn6ova46wfvoesbk4hnd'),
+      getKlayr32AddressFromPublicKey: jest.fn(() => 'klydgtenb76rf93bzd56cqn6ova46wfvoesbk4hnd'),
     },
   },
 }));
@@ -41,7 +41,7 @@ describe('TransactionResult Multisignature', () => {
         params: {
           tokenID: Buffer.from('0400000100000000', 'hex'),
           amount: BigInt('9140968487542404274'),
-          recipientAddress: Buffer.from('lskr8xo6fkzg2m3fhgsofbnfozcn7nnsdgbma6e42', 'hex'),
+          recipientAddress: Buffer.from('klyr8xo6fkzg2m3fhgsofbnfozcn7nnsdgbma6e42', 'hex'),
           data: 'survey twist collect recipe morning reunion crop loyal celery',
         },
         signatures: [],
@@ -74,7 +74,7 @@ describe('TransactionResult Multisignature', () => {
     params: {
       amount: '1000000000000',
       data: '',
-      recipientAddress: 'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
+      recipientAddress: 'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
       tokenID: '0000000000000000',
     },
     id: '94aa29aa94c55323c3e4b8a1409b879f1766477a84bb028143ac10aa7f44b217',

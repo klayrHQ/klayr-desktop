@@ -2,7 +2,7 @@
 import React from 'react';
 import grid from 'flexboxgrid/dist/flexboxgrid.css';
 import { withTranslation } from 'react-i18next';
-import { passphrase as LiskPassphrase } from '@liskhq/lisk-client';
+import { passphrase as KlayrPassphrase } from '@klayr/client';
 import { PrimaryButton, TertiaryButton } from 'src/theme/buttons';
 import styles from './passphraseRenderer.css';
 
@@ -74,7 +74,7 @@ class PassphraseRenderer extends React.Component {
 
   // eslint-disable-next-line class-methods-use-this
   assembleWordOptions(values, missing) {
-    const wordsList = LiskPassphrase.Mnemonic.wordlists.english.filter(
+    const wordsList = KlayrPassphrase.Mnemonic.wordlists.english.filter(
       (word) => !values.includes(word)
     );
     const numberOfOptions = 3;

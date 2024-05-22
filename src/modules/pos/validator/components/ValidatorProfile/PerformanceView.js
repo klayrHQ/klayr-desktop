@@ -56,7 +56,7 @@ const ActiveValidator = ({ theme, t }) => (
 const StandByValidator = ({ theme, t }) => (
   <div className={`${styles.validatorDescription} ${theme}`}>
     <p>
-      {t(`The validator has at least 1,000 LSK validator weight, but is not among the
+      {t(`The validator has at least 1,000 KLY validator weight, but is not among the
       top 101 by validator weight.`)}
     </p>
     <p>
@@ -71,7 +71,7 @@ const IneligibleValidator = ({ theme, t }) => (
   <div className={`${styles.validatorDescription} ${theme}`}>
     <p>
       {t(
-        'The validator weight is below 1,000 LSK meaning that the validator is not eligible to generate.'
+        'The validator weight is below 1,000 KLY meaning that the validator is not eligible to generate.'
       )}
     </p>
   </div>
@@ -162,7 +162,7 @@ const PerformanceView = ({ data }) => {
               <div className={`${styles.title} ${theme}`}>
                 <div className={`${grid.row} ${styles.rewardContainer}`}>
                   <div className={grid['col-md-6']}>
-                    <span>{t(`Rewards (${token?.symbol ?? 'LSK'})`)}</span>
+                    <span>{t(`Rewards (${token?.symbol ?? 'KLY'})`)}</span>
                     <div className={styles.performanceValue}>
                       <FormattedNumber val={Number(rewardValue || 0).toFixed(4)} />
                     </div>

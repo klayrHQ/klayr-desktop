@@ -10,7 +10,7 @@ import Summary from './summary';
 const mapStateToProps = (state) => ({
   account: selectActiveTokenAccount(state),
   network: state.network,
-  networkIdentifier: state.network.networks.LSK.networkIdentifier,
+  networkIdentifier: state.network.networks.KLY.networkIdentifier,
 });
 
 const dispatchToProps = {

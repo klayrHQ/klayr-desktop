@@ -7,7 +7,7 @@ describe('htmlStringToReact util', () => {
       <h1>Dummy title</h1>
       <span>
         <p>before <strong>Nested</strong> tags</p>
-        <a href="https://github.com/LiskHQ/lisk-desktop/issues/1234">#1234</a>
+        <a href="https://github.com/KlayrHQ/klayr-desktop/issues/1234">#1234</a>
       </span>
       <ul>
         <li>sibling</li>
@@ -33,7 +33,7 @@ describe('htmlStringToReact util', () => {
       <h1>Dummy title</h1>
       <p>
         <span>before <strong>Nested</strong> tags</span>
-        <a href="https://github.com/LiskHQ/lisk-desktop/issues/1234">#1234</a>
+        <a href="https://github.com/KlayrHQ/klayr-desktop/issues/1234">#1234</a>
       </p>
     </div>`;
 
@@ -54,7 +54,7 @@ describe('htmlStringToReact util', () => {
     const wrapper = mount(htmlStringToReact(dummyHtml));
 
     expect(wrapper.find('a').prop('href')).toBe(
-      'https://github.com/LiskHQ/lisk-desktop/issues/5923'
+      'https://github.com/KlayrHQ/klayr-desktop/issues/5923'
     );
   });
 

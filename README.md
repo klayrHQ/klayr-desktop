@@ -41,8 +41,8 @@ _Note_:
 For _Windows_ users, make sure to set the correct [msvs_version](https://www.npmjs.com/package/node-gyp#on-windows) config for installing and packing the Lisk Desktop application.
 
 ```
-git clone https://github.com/LiskHQ/lisk-desktop.git
-cd lisk-desktop
+git clone https://github.com/KlayrHQ/klayr-desktop.git
+cd klayr-desktop
 nvm use
 yarn --cwd app && yarn
 yarn run dev
@@ -93,7 +93,7 @@ yarn run dev:hw
 or to launch electron and receive live updates from already running `webpack-dev-server` on port `8080` and you can run
 
 ```
-LISK_DESKTOP_URL="http://localhost:8080" DEBUG=true yarn run start
+KLAYR_DESKTOP_URL="http://localhost:8080" DEBUG=true yarn run start
 ```
 
 This comes with Redux dev tools.

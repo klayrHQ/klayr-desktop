@@ -76,11 +76,11 @@
 
     & > label {
       margin-bottom: 7px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       font-size: var(--font-size-small-secondary);
 
       & .notice {
-        color: var(--color-ultramarine-blue);
+        color: var(--color-primary);
       }
     }
   }
@@ -128,7 +128,7 @@ form {
 
   & .fieldGroup {
     font-size: 16px;
-    color: var(--color-zodiac-blue);
+    color: var(--color-colecti-dark-blue);
 
     &:last-child {
       margin-left: 10px;
@@ -156,7 +156,7 @@ form {
   & .discreetMode {
     & span {
       font-size: 16px;
-      color: var(--color-zodiac-blue);
+      color: var(--color-colecti-dark-blue);
     }
   }
 }

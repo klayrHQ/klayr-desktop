@@ -2,13 +2,13 @@
 
 .modal {
   width: 100%;
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: var(--border-radius-box);
 }
 
 .confirmModal {
   width: 371px;
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: var(--border-radius-box);
 }
 

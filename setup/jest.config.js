@@ -346,8 +346,8 @@ module.exports = {
     TEST: true,
     VERSION: '',
     REACT_APP_DEFAULT_NETWORK: 'undefined',
-    LISK_ENABLE_DEV_TOOL: false,
-    LISK_DOMAIN: 'https://lisk.com',
+    KLAYR_ENABLE_DEV_TOOL: false,
+    KLAYR_DOMAIN: 'https://klayr.xyz',
   },
   coverageReporters: process.env.ON_JENKINS ? ['text', 'lcov', 'cobertura'] : ['html', 'json'],
   reporters: [

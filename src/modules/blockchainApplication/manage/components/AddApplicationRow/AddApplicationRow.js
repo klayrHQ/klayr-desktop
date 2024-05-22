@@ -14,7 +14,7 @@ const ChainName = ({ title, logo }) => (
 
 const DepositAmount = ({ amount }) => (
   <span className={`deposit-amount ${styles.amount} ${grid['col-xs-6']}`}>
-    <TokenAmount isLsk val={amount} />
+    <TokenAmount isKly val={amount} />
   </span>
 );
 
@@ -26,7 +26,7 @@ const AddApplicationRow = ({ data, className }) => (
       data={{ chainId: data.chainID, mode: 'addApplication' }}
     >
       <ChainName title={data.chainName} logo={getLogo(data)} />
-      <DepositAmount amount={data.escrowedLSK} />
+      <DepositAmount amount={data.escrowedKLY} />
     </DialogLink>
   </div>
 );

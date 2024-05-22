@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { passphrase as LiskPassphrase } from '@liskhq/lisk-client';
+import { passphrase as KlayrPassphrase } from '@klayr/client';
 import routes from 'src/routes/routes';
 import BackupPassphrase from './SavePassphrase';
 
@@ -20,7 +20,7 @@ jest.mock('react-router-dom', () => ({
 describe('Register Process - Backup Passphrase', () => {
   let wrapper;
 
-  const passphrase = LiskPassphrase.Mnemonic.generateMnemonic();
+  const passphrase = KlayrPassphrase.Mnemonic.generateMnemonic();
 
   const props = {
     passphrase,

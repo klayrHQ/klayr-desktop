@@ -64,7 +64,7 @@ function HardwareAccountManagerModal() {
           ))}
           {!isAppOpen && (
             <p className={styles.warningText}>
-              {t('Please open the Lisk app on your hardware wallet device to see your accounts.')}
+              {t('Please open the Klayr app on your hardware wallet device to see your accounts.')}
             </p>
           )}
         </div>

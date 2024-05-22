@@ -39,7 +39,7 @@
     box-sizing: border-box;
     padding: 20px;
     border-radius: var(--border-radius-box);
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
 
     & > section,
     & .row {
@@ -118,7 +118,7 @@
     & h2 {
       @mixin headingNormal bold;
 
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       margin: 0;
       padding: 0;
     }

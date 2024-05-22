@@ -1,5 +1,5 @@
 import React from 'react';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { render, fireEvent, screen, waitFor } from '@testing-library/react';
 import { mockOnMessage } from '@setup/config/setupJest';
 import mockSavedAccounts from '@tests/fixtures/accounts';

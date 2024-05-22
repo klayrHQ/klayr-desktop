@@ -1,8 +1,8 @@
-import { cryptography, transactions, codec } from '@liskhq/lisk-client';
+import { cryptography, transactions, codec } from '@klayr/client';
 import * as signMessage from '@wallet/utils/signMessage';
 import moduleCommandSchemas from '@tests/constants/schemas';
 import accounts from '@tests/constants/wallets';
-import * as clientLedgerHWCommunication from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication';
+import * as clientLedgerHWCommunication from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
 
 import { fromTransactionJSON } from '../encoding';
 import { signTransactionByHW } from '.';
@@ -41,7 +41,7 @@ describe('signTransactionByHW', () => {
       path: '',
       accountIndex: 1,
       isHW: true,
-      address: 'lskyyoff8q6cj4jcrpvcm9yquv6anc5qf7rjggm2t',
+      address: 'klyyyoff8q6cj4jcrpvcm9yquv6anc5qf7rjggm2t',
     },
   };
   const txInitiatorAccount = accounts.multiSig.keys;

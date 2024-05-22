@@ -24,7 +24,7 @@ jest.mock('@pos/validator/store/actions/staking', () => ({
 }));
 
 describe('getMaxAmount', () => {
-  it('Returns 10n LSK if: balance >= (10n LSK + fee + dust)', async () => {
+  it('Returns 10n KLY if: balance >= (10n KLY + fee + dust)', async () => {
     const result = await getMaxAmount({
       balance: account.summary.balance,
       nonce: account.sequence?.nonce,
@@ -40,7 +40,7 @@ describe('getMaxAmount', () => {
     expect(result).toBe(0.8e10);
   });
 
-  it('Returns (n-1) * 10 LSK if: 10n LSK < balance < (10n LSK + fee + dust)', async () => {
+  it('Returns (n-1) * 10 KLY if: 10n KLY < balance < (10n KLY + fee + dust)', async () => {
     const result = await getMaxAmount({
       balance: 1e10,
       nonce: account.sequence?.nonce,

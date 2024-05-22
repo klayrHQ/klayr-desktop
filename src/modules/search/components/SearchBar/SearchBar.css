@@ -15,12 +15,11 @@
   & input {
     border-width: 0 !important;
     border-radius: 40px;
-    background: var(--color-search-bar-background);
-    color: var(--color-athens-white);
+    background: var(--color-white);
   }
 
   & input::placeholder {
-    color: var(--color-periwinkle-blue--manatee-gray);
+    color: var(--color-slate-gray);
   }
 }
 
@@ -48,7 +47,7 @@
   display: block;
   width: 100%;
   color: var(--color-slate-gray);
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: var(--border-radius-box);
   padding: 15px;
   box-sizing: border-box;

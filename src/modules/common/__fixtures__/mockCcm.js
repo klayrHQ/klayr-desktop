@@ -11,7 +11,7 @@ export const mockCcm = {
       params: {
         amount: '150000000',
         recipient: {
-          address: 'lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
+          address: 'kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
           publicKey: '2ca9a7...c23079',
           name: 'genesis_49',
         },

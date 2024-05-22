@@ -5,7 +5,7 @@ import setStakesByLaunchProtocol from './urlProcessor';
 jest.mock('@wallet/utils/api', () => ({
   getAccount: jest.fn().mockImplementation((data) =>
     Promise.resolve({
-      summary: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
+      summary: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
       pos: { validator: { username: data.username } },
     })
   ),
@@ -17,7 +17,7 @@ describe('setStakesByLaunchProtocol', () => {
     status: { online: true },
     name: 'Mainnet',
     networks: {
-      LSK: {
+      KLY: {
         nodeUrl: 'hhtp://localhost:4000',
         nethash: '198f2b61a8eb95fbeed58b8216780b68f697f26b849acf00c8c93bb9b24f783d',
       },
@@ -41,7 +41,7 @@ describe('setStakesByLaunchProtocol', () => {
 
   it('Should dispatch stakeEdited with a single username in the query params', async () => {
     const account = {
-      summary: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
+      summary: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
       pos: { validator: { username: 'genesis_5' } },
     };
     accounts.getAccounts.mockImplementation(() =>
@@ -72,7 +72,7 @@ describe('setStakesByLaunchProtocol', () => {
 
   it('Should dispatch stakeEdited with empty data if the usernames are invalid', async () => {
     const account = {
-      summary: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
+      summary: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
       pos: { validator: { username: 'genesis_5' } },
     };
     accounts.getAccounts.mockImplementation({

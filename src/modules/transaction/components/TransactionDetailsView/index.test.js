@@ -103,7 +103,7 @@ describe('TransactionDetailsView', () => {
     expect(screen.getByText(transaction.id)).toBeTruthy();
     expect(screen.getByText(transaction.block.id)).toBeTruthy();
     expect(screen.getByText(transaction.block.height)).toBeTruthy();
-    expect(screen.getByText('0.01 LSK')).toBeTruthy();
+    expect(screen.getByText('0.01 KLY')).toBeTruthy();
     expect(
       screen.getByText(moment(transaction.block.timestamp * 1000).format('DD MMM YYYY, hh:mm:ss A'))
     ).toBeTruthy();

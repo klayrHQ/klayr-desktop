@@ -52,7 +52,7 @@ export const mockCommandParametersSchemas = {
           generatorAddress: {
             dataType: 'bytes',
             fieldNumber: 5,
-            format: 'lisk32',
+            format: 'klayr32',
           },
           transactionRoot: {
             dataType: 'bytes',
@@ -148,7 +148,7 @@ export const mockCommandParametersSchemas = {
     },
     transaction: {
       schema: {
-        $id: '/lisk/transaction',
+        $id: '/klayr/transaction',
         type: 'object',
         required: ['module', 'command', 'nonce', 'fee', 'senderPublicKey', 'params'],
         properties: {
@@ -346,12 +346,12 @@ export const mockCommandParametersSchemas = {
           properties: {
             senderAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             generatorAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 2,
             },
             burntAmount: {
@@ -381,7 +381,7 @@ export const mockCommandParametersSchemas = {
             },
             relayerAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 2,
             },
             burntAmount: {
@@ -547,12 +547,12 @@ export const mockCommandParametersSchemas = {
           properties: {
             senderAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             recipientAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 2,
             },
             tokenID: {
@@ -589,12 +589,12 @@ export const mockCommandParametersSchemas = {
           properties: {
             senderAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             recipientAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 2,
             },
             tokenID: {
@@ -637,12 +637,12 @@ export const mockCommandParametersSchemas = {
           properties: {
             senderAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             recipientAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 2,
             },
             tokenID: {
@@ -678,7 +678,7 @@ export const mockCommandParametersSchemas = {
           properties: {
             address: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             tokenID: {
@@ -708,7 +708,7 @@ export const mockCommandParametersSchemas = {
           properties: {
             address: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             tokenID: {
@@ -738,7 +738,7 @@ export const mockCommandParametersSchemas = {
           properties: {
             address: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             module: {
@@ -774,7 +774,7 @@ export const mockCommandParametersSchemas = {
           properties: {
             address: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             module: {
@@ -831,7 +831,7 @@ export const mockCommandParametersSchemas = {
           properties: {
             address: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 1,
             },
             tokenID: {
@@ -935,7 +935,7 @@ export const mockCommandParametersSchemas = {
             },
             relayerAddress: {
               dataType: 'bytes',
-              format: 'lisk32',
+              format: 'klayr32',
               fieldNumber: 3,
             },
             result: {
@@ -1485,7 +1485,7 @@ export const mockCommandParametersSchemas = {
         module: 'legacy',
         version: '0',
         schema: {
-          $id: 'lisk/legacy/genesisLegacyStore',
+          $id: 'klayr/legacy/genesisLegacyStore',
           type: 'object',
           required: ['accounts'],
           properties: {
@@ -1542,7 +1542,7 @@ export const mockCommandParametersSchemas = {
                 properties: {
                   address: {
                     dataType: 'bytes',
-                    format: 'lisk32',
+                    format: 'klayr32',
                     fieldNumber: 1,
                   },
                   name: {
@@ -1630,7 +1630,7 @@ export const mockCommandParametersSchemas = {
                 properties: {
                   address: {
                     dataType: 'bytes',
-                    format: 'lisk32',
+                    format: 'klayr32',
                     fieldNumber: 1,
                   },
                   sentStakes: {
@@ -1642,7 +1642,7 @@ export const mockCommandParametersSchemas = {
                       properties: {
                         validatorAddress: {
                           dataType: 'bytes',
-                          format: 'lisk32',
+                          format: 'klayr32',
                           fieldNumber: 1,
                         },
                         amount: {
@@ -1683,7 +1683,7 @@ export const mockCommandParametersSchemas = {
                         validatorAddress: {
                           dataType: 'bytes',
                           fieldNumber: 1,
-                          format: 'lisk32',
+                          format: 'klayr32',
                         },
                         amount: {
                           dataType: 'uint64',
@@ -1713,7 +1713,7 @@ export const mockCommandParametersSchemas = {
                   fieldNumber: 2,
                   items: {
                     dataType: 'bytes',
-                    format: 'lisk32',
+                    format: 'klayr32',
                   },
                 },
               },
@@ -1755,7 +1755,7 @@ export const mockCommandParametersSchemas = {
                 properties: {
                   address: {
                     dataType: 'bytes',
-                    format: 'lisk32',
+                    format: 'klayr32',
                     fieldNumber: 1,
                   },
                   tokenID: {
@@ -2198,9 +2198,9 @@ export const mockCommandParametersSchemas = {
         },
       },
       {
-        moduleCommand: 'legacy:reclaimLSK',
+        moduleCommand: 'legacy:reclaimKLY',
         schema: {
-          $id: 'lisk/legacy/reclaimLSK',
+          $id: 'klayr/legacy/reclaimKLY',
           type: 'object',
           required: ['amount'],
           properties: {
@@ -2214,7 +2214,7 @@ export const mockCommandParametersSchemas = {
       {
         moduleCommand: 'legacy:registerKeys',
         schema: {
-          $id: 'lisk/legacy/registerKeys',
+          $id: 'klayr/legacy/registerKeys',
           type: 'object',
           required: ['blsKey', 'proofOfPossession', 'generatorKey'],
           properties: {
@@ -2327,7 +2327,7 @@ export const mockCommandParametersSchemas = {
                   validatorAddress: {
                     dataType: 'bytes',
                     fieldNumber: 1,
-                    format: 'lisk32',
+                    format: 'klayr32',
                   },
                   amount: {
                     dataType: 'sint64',
@@ -2360,7 +2360,7 @@ export const mockCommandParametersSchemas = {
       {
         moduleCommand: 'token:transfer',
         schema: {
-          $id: '/lisk/transferParams',
+          $id: '/klayr/transferParams',
           title: 'Transfer transaction params',
           type: 'object',
           required: ['tokenID', 'amount', 'recipientAddress', 'data'],
@@ -2378,7 +2378,7 @@ export const mockCommandParametersSchemas = {
             recipientAddress: {
               dataType: 'bytes',
               fieldNumber: 3,
-              format: 'lisk32',
+              format: 'klayr32',
             },
             data: {
               dataType: 'string',
@@ -2392,7 +2392,7 @@ export const mockCommandParametersSchemas = {
       {
         moduleCommand: 'token:transferCrossChain',
         schema: {
-          $id: '/lisk/ccTransferParams',
+          $id: '/klayr/ccTransferParams',
           type: 'object',
           required: [
             'tokenID',
@@ -2422,7 +2422,7 @@ export const mockCommandParametersSchemas = {
             recipientAddress: {
               dataType: 'bytes',
               fieldNumber: 4,
-              format: 'lisk32',
+              format: 'klayr32',
             },
             data: {
               dataType: 'string',

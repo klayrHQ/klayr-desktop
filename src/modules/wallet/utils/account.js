@@ -1,10 +1,10 @@
 /* eslint-disable max-lines, max-len */
-import { passphrase as LiskPassphrase, cryptography } from '@liskhq/lisk-client';
+import { passphrase as KlayrPassphrase, cryptography } from '@klayr/client';
 import { regex } from 'src/const/regex';
 import i18next from 'i18next';
 
 /**
- * Extracts Lisk PrivateKey/PublicKey pair from a given valid Mnemonic passphrase
+ * Extracts Klayr PrivateKey/PublicKey pair from a given valid Mnemonic passphrase
  */
 export const extractKeyPair = async ({
   passphrase,
@@ -20,7 +20,7 @@ export const extractKeyPair = async ({
     };
   }
 
-  if (LiskPassphrase.Mnemonic.validateMnemonic(passphrase) && !!derivationPath) {
+  if (KlayrPassphrase.Mnemonic.validateMnemonic(passphrase) && !!derivationPath) {
     const privateKey = await cryptography.ed.getPrivateKeyFromPhraseAndPath(
       passphrase,
       derivationPath
@@ -36,7 +36,7 @@ export const extractKeyPair = async ({
 };
 
 /**
- * Extracts Lisk PublicKey from a given valid Mnemonic passphrase
+ * Extracts Klayr PublicKey from a given valid Mnemonic passphrase
  */
 export const extractPublicKey = async (
   passphrase,
@@ -57,7 +57,7 @@ export const extractPublicKey = async (
 };
 
 /**
- * Extracts Lisk PrivateKey from a given valid Mnemonic passphrase
+ * Extracts Klayr PrivateKey from a given valid Mnemonic passphrase
  */
 export const extractPrivateKey = async (
   passphrase,
@@ -82,11 +82,11 @@ export const extractPrivateKey = async (
 export const extractAddressFromPublicKey = (publicKey) => {
   if (regex.publicKey.test(publicKey)) {
     return cryptography.address
-      .getLisk32AddressFromPublicKey(Buffer.from(publicKey, 'hex'))
+      .getKlayr32AddressFromPublicKey(Buffer.from(publicKey, 'hex'))
       .toString('hex');
   }
   if (Buffer.isBuffer(publicKey)) {
-    return cryptography.address.getLisk32AddressFromPublicKey(publicKey);
+    return cryptography.address.getKlayr32AddressFromPublicKey(publicKey);
   }
   throw Error(`Unable to convert publicKey ${publicKey} to address`);
 };

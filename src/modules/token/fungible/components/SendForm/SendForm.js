@@ -320,7 +320,7 @@ const SendForm = (props) => {
             <div className={`${styles.fieldGroup} ${styles.recipientFieldWrapper}`}>
               <span className={`${styles.fieldLabel}`}>{t('Recipient address')}</span>
               <BookmarkAutoSuggest
-                bookmarks={bookmarks.LSK.filter((item) => !item.disabled)}
+                bookmarks={bookmarks.KLY.filter((item) => !item.disabled)}
                 recipient={recipient}
                 t={t}
                 updateField={setRecipientField}

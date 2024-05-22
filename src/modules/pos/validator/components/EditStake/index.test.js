@@ -56,14 +56,14 @@ jest.mock('@pos/reward/hooks/queries/useStakingRewards', () => ({
 jest.mock('src/modules/common/hooks/useFiatRates');
 
 describe('EditStake', () => {
-  const validatorAddress = 'lskjq7jh2k7q332wgkz3bxogb8bj5zc3fcnb9ya53';
+  const validatorAddress = 'klyjq7jh2k7q332wgkz3bxogb8bj5zc3fcnb9ya53';
   const stakingStoreValue = {
-    lskn3kjdanry8v272fyqky8nx7nc358sedo8rzmw2: {
+    klyn3kjdanry8v272fyqky8nx7nc358sedo8rzmw2: {
       confirmed: 1000000000,
       name: 'genesis_66',
       unconfirmed: 3000000000,
     },
-    lsknm4djcs98mpu87m9cjsawy7eqp8cpk4v7u8gdz: {
+    klynm4djcs98mpu87m9cjsawy7eqp8cpk4v7u8gdz: {
       confirmed: 2000000000,
       name: 'genesis_8',
       unconfirmed: 4000000000,
@@ -75,7 +75,7 @@ describe('EditStake', () => {
     network: {},
     staking: {},
   };
-  const address = 'lsk6wrjbs66uo9eoqr4t86afvd4yym6ovj4afunvh';
+  const address = 'kly6wrjbs66uo9eoqr4t86afvd4yym6ovj4afunvh';
   const updatedProps = {
     ...props,
     history: { ...props.history, location: { search: `?validatorAddress=${address}` } },
@@ -93,7 +93,7 @@ describe('EditStake', () => {
     usePosToken.mockReturnValue({
       token: { ...mockAppsTokens.data[0], availableBalance: '1000000000' },
     });
-    useFiatRates.mockReturnValue({ LSK: { USD: 1, EUR: 1 } });
+    useFiatRates.mockReturnValue({ KLY: { USD: 1, EUR: 1 } });
     usePosExpectedSharedRewards.mockReturnValue({
       data: {
         data: { reward: '0' },
@@ -129,7 +129,7 @@ describe('EditStake', () => {
         'Input your Stake amount. This value shows how much trust you have in this validator.'
       )
     ).toBeTruthy();
-    expect(screen.getByText('Stake amount (LSK)')).toBeTruthy();
+    expect(screen.getByText('Stake amount (KLY)')).toBeTruthy();
   });
 
   it('should add stake to the stakes queue', async () => {
@@ -175,7 +175,7 @@ describe('EditStake', () => {
     expect(
       screen.getByText('Edit your stake by modifying stake amount or removing existing stake.')
     ).toBeTruthy();
-    expect(screen.getByText('Stake amount (LSK)')).toBeTruthy();
+    expect(screen.getByText('Stake amount (KLY)')).toBeTruthy();
 
     fireEvent.click(screen.getByText('Remove stake'));
 
@@ -207,7 +207,7 @@ describe('EditStake', () => {
     expect(
       screen.getByText('Edit your stake by modifying stake amount or removing existing stake.')
     ).toBeTruthy();
-    expect(screen.getByText('Stake amount (LSK)')).toBeTruthy();
+    expect(screen.getByText('Stake amount (KLY)')).toBeTruthy();
 
     const stakingField = screen.getByTestId('stake');
 
@@ -231,7 +231,7 @@ describe('EditStake', () => {
   });
 
   describe('Staking validation', () => {
-    const stakedValidatorAddress = 'lsk6wrjbs66uo9eoqr4t86afvd4yym6ovj4afunvh';
+    const stakedValidatorAddress = 'kly6wrjbs66uo9eoqr4t86afvd4yym6ovj4afunvh';
     const stakingValues = {
       [stakedValidatorAddress]: {
         confirmed: 4000000000,
@@ -324,14 +324,14 @@ describe('EditStake', () => {
 
       await waitFor(() => {
         expect(screen.queryByText('Confirm')).toHaveAttribute('disabled');
-        expect(screen.queryByText(`You can only stake in multiplies of 10 LSK.`)).toBeTruthy();
+        expect(screen.queryByText(`You can only stake in multiplies of 10 KLY.`)).toBeTruthy();
       });
 
       fireEvent.change(stakingField, { target: { value: 9 } });
 
       await waitFor(() => {
         expect(screen.queryByText('Confirm')).toHaveAttribute('disabled');
-        expect(screen.queryByText(`You can only stake in multiplies of 10 LSK.`)).toBeTruthy();
+        expect(screen.queryByText(`You can only stake in multiplies of 10 KLY.`)).toBeTruthy();
       });
 
       fireEvent.change(stakingField, { target: { value: 20 } });

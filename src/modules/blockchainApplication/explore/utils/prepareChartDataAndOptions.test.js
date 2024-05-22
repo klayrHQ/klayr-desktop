@@ -6,8 +6,8 @@ describe('BlockchainApplication explore utils', () => {
       registered: 101,
       activated: 53,
       terminated: 9,
-      totalSupplyLSK: '5000000',
-      stakedLSK: '3000000',
+      totalSupplyKLY: '5000000',
+      stakedKLY: '3000000',
     };
     const colorPalette = ['green', 'blue', 'grey'];
     const t = (l) => l;

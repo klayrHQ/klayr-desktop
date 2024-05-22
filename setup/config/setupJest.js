@@ -12,7 +12,7 @@ import crypto from 'crypto';
 import ReactRouterDom from 'react-router-dom';
 import * as ReactRedux from 'react-redux';
 import lodashMerge from 'lodash.merge';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import defaultState from '../../tests/constants/defaultState';
 
 require('jest-localstorage-mock');

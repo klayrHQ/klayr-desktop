@@ -26,8 +26,8 @@ import {
 
 i18nSetup();
 
-const DESKTOP_HOST = process.env.LISK_DESKTOP_HOST || '127.0.0.1';
-const DESKTOP_PORT = process.env.LISK_DESKTOP_PORT || 5659;
+const DESKTOP_HOST = process.env.KLAYR_DESKTOP_HOST || '127.0.0.1';
+const DESKTOP_PORT = process.env.KLAYR_DESKTOP_PORT || 5659;
 
 let serverUrl;
 const startServer = () =>
@@ -85,7 +85,7 @@ app.on('ready', () => {
   createWindow();
   setRendererPermissions(win);
   if (process.platform === 'win32') {
-    app.setAppUserModelId('io.lisk.hub');
+    app.setAppUserModelId('io.klayr.hub');
   }
 });
 
@@ -97,8 +97,8 @@ app.on('window-all-closed', () => {
 
 // This will override the values defined in the app’s .plist file (macOS)
 if (process.platform === 'darwin') {
-  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Lisk Foundation`;
-  app.setAboutPanelOptions({ applicationName: 'Lisk', copyright });
+  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Klayr Holding`;
+  app.setAboutPanelOptions({ applicationName: 'Klayr', copyright });
 }
 
 app.on('activate', () => {
@@ -110,7 +110,7 @@ app.on('activate', () => {
 });
 
 // Set app protocol
-app.setAsDefaultProtocolClient('lisk');
+app.setAsDefaultProtocolClient('klayr');
 
 // Force single instance application
 const isSingleLock = app.requestSingleInstanceLock();

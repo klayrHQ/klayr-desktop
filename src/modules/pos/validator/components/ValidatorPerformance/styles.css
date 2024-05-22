@@ -30,7 +30,7 @@
       text-align: left;
 
       & .details {
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
       }
     }
 
@@ -38,7 +38,7 @@
       text-align: right;
 
       & .details {
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
       }
     }
   }

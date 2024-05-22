@@ -9,7 +9,7 @@ describe('WalletVisualWithAddress component', () => {
     transactionSubject: 'senderId',
     address: '283470127032187L',
     bookmarks: {
-      LSK: [
+      KLY: [
         {
           title: 'BM',
           address: '283470127032187L',

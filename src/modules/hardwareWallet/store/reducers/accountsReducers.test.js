@@ -17,7 +17,7 @@ describe('reducer: hardware wallet accounts', () => {
       path: '',
       accountIndex: 1,
       isHW: true,
-      address: 'lskyyoff8q6cj4jcrpvcm9yquv6anc5qf7rjggm2t',
+      address: 'klyyyoff8q6cj4jcrpvcm9yquv6anc5qf7rjggm2t',
       creationTime: '2022-12-08T15:30:39.979Z',
     },
     version: 1,

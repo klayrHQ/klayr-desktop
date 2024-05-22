@@ -23,7 +23,7 @@ describe('TransactionEvents', () => {
   let wrapper;
   const props = {
     blockId: 1,
-    address: 'lskhbxua8tpdckcewntcttfqfo4rbatampo2dgrno',
+    address: 'klyhbxua8tpdckcewntcttfqfo4rbatampo2dgrno',
   };
 
   useTransactionEvents.mockReturnValue({

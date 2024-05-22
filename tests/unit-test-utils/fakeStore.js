@@ -7,7 +7,7 @@ const defaultStore = {
   network: {
     name: 'Custom Node',
     networks: {
-      LSK: {
+      KLY: {
         nodeUrl: 'http://localhost:4000',
         nethash: '23jh4g',
       },
@@ -19,9 +19,9 @@ const defaultStore = {
     areTermsOfUseAccepted: true,
   },
   token: {
-    active: tokenMap.LSK.key,
+    active: tokenMap.KLY.key,
     list: {
-      [tokenMap.LSK.key]: true,
+      [tokenMap.KLY.key]: true,
     },
   },
   search: {

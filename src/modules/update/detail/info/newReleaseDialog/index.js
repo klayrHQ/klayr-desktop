@@ -14,7 +14,7 @@ const NewReleaseDialog = ({ t }) => {
   return (
     <Dialog hasClose>
       <div className={styles.wrapper}>
-        <Dialog.Title>{t('Lisk {{version}} is here!', { version })}</Dialog.Title>
+        <Dialog.Title>{t('Klayr {{version}} is here!', { version })}</Dialog.Title>
         <Dialog.Description>
           <p>{t('Would you like to download it now?')}</p>
         </Dialog.Description>

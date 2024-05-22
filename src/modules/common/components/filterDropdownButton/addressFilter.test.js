@@ -22,7 +22,7 @@ describe('AddressFilter', () => {
       .find('.input')
       .at(1)
       .simulate('change', {
-        target: { name: 'recipient', value: 'lskewvoradpj2zheu8jkouqt97ee3548s683xqv56' },
+        target: { name: 'recipient', value: 'klyewvoradpj2zheu8jkouqt97ee3548s683xqv56' },
       });
     jest.advanceTimersByTime(300);
     expect(props.updateCustomFilters).toBeCalled();
@@ -33,7 +33,7 @@ describe('AddressFilter', () => {
       .find('.input')
       .at(1)
       .simulate('change', {
-        target: { name: 'recipient', value: 'lskewvoradpj2zheu8jkouqt97ee3548s683xqv56' },
+        target: { name: 'recipient', value: 'klyewvoradpj2zheu8jkouqt97ee3548s683xqv56' },
       });
     jest.advanceTimersByTime(300);
     wrapper.update();

@@ -51,7 +51,7 @@ const RemoveApplicationDetails = ({ location, onCancel, nextStep, history }) => 
     lastCertificateHeight,
     lastUpdated,
     projectPage,
-    escrowedLSK = '0',
+    escrowedKLY = '0',
   } = application;
 
   const reloadAppDetails = () => {
@@ -63,7 +63,7 @@ const RemoveApplicationDetails = ({ location, onCancel, nextStep, history }) => 
     {
       header: {
         text: t('Chain ID'),
-        toolTipText: t('The chain ID uniquely identifies a chain in the Lisk ecosystem'),
+        toolTipText: t('The chain ID uniquely identifies a chain in the Klayr ecosystem'),
       },
       className: `${styles.detailContentText} ${styles.chainId} chain-id`,
       content: chainId,
@@ -182,7 +182,7 @@ const RemoveApplicationDetails = ({ location, onCancel, nextStep, history }) => 
             <div className={styles.balanceRow}>
               <span>{t('Deposited:')}</span>
               <span>
-                <TokenAmount isLsk val={escrowedLSK} />
+                <TokenAmount isKly val={escrowedKLY} />
               </span>
             </div>
           )}

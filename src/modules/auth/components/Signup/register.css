@@ -29,14 +29,14 @@
 .warningSubheading {
   @mixin contentLargest semi-bold;
 
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   margin-top: 0;
 }
 
 .warningPara {
   @mixin contentLargest;
 
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   line-height: 24px;
   text-align: start;
   margin-top: 0;
@@ -75,7 +75,7 @@
 
     border: none;
     margin: 32px 0 0;
-    color: var(--color-ultramarine-blue) !important;
+    color: var(--color-primary) !important;
   }
 
   & .savePassphraseBackButton {
@@ -111,7 +111,7 @@
     justify-content: center;
     margin-top: 0px;
     margin-bottom: 16px;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
 
     & > img {
       margin-right: 16px;
@@ -122,7 +122,7 @@
     @mixin contentLargest;
 
     margin: 0;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     min-width: 450px;
 
     &:first-of-type {
@@ -144,7 +144,7 @@
     max-width: 603px;
     font-size: 14px;
     line-height: 18px;
-    color: var(--color-constant-zodiac-blue);
+    color: var(--color-constant-colecti-dark-blue);
     text-align: left;
 
     & > img {

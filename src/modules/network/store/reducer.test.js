@@ -22,22 +22,22 @@ describe('Reducer: network(state, action)', () => {
   it('should return state object with passed network setup if action is networkSet', () => {
     const state = {
       networks: {
-        LSK: {},
+        KLY: {},
       },
     };
     const action = {
       type: actionTypes.networkConfigSet,
       data: {
         name: 'Custom Node',
-        token: 'LSK',
-        network: state.networks.LSK,
+        token: 'KLY',
+        network: state.networks.KLY,
       },
     };
 
     const newState = {
       name: action.data.name,
       networks: {
-        LSK: action.data.network,
+        KLY: action.data.network,
       },
     };
     const changedState = network(state, action);

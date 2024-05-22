@@ -37,7 +37,7 @@ const Status = ({ account, transactions, t, prevStep }) => {
               <ul>
                 <li className={`${styles.step} ${styles.check}`}>
                   <span>
-                    {t('{{reclaimedAmount}} LSK will be deposited in your account', {
+                    {t('{{reclaimedAmount}} KLY will be deposited in your account', {
                       reclaimedAmount,
                     })}
                   </span>

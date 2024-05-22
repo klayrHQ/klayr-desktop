@@ -3,12 +3,12 @@
 .footerButton {
   @mixin contentNormal bold;
 
-  background-color: var(--color-white-smoke);
+  background-color: var(--color-surface);
   border-radius: 0 0 var(--border-radius-box) var(--border-radius-box);
   border: unset;
   border-top: solid 1px var(--color-platinum);
   box-shadow: none;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   cursor: pointer;
   height: 36px;
   min-height: 36px;
@@ -17,7 +17,7 @@
 
   &:focus,
   &:hover {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
   }
 
   &:disabled {

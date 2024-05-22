@@ -35,8 +35,8 @@ const FilterBar = ({ clearFilter, clearAllFilters, filters, results, formatters 
   formatters = {
     dateFrom: (value) => `${t('from')} ${moment(value, t('DD.MM.YY')).format(t('DD MMM YYYY'))}`,
     dateTo: (value) => `${t('to')} ${moment(value, t('DD.MM.YY')).format(t('DD MMM YYYY'))}`,
-    amountFrom: (value) => `> ${value} ${tokenMap.LSK.key}`,
-    amountTo: (value) => `< ${value} ${tokenMap.LSK.key}`,
+    amountFrom: (value) => `> ${value} ${tokenMap.KLY.key}`,
+    amountTo: (value) => `< ${value} ${tokenMap.KLY.key}`,
     ...formatters,
   };
 

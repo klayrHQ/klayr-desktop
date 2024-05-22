@@ -18,7 +18,7 @@ const PassphraseBackup = ({ t, passphrase, paperWalletName, jsonBackup = false }
   const [currentAccount] = useCurrentAccount();
   const { name: accountName = '', address = '' } = currentAccount?.metadata ?? {};
   const appendAccountName = `-${accountName}`;
-  const fileName = `${address}${accountName ? appendAccountName : ''}-lisk-account`;
+  const fileName = `${address}${accountName ? appendAccountName : ''}-klayr-account`;
   const truncatedFilename = `${truncateAddress(fileName)}.json`;
 
   /* istanbul ignore next */
@@ -87,7 +87,7 @@ const PassphraseBackup = ({ t, passphrase, paperWalletName, jsonBackup = false }
               <div style={{ display: 'none' }} ref={canvasRef}>
                 <QRCode value={passphrase} />
               </div>
-              <div className={styles.downloadLisk}>
+              <div className={styles.downloadKlayr}>
                 <Icon name="fileOutline" />
                 <p className="option-value">{walletName}</p>
                 <span onClick={generatePaperWallet}>

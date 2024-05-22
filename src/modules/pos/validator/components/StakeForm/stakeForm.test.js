@@ -33,19 +33,19 @@ jest.mock('@account/hooks/useDeprecatedAccount', () => ({
 jest.mock('@network/hooks/useCommandsSchema');
 
 const addresses = [
-  'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99',
-  'lskyau2yy4993jkbd7kxcsfsrarac8macbbs8saad',
-  'lskv9tm4z6deg3wu53osxs5cr4sbz7o24qqxyk57k',
-  'lskumc3ec2wzzzzxtcekzbhajo6y3jg8gcaz52jo5',
-  'lskxsnyj33zzzzzz7upwkfrcjocxkse56arbupru6',
-  'lskajvtut6wzj5ah4ky7o5roo4fu7uzsywkawa94w',
-  'lskurg8nyooztpsxodaqqcmhtc64xp5rabbdet3w2',
-  'lskk4drn4kdt2qp39n2vdx7hxhqbkyvak668j9zcm',
-  'lskdea5kprt8c89b2sgntv3u6optuuoe7q7f23vaw',
-  'lskrgs75gvfy29ah9m5bmraenr46dxo3cw8xsnqyz',
-  'lskyhyc9z5e8eg25sokdho5o8mymgacfbp4kx7tcd',
-  'lskzzovs6sbs87pkr8kndsspkrox4z5237wbqh9zf',
-  'lskarccxj6xqdeqtuvakr3hjdjh8a6df73b6pqk6s',
+  'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99',
+  'klyyau2yy4993jkbd7kxcsfsrarac8macbbs8saad',
+  'klyv9tm4z6deg3wu53osxs5cr4sbz7o24qqxyk57k',
+  'klyumc3ec2wzzzzxtcekzbhajo6y3jg8gcaz52jo5',
+  'klyxsnyj33zzzzzz7upwkfrcjocxkse56arbupru6',
+  'klyajvtut6wzj5ah4ky7o5roo4fu7uzsywkawa94w',
+  'klyurg8nyooztpsxodaqqcmhtc64xp5rabbdet3w2',
+  'klyk4drn4kdt2qp39n2vdx7hxhqbkyvak668j9zcm',
+  'klydea5kprt8c89b2sgntv3u6optuuoe7q7f23vaw',
+  'klyrgs75gvfy29ah9m5bmraenr46dxo3cw8xsnqyz',
+  'klyyhyc9z5e8eg25sokdho5o8mymgacfbp4kx7tcd',
+  'klyzzovs6sbs87pkr8kndsspkrox4z5237wbqh9zf',
+  'klyarccxj6xqdeqtuvakr3hjdjh8a6df73b6pqk6s',
 ];
 
 describe('StakeForm', () => {
@@ -114,7 +114,7 @@ describe('StakeForm', () => {
       expect.objectContaining({
         data: [
           {
-            address: 'lskyau2yy4993jkbd7kxcsfsrarac8macbbs8saad',
+            address: 'klyyau2yy4993jkbd7kxcsfsrarac8macbbs8saad',
             confirmed: 10000000000,
             unconfirmed: 20000000000,
           },
@@ -144,7 +144,7 @@ describe('StakeForm', () => {
     });
     expect(wrapper.find('.available-stakes-num').text()).toBe('8/');
     expect(wrapper.find('.feedback').at(0).text()).toBe(
-      "You don't have enough LSK in your account."
+      "You don't have enough KLY in your account."
     );
   });
 
@@ -162,7 +162,7 @@ describe('StakeForm', () => {
     });
     expect(wrapper.find('.available-stakes-num').text()).toBe('8/');
     expect(wrapper.find('.feedback').at(0).text()).toBe(
-      "You don't have enough LSK in your account."
+      "You don't have enough KLY in your account."
     );
   });
 });

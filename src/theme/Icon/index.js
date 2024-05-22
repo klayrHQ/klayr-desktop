@@ -53,14 +53,14 @@ import iconLedgerDevice from '@setup/react/assets/images/icons/icon-ledger-devic
 import iconLoader from '@setup/react/assets/images/icons/icon-loader.svg';
 import iconWarning from '@setup/react/assets/images/icons/icon-warning.svg';
 import incoming from '@setup/react/assets/images/icons/incoming.svg';
-import liskChat from '@setup/react/assets/images/icons/lisk-chat.svg';
-import liskLogo from '@setup/react/assets/images/lisk-logo-v2.svg';
-import liskLogoDark from '@setup/react/assets/images/lisk-logo-dark.svg';
-import liskLogoWhite from '@setup/react/assets/images/lisk-logo-white-v2.svg';
-import liskLogoWhiteNormalized from '@setup/react/assets/images/lisk-logo-white-v2-normalized.svg';
+import klayrChat from '@setup/react/assets/images/icons/klayr-chat.svg';
+import klayrLogo from '@setup/react/assets/images/klayr-logo-v2.svg';
+import klayrLogoDark from '@setup/react/assets/images/klayr-logo-dark.svg';
+import klayrLogoWhite from '@setup/react/assets/images/klayr-logo-white-v2.svg';
+import klayrLogoWhiteNormalized from '@setup/react/assets/images/klayr-logo-white-v2-normalized.svg';
 import logout from '@setup/react/assets/images/icons/logout.svg';
 import logoutActive from '@setup/react/assets/images/icons/logout-active.svg';
-import lskIcon from '@setup/react/assets/images/icons/icon-lsk.svg';
+import klyIcon from '@setup/react/assets/images/icons/icon-kly.svg';
 import okIcon from '@setup/react/assets/images/icons/icon-checkmark.svg';
 import outgoing from '@setup/react/assets/images/icons/outgoing.svg';
 import pending from '@setup/react/assets/images/icons/pending.svg';
@@ -148,8 +148,8 @@ import calendarDark from '@setup/react/assets/images/icons/calendar-dark.svg';
 import validatorName from '@setup/react/assets/images/icons/validator-name.svg';
 import weight from '@setup/react/assets/images/icons/weight.svg';
 import weightDark from '@setup/react/assets/images/icons/weight-dark.svg';
-import reward from '@setup/react/assets/images/icons/generated-lsk.svg';
-import rewardDark from '@setup/react/assets/images/icons/generated-lsk-dark.svg';
+import reward from '@setup/react/assets/images/icons/generated-kly.svg';
+import rewardDark from '@setup/react/assets/images/icons/generated-kly-dark.svg';
 import productivity from '@setup/react/assets/images/icons/productivity.svg';
 import productivityDark from '@setup/react/assets/images/icons/productivity-dark.svg';
 import missedBlocks from '@setup/react/assets/images/icons/missed-blocks.svg';
@@ -159,7 +159,7 @@ import generatedBlocksDark from '@setup/react/assets/images/icons/generated-bloc
 import consecutiveMissedBlocks from '@setup/react/assets/images/icons/consecutive-missed-blocks.svg';
 import consecutiveMissedBlocksDark from '@setup/react/assets/images/icons/consecutive-missed-blocks-dark.svg';
 import lock from '@setup/react/assets/images/icons/lock.svg';
-import lockedBalance from '@setup/react/assets/images/icons/zodiac-blue-lock.svg';
+import lockedBalance from '@setup/react/assets/images/icons/dark-blue-lock.svg';
 import lockedBalanceDark from '@setup/react/assets/images/icons/white-lock.svg';
 import unlock from '@setup/react/assets/images/icons/unlock.svg';
 import loading from '@setup/react/assets/images/icons/loading.svg';
@@ -173,6 +173,7 @@ import arrowRightTailed from '@setup/react/assets/images/icons/arrow-right-taile
 import download from '@setup/react/assets/images/icons/download.svg';
 import downloadBlue from '@setup/react/assets/images/icons/download-blue.svg';
 import registerMultisignature from '@setup/react/assets/images/icons/multisignature.svg';
+import klayrLogoNoText from '@setup/react/assets/images/logo/klayr-logo-no-text.svg';
 import multisignatureTransaction from '@setup/react/assets/images/icons/multisignatureTransaction.svg';
 import multisignatureTransactionDark from '@setup/react/assets/images/icons/multisignatureTransaction-dark.svg';
 import multiSignatureOutline from '@setup/react/assets/images/icons/multisignature-outline.svg';
@@ -198,7 +199,7 @@ import validatorBanned from '@setup/react/assets/images/icons/validator-banned.s
 import validatorBannedDark from '@setup/react/assets/images/icons/validator-banned-dark.svg';
 import eyeInactive from '@setup/react/assets/images/icons/eye-inactive.svg';
 import eyeActive from '@setup/react/assets/images/icons/eye-active.svg';
-import liskIcon from '@setup/react/assets/images/icons/lisk-icon.svg';
+import klayrIcon from '@setup/react/assets/images/icons/klayr-icon.svg';
 import initialiseIcon from '@setup/react/assets/images/icons/initialise-icon.svg';
 import initialiseRegistration from '@setup/react/assets/images/icons/initialise-registration.svg';
 import warningYellow from '@setup/react/assets/images/icons/warning-yellow.svg';
@@ -287,19 +288,20 @@ export const icons = {
   hidePassphraseIcon,
   hwWalletIcon,
   edit,
+  klayrLogoNoText,
   iconEmptyRecentTransactions,
   iconFilter,
   iconLedgerDevice,
   iconLoader,
   iconWarning,
   incoming,
-  liskChat,
-  liskLogo,
-  liskLogoWhite,
-  liskLogoWhiteNormalized,
+  klayrChat,
+  klayrLogo,
+  klayrLogoWhite,
+  klayrLogoWhiteNormalized,
   logout,
   logoutActive,
-  lskIcon,
+  klyIcon,
   okIcon,
   outgoing,
   pending,
@@ -341,7 +343,7 @@ export const icons = {
   qrCodeActive,
   copyActive,
   verifyWalletAddressActive,
-  liskLogoDark,
+  klayrLogoDark,
   balanceDark,
   fileOutlineDark,
   signMessage,
@@ -425,7 +427,7 @@ export const icons = {
   validatorBannedDark,
   eyeActive,
   eyeInactive,
-  liskIcon,
+  klayrIcon,
   initialiseIcon,
   initialiseRegistration,
   warningYellow,

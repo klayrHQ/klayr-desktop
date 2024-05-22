@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { I18nextProvider } from 'react-i18next';
 import { externalLinks } from 'src/utils/externalLinks';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { store, persistedStore } from 'src/redux/store';
 import ipcLocale from 'src/utils/ipcLocale';
 import updateApp from '@update/utils/updateApp';

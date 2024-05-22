@@ -15,10 +15,10 @@ describe('connectionCreator', () => {
       projectId: process.env.PROJECT_ID,
       relayUrl: process.env.RELAY_URL,
       metadata: {
-        name: 'Lisk',
-        description: 'Lisk',
-        url: 'https://github.com/LiskHQ/lisk-desktop',
-        icons: ['https://lisk.com/documentation/_/img/lisk-symbol.svg'],
+        name: 'Klayr',
+        description: 'Klayr',
+        url: 'https://github.com/klayrHQ/klayr-desktop',
+        icons: ['https://klayr.xyz/documentation/_/img/klayr-symbol.svg'],
       },
     });
     expect(res).toEqual({ mock: true });

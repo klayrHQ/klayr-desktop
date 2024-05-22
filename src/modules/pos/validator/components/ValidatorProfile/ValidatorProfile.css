@@ -189,7 +189,7 @@
       font-weight: var(--font-weight-semi-bold);
       font-size: 15px;
       margin-top: 8px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
 
       &.capitalized {
         text-transform: capitalize;
@@ -259,7 +259,7 @@
             @mixin validatorPerformanceValueFont;
 
             margin-top: 10px;
-            color: var(--color-maastricht-blue);
+            color: var(--color-content);
             overflow-wrap: break-word;
           }
 
@@ -296,7 +296,7 @@
           & .value {
             @mixin validatorPerformanceValueFont;
 
-            color: var(--color-maastricht-blue);
+            color: var(--color-content);
             font-size: 14px;
           }
         }
@@ -316,7 +316,7 @@
       & > *:not(.title):not(.highlightIcon):not(.details) {
         @mixin validatorPerformanceValueFont;
 
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
       }
     }
 
@@ -419,7 +419,7 @@
       & > *:not(.title):not(.validatorDescription):not(.highlightIcon) {
         @mixin validatorPerformanceValueFont;
 
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
       }
     }
 
@@ -457,7 +457,7 @@
     @mixin contentLargest;
 
     padding-left: 10px;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   &::after {
@@ -504,6 +504,10 @@
 }
 
 .editBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -523,8 +527,5 @@
 }
 
 .editDisabledIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: initial;
 }

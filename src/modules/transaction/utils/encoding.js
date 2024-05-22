@@ -1,9 +1,9 @@
-import { codec, cryptography } from '@liskhq/lisk-client';
+import { codec, cryptography } from '@klayr/client';
 import { trimBigintString } from './helpers';
 import { joinModuleAndCommand } from './moduleCommand';
 
 export const baseTransactionSchema = {
-  $id: '/lisk/baseTransaction',
+  $id: '/klayr/baseTransaction',
   type: 'object',
   required: ['module', 'command', 'nonce', 'fee', 'senderPublicKey', 'params'],
   properties: {

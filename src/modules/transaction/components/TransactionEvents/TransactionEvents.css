@@ -15,7 +15,7 @@
 }
 
 .dataContainer {
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   overflow: hidden;
   display: flex;
   flex-flow: row wrap;
@@ -42,18 +42,18 @@
 
     & > span {
       padding-left: 5px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
     }
   }
 }
 
 h1 {
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }
 
 .tableHeader {
   top: -14px;
-  background: var(--color-white);
+  background: var(--color-surface);
   z-index: 2;
   padding: 5px 0px;
   position: sticky;

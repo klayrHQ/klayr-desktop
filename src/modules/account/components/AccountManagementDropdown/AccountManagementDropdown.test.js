@@ -27,7 +27,7 @@ describe('AccountManagementDropdown', () => {
   });
   useTokenBalances.mockReturnValue({
     data: {
-      data: [{ name: 'Lisk', symbol: 'LSK', availableBalance: 0, ...mockAppsTokens.data[0] }],
+      data: [{ name: 'Klayr', symbol: 'KLY', availableBalance: 0, ...mockAppsTokens.data[0] }],
     },
   });
   useFees.mockReturnValue({

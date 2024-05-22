@@ -110,7 +110,7 @@ export default class ValidityForm extends React.Component {
         signature: inputs.signature.value,
       };
     }
-    const separators = ['MESSAGE', 'PUBLIC KEY', 'SIGNATURE', 'END LISK SIGNED MESSAGE'].join('|');
+    const separators = ['MESSAGE', 'PUBLIC KEY', 'SIGNATURE', 'END KLAYR SIGNED MESSAGE'].join('|');
     const parsedMessage = inputs.signedMessage.value.split(
       new RegExp(`\n?-----(${separators})-----\n?`)
     );

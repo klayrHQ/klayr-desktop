@@ -4,9 +4,9 @@
   "plugins": ["import", "babel", "jest", "prettier"],
   "globals": {
     "ipc": true,
-    "LISK_ENABLE_DEV_TOOL": true,
+    "KLAYR_ENABLE_DEV_TOOL": true,
     "PRODUCTION": true,
-    "LISK_DOMAIN": true,
+    "KLAYR_DOMAIN": true,
     "REACT_APP_DEFAULT_NETWORK": true
   },
   "env": {

@@ -5,17 +5,17 @@ import moduleCommandSchemas from './schemas';
 export default {
   wallet: {
     info: {
-      LSK: {
+      KLY: {
         ...wallets.genesis,
       },
     },
   },
   bookmarks: {
-    LSK: [],
+    KLY: [],
   },
   service: {
     priceTicker: {
-      LSK: {
+      KLY: {
         USD: 1,
       },
     },
@@ -25,15 +25,15 @@ export default {
     darkMode: false,
   },
   token: {
-    active: 'LSK',
+    active: 'KLY',
     list: {
-      LSK: true,
+      KLY: true,
     },
   },
   network: {
     name: 'Testnet',
     networks: {
-      LSK: {
+      KLY: {
         serviceUrl: 'http://example.com',
         moduleCommandSchemas,
       },
@@ -60,10 +60,10 @@ export default {
     pins: [],
     applications: {},
     current: {
-      chainName: 'lisk',
+      chainName: 'klayr',
       chainID: '04000000',
       networkType: 'devnet',
-      serviceURLs: [{ http: 'http://devnet-service.liskdev.net:9901' }],
+      serviceURLs: [{ http: 'http://devnet-service.klayr.xyz:9901' }],
     },
   },
 };

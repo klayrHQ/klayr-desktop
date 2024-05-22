@@ -9,7 +9,7 @@ const mockTransactionEvents = [
     module: 'pos',
     name: 'commissionChange',
     data: {
-      validatorAddress: 'lsk7cd4wv3ygqabp2dw52sbg5sm7zt3m2yxc6gcmr',
+      validatorAddress: 'kly7cd4wv3ygqabp2dw52sbg5sm7zt3m2yxc6gcmr',
       oldCommission: 9000,
       newCommission: 8990,
     },
@@ -24,13 +24,13 @@ const mockTransactionEvents = [
     module: 'pos',
     name: 'commissionChange',
     data: {
-      validatorAddress: 'lsk7cd4wv3ygqabp2dw52sbg5sm7zt3m2yxc6gcmr',
+      validatorAddress: 'kly7cd4wv3ygqabp2dw52sbg5sm7zt3m2yxc6gcmr',
       oldCommission: 10000,
       newCommission: 9000,
     },
     topics: [
       '0438ba3dc9432dcf93a2f3c73ee70a019ea520bb64211e564ef357fdc777e3541d',
-      'lsk7cd4wv3ygqabp2dw52sbg5sm7zt3m2yxc6gcmr',
+      'kly7cd4wv3ygqabp2dw52sbg5sm7zt3m2yxc6gcmr',
     ],
     index: 1,
     block: {

@@ -1,6 +1,6 @@
 import { screen, fireEvent, waitFor } from '@testing-library/react';
 import { smartRender } from 'src/utils/testHelpers';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { removeSearchParamsFromUrl } from 'src/utils/searchParams';
 import wallets from '@tests/constants/wallets';
 import { mockAuth } from '@auth/__fixtures__';
@@ -13,8 +13,8 @@ import usePosToken from '@pos/validator/hooks/usePosToken';
 import { mockAppsTokens, mockTokensBalance } from 'src/modules/token/fungible/__fixtures__';
 import Summary from './summary';
 
-const address = 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
-jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+const address = 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
+jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 
 jest.mock('src/utils/searchParams', () => ({
   ...jest.requireActual('src/utils/searchParams'),
@@ -47,7 +47,7 @@ describe('Sign Multisignature Tx Review component', () => {
     formProps: {
       isValid: true,
       moduleCommand: MODULE_COMMANDS_NAME_MAP.transfer,
-      composedFees: { Transaction: '1 LSK', CCM: '1 LSK', Initialisation: '1 LSK' },
+      composedFees: { Transaction: '1 KLY', CCM: '1 KLY', Initialisation: '1 KLY' },
       fields: {
         sendingChain: mockBlockchainApplications[0],
         recipientChain: blockchainApplicationsExplore[0],
@@ -156,7 +156,7 @@ describe('Sign Multisignature Tx Review component', () => {
     const { params } = newProps.transactionJSON;
     const expectedLength = params.mandatoryKeys.length + params.optionalKeys.length;
     expect(screen.queryAllByTestId('member-info').length).toEqual(expectedLength);
-    expect(screen.getByText('0.00196 LSK')).toBeInTheDocument();
+    expect(screen.getByText('0.00196 KLY')).toBeInTheDocument();
   });
 
   it('Should render properly when senderAccount is empty', () => {

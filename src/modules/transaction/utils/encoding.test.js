@@ -1,6 +1,6 @@
 import * as keys from '@tests/constants/keys';
 import { mockCommandParametersSchemas } from 'src/modules/common/__fixtures__';
-import { cryptography, codec } from '@liskhq/lisk-client';
+import { cryptography, codec } from '@klayr/client';
 import {
   decodeTransaction,
   encodeTransaction,
@@ -28,7 +28,7 @@ describe('encoding', () => {
   });
 
   it('should throw and error', () => {
-    const schema = [{ moduleCommand: 'legacy:reclaimLSK', schema: 'schema' }];
+    const schema = [{ moduleCommand: 'legacy:reclaimKLY', schema: 'schema' }];
 
     expect(() => {
       getCommandParamsSchema('token', 'transfer', schema);

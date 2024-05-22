@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 30px 0 var(--horizontal-padding-s);
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: 0 0 var(--border-radius-box) var(--border-radius-box);
   border-top: solid 1px var(--color-mystic);
   margin-top: -10px;
@@ -29,7 +29,7 @@
   & label {
     @mixin contentLargest bold;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 }
 
@@ -60,13 +60,13 @@
   }
 
   & .transactionId {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & .transactionMessage {
     @mixin contentLargest bold;
 
-    color: var(--color-ink-blue);
+    color: var(--color-azule-dark);
     box-sizing: border-box;
     margin-left: auto;
   }
@@ -82,7 +82,7 @@
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
 
     &.active,
     &:hover {

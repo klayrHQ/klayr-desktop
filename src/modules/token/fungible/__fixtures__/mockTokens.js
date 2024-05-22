@@ -9,7 +9,7 @@ import {
 export const mockTokensBalance = {
   data: tokensBalance,
   meta: {
-    address: 'lsk6757819470afeb656',
+    address: 'kly6757819470afeb656',
     count: 5,
     offset: 0,
     total: 120,
@@ -19,7 +19,7 @@ export const mockTokensBalance = {
 export const mockTokenBalancesTop = {
   data: tokenBalancesTop,
   meta: {
-    address: 'lsk6757819470afeb131',
+    address: 'kly6757819470afeb131',
     count: 20,
     offset: 0,
     total: 30,
@@ -42,28 +42,28 @@ export const mockAppsTokens = {
   data: [
     {
       chainID: '00000001',
-      chainName: 'Lisk',
+      chainName: 'Klayr',
       tokenID: '0000000100000000',
-      tokenName: 'Lisk',
+      tokenName: 'Klayr',
       networkType: 'mainnet',
-      description: 'Base token for the Lisk ecosystem',
+      description: 'Base token for the Klayr ecosystem',
       denomUnits: [
         {
           denom: 'beddows',
           decimals: 0,
         },
         {
-          denom: 'lisk',
+          denom: 'klayr',
           decimals: 8,
-          aliases: ['Lisk'], // Optional
+          aliases: ['Klayr'], // Optional
         },
       ],
       baseDenom: 'beddows',
-      displayDenom: 'lisk',
-      symbol: 'LSK',
+      displayDenom: 'klayr',
+      symbol: 'KLY',
       logo: {
         png: 'https://lisk-qa.ams3.digitaloceanspaces.com/Artboard%201%20copy%2019.png',
-        svg: 'https://downloads.lisk.com/lisk/images/tokens/lsk.svg',
+        svg: 'https://downloads.klayr.xyz/klayr/images/tokens/kly.svg',
       },
     },
     {

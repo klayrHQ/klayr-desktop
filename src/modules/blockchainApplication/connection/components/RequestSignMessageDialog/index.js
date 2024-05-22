@@ -81,7 +81,7 @@ const RequestSignMessageDialog = () => {
               icon: icons?.[0],
             },
           }}
-          clipboardCopyItems={requiredNamespaces?.lisk?.chains?.map((chain) => ({
+          clipboardCopyItems={requiredNamespaces?.klayr?.chains?.map((chain) => ({
             label: 'Chain ID:',
             value: chain?.replace(/\D+/g, ''),
           }))}

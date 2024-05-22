@@ -10,7 +10,7 @@ export const mockNetworkStatus = {
     syncing: false,
     unconfirmedTransactions: 0,
     genesis: {
-      communityIdentifier: 'Lisk',
+      communityIdentifier: 'Klayr',
       maxTransactionsSize: 15360,
       minFeePerByte: 1000,
       blockTime: 10,
@@ -26,7 +26,7 @@ export const mockNetworkStatus = {
       { id: '0000000d:00000002', name: 'pos:unlockToken' },
       { id: '0000000d:00000004', name: 'pos:updateGeneratorKey' },
       { id: '0000000d:00000001', name: 'pos:stakeValidator' },
-      { id: '00008000:00000000', name: 'legacy:reclaimLSK' },
+      { id: '00008000:00000000', name: 'legacy:reclaimKLY' },
       { id: '00008000:00000001', name: 'legacy:registerkeys' },
     ],
     network: {

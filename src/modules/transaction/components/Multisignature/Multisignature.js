@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { PrimaryButton, SecondaryButton, TertiaryButton } from 'src/theme/buttons';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import Illustration from 'src/modules/common/components/illustration';
 import routes from 'src/routes/routes';
 import { txStatusTypes } from '@transaction/configuration/txStatus';
@@ -100,7 +100,7 @@ export const ErrorActions = ({ t, status, message, network, application }) => (
       errorMessage: message,
       networkIdentifier: network?.networkIdentifier,
       serviceUrl: network?.serviceUrl,
-      liskCoreVersion: network?.networkVersion,
+      klayrCoreVersion: network?.networkVersion,
       application,
     })}
     target="_top"
@@ -159,7 +159,7 @@ const Multisignature = ({
       moduleCommand === MODULE_COMMANDS_NAME_MAP.registerMultisignature
         ? 'register-multisignature-request'
         : 'sign-multisignature-request';
-    const senderAddress = cryptography.address.getLisk32AddressFromPublicKey(
+    const senderAddress = cryptography.address.getKlayr32AddressFromPublicKey(
       transactions.signedTransaction?.senderPublicKey
     );
 
@@ -205,7 +205,7 @@ const Multisignature = ({
                   {truncateAddress(nextAccountToSign?.metadata?.address)})
                 </b>{' '}
                 {t(
-                  'to complete this transaction has been found on your Lisk Desktop. Please click on “Switch account” to complete this transaction.'
+                  'to complete this transaction has been found on your Klayr Desktop. Please click on “Switch account” to complete this transaction.'
                 )}
               </span>
             }

@@ -161,7 +161,7 @@ AddBookmark.propTypes = {
     active: PropTypes.string.isRequired,
   }).isRequired,
   bookmarks: PropTypes.shape({
-    LSK: PropTypes.arrayOf(
+    KLY: PropTypes.arrayOf(
       PropTypes.shape({
         address: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,

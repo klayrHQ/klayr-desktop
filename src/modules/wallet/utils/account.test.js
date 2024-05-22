@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import accounts from '@tests/constants/wallets';
 import {
   extractPublicKey,
@@ -16,7 +16,7 @@ const { address, privateKey, publicKey } = accounts.genesis.summary;
 const customDerivationPath = "m/44'/134'/1'";
 const enableAccessToLegacyAccounts = true;
 
-jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 jest
   .spyOn(cryptography.ed, 'getPrivateKeyFromPhraseAndPath')
   .mockResolvedValue(Buffer.from(privateKey));
@@ -84,7 +84,7 @@ describe('Utils: Account', () => {
         amount: '1000000000',
         unstakeHeight: 4900,
         expectedUnlockableHeight: 5900,
-        validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+        validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
         isLocked: false,
       };
 
@@ -94,14 +94,14 @@ describe('Utils: Account', () => {
           amount: '3000000000',
           unstakeHeight: 100,
           expectedUnlockableHeight: 200,
-          validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+          validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
           isLocked: true,
         },
         {
           amount: '1000000000',
           unstakeHeight: 3000,
           expectedUnlockableHeight: 4000,
-          validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y13',
+          validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y13',
           isLocked: true,
         },
       ];
@@ -114,7 +114,7 @@ describe('Utils: Account', () => {
           amount: '1000000000',
           unstakeHeight: 4900,
           expectedUnlockableHeight: 5900,
-          validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+          validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
           isLocked: true,
         },
         {
@@ -128,7 +128,7 @@ describe('Utils: Account', () => {
           amount: '1000000000',
           unstakeHeight: 3000,
           expectedUnlockableHeight: 5500,
-          validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y13',
+          validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y13',
           isLocked: true,
         },
       ];
@@ -138,9 +138,9 @@ describe('Utils: Account', () => {
     describe('calculateBalanceLockedInStakes', () => {
       it('should get correct available balance', () => {
         const stakes = {
-          lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11: { confirmed: 5000000000 },
-          lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y12: { confirmed: 3000000000 },
-          lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y13: { confirmed: 2000000000 },
+          klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11: { confirmed: 5000000000 },
+          klydwsyfmcko6mcd357446yatromr9vzgu7eb8y12: { confirmed: 3000000000 },
+          klydwsyfmcko6mcd357446yatromr9vzgu7eb8y13: { confirmed: 2000000000 },
         };
 
         expect(calculateBalanceLockedInStakes(stakes)).toEqual(10000000000);
@@ -158,21 +158,21 @@ describe('Utils: Account', () => {
             amount: '1000000000',
             unstakeHeight: 5000,
             expectedUnlockableHeight: 6000,
-            validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+            validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
             isLocked: false,
           },
           {
             amount: '3000000000',
             unstakeHeight: 100,
             expectedUnlockableHeight: 2000,
-            validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+            validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
             isLocked: true,
           },
           {
             amount: '1000000000',
             unstakeHeight: 3100,
             expectedUnlockableHeight: 41000,
-            validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y13',
+            validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y13',
             isLocked: false,
           },
         ];
@@ -182,7 +182,7 @@ describe('Utils: Account', () => {
             amount: '3000000000',
             unstakeHeight: 100,
             expectedUnlockableHeight: 2000,
-            validatorAddress: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+            validatorAddress: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
             isLocked: true,
           },
         ]);

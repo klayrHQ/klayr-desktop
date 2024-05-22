@@ -5,7 +5,7 @@
   flex-direction: column;
 
   & .title {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & > p:first-child > div:first-child {
@@ -29,7 +29,7 @@
   & p {
     @mixin contentNormal bold;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & .label {
@@ -39,7 +39,7 @@
 
     & > p {
       text-align: left;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       margin-top: 0;
       margin-bottom: 16px;
     }
@@ -54,7 +54,7 @@
 
       & > span:last-child {
         font-weight: 500;
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
       }
 
       & .tooltipWrapper {
@@ -99,15 +99,14 @@
 
       margin-top: 0;
       margin-bottom: 10px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       font-family: var(--content-font);
 
       & > span {
         @mixin contentNormal;
 
         margin-left: 10px;
-        color: black;
-        color: var(--color-maastricht-blue);
+        color: var(--color-content);
       }
     }
 

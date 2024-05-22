@@ -23,11 +23,11 @@
     }
 
     & .editedNumeral {
-      color: var(--color-ink-blue);
+      color: var(--color-azule-dark);
     }
 
     & .removedNumeral {
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
     }
   }
 

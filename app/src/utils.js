@@ -1,5 +1,5 @@
 /* eslint-disable max-statements */
-import { validator } from '@liskhq/lisk-client';
+import { validator } from '@klayr/client';
 import { requestTokenSchema } from './validationSchema';
 
 const PERMISSION_WHITE_LIST = ['clipboard-read', 'notifications', 'openExternal'];
@@ -11,8 +11,8 @@ export const WHITE_LISTED_DEEP_LINKS = [
 ];
 
 const WHITE_LISTED_URLS = [
-  { protocol: 'https:', urlKey: 'host', domains: ['lisk.com'] },
-  { protocol: 'mailto:', urlKey: 'pathname', domains: ['desktopdev@lisk.com'] },
+  { protocol: 'https:', urlKey: 'host', domains: ['klayr.xyz'] },
+  { protocol: 'mailto:', urlKey: 'pathname', domains: ['dev@klayr.xyz'] },
 ];
 
 export const isUrlAllowed = (url) => {
@@ -33,7 +33,7 @@ export const setRendererPermissions = (win) => {
 export const canExecuteDeepLinking = (url) => {
   const { protocol, searchParams, hostname, pathname } = new URL(url);
 
-  if (protocol !== 'lisk:') return false;
+  if (protocol !== 'klayr:') return false;
 
   let urlPath = hostname;
   if (hostname.length === 0) urlPath = pathname.replace(/^\/{2}/, '');

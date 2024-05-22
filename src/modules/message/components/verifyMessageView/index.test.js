@@ -1,4 +1,4 @@
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { mountWithRouter } from 'src/utils/testHelpers';
 import VerifyMessage from './index';
 
@@ -24,7 +24,7 @@ ${message}
 ${publicKey}
 -----SIGNATURE-----
 ${signature}
------END LISK SIGNED MESSAGE-----
+-----END KLAYR SIGNED MESSAGE-----
 `;
 
   beforeEach(() => {

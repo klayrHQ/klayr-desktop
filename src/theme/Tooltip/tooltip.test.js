@@ -12,7 +12,7 @@ describe('Tooltip wrapper', () => {
     title: 'Title of the tooltip',
     children: <p>Some text content here!</p>,
     footer: (
-      <a href="http://lisk.com" rel="noopener noreferrer" target="_blank">
+      <a href="http://klayr.xyz" rel="noopener noreferrer" target="_blank">
         Read more
       </a>
     ),

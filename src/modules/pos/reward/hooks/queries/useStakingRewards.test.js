@@ -14,7 +14,7 @@ jest.mock('@pos/reward/hooks/queries/useStakingRewards', () => ({
 jest.mock('src/modules/common/hooks/queries/useInvokeQuery');
 
 describe('usePosExpectedSharedRewards hook', () => {
-  const validatorAddress = 'lsktzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg';
+  const validatorAddress = 'klytzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg';
   const stake = '100';
   const validatorReward = '0';
   const queryConfig = {

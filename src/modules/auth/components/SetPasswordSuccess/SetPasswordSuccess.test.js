@@ -4,7 +4,7 @@ import * as txUtils from '@transaction/utils/transaction';
 import SetPasswordSuccess from './index';
 
 describe('Setup password success and JSON download component', () => {
-  const address = 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
+  const address = 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
   const name = 'test_acct';
   const props = {
     onClose: jest.fn(),
@@ -21,7 +21,7 @@ describe('Setup password success and JSON download component', () => {
     expect(wrapper).toContainMatchingElement('.container');
     expect(wrapper).toContainMatchingElement('.content');
     expect(wrapper).toContainMatchingElement('.subHeader');
-    expect(wrapper).toContainMatchingElement('.downloadLisk');
+    expect(wrapper).toContainMatchingElement('.downloadKlayr');
     expect(wrapper).toContainMatchingElement('.downloadBtn');
     expect(wrapper).toContainMatchingElement('.continueButton');
   });
@@ -32,7 +32,7 @@ describe('Setup password success and JSON download component', () => {
     wrapper.find('.downloadBtn').at(0).simulate('click');
     expect(spyOnJSONDownload).toHaveBeenCalledWith(
       props.encryptedPhrase,
-      `${address}-${name}-lisk-account`
+      `${address}-${name}-klayr-account`
     );
   });
 

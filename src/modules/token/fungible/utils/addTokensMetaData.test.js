@@ -20,7 +20,7 @@ describe('tokenTransformResult', () => {
 
   it('merge meta response', async () => {
     const mockTokenBalance = { tokenID: 1, balance: 1 };
-    const mockTokenMeta = { tokenName: 'Lisk', tokenID: 1 };
+    const mockTokenMeta = { tokenName: 'Klayr', tokenID: 1 };
     jest.spyOn(defaultClient, 'call').mockReturnValue({ data: [mockTokenMeta] });
     const config = {
       url: `/api/${API_VERSION}/blockchain/apps/meta/tokens`,

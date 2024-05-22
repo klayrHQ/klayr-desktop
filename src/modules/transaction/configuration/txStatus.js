@@ -9,7 +9,7 @@ export const txStatusTypes = {
   hwCannotOpenPath: 'HW_CANNOT_OPEN_PATH',
   hwRejected: 'HW_REJECTED',
   hwMemorySizeLimitRejection: 'HW_MEMORY_SIZE_LIMIT_REJECTION',
-  hwLiskAppClosed: 'HW_LISK_APP_CLOSED',
+  hwKlayrAppClosed: 'HW_KLAYR_APP_CLOSED',
   hwDisconnected: 'HW_DISCONNECTED',
 };
 

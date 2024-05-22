@@ -1,7 +1,7 @@
-diff --git a/node_modules/@liskhq/lisk-client/package.json b/node_modules/@liskhq/lisk-client/package.json
+diff --git a/node_modules/@klayr/client/package.json b/node_modules/@klayr/client/package.json
 index 3483ef8..734c304 100644
---- a/node_modules/@liskhq/lisk-client/package.json
-+++ b/node_modules/@liskhq/lisk-client/package.json
+--- a/node_modules/@klayr/client/package.json
++++ b/node_modules/@klayr/client/package.json
 @@ -23,7 +23,7 @@
  	"main": "dist-node/index.js",
  	"browser": "dist-browser/index.js",

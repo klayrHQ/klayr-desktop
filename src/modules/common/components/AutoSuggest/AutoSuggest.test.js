@@ -9,7 +9,7 @@ describe('Recipient Input', () => {
   let wrapper;
 
   const props = {
-    token: tokenMap.LSK.key,
+    token: tokenMap.KLY.key,
     t: (v) => v,
     onChangeDelayed: jest.fn(),
     onChange: jest.fn(),

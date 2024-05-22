@@ -1,6 +1,6 @@
 {
   "system": {
-    "dataPath": "~/.lisk",
+    "dataPath": "~/.klayr",
     "logLevel": "info",
     "enableMetrics": true,
     "keepEventsForHeights": -1

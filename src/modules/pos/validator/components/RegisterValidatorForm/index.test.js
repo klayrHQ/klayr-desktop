@@ -106,7 +106,7 @@ describe('RegisterValidatorForm', () => {
       data: mockTokensBalance.data.map((token) => ({
         ...token,
         availableBalance: 1500000000,
-        denomUnits: [{ denom: 'lsk', decimals: 8 }],
+        denomUnits: [{ denom: 'kly', decimals: 8 }],
       })),
     },
     isLoading: false,

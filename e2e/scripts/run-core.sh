@@ -25,22 +25,22 @@ if [[ $CORE == "enevti" ]]
     fi
 fi
 
-# spin up lisk core
-if [[ $CORE == "lisk" ]]
+# spin up klayr core
+if [[ $CORE == "klayr" ]]
   then
-    if [ ! command -v lisk-core &> /dev/null ]
+    if [ ! command -v klayr-core &> /dev/null ]
       then
-        npm i -g lisk-core@^4.0.0-rc.3
+        npm i -g klayr-core@^4.0.0-rc.3
     fi
 
-    rm -rf ~/.lisk
-    lisk-core blockchain:import --force ./e2e/artifacts/lisk-core/blockchain.tar.gz
+    rm -rf ~/.klayr
+    klayr-core blockchain:import --force ./e2e/artifacts/klayr-core/blockchain.tar.gz
 
     if [[ ! -z "$USE_NOHUP" ]]
       then
-        nohup lisk-core start --network=devnet --api-ws --api-host=0.0.0.0 --config ./e2e/artifacts/lisk-core/config.json --overwrite-config >lisk-core.out 2>lisk-core.err &
-        echo $! >lisk-core.pid
+        nohup klayr-core start --network=devnet --api-ws --api-host=0.0.0.0 --config ./e2e/artifacts/klayr-core/config.json --overwrite-config >klayr-core.out 2>klayr-core.err &
+        echo $! >klayr-core.pid
       else
-        lisk-core start --network=devnet --api-ws --api-host=0.0.0.0 --config ./e2e/artifacts/lisk-core/config.json --overwrite-config
+        klayr-core start --network=devnet --api-ws --api-host=0.0.0.0 --config ./e2e/artifacts/klayr-core/config.json --overwrite-config
     fi
 fi

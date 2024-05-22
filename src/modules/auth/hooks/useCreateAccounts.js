@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { passphrase as LiskPassphrase, cryptography } from '@liskhq/lisk-client';
+import { passphrase as KlayrPassphrase, cryptography } from '@klayr/client';
 import { defaultDerivationPath } from '@account/const';
 
 export const getPassphraseAndAddress = async (strength) => {
-  const generatedPassphrase = LiskPassphrase.Mnemonic.generateMnemonic(strength);
+  const generatedPassphrase = KlayrPassphrase.Mnemonic.generateMnemonic(strength);
   const privateKey = await cryptography.ed.getPrivateKeyFromPhraseAndPath(
     generatedPassphrase,
     defaultDerivationPath
@@ -11,7 +11,7 @@ export const getPassphraseAndAddress = async (strength) => {
   const publicKey = cryptography.ed.getPublicKeyFromPrivateKey(privateKey);
 
   return {
-    address: cryptography.address.getLisk32AddressFromPublicKey(publicKey).toString('hex'),
+    address: cryptography.address.getKlayr32AddressFromPublicKey(publicKey).toString('hex'),
     passphrase: generatedPassphrase,
   };
 };

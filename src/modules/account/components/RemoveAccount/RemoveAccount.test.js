@@ -30,7 +30,7 @@ describe('Remove account', () => {
 
   it('Should successfully go though the flow', async () => {
     const { address, name } = mockSavedAccounts[0].metadata;
-    const fileName = `${address}-${name}-lisk-account`;
+    const fileName = `${address}-${name}-klayr-account`;
     expect(screen.getByText('Remove Account?')).toBeTruthy();
     const message = 'This account will no longer be stored on this device.{{text}}';
     expect(screen.getByText(message)).toBeTruthy();

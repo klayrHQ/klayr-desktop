@@ -24,7 +24,7 @@ describe('SignInTooltipWrapper', () => {
   it('should not render Tooltip if props.account.info exists', () => {
     const account = {
       info: {
-        LSK: { address: '16313739661670634666L' },
+        KLY: { address: '16313739661670634666L' },
       },
     };
     const wrapper = mount(<SignInTooltipWrapper {...props} account={account} />);

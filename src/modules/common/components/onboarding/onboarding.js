@@ -10,26 +10,26 @@ const getOnboardingSlides = (t) => [
   {
     title: t('Ready to go!'),
     content: t(
-      'The ultimate gateway to the ecosystem. Lisk’s new design lets you easily manage your LSK (and much, much more).'
+      'The ultimate gateway to the ecosystem. Klayr’s new design lets you easily manage your KLY (and much, much more).'
     ),
     illustration: 'hubReadyToGo',
   },
   {
     title: t('Stay informed'),
     content: t(
-      'Keep up-to-date with announcements from the Lisk Foundation. Check what network validators have been up to with dedicated profile pages.'
+      'Keep up-to-date with announcements from the Klayr Foundation. Check what network validators have been up to with dedicated profile pages.'
     ),
     illustration: 'builtAroundCommunity',
   },
   {
     title: t('Effortlessly send and receive tokens'),
     content: t('Personalize each transaction with a custom message.'),
-    illustration: 'sendLSKTokens',
+    illustration: 'sendKLYTokens',
   },
   {
     title: t('Get involved'),
     content: t(
-      'Community is key. Stake for validators, or register as one yourself. Feel like a feature is missing? Request it directly from the Lisk.'
+      'Community is key. Stake for validators, or register as one yourself. Feel like a feature is missing? Request it directly from the Klayr.'
     ),
     illustration: 'timeToContribute',
   },

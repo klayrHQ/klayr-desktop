@@ -7,7 +7,7 @@ import TokenAmount from '@token/fungible/components/tokenAmount';
 import routes from 'src/routes/routes';
 import styles from './TokenCard.css';
 
-const liskSymbol = 'LSK';
+const klayrSymbol = 'KLY';
 
 const TokenCard = ({ token, searchAddress }) => {
   const { symbol, availableBalance, lockedBalances } = token;
@@ -21,14 +21,14 @@ const TokenCard = ({ token, searchAddress }) => {
     <div data-testid="token-card" className={styles.wrapper}>
       <div
         className={
-          !totalLockedBalance || symbol?.toUpperCase?.() !== liskSymbol ? styles.vCenter : ''
+          !totalLockedBalance || symbol?.toUpperCase?.() !== klayrSymbol ? styles.vCenter : ''
         }
       >
         <img alt={symbol} className={styles.tokenLogo} src={getLogo(token)} />
       </div>
       <div>
         <TokenAmount className={styles.tokenAmount} val={availableBalance} token={token} />
-        {symbol === 'LSK' && (
+        {symbol === 'KLY' && (
           <Converter
             className={styles.fiatBalance}
             value={convertFromBaseDenom(availableBalance, token)}

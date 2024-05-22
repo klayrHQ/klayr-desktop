@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { liskGenesisBlockTime } from '@block/const';
+import { klayrGenesisBlockTime } from '@block/const';
 
 /**
  * Returns unix timestamp from value
@@ -13,7 +13,7 @@ export const getUnixTimestampFromValue = (value) => +moment(value).format('x') *
  * @returns {Number} - Timestamp from first block
  */
 export const getDateTimestampFromFirstBlock = (value, format) =>
-  (moment(value, format).format('x') - moment(liskGenesisBlockTime).startOf('day').format('x')) /
+  (moment(value, format).format('x') - moment(klayrGenesisBlockTime).startOf('day').format('x')) /
   1000;
 
 /**
@@ -41,11 +41,11 @@ export const formatInputToDate = (value, separator = '.') => {
 
 /**
  * Converts Unix timestamp (seconds since Jan 01 1970 UTC)
- * to Lisk Epoch timestamp (seconds since May 24 2016, 17:00 UTC).
+ * to Klayr Epoch timestamp (seconds since May 24 2016, 17:00 UTC).
  * @returns {Number} - Timestamp in seconds from first block
  */
-export const convertUnixSecondsToLiskEpochSeconds = (timestamp) =>
-  moment(timestamp * 1000).unix() - moment(liskGenesisBlockTime).unix();
+export const convertUnixSecondsToKlayrEpochSeconds = (timestamp) =>
+  moment(timestamp * 1000).unix() - moment(klayrGenesisBlockTime).unix();
 
 /**
  * Converts a date in DD-MM-YYYY format to timestamp
@@ -55,9 +55,9 @@ export const transformStringDateToUnixTimestamp = (date) =>
   new Date(moment(date, 'DD-MM-YYYY').format('MM/DD/YYYY')).valueOf() / 1000;
 
 export default {
-  convertUnixSecondsToLiskEpochSeconds,
+  convertUnixSecondsToKlayrEpochSeconds,
   getDateTimestampFromFirstBlock,
   formatInputToDate,
-  liskGenesisBlockTime,
+  klayrGenesisBlockTime,
   transformStringDateToUnixTimestamp,
 };

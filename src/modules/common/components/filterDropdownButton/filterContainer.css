@@ -38,7 +38,7 @@
   }
 
   & .actionable {
-    color: var(--color-primary-standard);
+    color: var(--color-primary);
     cursor: pointer;
     font-weight: var(--font-weight-bold);
     text-align: right;

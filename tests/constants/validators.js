@@ -6,7 +6,7 @@ const validator = (index) => ({
   totalSelfStakeRewards: 200 * index,
   totalCommission: 100 * index,
   validatorWeight: `100600000${index}000`,
-  address: `lskhbxua8tpdckcewntcttfqfo4rbatampo2dgrno${index}`,
+  address: `klyhbxua8tpdckcewntcttfqfo4rbatampo2dgrno${index}`,
   lastGeneratedHeight: 27605 + index,
   generatedBlocks: 1 + index,
   status: 'active',
@@ -27,9 +27,9 @@ const validators = Array(30)
   .map((item, index) => validator(index));
 
 const generateValidator = (index) => ({
-  [`lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y1${index}`]: {
+  [`klydwsyfmcko6mcd357446yatromr9vzgu7eb8y1${index}`]: {
     summary: {
-      address: `lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y1${index}`,
+      address: `klydwsyfmcko6mcd357446yatromr9vzgu7eb8y1${index}`,
       name: `testUsername_${index}`,
     },
   },

@@ -15,10 +15,10 @@ jest.mock('@libs/wcm/hooks/useSession');
 jest.mock('@libs/wcm/hooks/useEvents');
 jest.mock('@account/hooks', () => ({
   useAccounts: jest.fn().mockImplementation(() => ({
-    accounts: [{ metadata: { address: 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt' } }],
+    accounts: [{ metadata: { address: 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt' } }],
   })),
   useCurrentAccount: jest.fn(() => [
-    { metadata: { address: 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt' } },
+    { metadata: { address: 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt' } },
   ]),
 }));
 
@@ -54,8 +54,8 @@ const proposal = {
       },
     },
     requiredNamespaces: {
-      lisk: {
-        chains: ['lsk:1'],
+      klayr: {
+        chains: ['kly:1'],
         events: ['sign_transaction'],
         methods: ['receive_token'],
       },
@@ -98,10 +98,10 @@ describe('ConnectionSummary', () => {
       proposal.params.proposer.metadata.icons[0]
     );
     wrapper.find('.methods span').forEach((method, index) => {
-      expect(method.text()).toEqual(proposal.params.requiredNamespaces.lisk.methods[index]);
+      expect(method.text()).toEqual(proposal.params.requiredNamespaces.klayr.methods[index]);
     });
     wrapper.find('.events span').forEach((event, index) => {
-      expect(event.text()).toEqual(proposal.params.requiredNamespaces.lisk.events[index]);
+      expect(event.text()).toEqual(proposal.params.requiredNamespaces.klayr.events[index]);
     });
   });
 
@@ -110,8 +110,8 @@ describe('ConnectionSummary', () => {
       params: {
         proposer: proposal.params.proposer,
         requiredNamespaces: {
-          lisk: {
-            chains: ['lsk:1'],
+          klayr: {
+            chains: ['kly:1'],
             events: [],
             methods: ['sign_transaction'],
           },

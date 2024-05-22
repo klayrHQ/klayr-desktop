@@ -1,5 +1,5 @@
 export const requestTokenSchema = {
-  $id: '/lisk/request-token',
+  $id: '/klayr/request-token',
   title: 'Request token params',
   type: 'object',
   required: ['modal', 'recipient', 'amount', 'token', 'recipientChain'],

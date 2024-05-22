@@ -19,8 +19,8 @@ const NetworkError = ({ onRetry, error }) => {
   };
 
   const mailReference = useMemo(() => {
-    const recipient = 'desktopdev@lisk.com';
-    const subject = `User Reported Error - Lisk - ${VERSION}`; // eslint-disable-line no-undef
+    const recipient = 'dev@klayr.xyz';
+    const subject = `User Reported Error - Klayr - ${VERSION}`; // eslint-disable-line no-undef
     return `mailto:${recipient}?&subject=${subject}&body=${JSON.stringify(errorMessage)}`;
   }, []);
 

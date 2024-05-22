@@ -10,7 +10,7 @@ import actionTypes from './actionTypes';
 export const bookmarksRetrieved = () => (dispatch) => {
   getFromStorage('bookmarks', emptyBookmarks, (data) => {
     const bookmarks = {
-      LSK: data.LSK.map((wallet) => ({
+      KLY: data.KLY.map((wallet) => ({
         ...wallet,
         disabled: validateAddress(wallet.address) === 1,
       })),
@@ -22,17 +22,17 @@ export const bookmarksRetrieved = () => (dispatch) => {
   });
 };
 
-export const bookmarkAdded = ({ wallet, token = tokenMap.LSK.key }) => ({
+export const bookmarkAdded = ({ wallet, token = tokenMap.KLY.key }) => ({
   data: { wallet, token },
   type: actionTypes.bookmarkAdded,
 });
 
-export const bookmarkUpdated = ({ wallet, token = tokenMap.LSK.key }) => ({
+export const bookmarkUpdated = ({ wallet, token = tokenMap.KLY.key }) => ({
   data: { wallet, token },
   type: actionTypes.bookmarkUpdated,
 });
 
-export const bookmarkRemoved = ({ address, token = tokenMap.LSK.key }) => ({
+export const bookmarkRemoved = ({ address, token = tokenMap.KLY.key }) => ({
   data: { address, token },
   type: actionTypes.bookmarkRemoved,
 });

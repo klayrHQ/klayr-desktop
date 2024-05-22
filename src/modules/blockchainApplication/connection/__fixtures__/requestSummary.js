@@ -8,7 +8,7 @@ export const context = {
       name: EVENTS.SESSION_REQUEST,
       meta: {
         params: {
-          chainId: 'lisk:00000001',
+          chainId: 'klayr:00000001',
           request: {
             method: 'sign_transaction',
             params: {
@@ -31,6 +31,6 @@ export const context = {
         url: 'http://example.com',
       },
     },
-    requiredNamespaces: { lisk: { chains: ['lisk:00000001'] } },
+    requiredNamespaces: { klayr: { chains: ['klayr:00000001'] } },
   },
 };

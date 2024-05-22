@@ -5,7 +5,7 @@
   max-width: 630px;
   min-width: 550px;
   height: 423px;
-  background: var(--color-white);
+  background: var(--color-surface);
   border-radius: var(--border-radius-box);
 
   & .content {
@@ -18,7 +18,7 @@
       @mixin headingNormal bold;
 
       max-width: initial;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
     }
   }
 }

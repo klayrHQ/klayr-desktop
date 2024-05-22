@@ -31,7 +31,7 @@ const AccountsComparison = ({ t }) => {
 
   return (
     <div className={`${styles.container} ${styles.reclaim}`}>
-      <h4>{t('Reclaim LSK tokens')}</h4>
+      <h4>{t('Reclaim KLY tokens')}</h4>
       <p>
         {t('Your tokens and passphrase are safe.')}
         <br />
@@ -60,22 +60,22 @@ const AccountsComparison = ({ t }) => {
             }`}
           >
             <div>
-              {t('Deposit at least {{amount}} LSK to your new account', { amount })}
+              {t('Deposit at least {{amount}} KLY to your new account', { amount })}
               <Tooltip position="right" size="m">
                 <>
                   <p>
                     {t(
-                      'Since you want to reclaim your LSK on the new blockchain, you need to pay the network fee from your new account.'
+                      'Since you want to reclaim your KLY on the new blockchain, you need to pay the network fee from your new account.'
                     )}
                   </p>
                   <br />
-                  <p>{t('Hence your LSK in your old account can not be used to pay the fee.')}</p>
+                  <p>{t('Hence your KLY in your old account can not be used to pay the fee.')}</p>
                   <br />
                   <p
                     className={`${styles.link} link`}
                     onClick={() => {
                       window.open(
-                        'https://lisk.com/blog/posts/reclaiming-a-lisk-account',
+                        'https://klayr.xyz/blog/posts/reclaiming-a-klayr-account',
                         '_blank',
                         'rel=noopener noreferrer'
                       );
@@ -89,7 +89,7 @@ const AccountsComparison = ({ t }) => {
               <>
                 <span>
                   {t(
-                    'Transfer {{amount}} LSK to your account {{address}} to initiate the reclaim tokens.',
+                    'Transfer {{amount}} KLY to your account {{address}} to initiate the reclaim tokens.',
                     { amount, address: wallet.summary?.address }
                   )}
                 </span>

@@ -30,7 +30,7 @@
         flex-direction: column;
 
         & label {
-          color: var(--color-zodiac-blue);
+          color: var(--color-colecti-dark-blue);
           margin-top: 16px;
           font-weight: var(--font-weight-normal);
           font-size: var(--paragraph-font-size-s);

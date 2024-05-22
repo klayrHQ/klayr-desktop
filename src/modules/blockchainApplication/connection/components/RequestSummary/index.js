@@ -19,7 +19,7 @@ import { convertFromBaseDenom } from '@token/fungible/utils/helpers';
 import { joinModuleAndCommand } from '@transaction/utils/moduleCommand';
 import { signMessage } from '@message/store/action';
 import { addSearchParamsToUrl, removeSearchParamsFromUrl } from 'src/utils/searchParams';
-import { validator } from '@liskhq/lisk-client';
+import { validator } from '@klayr/client';
 import { useSession } from '@libs/wcm/hooks/useSession';
 import { useEvents } from '@libs/wcm/hooks/useEvents';
 import { useSchemas } from '@transaction/hooks/queries/useSchemas';
@@ -37,7 +37,7 @@ import styles from './requestSummary.css';
 
 const getTitle = (key, t) =>
   Object.values(SIGNING_METHODS).find((item) => item.key === key)?.title ?? t('Method not found.');
-const defaultToken = { symbol: 'LSK' };
+const defaultToken = { symbol: 'KLY' };
 
 // eslint-disable-next-line max-statements
 const RequestSummary = ({ nextStep, history, message }) => {
@@ -66,7 +66,7 @@ const RequestSummary = ({ nextStep, history, message }) => {
     return senderAccount?.address;
   }, [encryptedSenderAccount, senderAccount]);
 
-  const sendingChainID = request?.chainId?.replace('lisk:', '');
+  const sendingChainID = request?.chainId?.replace('klayr:', '');
   const { data: tokenData } = useAppsMetaTokens({
     config: { params: { chainID: sendingChainID } },
   });
@@ -169,7 +169,7 @@ const RequestSummary = ({ nextStep, history, message }) => {
     },
   };
 
-  const clipboardCopyItems = sessionRequest?.requiredNamespaces?.lisk?.chains?.map((chain) => ({
+  const clipboardCopyItems = sessionRequest?.requiredNamespaces?.klayr?.chains?.map((chain) => ({
     label: 'Chain ID:',
     value: chain.replace(/\D+/g, ''),
   }));
@@ -252,7 +252,7 @@ const RequestSummary = ({ nextStep, history, message }) => {
                           <b>{signingAccountDetails}</b>
                           <span>
                             {t(
-                              '” to Lisk Desktop and re-initiate the transaction signing from the external application.'
+                              '” to Klayr Desktop and re-initiate the transaction signing from the external application.'
                             )}
                           </span>
                         </>

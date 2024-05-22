@@ -34,7 +34,7 @@ describe('Overview', () => {
     const updatedProps = { ...props, tokenData: { data: [] } };
     smartRender(Overview, updatedProps, config);
 
-    expect(screen.getByTestId('selected-menu-item')).not.toHaveTextContent('LSK');
+    expect(screen.getByTestId('selected-menu-item')).not.toHaveTextContent('KLY');
     expect(screen.queryByTestId('dropdown-options')).not.toBeInTheDocument();
   });
 
@@ -50,19 +50,19 @@ describe('Overview', () => {
     props.tokenData.data = undefined;
     smartRender(Overview, props, config);
 
-    expect(screen.getByTestId('selected-menu-item')).not.toHaveTextContent('LSK');
+    expect(screen.getByTestId('selected-menu-item')).not.toHaveTextContent('KLY');
   });
 
   it('updates the filter when the search input is changed', async () => {
     smartRender(Overview, props, config);
 
     fireEvent.change(screen.getByPlaceholderText('Search by name or address'), {
-      target: { value: 'lsk3szyz' },
+      target: { value: 'kly3szyz' },
     });
 
     await waitFor(() => {
       expect(mockSetFilter).toHaveBeenCalledTimes(1);
-      expect(mockSetFilter).toHaveBeenCalledWith('search', 'lsk3szyz');
+      expect(mockSetFilter).toHaveBeenCalledWith('search', 'kly3szyz');
     });
   });
 });

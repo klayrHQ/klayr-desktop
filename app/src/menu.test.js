@@ -21,7 +21,7 @@ describe('MenuBuilder', () => {
         setApplicationMenu: spy(),
         buildFromTemplate: (template) => template,
       },
-      app: { getName: () => 'Lisk', getVersion: () => '0.2.0' },
+      app: { getName: () => 'Klayr', getVersion: () => '0.2.0' },
       dialog: { showMessageBox: spy() },
     };
     clock = useFakeTimers({
@@ -40,7 +40,7 @@ describe('MenuBuilder', () => {
     processMock.expects('isPlatform').withArgs('darwin').returns(true);
     processMock.expects('isPlatform').withArgs('linux').returns(false);
     const template = menu.build(electron);
-    expect(template[0].label).to.equal('Lisk');
+    expect(template[0].label).to.equal('Klayr');
     expect(template[0].submenu[0].role).to.equal('about');
     expect(template[0].submenu[0].label).to.equal('About');
     expect(template[0].submenu[1].role).to.equal('quit');
@@ -59,7 +59,7 @@ describe('MenuBuilder', () => {
     expect(submenu[submenu.length - 1].label).to.equal('About');
 
     // make sure the mac about menu was not added
-    expect(template[0].label).to.not.equal('Lisk');
+    expect(template[0].label).to.not.equal('Klayr');
 
     // make sure message box is not shown on click if window is not focused
     submenu[submenu.length - 1].click(null, false);
@@ -67,8 +67,8 @@ describe('MenuBuilder', () => {
 
     const expectedOptions = {
       buttons: ['OK'],
-      icon: `${__dirname}/assets/images/LISK.png`,
-      message: `${electron.app.getName()}\nVersion ${electron.app.getVersion()}\nCopyright © 2016 - 2018 Lisk Foundation`,
+      icon: `${__dirname}/assets/images/KLAYR.png`,
+      message: `${electron.app.getName()}\nVersion ${electron.app.getVersion()}\nCopyright © 2024 Klayr Holding`,
     };
 
     // make sure message box is shown on click if window is focused
@@ -81,7 +81,7 @@ describe('MenuBuilder', () => {
   });
 
   it('Should open link on click', () => {
-    menu.onClickLink(electron, 'https://lisk.com');
-    expect(electron.shell.openExternal).to.have.been.calledWith('https://lisk.com');
+    menu.onClickLink(electron, 'https://klayr.xyz');
+    expect(electron.shell.openExternal).to.have.been.calledWith('https://klayr.xyz');
   });
 });

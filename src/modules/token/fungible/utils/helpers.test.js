@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { convertFromBaseDenom, convertToBaseDenom } from './helpers';
 
-const mockLiskTokenMetadata = {
-  displayDenom: 'lsk',
+const mockKlayrTokenMetadata = {
+  displayDenom: 'kly',
   denomUnits: [
     {
       denom: 'beddows',
@@ -10,9 +10,9 @@ const mockLiskTokenMetadata = {
       aliases: ['Beddows'],
     },
     {
-      denom: 'lsk',
+      denom: 'kly',
       decimals: 8,
-      aliases: ['Lisk'],
+      aliases: ['Klayr'],
     },
   ],
 };
@@ -35,8 +35,8 @@ const mockEventiTokenMetadata = {
 
 describe('Token utils', () => {
   describe('convertFromBaseDenom', () => {
-    it('should convert beddows to lsk', () => {
-      expect(convertFromBaseDenom(100000000, mockLiskTokenMetadata)).to.be.equal('1');
+    it('should convert beddows to kly', () => {
+      expect(convertFromBaseDenom(100000000, mockKlayrTokenMetadata)).to.be.equal('1');
     });
 
     it('should convert ventti to envt', () => {
@@ -49,8 +49,8 @@ describe('Token utils', () => {
   });
 
   describe('convertToBaseDenom', () => {
-    it('should convert lsk to beddows', () => {
-      expect(convertToBaseDenom(1, mockLiskTokenMetadata)).to.be.equal('100000000');
+    it('should convert kly to beddows', () => {
+      expect(convertToBaseDenom(1, mockKlayrTokenMetadata)).to.be.equal('100000000');
     });
 
     it('should convert envt to ventti', () => {

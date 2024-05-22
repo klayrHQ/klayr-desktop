@@ -1,8 +1,8 @@
 import { selectCurrentHWDevice } from '@hardwareWallet/store/selectors/hwSelectors';
 
 const selectActiveToken = (state) => state.token.active;
-const selectLSKAddress = (state) =>
-  state.wallet.info ? state.wallet.info.LSK.summary.address : undefined;
+const selectKLYAddress = (state) =>
+  state.wallet.info ? state.wallet.info.KLY.summary.address : undefined;
 const selectTransactions = (state) => state.transactions;
 const selectActiveTokenAccount = (state) => {
   if (!state.wallet.info) {
@@ -34,7 +34,7 @@ const selectSettings = (state) => state.settings;
 const selectNetwork = (state) => state.network;
 const selectNetworkName = (state) => state.network.name;
 const selectStaking = (state) => state.staking;
-const selectModuleCommandSchemas = (state) => state.network.networks?.LSK?.moduleCommandSchemas;
+const selectModuleCommandSchemas = (state) => state.network.networks?.KLY?.moduleCommandSchemas;
 const selectBookmarks = (state) => state.bookmarks;
 const selectCurrentBlockchainApplication = (state) => state.blockChainApplications.current;
 
@@ -44,7 +44,7 @@ export {
   selectSettings,
   selectActiveToken,
   selectTransactions,
-  selectLSKAddress,
+  selectKLYAddress,
   selectActiveTokenAccount,
   selectNetworkName,
   selectModuleCommandSchemas,

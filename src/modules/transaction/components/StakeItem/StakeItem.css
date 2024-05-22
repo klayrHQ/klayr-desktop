@@ -18,18 +18,18 @@
 .primaryText {
   @mixin contentNormal semi-bold;
 
-  color: var(--color-ink-blue);
+  color: var(--color-azule-dark);
   margin-right: 10px;
 }
 
 .value {
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   display: flex;
 }
 
 .arrowIcon {
   margin: 0 5px;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }
 
 .confirmed {

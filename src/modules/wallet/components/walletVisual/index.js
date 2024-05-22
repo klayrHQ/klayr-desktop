@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js';
 import React from 'react';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import generateUniqueId from 'src/utils/generateUniqueId';
 import { validateAddress } from 'src/utils/validators';
 import { Gradients, gradientSchemes } from './gradients';

@@ -194,13 +194,13 @@
   & .title {
     @mixin contentNormal bold;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & a {
     @mixin contentLarge bold;
 
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     text-decoration: none;
 
     &:hover {
@@ -219,7 +219,7 @@
   }
 
   & > main {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     font-size: var(--footnote-font-size);
   }
 

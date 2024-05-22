@@ -24,9 +24,9 @@ const ConnectionProposal = () => {
   const { t } = useTranslation();
   const event = events?.length && events[events.length - 1];
   const requiredNamespaces = event?.meta?.params?.requiredNamespaces;
-  const requestingChainIDs = (requiredNamespaces?.lisk?.chains || [])
+  const requestingChainIDs = (requiredNamespaces?.klayr?.chains || [])
     .join(',')
-    .replace(/lisk:/g, '');
+    .replace(/klayr:/g, '');
 
   const blockchainAppsMeta = useBlockchainApplicationMeta({
     config: { params: { chainID: requestingChainIDs } },
@@ -65,7 +65,7 @@ const ConnectionProposal = () => {
 
     const nameSpaceKeys = requiredNamespaces && Object.keys(requiredNamespaces);
     const hasNameSpaceError =
-      !nameSpaceKeys || nameSpaceKeys.length > 1 || !nameSpaceKeys.includes('lisk');
+      !nameSpaceKeys || nameSpaceKeys.length > 1 || !nameSpaceKeys.includes('klayr');
     const isSessionProposal = event?.name === EVENTS.SESSION_PROPOSAL;
 
     if (!blockchainAppsMeta.data?.data?.length || blockchainAppsMeta.isError) {

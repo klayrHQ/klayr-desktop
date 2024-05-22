@@ -17,7 +17,7 @@ describe('actions: bookmarks', () => {
       balance: wallets.genesis.balance,
       title: wallets.genesis.summary.address,
     },
-    token: tokenMap.LSK.key,
+    token: tokenMap.KLY.key,
   };
   const dispatch = jest.fn();
   describe('bookmarksRetrieved', () => {
@@ -28,7 +28,7 @@ describe('actions: bookmarks', () => {
     it('gets bookmarks from localJSONStorage', () => {
       getFromStorage.mockImplementation((_, __, cb) => {
         cb({
-          LSK: [{}],
+          KLY: [{}],
         });
       });
 
@@ -40,7 +40,7 @@ describe('actions: bookmarks', () => {
       expect(dispatch).toBeCalledWith({
         type: actionTypes.bookmarksRetrieved,
         data: {
-          LSK: [{ disabled: true }],
+          KLY: [{ disabled: true }],
         },
       });
     });
@@ -67,7 +67,7 @@ describe('actions: bookmarks', () => {
   it('should create an action to remove a bookmark wallet', () => {
     const removedData = {
       address: wallets.genesis.summary.address,
-      token: tokenMap.LSK.key,
+      token: tokenMap.KLY.key,
     };
     const expectedAction = {
       data: removedData,

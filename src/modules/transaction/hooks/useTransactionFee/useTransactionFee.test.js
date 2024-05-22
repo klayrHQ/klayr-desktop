@@ -8,8 +8,8 @@ import * as encodingUtils from '../../utils/encoding';
 jest.useRealTimers();
 
 jest.spyOn(encodingUtils, 'fromTransactionJSON').mockImplementation((tx) => tx);
-jest.mock('@liskhq/lisk-client', () => ({
-  ...jest.requireActual('@liskhq/lisk-client'),
+jest.mock('@klayr/client', () => ({
+  ...jest.requireActual('@klayr/client'),
   transactions: {
     computeMinFee: jest.fn().mockReturnValue(1000000n),
     getBytes: jest.fn().mockReturnValue({ length: 50 }),

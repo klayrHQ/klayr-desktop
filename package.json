@@ -1,16 +1,16 @@
 {
-  "name": "Lisk",
+  "name": "Klayr",
   "version": "3.0.1",
-  "author": "Lisk Foundation <admin@lisk.com>, lightcurve GmbH <admin@lightcurve.io>",
+  "author": "Klayr Labs <admin@klayr.xyz>, Lisk Foundation <admin@lisk.com>, lightcurve GmbH <admin@lightcurve.io>",
   "license": "GPL-3.0",
-  "productName": "Lisk",
-  "description": "Lisk",
-  "homepage": "https://github.com/LiskHQ/lisk-desktop",
-  "bugs": "https://github.com/LiskHQ/lisk-desktop/issues",
+  "productName": "Klayr",
+  "description": "Klayr",
+  "homepage": "https://github.com/klayrhq/klayr-desktop",
+  "bugs": "https://github.com/klayrhq/klayr-desktop/issues",
   "main": "./setup/react/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LiskHQ/lisk-desktop"
+    "url": "https://github.com/klayrhq/klayr-desktop"
   },
   "engines": {
     "node": ">=v18.16.1"
@@ -50,16 +50,16 @@
   },
   "build": {
     "asar": true,
-    "appId": "io.lisk.hub",
-    "copyright": "Copyright © 2016-2023 Lisk",
+    "appId": "io.klayr.hub",
+    "copyright": "Copyright © 2016-2024 Klayr",
     "afterSign": "electron-builder-notarize",
     "protocols": {
-      "name": "lisk",
+      "name": "klayr",
       "schemes": [
-        "lisk"
+        "klayr"
       ]
     },
-    "artifactName": "lisk-${os}-${arch}-${version}.${ext}",
+    "artifactName": "klayr-${os}-${arch}-${version}.${ext}",
     "publish": [
       "github"
     ],
@@ -68,13 +68,13 @@
         "AppImage"
       ],
       "desktop": {
-        "MimeType": "application/lisk;x-scheme-handler/lisk"
+        "MimeType": "application/klayr;x-scheme-handler/klayr"
       },
       "category": "Network"
     },
     "win": {
       "target": "nsis",
-      "publisherName": "Lisk Stiftung",
+      "publisherName": "Klayr holding",
       "sign": "./scripts/sign.js",
       "certificateSubjectName": "key_480054267"
     },
@@ -114,8 +114,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "2.8.8",
+    "@klayr/client": "6.0.3",
     "@ledgerhq/hw-transport-node-hid": "6.27.17-next.0",
-    "@liskhq/lisk-client": "6.0.1",
     "@tanstack/react-query": "4.0.10",
     "@tanstack/react-query-devtools": "4.2.1",
     "@walletconnect/sign-client": "2.9.0",
@@ -148,7 +148,8 @@
     "lodash.merge": "4.6.2",
     "moment": "2.29.4",
     "msw": "1.2.2",
-    "node-hid": "2.1.2",
+    "node-abi": "3.56.0",
+    "node-hid": "3.0.0",
     "numeral": "git+https://github.com/LiskHQ/Numeral-js.git",
     "path-browserify": "^1.0.1",
     "playwright": "1.32.1",
@@ -212,8 +213,8 @@
     "cpx": "1.5.0",
     "cross-env": "7.0.3",
     "css-loader": "5.2.4",
-    "electron": "27.1.0",
-    "electron-builder": "24.6.4",
+    "electron": "30.0.6",
+    "electron-builder": "24.13.3",
     "electron-builder-notarize": "1.5.1",
     "electron-devtools-installer": "3.2.0",
     "electron-ipc-mock": "0.0.3",

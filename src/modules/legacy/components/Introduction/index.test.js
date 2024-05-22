@@ -8,11 +8,11 @@ window.open = jest.fn();
 describe('Reclaim balance Introduction screen', () => {
   const props = { nextStep: jest.fn() };
 
-  it('Opens lisk blog windows', () => {
+  it('Opens klayr blog windows', () => {
     const wrapper = mount(<Introduction {...props} />);
     wrapper.find('.link').first().simulate('click');
     expect(window.open).toHaveBeenCalledWith(
-      'https://lisk.com/blog/posts/announcing-lisk-mainnet-v4-migration',
+      'https://klayr.xyz/blog/posts/announcing-klayr-mainnet-v4-migration',
       '_blank',
       'rel=noopener noreferrer'
     );

@@ -62,7 +62,7 @@ describe('Paper Wallet', () => {
   it('should render the information', async () => {
     const doc = await renderPaperWallet(JSPDF, data, walletName);
     await waitFor(() => {
-      expect(doc.setFont).toHaveBeenCalledWith('gilroy', 'normal', 'bold');
+      expect(doc.setFont).toHaveBeenCalledWith('Utendo', 'normal', 'bold');
       expect(doc.setFontSize).toHaveBeenCalledWith(16);
       expect(doc.text).toHaveBeenNthCalledWith(1, 'Paper wallet', 135, 64, {
         align: 'left',

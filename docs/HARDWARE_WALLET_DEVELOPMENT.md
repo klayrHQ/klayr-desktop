@@ -1,8 +1,8 @@
 # How to use the Ledger hardware wallet (Dev Mode)
 
-Note: This guide is only for development purpose, for production usage please download the Lisk App from Ledger Live.
+Note: This guide is only for development purpose, for production usage please download the Klayr App from Ledger Live.
 
-## Step 1: Manually add the Lisk ledger app to your Ledger hardware wallet
+## Step 1: Manually add the Klayr ledger app to your Ledger hardware wallet
 
 - Download `installer_nanos.sh` or `installer_nanos_plus.sh` from [ledger-lisk](https://github.com/Zondax/ledger-lisk/releases), depending on your HW test device.
 - run `chmod +x ./installer.sh`
@@ -15,10 +15,10 @@ Note: This guide is only for development purpose, for production usage please do
 
 ## Step 2: How to sign in to your Ledger wallet
 
-- `git clone git@github.com:LiskHQ/lisk-desktop.git`
+- `git clone git@github.com:KlayrHQ/klayr-desktop.git`
 - run `npm run build`
 - Open two terminals.
 - In terminal 1 run `npm run dev`
-- In terminal 2 run `LISK_DESKTOP_URL="http://localhost:8080" DEBUG=true npm run start` // this will open the Lisk electron app.
-- In the Lisk electron app navigate to /dashboard → click “Add account” → then click “Use a hardware wallet”.
+- In terminal 2 run `KLAYR_DESKTOP_URL="http://localhost:8080" DEBUG=true npm run start` // this will open the Klayr electron app.
+- In the Klayr electron app navigate to /dashboard → click “Add account” → then click “Use a hardware wallet”.
 - Open the Lisk app on your Ledger, (the app you previously installed in step 1).

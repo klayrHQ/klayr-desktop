@@ -5,23 +5,23 @@ const transaction = (index) => ({
   nonce: '111',
   fee: '1000000',
   sender: {
-    address: 'lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
+    address: 'kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
     publicKey: '2ca9a7...c23079',
     name: 'genesis_51',
   },
   params: {
     // Depends on moduleCommandID
     amount: '150000000',
-    recipientAddress: 'lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
+    recipientAddress: 'kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
     data: 'message',
     stakes:
       index >= 15
         ? [
             {
-              validatorAddress: 'lskkkb9gcggfqzsusrnu7zb9uzfop96u7596zr5w2',
+              validatorAddress: 'klykkb9gcggfqzsusrnu7zb9uzfop96u7596zr5w2',
             },
             {
-              validatorAddress: 'lskma5wphbxzf8zkvwumtamjosauzdo5s2qepgrty',
+              validatorAddress: 'klyma5wphbxzf8zkvwumtamjosauzdo5s2qepgrty',
             },
           ]
         : undefined,
@@ -36,7 +36,7 @@ const transaction = (index) => ({
   executionStatus: 'Successful',
   meta: {
     recipient: {
-      address: 'lsktk7bj2yadx5vq3f87gh5cwca7ptpk5djpxhhc3',
+      address: 'klytk7bj2yadx5vq3f87gh5cwca7ptpk5djpxhhc3',
       publicKey: '2ca9a7...c23079',
       name: 'genesis_49',
     },

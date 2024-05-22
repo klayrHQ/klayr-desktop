@@ -1,5 +1,5 @@
 /* istanbul ignore file */
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { extractKeyPair, extractAddressFromPublicKey } from 'src/modules/wallet/utils/account';
 
 const ARGON2 = {
@@ -28,7 +28,7 @@ export const encryptAccount = async ({
     }
     const address = extractAddressFromPublicKey(publicKey);
     const plainText = JSON.stringify({ privateKey, recoveryPhrase });
-    // Recommended options https://github.com/LiskHQ/lips/pull/465/files
+    // Recommended options https://github.com/KlayrHQ/lips/pull/465/files
     const encryptOptions = {
       kdf: cryptography.encrypt.KDF.ARGON2,
       kdfparams: {

@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="644" height="374" viewBox="0 0 644 374">
   <defs>
-    <linearGradient id="send-lsk-tokens-a" x1="0%" x2="100%" y1="50%" y2="50%">
+    <linearGradient id="send-kly-tokens-a" x1="0%" x2="100%" y1="50%" y2="50%">
       <stop offset="0%" stop-color="#1A2A58" stop-opacity="0"/>
       <stop offset="100%" stop-color="#1A2A58"/>
     </linearGradient>
   </defs>
   <g fill="none" fill-rule="evenodd" transform="translate(-124 38)">
     <path fill="#254898" fill-rule="nonzero" d="M673.907,263.146 L673.907,336.583 L768.014,336.583 L768.014,276.042 C767.999646,249.228788 746.259215,227.5 719.446,227.5 L638.3,227.5 C657.965567,227.535829 673.892699,243.480405 673.907,263.146 L673.907,263.146 Z"/>
-    <rect width="195.403" height="139.893" x="520.325" y="28.379" fill="url(#send-lsk-tokens-a)" fill-rule="nonzero"/>
+    <rect width="195.403" height="139.893" x="520.325" y="28.379" fill="url(#send-kly-tokens-a)" fill-rule="nonzero"/>
     <path stroke="#254898" stroke-width="1.3" d="M673.907,336.583 L673.907,263.146 C673.892699,243.480405 657.965567,227.535829 638.3,227.5 L345.917,227.5 C328.563661,227.5 314.496,241.567661 314.496,258.921 L314.496,336.609"/>
     <rect width="155.454" height="94.354" x="541.073" y="54.236" fill="#DFE6F2" fill-rule="nonzero"/>
     <rect width="155.454" height="9.828" x="541.073" y="47.515" fill="#C3CFE6" fill-rule="nonzero"/>

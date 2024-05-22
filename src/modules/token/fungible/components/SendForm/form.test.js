@@ -82,7 +82,7 @@ jest.spyOn(transactionApi, 'dryRunTransaction').mockResolvedValue([]);
 describe('Form', () => {
   let props;
   let bookmarks;
-  const availableBalance = '200000000'; // 2LSK
+  const availableBalance = '200000000'; // 2KLY
 
   useTokenBalances.mockReturnValue({ data: mockTokensBalance, isLoading: false, isSuccess: true });
   useTokenSummary.mockReturnValue({
@@ -115,7 +115,7 @@ describe('Form', () => {
     data: { data: { escrowAccount: 165000, userAccount: 165000 } },
   });
   useGetMinimumMessageFee.mockReturnValue({ data: { data: { fee: 5000000 } } });
-  useFiatRates.mockReturnValue({ LSK: { USD: 1, EUR: 1 } });
+  useFiatRates.mockReturnValue({ KLY: { USD: 1, EUR: 1 } });
   useTransactionEstimateFees.mockReturnValue({
     data: mockEstimateFeeResponse,
     isFetching: false,
@@ -136,25 +136,25 @@ describe('Form', () => {
 
   beforeEach(() => {
     bookmarks = {
-      LSK: [
+      KLY: [
         {
           title: 'ABC',
-          address: 'lsks6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6',
+          address: 'klys6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6',
         },
         {
           title: 'FRG',
-          address: 'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
+          address: 'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
         },
         {
           title: 'KTG',
-          address: 'lskgonvfdxt3m6mm7jaeojrj5fnxx7vwmkxq72v79',
+          address: 'klygonvfdxt3m6mm7jaeojrj5fnxx7vwmkxq72v79',
         },
       ],
     };
 
     props = {
       t: (v) => v,
-      token: tokenMap.LSK.key,
+      token: tokenMap.KLY.key,
       account: {
         ...accounts.genesis,
         summary: { balance: '200000000' },
@@ -250,7 +250,7 @@ describe('Form', () => {
     it('should validate bookmark', () => {
       const wrapper = mountWithQueryClient(Form, props);
       const evt = {
-        target: { name: 'recipient', value: 'lsks6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6' },
+        target: { name: 'recipient', value: 'klys6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6' },
       };
       wrapper.find('input.recipient').simulate('change', evt);
       act(() => {
@@ -263,7 +263,7 @@ describe('Form', () => {
     it('should validate address', () => {
       const wrapper = mountWithQueryClient(Form, {
         ...props,
-        bookmarks: { LSK: [] },
+        bookmarks: { KLY: [] },
       });
       const evt = { target: { name: 'recipient', value: 'invalid_address' } };
       wrapper.find('input.recipient').simulate('change', evt);
@@ -277,13 +277,13 @@ describe('Form', () => {
 
     it('Should show bookmark title if address is a bookmark', () => {
       const wrapper = mountWithQueryClient(Form, props);
-      const receipentEvt = { target: { name: 'recipient', value: bookmarks.LSK[0].address } };
+      const receipentEvt = { target: { name: 'recipient', value: bookmarks.KLY[0].address } };
       wrapper.find('input.recipient').simulate('change', receipentEvt);
       act(() => {
         jest.advanceTimersByTime(300);
       });
       wrapper.update();
-      expect(wrapper.find('input.recipient')).toHaveValue(bookmarks.LSK[0].title);
+      expect(wrapper.find('input.recipient')).toHaveValue(bookmarks.KLY[0].title);
     });
   });
 
@@ -330,7 +330,7 @@ describe('Form', () => {
       amountField = wrapper.find('.fieldGroup').at(1);
 
       expect(amountField.find('.feedback.error')).toHaveClassName('error');
-      expect(wrapper.find('.amount Feedback')).toHaveText('Provide a correct amount of LSK');
+      expect(wrapper.find('.amount Feedback')).toHaveText('Provide a correct amount of KLY');
 
       amountField
         .find('input[name="amount"]')
@@ -343,7 +343,7 @@ describe('Form', () => {
       amountField = wrapper.find('.fieldGroup').at(1);
 
       expect(amountField.find('.feedback.error')).toHaveClassName('error');
-      expect(wrapper.find('.amount Feedback')).toHaveText('Provide a correct amount of LSK');
+      expect(wrapper.find('.amount Feedback')).toHaveText('Provide a correct amount of KLY');
 
       amountField.find('input').simulate('change', {
         target: { name: 'amount', value: props.account.token?.balance + 2 },
@@ -389,10 +389,10 @@ describe('Form', () => {
       expect(wrapper.find('.confirm-btn').at(0)).toBeDisabled();
     });
 
-    it('Should allow to send 0 LSK amount', () => {
+    it('Should allow to send 0 KLY amount', () => {
       const wrapper = mountWithQueryClient(Form, props);
       const recipient = {
-        target: { name: 'recipient', value: 'lsks6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6' },
+        target: { name: 'recipient', value: 'klys6uckwnap7s72ov3edddwgxab5e89t6uy8gjt6' },
       };
       wrapper.find('input.recipient').simulate('change', recipient);
       const evt = { target: { name: 'amount', value: '0' } };

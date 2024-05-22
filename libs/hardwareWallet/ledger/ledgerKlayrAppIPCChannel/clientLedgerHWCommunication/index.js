@@ -1,4 +1,4 @@
-import { executeIPCCommand } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication/utils';
+import { executeIPCCommand } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication/utils';
 import { LEDGER_HW_IPC_CHANNELS } from '@libs/hardwareWallet/ledger/constants';
 
 const {
@@ -57,7 +57,7 @@ export const resetLedgerIPCQueue = async () => {
   await executeIPCCommand(RESET_LEDGER_IPC_QUEUE);
 };
 
-export const getIsInsideLiskApp = async (devicePath, accountIndex) => {
+export const getIsInsideKlayrApp = async (devicePath, accountIndex) => {
   try {
     const pubKey = await getPubKey(devicePath, accountIndex);
 

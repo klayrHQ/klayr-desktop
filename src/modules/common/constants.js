@@ -2,15 +2,15 @@ import i18next from 'i18next';
 import routes from 'src/routes/routes';
 
 export const INFO_BANNERS = {
-  liskMigration: {
-    infoMessage: (t) => t('Lisk v4 Migration'),
+  klayrMigration: {
+    infoMessage: (t) => t('Klayr v4 Migration'),
     infoLabel: (t) => t('Announcement'),
     infoDescription: (t) =>
       t(
         'This announcement is intended for all validators and node operators. Please ensure that you correctly migrate your nodes to the new network to avoid missing any blocks after the network hard fork.'
       ),
-    illustrationName: 'liskMigrationIllustration',
-    infoLink: 'https://lisk.com/documentation/lisk-core/v4/management/migration.html',
+    illustrationName: 'klayrMigrationIllustration',
+    infoLink: 'https://klayr.xyz/documentation/klayr-core/management/migration.html',
     infoLinkText: 'Migration guide',
   },
   proofOfStake: {
@@ -75,7 +75,7 @@ export const INFO_BANNERS = {
     infoMessage: (t) => t('Introducing Multi-tokens'),
     infoDescription: (t) =>
       t(
-        'With Lisk interoperability, you can now store, manage, and transact with a variety of tokens within a single wallet interface. Seamlessly switch between different digital assets and diversify your portfolio effortlessly. Enjoy the convenience and flexibility of Multi-Tokens.'
+        'With Klayr interoperability, you can now store, manage, and transact with a variety of tokens within a single wallet interface. Seamlessly switch between different digital assets and diversify your portfolio effortlessly. Enjoy the convenience and flexibility of Multi-Tokens.'
       ),
     illustrationName: 'multiTokenBalances',
     infoLink: routes.allTokens.path,

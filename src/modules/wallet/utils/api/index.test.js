@@ -5,20 +5,20 @@ import { getAccounts } from './index';
 jest.mock('src/utils/api/http', () => jest.fn().mockReturnValue([]));
 jest.mock('src/utils/api/ws', () => jest.fn().mockReturnValue([]));
 
-jest.mock('@liskhq/lisk-client', () => ({
-  ...jest.requireActual('@liskhq/lisk-client'),
+jest.mock('@klayr/client', () => ({
+  ...jest.requireActual('@klayr/client'),
   cryptography: {
-    ...jest.requireActual('@liskhq/lisk-client').cryptography,
+    ...jest.requireActual('@klayr/client').cryptography,
     address: {
-      getLisk32AddressFromPublicKey: jest.fn(() => 'lskdgtenb76rf93bzd56cqn6ova46wfvoesbk4hnd'),
+      getKlayr32AddressFromPublicKey: jest.fn(() => 'klydgtenb76rf93bzd56cqn6ova46wfvoesbk4hnd'),
     },
   },
 }));
 
-describe.skip('API: LSK Account', () => {
+describe.skip('API: KLY Account', () => {
   const network = {
     networks: {
-      LSK: { serviceUrl: 'http://sample.com/' },
+      KLY: { serviceUrl: 'http://sample.com/' },
     },
   };
   const baseUrl = 'http://custom-basse-url.com/';
@@ -40,12 +40,12 @@ describe.skip('API: LSK Account', () => {
       const expectedApiCallParams = [
         {
           method: 'get.accounts',
-          params: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
+          params: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99' },
           jsonrpc: '2.0',
         },
         {
           method: 'get.accounts',
-          params: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y91' },
+          params: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y91' },
           jsonrpc: '2.0',
         },
       ];
@@ -54,8 +54,8 @@ describe.skip('API: LSK Account', () => {
         network,
         params: {
           addressList: [
-            'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99',
-            'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y91',
+            'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99',
+            'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y91',
           ],
         },
         path: 'transactions',

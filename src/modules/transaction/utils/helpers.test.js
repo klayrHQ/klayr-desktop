@@ -34,8 +34,8 @@ describe('helpers', () => {
         style: styles.unlock,
       });
     });
-    it('should return correct sign and styles for reclaim LSK', () => {
-      const moduleCommand = MODULE_COMMANDS_NAME_MAP.reclaimLSK;
+    it('should return correct sign and styles for reclaim KLY', () => {
+      const moduleCommand = MODULE_COMMANDS_NAME_MAP.reclaimKLY;
       const recipient = null;
       expect(getTxDirectionConfig(moduleCommand, host, recipient, styles)).toEqual({
         sign: '',
@@ -53,10 +53,10 @@ describe('helpers', () => {
           moduleCommand: 'token:transfer',
           fee: '10000000',
           isPending: false,
-          sender: { address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11' },
+          sender: { address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11' },
           params: {
             amount: '200',
-            recipientAddress: 'lsk8nxtxs9ekqc3c2jjtcsusmfj2498qyjbk35teh',
+            recipientAddress: 'kly8nxtxs9ekqc3c2jjtcsusmfj2498qyjbk35teh',
             data: 'test',
           },
           block: {
@@ -70,10 +70,10 @@ describe('helpers', () => {
           moduleCommand: 'token:transfer',
           fee: '10000000',
           isPending: false,
-          sender: { address: 'lskqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
+          sender: { address: 'klyqw2b528hc6ud7y56toq3kmaq6kj2fpvf9amvtx' },
           params: {
             amount: '200',
-            recipientAddress: 'lsk3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
+            recipientAddress: 'kly3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
             data: '',
           },
           block: {

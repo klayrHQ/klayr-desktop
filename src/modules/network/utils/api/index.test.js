@@ -13,7 +13,7 @@ const resetApiMock = () => {
   http.mockClear();
 };
 
-describe('API: LSK Network', () => {
+describe('API: KLY Network', () => {
   const network = { serviceUrl: 'http://testnet.io' };
 
   describe('getPeers', () => {
@@ -96,7 +96,7 @@ describe('API: LSK Network', () => {
         data: {
           height: '449520',
           blockTime: 10,
-          communityIdentifier: 'LISK',
+          communityIdentifier: 'KLAYR',
           finalizedHeight: 20533,
           currentReward: 500000000,
           maxPayloadLength: 15360,
@@ -108,7 +108,7 @@ describe('API: LSK Network', () => {
             { id: 'pos:stake', name: 'pos:stake' },
             { id: 'pos:unlock', name: 'pos:unlockToken' },
             { id: 'pos:reportMisbehavior', name: 'pos:reportMisbehavior' },
-            { id: 'legacy:reclaimLSK', name: 'legacyAccount:reclaimLSK' },
+            { id: 'legacy:reclaimKLY', name: 'legacyAccount:reclaimKLY' },
           ],
           milestone: ['500000000', '400000000', '300000000', '200000000', '100000000'],
           rewards: {

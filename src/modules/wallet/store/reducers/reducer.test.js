@@ -19,7 +19,7 @@ describe('Reducer: account(state, action)', () => {
     const action = {
       type: actionTypes.accountUpdated,
       data: {
-        LSK: {
+        KLY: {
           address: state.address,
           balance: 100000000,
         },

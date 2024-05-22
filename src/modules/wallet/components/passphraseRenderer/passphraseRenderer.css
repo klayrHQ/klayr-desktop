@@ -3,7 +3,7 @@
 .header {
   @mixin contentLargest bold;
 
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   display: flex;
   margin: 0;
 }
@@ -52,7 +52,7 @@
   }
 
   & .default {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & .emptyWord,
@@ -73,25 +73,25 @@
     color: var(--color-ghost);
 
     &::before {
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
     }
   }
 
   & .emptyWordFocused,
   & .emptyWordFocused::before {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
   }
 
   & .selected,
   & .selected::before {
     cursor: pointer;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     font-weight: var(--font-weight-bold);
   }
 
   & .error,
   & .error::before {
-    color: var(--color-burnt-sienna);
+    color: var(--color-lobster);
     font-weight: var(--font-weight-bold);
   }
 
@@ -120,7 +120,7 @@
     cursor: pointer;
     margin-top: 20px;
     padding: 8px 26px;
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     font-weight: var(--font-weight-bold);
     color: var(--color-shadow-word-option);
     margin-right: 20px;

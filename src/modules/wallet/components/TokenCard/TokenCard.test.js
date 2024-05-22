@@ -16,7 +16,7 @@ describe('TokenCard', () => {
     token: { ...mockAppsTokens.data[0], ...mockTokensBalance.data[0] },
   };
 
-  useFiatRates.mockReturnValue({ LSK: { USD: 1, EUR: 1 } });
+  useFiatRates.mockReturnValue({ KLY: { USD: 1, EUR: 1 } });
 
   it('should display properly ', async () => {
     wrapper = renderWithRouter(TransactionEventsRow, props);

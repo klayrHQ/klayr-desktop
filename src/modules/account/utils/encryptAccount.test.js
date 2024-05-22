@@ -1,4 +1,4 @@
-import { cryptography, passphrase } from '@liskhq/lisk-client';
+import { cryptography, passphrase } from '@klayr/client';
 import { encryptAccount, decryptAccount } from './encryptAccount';
 
 const recoveryPhrase =
@@ -26,7 +26,7 @@ const mockAccount = {
     name: 'test account',
     pubkey: 'c6bae83af23540096ac58d5121b00f33be6f02f05df785766725acdd5d48be9d',
     path: "m/44'/134'/0'",
-    address: 'lsktzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg',
+    address: 'klytzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg',
     creationTime: new Date().toISOString(),
     derivedFromUUID: 'fa3e4ceb-10dc-41ad-810e-17bf51ed93aa',
   },
@@ -36,7 +36,7 @@ const mockAccount = {
 const privateKey =
   'd92f8ffd3046fa9de33c21cef7af6f1315e289003c19f9b23ce6d499c8641d4e0792fecbbecf6e7370f7a7b217a9d159f380d3ecd0f2760d7a55dd3e27e97184';
 const publicKey = '0792fecbbecf6e7370f7a7b217a9d159f380d3ecd0f2760d7a55dd3e27e97184';
-const address = 'lskr4npg3esse6duo56u2war7umuo8embs4cwrkaf';
+const address = 'klyr4npg3esse6duo56u2war7umuo8embs4cwrkaf';
 const defaultKeys = {
   privateKey: Buffer.from(privateKey, 'hex'),
   publicKey: Buffer.from(publicKey, 'hex'),
@@ -49,7 +49,7 @@ jest.spyOn(cryptography.encrypt, 'decryptMessageWithPassword').mockResolvedValue
   })
 );
 jest.spyOn(cryptography.encrypt, 'encryptMessageWithPassword').mockResolvedValue(crypto);
-jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 jest.spyOn(passphrase.Mnemonic, 'validateMnemonic').mockReturnValue(true);
 jest
   .spyOn(cryptography.ed, 'getPrivateKeyFromPhraseAndPath')
@@ -73,7 +73,7 @@ describe('encryptAccount', () => {
         name,
         pubkey: '0792fecbbecf6e7370f7a7b217a9d159f380d3ecd0f2760d7a55dd3e27e97184',
         path: derivationPath,
-        address: 'lskr4npg3esse6duo56u2war7umuo8embs4cwrkaf',
+        address: 'klyr4npg3esse6duo56u2war7umuo8embs4cwrkaf',
         creationTime: expect.any(String),
       },
       version: 1,
@@ -91,7 +91,7 @@ describe('encryptAccount', () => {
         name,
         pubkey: '0792fecbbecf6e7370f7a7b217a9d159f380d3ecd0f2760d7a55dd3e27e97184',
         path: customDerivationPath,
-        address: 'lskr4npg3esse6duo56u2war7umuo8embs4cwrkaf',
+        address: 'klyr4npg3esse6duo56u2war7umuo8embs4cwrkaf',
         creationTime: expect.any(String),
       },
       version: 1,

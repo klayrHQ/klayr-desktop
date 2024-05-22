@@ -25,7 +25,7 @@ describe('SearchBarWallets', () => {
   it('should render properly validator accounts', () => {
     const newProps = { ...props };
     newProps.wallet = {
-      address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99',
+      address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99',
       balance: '120',
       isValidator: true,
       name: 'genesis_51',
@@ -40,7 +40,7 @@ describe('SearchBarWallets', () => {
   it('should render properly with accounts data', () => {
     const newProps = { ...props };
     newProps.wallet = {
-      address: 'lskyau2yy4993jkbd7kxcsfsrarac8macbbs8saad',
+      address: 'klyyau2yy4993jkbd7kxcsfsrarac8macbbs8saad',
       balance: '110',
     };
     wrapper = mount(<SearchBarWallets {...newProps} />);
@@ -55,7 +55,7 @@ describe('SearchBarWallets', () => {
     const newProps = { ...props };
     newProps.wallet = [
       {
-        address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y99',
+        address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y99',
         balance: '120',
       },
     ];

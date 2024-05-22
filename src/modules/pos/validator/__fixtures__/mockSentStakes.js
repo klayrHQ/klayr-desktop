@@ -9,7 +9,7 @@ const generateStakes = validators.slice(0, 7).map((validator, index) => ({
 const data = {
   stakes: generateStakes,
   account: {
-    address: 'lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
+    address: 'kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
     publicKey: 'aq02qkbb35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
     name: 'genesis_56',
     stakesUsed: 10,

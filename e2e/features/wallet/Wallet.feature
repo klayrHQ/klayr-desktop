@@ -29,15 +29,15 @@ Feature: Wallet
   Scenario: Send tokens
     Given I click on a button with exact text "Send"
     Then I should see send form details
-    And I should see "lisk_mainchain" should be selected in "To application" dropdown
-    And I should see "Lisk" should be selected in "Token" dropdown
+    And I should see "klayr_mainchain" should be selected in "To application" dropdown
+    And I should see "Klayr" should be selected in "Token" dropdown
     Then button with text "Continue to summary" should be disabled
     When I type "10" in "amount"
-    When I type "lsk9s5g8f7v6evazu2z6zo6oygzyz4skj7s64fst6" in "recipient"
+    When I type "kly9s5g8f7v6evazu2z6zo6oygzyz4skj7s64fst6" in "recipient"
     Then button with text "Continue to summary" should be enabled
     Given I click on a button with exact text "Continue to summary"
     Then I should see "Transaction Summary"
-    And I should see "10 LSK" in element with class "summary"
+    And I should see "10 KLY" in element with class "summary"
     When I click on an element with class "confirm-button"
     When I type "Password@1" in "password"
     And I click on a button with exact text "Confirm and Sign"

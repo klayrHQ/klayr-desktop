@@ -1,9 +1,9 @@
 import { tokenMap } from '@token/fungible/consts/tokens';
 
 export const initialState = {
-  active: tokenMap.LSK.key,
+  active: tokenMap.KLY.key,
   list: {
-    [tokenMap.LSK.key]: true,
+    [tokenMap.KLY.key]: true,
   },
 };
 

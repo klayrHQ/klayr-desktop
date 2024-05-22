@@ -9,13 +9,13 @@
     font-weight: 700;
     line-height: 32px;
     margin: 0;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 
   & h6 {
     line-height: 18px;
     margin: var(--vertical-padding-m) auto;
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
 
     &.error {
       color: var(--color-red);
@@ -44,7 +44,7 @@
   }
 
   & .feedbackCorrectionColor {
-    color: var(--color-zodiac-blue);
+    color: var(--color-colecti-dark-blue);
   }
 
   & button {

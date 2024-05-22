@@ -17,7 +17,7 @@ const BlockFilterDropdown = ({ t, filters, applyFilters }) => {
     },
     {
       label: t('Generator address'),
-      placeholder: t('e.g. lskzmeyea4ead534jnq9dho5vsust6h9x552zqtor'),
+      placeholder: t('e.g. klyzmeyea4ead534jnq9dho5vsust6h9x552zqtor'),
       name: 'generatorAddress',
       type: 'text',
     },

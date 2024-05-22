@@ -7,7 +7,7 @@
   box-sizing: border-box;
 
   & .headerText {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin: 40px 0 0 0;
     font-weight: var(--font-weight-very-bold);
   }

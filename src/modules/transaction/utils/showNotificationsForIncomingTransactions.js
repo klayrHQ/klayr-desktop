@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 const getNotificationContent = (amount, data, token) => {
   let notificationBody;
-  let appName = 'Lisk Desktop';
+  let appName = 'Klayr Desktop';
   const notificationTitle = i18n.t('You received tokens');
 
   if (amount > 0) {

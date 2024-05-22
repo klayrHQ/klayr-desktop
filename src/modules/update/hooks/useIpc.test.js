@@ -45,11 +45,11 @@ describe('useIpc', () => {
       current: mockSavedAccounts[0],
     },
     token: {
-      active: 'LSK',
+      active: 'KLY',
     },
     wallet: {
       info: {
-        LSK: 'some data',
+        KLY: 'some data',
       },
     },
     network: {
@@ -92,7 +92,7 @@ describe('useIpc', () => {
     wrapper.update();
 
     expect(spy).toHaveBeenCalledWith(expect.anything(), 'NewRelease');
-    expect(wrapper).toIncludeText(`Lisk ${version} is out. dummy text`);
+    expect(wrapper).toIncludeText(`Klayr ${version} is out. dummy text`);
     expect(wrapper.find('.read-more').at(0)).toHaveText('Read more');
     expect(wrapper.find('.update-now').at(0)).toHaveText('Update now');
     expect(mockDispatch).toHaveBeenCalledWith(

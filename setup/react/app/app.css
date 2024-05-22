@@ -87,7 +87,7 @@ body {
 .toastBody {
   float: right;
   clear: both;
-  background-color: var(--color-maastricht-blue);
+  background-color: var(--color-surface-blue);
   border-radius: var(--border-radius-box);
   min-height: 30px;
   line-height: 30px;
@@ -99,12 +99,12 @@ body {
   }
 
   &[class*="error"] {
-    background-color: var(--color-burnt-sienna);
+    background-color: var(--color-lobster);
   }
 }
 
 .toastText {
-  color: var(--color-white);
+  color: var(--color-surface);
   font-family: var(--content-font);
 }
 

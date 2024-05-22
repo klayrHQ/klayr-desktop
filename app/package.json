@@ -1,12 +1,12 @@
 {
-  "name": "lisk-desktop",
+  "name": "klayr-desktop",
   "version": "3.0.1",
-  "productName": "Lisk",
-  "description": "Lisk",
+  "productName": "Klayr",
+  "description": "Klayr",
   "main": "./build/main.js",
   "author": {
-    "name": "Lisk Foundation",
-    "email": "admin@lisk.com"
+    "name": "Klayr Holding",
+    "email": "admin@klayr.xyz"
   },
   "dependencies": {
     "get-port": "6.1.2",

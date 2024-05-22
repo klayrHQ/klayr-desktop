@@ -41,12 +41,12 @@ describe('Request', () => {
 
     expect(
       wrapper.getByText(
-        'Simply scan the QR code using the Lisk Mobile app or any other QR code reader.'
+        'Simply scan the QR code using the Klayr Mobile app or any other QR code reader.'
       )
     ).toBeTruthy();
     expect(
       wrapper.getByText(
-        'Use the sharing link to easily request any amount of tokens from Lisk Desktop or Lisk Mobile users.'
+        'Use the sharing link to easily request any amount of tokens from Klayr Desktop or Klayr Mobile users.'
       )
     ).toBeTruthy();
     expect(wrapper.getByText('Account')).toBeTruthy();

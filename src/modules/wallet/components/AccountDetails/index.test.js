@@ -12,7 +12,7 @@ import AccountDetails from '.';
 const currentAccount = mockSavedAccounts[0];
 const mockHistory = {
   location: {
-    search: '?address=lsk3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
+    search: '?address=kly3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
   },
   push: jest.fn(),
   goBack: jest.fn(),
@@ -47,7 +47,7 @@ const mockAuth = {
     optionalKeys: [],
   },
   meta: {
-    address: 'lsk3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
+    address: 'kly3ay4z7wqjczbo5ogcqxgxx23xyacxmycwxfh4d',
     publicKey: 'cf434a889d6c7a064e8de61bb01759a76f585e5ff45a78ba8126ca332601f535',
     name: '',
   },
@@ -141,7 +141,7 @@ describe('AccountDetails', () => {
     useAuth.mockReturnValue({ data: mockAuth });
     useValidators.mockReturnValue({});
 
-    const fileName = `${acctAddress}-${acctName}-lisk-account`;
+    const fileName = `${acctAddress}-${acctName}-klayr-account`;
 
     smartRender(AccountDetails, null, config);
 

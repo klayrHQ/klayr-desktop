@@ -90,20 +90,20 @@ const props = {
     fields: {},
   },
   bookmarks: {
-    LSK: [
+    KLY: [
       {
         title: 'ABC',
-        address: 'lskhbxua8tpdckcewntcttfqfo4rbatampo2dgrno',
+        address: 'klyhbxua8tpdckcewntcttfqfo4rbatampo2dgrno',
         balance: 10,
       },
       {
         title: 'FRG',
-        address: 'lskhbxua8tpdckcewntcttfqfo4rbatampo2dgrno',
+        address: 'klyhbxua8tpdckcewntcttfqfo4rbatampo2dgrno',
         balance: 15,
       },
       {
         title: 'KTG',
-        address: 'lskhbxua8tpdckcewntcttfqfo4rbatampo2dgrno',
+        address: 'klyhbxua8tpdckcewntcttfqfo4rbatampo2dgrno',
         balance: 7,
       },
     ],

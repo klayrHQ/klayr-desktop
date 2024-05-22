@@ -1,5 +1,5 @@
 /* eslint-disable max-lines */
-import { transactions } from '@liskhq/lisk-client';
+import { transactions } from '@klayr/client';
 import { joinModuleAndCommand } from 'src/modules/transaction/utils/moduleCommand';
 import http from 'src/utils/api/http';
 import to from 'await-to-js';

@@ -28,7 +28,7 @@ const EmptyState = ({ history }) => {
         name="pageNotFound"
         className={`${styles.illustration} no-request-illustration`}
       />
-      <p>{t('There are no transactions requested from Lisk Desktop yet.')}</p>
+      <p>{t('There are no transactions requested from Klayr Desktop yet.')}</p>
     </BoxEmptyState>
   );
 };

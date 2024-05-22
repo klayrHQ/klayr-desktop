@@ -41,7 +41,7 @@ const SEARCH = {
   EMPTY: '',
   MIN_LENGTH: 'me',
   VALIDATOR: 'genesis',
-  ADDRESS: 'lskqzpfr3uq8bm2jee5dkv4ns79uuswjzc9bbpezu',
+  ADDRESS: 'klyqzpfr3uq8bm2jee5dkv4ns79uuswjzc9bbpezu',
   TX: '2ada9e9d29788e0554bdc1dc183dfda30f89138752d2fe52f2061175d9b69506',
   BLOCK: '670008',
 };

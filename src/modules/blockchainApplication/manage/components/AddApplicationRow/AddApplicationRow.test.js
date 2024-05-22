@@ -5,7 +5,7 @@ import AddApplicationRow from './AddApplicationRow';
 const props = {
   data: {
     chainName: 'Sample app',
-    escrowedLSK: 50000000,
+    escrowedKLY: 50000000,
   },
 };
 
@@ -14,6 +14,6 @@ describe('AddApplicationRow', () => {
     renderWithRouter(AddApplicationRow, props);
 
     expect(screen.getByText('Sample app')).toBeTruthy();
-    expect(screen.getByText('0.5 LSK')).toBeTruthy();
+    expect(screen.getByText('0.5 KLY')).toBeTruthy();
   });
 });

@@ -8,7 +8,7 @@ jest.mock('src/utils/localJSONStorage');
 describe('Middleware: Bookmarks', () => {
   const next = jest.fn();
   const bookmarks = {
-    LSK: [],
+    KLY: [],
   };
   const store = {
     dispatch: jest.fn(),

@@ -9,7 +9,7 @@ import TokenRow from './TokenRow';
 jest.mock('src/modules/common/hooks/useFiatRates');
 
 describe('TokenRow', () => {
-  useFiatRates.mockReturnValue({ LSK: { USD: 1, EUR: 1 } });
+  useFiatRates.mockReturnValue({ KLY: { USD: 1, EUR: 1 } });
 
   it('should display properly', async () => {
     const props = {

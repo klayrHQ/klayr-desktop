@@ -35,7 +35,7 @@ jest.useRealTimers();
 jest.mock('@auth/hooks/queries/useAuth');
 jest.mock('@token/fungible/hooks/queries/useTokenBalances', () => ({
   useTokenBalances: jest.fn(() => ({
-    data: { data: [{ chainID: '04000000', symbol: 'LSK', availableBalance: 40000000 }] },
+    data: { data: [{ chainID: '04000000', symbol: 'KLY', availableBalance: 40000000 }] },
   })),
 }));
 
@@ -145,7 +145,7 @@ describe('ChangeCommissionForm', () => {
       fireEvent.change(input, { target: { value } });
       fireEvent.click(button);
 
-      const feeToken = { availableBalance: 40000000, chainID: '04000000', symbol: 'LSK' };
+      const feeToken = { availableBalance: 40000000, chainID: '04000000', symbol: 'KLY' };
 
       await waitFor(() => {
         expect(nextStep).toHaveBeenCalledWith(
@@ -178,7 +178,7 @@ describe('ChangeCommissionForm', () => {
                 {
                   components: [
                     {
-                      feeToken: { availableBalance: 40000000, chainID: '04000000', symbol: 'LSK' },
+                      feeToken: { availableBalance: 40000000, chainID: '04000000', symbol: 'KLY' },
                       type: 'bytesFee',
                       value: 96000n,
                     },
@@ -199,7 +199,7 @@ describe('ChangeCommissionForm', () => {
               ],
               fields: {
                 newCommission: '30.00',
-                token: { availableBalance: 40000000, chainID: '04000000', symbol: 'LSK' },
+                token: { availableBalance: 40000000, chainID: '04000000', symbol: 'KLY' },
               },
               isFormValid: true,
               moduleCommand: 'pos:changeCommission',

@@ -1,5 +1,5 @@
 export const piwikOptions = {
-  URL: 'https://matomo.lisk.com',
+  URL: 'https://matomo.klayr.xyz',
   SITE_ID: 1,
   DELETE_CUSTOM_VARIABLE: 'deleteCustomVariable',
   ENABLE_HEART_BEAT_TIMER: 'enableHeartBeatTimer',

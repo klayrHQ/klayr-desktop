@@ -20,7 +20,7 @@ describe('actions: legacy', () => {
   };
   const formProps = {
     isValid: true,
-    moduleCommand: 'legacy:reclaimLSK',
+    moduleCommand: 'legacy:reclaimKLY',
   };
 
   beforeEach(() => {
@@ -31,13 +31,13 @@ describe('actions: legacy', () => {
     const state = {
       wallet: {
         info: {
-          LSK: wallets.non_migrated,
+          KLY: wallets.non_migrated,
         },
       },
-      token: { active: 'LSK' },
+      token: { active: 'KLY' },
       network: {
         networks: {
-          LSK: {
+          KLY: {
             serviceUrl: 'http://localhost:4000',
             nethash: '198f2b61a8eb95fbeed58b8216780b68f697f26b849acf00c8c93bb9b24f783d',
             moduleCommandSchemas,
@@ -55,7 +55,7 @@ describe('actions: legacy', () => {
       fee: 100000,
       module: 'legacy',
       command: 'reclaim',
-      moduleCommand: 'legacy:reclaimLSK',
+      moduleCommand: 'legacy:reclaimKLY',
     };
     const privateKey = '0x0';
 
@@ -80,7 +80,7 @@ describe('actions: legacy', () => {
         transactionJSON,
         senderAccount,
         wallet: {
-          ...state.wallet.info.LSK,
+          ...state.wallet.info.KLY,
           loginType: undefined,
         },
         schema: moduleCommandSchemas[transactionJSON.moduleCommand],

@@ -29,7 +29,7 @@
   }
 
   & .loading {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
   }
 
   & .mgr30 {
@@ -138,7 +138,7 @@
   @mixin contentNormal bold;
 
   align-items: center;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   display: flex;
   margin: 40px 0 12px;
 
@@ -151,11 +151,11 @@
 .input {
   @mixin contentLargest;
 
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   border: 1px solid var(--dark-border-color);
   border-radius: var(--border-radius-standard);
   box-sizing: border-box;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   height: var(--height-l);
   outline: none;
   padding: 8px 10px;
@@ -167,18 +167,18 @@
 
   &.dark {
     border-color: var(--light-border-color);
-    background-color: var(--color-maastricht-blue);
-    color: var(--color-white);
+    background-color: var(--color-surface-blue);
+    color: var(--color-surface);
   }
 
   &:focus {
-    border-color: var(--color-primary-standard);
+    border-color: var(--color-primary);
   }
 
   &:global(.error),
   &.error {
-    border-color: var(--color-burnt-sienna);
-    color: var(--color-burnt-sienna);
+    border-color: var(--color-lobster);
+    color: var(--color-lobster);
   }
 
   &.pending {
@@ -190,7 +190,7 @@
   }
 
   &:read-only {
-    background-color: var(--color-white);
+    background-color: var(--color-surface);
     border: 1px solid var(--dark-border-color) !important;
     color: var(--color-blue-gray);
     outline: none;

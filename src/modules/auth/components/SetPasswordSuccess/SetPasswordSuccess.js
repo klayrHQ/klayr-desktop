@@ -14,7 +14,7 @@ function SetPasswordSuccess({ onClose, encryptedPhrase, headerText, contentText,
   const onContinue = () => onClose();
   const { metadata: { name: accountName, address, isHw } = {} } = encryptedPhrase || {};
   const appendAccountName = `-${accountName}`;
-  const fileName = `${address}${accountName ? appendAccountName : ''}-lisk-account`;
+  const fileName = `${address}${accountName ? appendAccountName : ''}-klayr-account`;
 
   return (
     <Box className={styles.container}>

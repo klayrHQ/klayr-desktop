@@ -1,4 +1,4 @@
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { mockHWAccounts } from '@hardwareWallet/__fixtures__';
 import * as signMessageUtil from '@wallet/utils/signMessage';
 import { signMessage } from './action';
@@ -16,14 +16,14 @@ describe('balanceReclaimed', () => {
   const signature =
     '68937004b6720d7e1902ef05a577e6d9f9ab2756286b1f2ae918f8a0e5153c15e4f410916076f750b708f8979be2430e4cfc7ebb523ae1905d2ea1f5d24ce700';
   const defaultPrintedMessage = `
-      -----BEGIN LISK SIGNED MESSAGE-----
+      -----BEGIN KLAYR SIGNED MESSAGE-----
       -----MESSAGE-----
       ${message}
       -----PUBLIC KEY-----
       ${mockCurrentAccount.metadata.pubkey}
       -----SIGNATURE-----
       ${signature}
-      -----END LISK SIGNED MESSAGE-----
+      -----END KLAYR SIGNED MESSAGE-----
     `.trim();
 
   afterEach(() => {

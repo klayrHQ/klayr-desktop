@@ -6,7 +6,7 @@ const moduleCommandNameMap = {
   registerSidechain: 'interoperability:registerSidechain',
   recoverState: 'interoperability:recoverState',
   terminateSidechainForLiveness: 'interoperability:terminateSidechainForLiveness',
-  reclaimLSK: 'legacy:reclaimLSK',
+  reclaimKLY: 'legacy:reclaimKLY',
   registerKeys: 'legacy:registerKeys',
   registerValidator: 'pos:registerValidator',
   reportMisbehavior: 'pos:reportMisbehavior',
@@ -53,7 +53,7 @@ const moduleCommandMap = {
     maxFee: 5e8,
     icon: 'multisignatureTransaction',
   },
-  [moduleCommandNameMap.reclaimLSK]: {
+  [moduleCommandNameMap.reclaimKLY]: {
     maxFee: 1e7,
     icon: 'txDefault',
   },

@@ -83,7 +83,7 @@
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-timing-function: linear;
-  background-color: var(--color-white);
+  background-color: var(--color-surface);
   border-radius: var(--border-radius-box);
   border: solid 1px var(--dark-border-color);
   box-shadow: var(--box-shadow-dialog);
@@ -104,7 +104,7 @@
 .title {
   @mixin headingLarge;
 
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   margin: 20px 0 0;
 }
 
@@ -175,7 +175,7 @@
 .closeBtn {
   align-items: center;
   box-sizing: border-box;
-  color: var(--color-ultramarine-blue);
+  color: var(--color-primary);
   cursor: pointer;
   display: flex;
   height: 32px;

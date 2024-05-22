@@ -18,7 +18,7 @@
 
       margin-top: 0;
       margin-bottom: 10px;
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       font-family: var(--content-font);
 
       & > span {
@@ -232,12 +232,12 @@ header {
 
   &.standby {
     &.light {
-      color: var(--color-ink-blue);
+      color: var(--color-azule-dark);
       background-color: var(--color-active-tab);
     }
 
     &.dark {
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
       background-color: var(--color-cloud-burst);
     }
   }
@@ -256,7 +256,7 @@ header {
 
   &.punished {
     &.light {
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       background-color: var(--color-yellow-transparent);
     }
 
@@ -277,12 +277,12 @@ header {
 
   background-color: transparent;
   border: unset;
-  color: var(--color-ultramarine-blue);
+  color: var(--color-primary);
   cursor: pointer;
   margin-top: 9px;
 
   &:hover {
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
   }
 }
 

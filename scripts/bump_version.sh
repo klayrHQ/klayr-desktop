@@ -3,7 +3,7 @@
 function bump {
 	search='("version":[[:space:]]*").+(")'
 	replace="\1${release}\2"
-	
+
 	sed -i ".tmp" -E "s/${search}/${replace}/g" "$1"
 	rm "$1.tmp"
   git add "$1"
@@ -28,7 +28,7 @@ if [ -z "${changes}" ]; then
   bump ".../package.json"
   bump ".../old_structure/app/package.json"
 
-  git commit -m "Bump Lisk to ${release}"
+  git commit -m "Bump Klayr to ${release}"
   git tag "v${release}"
   git push origin
   git push origin --tags

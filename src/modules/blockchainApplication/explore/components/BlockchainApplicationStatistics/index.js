@@ -33,17 +33,17 @@ const BlockchainApplicationStatistics = () => {
     () => [
       {
         title: t('Total supply'),
-        description: t('Total LSK tokens in circulation'),
-        amount: statistics?.data?.totalSupplyLSK || 0,
+        description: t('Total KLY tokens in circulation'),
+        amount: statistics?.data?.totalSupplyKLY || 0,
         icon: 'totalSupplyToken',
         tooltipSize: 'maxContent',
       },
       {
         title: t('Staked'),
         description: t(
-          'Amount of LSK tokens staked by validators and nominators for PoS governance'
+          'Amount of KLY tokens staked by validators and nominators for PoS governance'
         ),
-        amount: statistics?.data?.totalStakedLSK || 0,
+        amount: statistics?.data?.totalStakedKLY || 0,
         icon: 'stakedToken',
         tooltipSize: 'm',
       },
@@ -85,7 +85,7 @@ const BlockchainApplicationStatistics = () => {
               </Tooltip>
             </div>
             <div className={`${styles.statsInfo} stats-info-value`}>
-              <TokenAmount isLsk val={amount} showRounded={2} />
+              <TokenAmount isKly val={amount} showRounded={2} />
             </div>
           </div>
           <div>

@@ -1,5 +1,5 @@
 export const generateUnlock = (index, expectedUnlockTime) => ({
-  validatorAddress: `lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg${index}eu`,
+  validatorAddress: `kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg${index}eu`,
   amount: `${(index + 1) * 1000000000}`,
   tokenID: '0000000000000000',
   unstakeHeight: 30 + index,
@@ -13,7 +13,7 @@ const data = {
     .fill(1)
     .map((_, idx) => generateUnlock(idx, 300000)),
   account: {
-    address: 'lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
+    address: 'kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
     publicKey: 'aq02qkbb35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu',
     name: 'genesis_56',
   },

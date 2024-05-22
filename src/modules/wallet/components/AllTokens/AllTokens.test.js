@@ -54,7 +54,7 @@ describe('AllTokens', () => {
   useAuth.mockReturnValue({ data: mockAuth });
   useValidators.mockReturnValue({ data: mockValidators });
   useBlocks.mockReturnValue({ data: mockBlocks });
-  useFiatRates.mockReturnValue({ LSK: { USD: 1, EUR: 1 } });
+  useFiatRates.mockReturnValue({ KLY: { USD: 1, EUR: 1 } });
 
   it('should display token details properly', async () => {
     const props = {

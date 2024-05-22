@@ -10,7 +10,7 @@ describe('HTTP', () => {
     method: 'GET',
     network: {
       networks: {
-        LSK: { serviceUrl: 'http://liskdev.net' },
+        KLY: { serviceUrl: 'https://klayr.xyz' },
       },
     },
   };
@@ -34,7 +34,7 @@ describe('HTTP', () => {
       params: { id: 'test' },
       network: {
         networks: {
-          LSK: { serviceUrl: 'http://liskdev.net' },
+          KLY: { serviceUrl: 'https://klayr.xyz' },
         },
       },
     };

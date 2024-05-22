@@ -47,6 +47,6 @@ Feature: Network Management
     Then I should be redirected to route: 'wallet?modal=dialogAddNetwork'
     And button with text "Add network" should be disabled
     Given I type "testnet" in "name"
-    And I type "https://testnet-doesntexists.lisk.com" in "serviceUrl"
+    And I type "https://testnet-doesntexists.klayr.xyz" in "serviceUrl"
     And I wait for "1 seconds"
     Then I should see "Failed to fetch: onchain, offchain data. Please check the URL."

@@ -41,7 +41,7 @@
     & > .link {
       @mixin contentLargest bold;
 
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
       margin-top: 18px;
       text-decoration: none;
     }
@@ -49,7 +49,7 @@
     & > .label {
       @mixin contentNormal bold;
 
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       margin: 16px 0 8px;
 
       &:first-child {

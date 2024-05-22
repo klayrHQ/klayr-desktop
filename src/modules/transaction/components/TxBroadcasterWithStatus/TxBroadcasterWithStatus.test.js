@@ -33,10 +33,10 @@ describe('TxBroadcasterWithStatus', () => {
     },
     blockChainApplications: {
       current: {
-        chainName: 'lisk',
+        chainName: 'klayr',
         chainID: '04000000',
         networkType: 'devnet',
-        serviceURLs: [{ http: 'http://devnet-service.liskdev.net:9901' }],
+        serviceURLs: [{ http: 'http://devnet-service.klayr.xyz:9901' }],
       },
     },
   };

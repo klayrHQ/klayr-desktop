@@ -17,7 +17,7 @@ describe('Analytics Message banner', () => {
   });
 
   it('Should render correctly with all passed props', () => {
-    expect(wrapper).toIncludeText('Opt-in to sharing anonymous data in order to improve Lisk.');
+    expect(wrapper).toIncludeText('Opt-in to sharing anonymous data in order to improve Klayr.');
     expect(wrapper).toIncludeText('Read more');
     wrapper.find('a.url-link').simulate('click');
     expect(pushMock).toHaveBeenCalledTimes(1);

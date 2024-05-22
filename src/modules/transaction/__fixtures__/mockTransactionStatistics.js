@@ -24,7 +24,7 @@ const data = {
     'pos:stakeValidator': 9,
     'pos:unlock': 4,
     'pos:reportValidatorMisbehavior': 2,
-    'legacy:reclaimLSK': 1,
+    'legacy:reclaimKLY': 1,
   },
   distributionByAmount: {
     '0000000000000000': {

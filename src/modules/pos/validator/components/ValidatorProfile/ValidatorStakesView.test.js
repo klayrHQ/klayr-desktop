@@ -15,7 +15,7 @@ describe('Validator stakes view', () => {
   useReceivedStakes.mockReturnValue({ data: mockReceivedStakes });
 
   const props = {
-    address: 'lskc7ofju4nvnshg6349otmcssme9q87wrpf8umws',
+    address: 'klyc7ofju4nvnshg6349otmcssme9q87wrpf8umws',
   };
 
   useFilter.mockReturnValue({

@@ -2,7 +2,7 @@ import i18n from 'src/utils/i18n/i18n';
 import accounts from '@tests/constants/wallets';
 import { mockAppsTokens } from '@token/fungible/__fixtures__';
 import { getTokenDecimals } from '@token/fungible/utils/helpers';
-import { validateAddress, validateLSKPublicKey, validateAmount, isNumeric } from './validators';
+import { validateAddress, validateKLYPublicKey, validateAmount, isNumeric } from './validators';
 
 const mockToken = mockAppsTokens.data[0];
 
@@ -11,7 +11,7 @@ describe('Validate Address', () => {
     expect(validateAddress('')).toBe(-1);
   });
 
-  it('Should validate LSK address', () => {
+  it('Should validate KLY address', () => {
     expect(validateAddress(accounts.genesis.summary.address)).toBe(0);
     expect(validateAddress('12345')).toBe(1);
   });
@@ -21,18 +21,18 @@ describe('Validate Public Key', () => {
   const invalidPublicKey = 'invalid_public_key';
 
   it('Should return 0 if public key is valid', () => {
-    expect(validateLSKPublicKey(accounts.genesis.summary.publicKey)).toBe(0);
+    expect(validateKLYPublicKey(accounts.genesis.summary.publicKey)).toBe(0);
   });
 
   it('Should return 1 if public key is invalid', () => {
-    expect(validateLSKPublicKey(invalidPublicKey)).toBe(1);
+    expect(validateKLYPublicKey(invalidPublicKey)).toBe(1);
   });
 });
 
 describe('Validate Amount Format', () => {
   const errors = {
     ZERO: i18n.t("Amount can't be zero."),
-    INVALID: i18n.t('Provide a correct amount of {{token}}', { token: 'LSK' }),
+    INVALID: i18n.t('Provide a correct amount of {{token}}', { token: 'KLY' }),
     FLOATING_POINT: i18n.t('Maximum allowed decimal point is {{decimal}}.', {
       decimal: getTokenDecimals(mockToken),
     }),

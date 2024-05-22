@@ -186,7 +186,7 @@ export const useDeprecatedAccount = (accountInfo) => {
   useEffect(() => {
     dispatch({
       type: authActionTypes.accountUpdated,
-      data: { LSK: account },
+      data: { KLY: account },
     });
   }, [account]);
 

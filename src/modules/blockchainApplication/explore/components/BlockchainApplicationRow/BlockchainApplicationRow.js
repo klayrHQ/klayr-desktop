@@ -10,7 +10,7 @@ import { ReactComponent as CautionIcon } from '../../../../../../setup/react/ass
 
 const DepositAmount = ({ amount }) => (
   <span className={`deposit-amount ${styles.amount} ${grid['col-xs-3']}`}>
-    <TokenAmount isLsk val={amount} />
+    <TokenAmount isKly val={amount} />
   </span>
 );
 
@@ -96,7 +96,7 @@ const BlockchainApplicationRow = ({ data, className, t }) => {
           />
           <ChainId id={application.chainID} />
           <ChainStatus status={application.status} t={t} />
-          <DepositAmount amount={application.escrowedLSK} />
+          <DepositAmount amount={application.escrowedKLY} />
         </>
       </RowWrapper>
     </div>

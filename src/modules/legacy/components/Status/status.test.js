@@ -5,7 +5,7 @@ import TxBroadcaster from '@transaction/components/TxBroadcaster';
 import accounts from '@tests/constants/wallets';
 import { useCommandSchema } from '@network/hooks';
 import { mockCommandParametersSchemas } from 'src/modules/common/__fixtures__';
-import { legacyReclaimLSK, getTransactionObject } from '@tests/fixtures/transactions';
+import { legacyReclaimKLY, getTransactionObject } from '@tests/fixtures/transactions';
 import Status from './Status';
 
 jest.mock('@libs/wcm/hooks/useSession', () => ({
@@ -20,7 +20,7 @@ describe('Status', () => {
     balance: 1e20,
     transactions: {
       confirmed: [],
-      signedTransaction: { ...getTransactionObject(legacyReclaimLSK) },
+      signedTransaction: { ...getTransactionObject(legacyReclaimKLY) },
       txSignatureError: null,
       txBroadcastError: null,
     },
@@ -28,7 +28,7 @@ describe('Status', () => {
   };
 
   const signedTransaction = {
-    id: 'legacy:reclaimLSK',
+    id: 'legacy:reclaimKLY',
     senderPublicKey: accounts.non_migrated.summary.publicKey,
     signatures: [accounts.non_migrated.summary.publicKey],
     nonce: '19n',
@@ -101,9 +101,9 @@ describe('Status', () => {
       illustration: 'default',
       status: {
         code: 'BROADCAST_ERROR',
-        message: { error: 'error:test', transaction: legacyReclaimLSK },
+        message: { error: 'error:test', transaction: legacyReclaimKLY },
       },
-      title: 'Reclaim LSK tokens failed',
+      title: 'Reclaim KLY tokens failed',
       className: 'content',
     });
   });
@@ -124,7 +124,7 @@ describe('Status', () => {
     expect(wrapper.find(TxBroadcaster).props()).toMatchObject({
       illustration: 'default',
       status: { code: 'BROADCAST_SUCCESS' },
-      title: 'Reclaimed LSK tokens',
+      title: 'Reclaimed KLY tokens',
       className: 'content',
     });
   });

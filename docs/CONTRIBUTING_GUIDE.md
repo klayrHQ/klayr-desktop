@@ -20,14 +20,14 @@ Before you start, read the **[README.md](/README.md)** file for info on the proj
 
 ## Finding first issue
 
-Go to [issues tab](https://github.com/LiskHQ/lisk-desktop/issues) and look for
+Go to [issues tab](https://github.com/KlayrHQ/klayr-desktop/issues) and look for
 
-_✏️ `good first issue`_ - it is a label for tasks that are perfect for people who want to start with Lisk.
+_✏️ `good first issue`_ - it is a label for tasks that are perfect for people who want to start with Klayr.
 
 ## Reporting issues
 
-1.  Check if problem already exist in [issues tab](https://github.com/LiskHQ/lisk-desktop/issues)
-2.  If not, create a new [issue](https://github.com/LiskHQ/lisk-desktop/issues/new/choose)
+1.  Check if problem already exist in [issues tab](https://github.com/KlayrHQ/klayr-desktop/issues)
+2.  If not, create a new [issue](https://github.com/KlayrHQ/klayr-desktop/issues/new/choose)
 3.  Fill our [template](/.github/issue_template.md)
 4.  Click `Submit new issue`
 

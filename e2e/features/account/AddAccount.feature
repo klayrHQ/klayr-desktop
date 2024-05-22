@@ -2,12 +2,12 @@ Feature: AddAccount
   Background: Navigate to add account options
     Given I go to page "wallet"
     And I wait for "1 seconds"
-    Then I should see "Welcome to Lisk"
-    And I should see "If you are new to the Lisk ecosystem, create an account by clicking on the “Create account”. If you have an account, then add it to your wallet by clicking on “Add account”."
+    Then I should see "Welcome to Klayr"
+    And I should see "If you are new to the Klayr ecosystem, create an account by clicking on the “Create account”. If you have an account, then add it to your wallet by clicking on “Add account”."
     Given I click on exact text "Add account"
     Then I should be redirected to route: "account/add"
     And I should see "Add your account"
-    And I should see "Choose an option to add your account to Lisk wallet."
+    And I should see "Choose an option to add your account to Klayr wallet."
 
   Scenario: Add account by passphrase with custom derivation path
     Given I click on exact text "Secret recovery phrase"
@@ -35,7 +35,7 @@ Feature: AddAccount
 
   Scenario: Add account by passphrase without custom derivation path
     Given I click on a button with text "Secret recovery phrase"
-    And I click on text "Enable access to legacy Lisk accounts"
+    And I click on text "Enable access to legacy Klayr accounts"
     Then custom derivation path input field should be "disabled"
     And I fill in mnemonic phrases 'peanut hundred pen hawk invite exclude brain chunk gadget wait wrong ready'
     And I click on a button with text "Continue to set password"
@@ -83,14 +83,14 @@ Feature: AddAccount
         "metadata": {
           "name": "test_account",
           "pubkey": "0fe9a3f1a21b5530f27f87a414b549e79a940bf24fdf2b2f05e7f22aeeecc86a",
-          "address": "lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt",
+          "address": "klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt",
           "creationTime": "2023-05-21T23:21:46.922Z"
         },
         "version": 1
       }
       """
     And I click on a button with text "Continue"
-    Then I should be on the password collection step having address: "lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt" and account name "test_account"
+    Then I should be on the password collection step having address: "klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt" and account name "test_account"
     And button with text 'Continue' should be disabled
     Given I type "Password1$" in "password"
     And I click on a button with text "Continue"
@@ -120,7 +120,7 @@ Feature: AddAccount
       "metadata": {
       "name": "test_account",
       "pubkey": "0fe9a3f1a21b5530f27f87a414b549e79a940bf24fdf2b2f05e7f22aeeecc86a",
-      "address": "lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt",
+      "address": "klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt",
       "creationTime": "2023-05-21T23:21:46.922Z"
       },
       "version": 1

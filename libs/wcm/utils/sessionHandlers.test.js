@@ -19,7 +19,7 @@ describe('sessionHandlers', () => {
   const proposal = {
     params: {
       requiredNamespaces: [],
-      relays: [{ protocol: 'LSK' }],
+      relays: [{ protocol: 'KLY' }],
     },
     id: 'sample_id',
   };

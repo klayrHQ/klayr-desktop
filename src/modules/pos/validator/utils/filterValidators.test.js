@@ -3,20 +3,20 @@ import { filterValidators } from './filterValidators';
 const validators = {
   data: [
     {
-      address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
+      address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y11',
       username: 'testUsername_1',
     },
     {
-      address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y32',
-      username: 'liskUsername_3',
+      address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y32',
+      username: 'klayrUsername_3',
     },
     {
-      address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y53',
+      address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y53',
       username: 'testUsername_5',
     },
     {
-      address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y74',
-      username: 'liskUsername_7',
+      address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y74',
+      username: 'klayrUsername_7',
     },
   ],
 };
@@ -24,17 +24,17 @@ const validators = {
 describe('filterValidators', () => {
   it('properly filters validators based on username', () => {
     const filters = {
-      search: 'lisk',
+      search: 'klayr',
     };
     const expectedResult = {
       data: [
         {
-          address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y32',
-          username: 'liskUsername_3',
+          address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y32',
+          username: 'klayrUsername_3',
         },
         {
-          address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y74',
-          username: 'liskUsername_7',
+          address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y74',
+          username: 'klayrUsername_7',
         },
       ],
     };
@@ -44,14 +44,14 @@ describe('filterValidators', () => {
     const expectedResult = {
       data: [
         {
-          address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y74',
-          username: 'liskUsername_7',
+          address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y74',
+          username: 'klayrUsername_7',
         },
       ],
     };
     const filters = {
-      search: 'lisk',
-      address: 'lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y74',
+      search: 'klayr',
+      address: 'klydwsyfmcko6mcd357446yatromr9vzgu7eb8y74',
     };
     expect(filterValidators(validators, filters)).toEqual(expectedResult);
   });

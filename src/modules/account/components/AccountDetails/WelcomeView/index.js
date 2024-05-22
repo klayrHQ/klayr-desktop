@@ -8,8 +8,6 @@ import { PrimaryButton } from 'src/theme/buttons';
 import stylesPrimaryButton from '@theme/buttons/css/primaryButton.css';
 import routes from 'src/routes/routes';
 import stylesSecondary from '@theme/buttons/css/secondaryButton.css';
-import InfoBanner from '@common/components/infoBanner/infoBanner';
-import { INFO_BANNERS } from '@common/constants';
 import styles from './WelcomeView.css';
 
 function AccountUniqueValueProposition({ className, valueProposition, bulletPointNr }) {
@@ -47,27 +45,15 @@ export default function WelcomeView() {
 
   return (
     <div className={styles.wrapper}>
-      <InfoBanner
-        t={t}
-        show
-        name="walletPageBanner"
-        className={styles.bannerWrapper}
-        infoLabel={INFO_BANNERS.liskMigration.infoLabel(t)}
-        infoMessage={INFO_BANNERS.liskMigration.infoMessage(t)}
-        infoDescription={INFO_BANNERS.liskMigration.infoDescription(t)}
-        illustrationName={INFO_BANNERS.liskMigration.illustrationName}
-        infoLink={INFO_BANNERS.liskMigration.infoLink}
-        infoLinkText={INFO_BANNERS.liskMigration.infoLinkText}
-      />
       <section className={styles.welcomeView}>
         <header className={styles.welcomeHeader}>
           <div className={styles.logoContainer}>
-            <Icon name="liskLogoWhiteNormalized" height={32} />
+            <Icon name="klayrLogoNoText" height={32} />
           </div>
-          <h1 className={styles.title}>{t('Welcome to Lisk')}</h1>
+          <h1 className={styles.title}>{t('Welcome to Klayr')}</h1>
           <p className={styles.description}>
             {t(
-              'If you are new to the Lisk ecosystem, create an account by clicking on the “Create account”. If you have an account, then add it to your wallet by clicking on “Add account”.'
+              'If you are new to the Klayr ecosystem, create an account by clicking on the “Create account”. If you have an account, then add it to your wallet by clicking on “Add account”.'
             )}
           </p>
           <div className={styles.actionButtons}>

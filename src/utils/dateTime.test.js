@@ -1,6 +1,6 @@
 import {
   getUnixTimestampFromValue,
-  convertUnixSecondsToLiskEpochSeconds,
+  convertUnixSecondsToKlayrEpochSeconds,
 } from 'src/utils/dateTime';
 
 describe('Datetime', () => {
@@ -10,9 +10,9 @@ describe('Datetime', () => {
     });
   });
 
-  describe('convertUnixSecondsToLiskEpochSeconds', () => {
+  describe('convertUnixSecondsToKlayrEpochSeconds', () => {
     it('should return valid unix timestamp', () => {
-      expect(convertUnixSecondsToLiskEpochSeconds(1595584910)).toEqual(131475710);
+      expect(convertUnixSecondsToKlayrEpochSeconds(1595584910)).toEqual(131475710);
     });
   });
 });

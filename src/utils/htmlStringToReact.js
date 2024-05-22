@@ -14,7 +14,7 @@ const htmlStringToReact = (html = '') => {
         !domNode.attribs.href &&
         /#\d+$/.test(content)
       ) {
-        domNode.attribs.href = `https://github.com/LiskHQ/lisk-desktop/issues/${content.replace(
+        domNode.attribs.href = `https://github.com/KlayrHQ/klayr-desktop/issues/${content.replace(
           /\D/g,
           ''
         )}`;

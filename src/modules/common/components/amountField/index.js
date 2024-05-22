@@ -110,7 +110,7 @@ const AmountField = ({
             <Tooltip position="bottom" tooltipClassName={`${styles.tooltipContainer}`}>
               <span>
                 {t(
-                  'Based on your available balance and rounded down to a multiple of 10 LSK, your total remaining balance is {{maxAmount}} LSK',
+                  'Based on your available balance and rounded down to a multiple of 10 KLY, your total remaining balance is {{maxAmount}} KLY',
                   { maxAmount: convertFromBaseDenom(maxAmount.value) }
                 )}
               </span>

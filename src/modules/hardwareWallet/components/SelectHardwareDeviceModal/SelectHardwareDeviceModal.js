@@ -19,7 +19,7 @@ function SelectHardwareDeviceModal() {
           <h2 className={styles.hwTitle}>{t('Select hardware wallet device')}</h2>
         </BoxHeader>
         <BoxInfoText className={styles.boxInfoTextProp}>
-          {t('Choose a hardware wallet to perform your transactions on add to your Lisk Desktop')}
+          {t('Choose a hardware wallet to perform your transactions on add to your Klayr Desktop')}
         </BoxInfoText>
         <HwDeviceListing />
         <Link className={`${styles.backToWalletLink}`} to={routes.wallet.path}>

@@ -1,4 +1,4 @@
-# Lisk Desktop Pull Request Guideline
+# Klayr Desktop Pull Request Guideline
 
 ## Table Of Contents
 

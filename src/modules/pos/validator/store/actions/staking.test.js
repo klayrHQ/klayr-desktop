@@ -38,7 +38,7 @@ describe('actions: staking', () => {
     network: {
       name: networks.mainnet.label,
       networks: {
-        LSK: {
+        KLY: {
           serviceUrl: 'http://example.api',
           moduleCommandSchemas,
         },
@@ -50,7 +50,7 @@ describe('actions: staking', () => {
     wallet: {
       loginType: 0,
       info: {
-        LSK: {
+        KLY: {
           summary: {
             address: '123L',
             publicKey: '0fe9a3f1a21b5530f27f87a414b549e79a940bf24fdf2b2f05e7f22aeeecc86a',
@@ -63,7 +63,7 @@ describe('actions: staking', () => {
       },
     },
     token: {
-      active: 'LSK',
+      active: 'KLY',
     },
     blockChainApplications: {
       current: { chainID: mockBlockchainApp.data[0].chainID },
@@ -82,7 +82,7 @@ describe('actions: staking', () => {
     params: {
       stakes: [
         {
-          validatorAddress: 'lskz5kf62627u2n8kzqa8jpycee64pgxzutcrbzhz',
+          validatorAddress: 'klyz5kf62627u2n8kzqa8jpycee64pgxzutcrbzhz',
           amount: 1e10,
         },
       ],
@@ -249,7 +249,7 @@ describe('actions: staking', () => {
     const activeTokenWallet = {
       hwInfo: undefined,
       loginType: 0,
-      ...state.wallet.info.LSK,
+      ...state.wallet.info.KLY,
     };
     const transactionObject = {
       module: 'pos',
@@ -275,7 +275,7 @@ describe('actions: staking', () => {
       )(dispatch, getState);
       expect(transactionApi.signTransaction).toHaveBeenCalledWith({
         wallet: activeTokenWallet,
-        schema: state.network.networks.LSK.moduleCommandSchemas[transactionObject.moduleCommand],
+        schema: state.network.networks.KLY.moduleCommandSchemas[transactionObject.moduleCommand],
         chainID: mockBlockchainApp.data[0].chainID,
         transactionJSON: transactionObject,
         privateKey,

@@ -35,7 +35,7 @@
 
   &.rightNav {
     right: 0px;
-    background: linear-gradient(270deg, var(--color-white) 27.68%, rgba(243, 245, 247, 0) 103.93%);
+    background: linear-gradient(270deg, var(--color-surface) 27.68%, rgba(243, 245, 247, 0) 103.93%);
 
     & > button {
       margin-right: -80px;
@@ -45,7 +45,7 @@
 
   &.leftNav {
     left: 0px;
-    background: linear-gradient(90deg, var(--color-white) 27.68%, rgba(243, 245, 247, 0) 103.93%);
+    background: linear-gradient(90deg, var(--color-surface) 27.68%, rgba(243, 245, 247, 0) 103.93%);
 
     & > button {
       margin-left: -80px;
@@ -64,7 +64,7 @@
 
 .skeletonLoader {
   border-radius: 16px !important;
-  background-color: var(--color-white) !important;
+  background-color: var(--color-surface) !important;
 }
 
 .errorWrapper {
@@ -85,7 +85,7 @@
   }
 
   & > button {
-    color: var(--color-ultramarine-blue);
+    color: var(--color-primary);
     height: fit-content !important;
   }
 }

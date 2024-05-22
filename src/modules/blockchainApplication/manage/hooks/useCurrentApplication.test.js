@@ -15,7 +15,7 @@ const mockState = {
     current: mockApplications[0],
   },
   staking: {
-    lskngtn9t6k4pg4foetmy493x96hraoq2krtcz4zy: {
+    klyngtn9t6k4pg4foetmy493x96hraoq2krtcz4zy: {
       unconfirmed: 2000000000,
       confirmed: 0,
       name: 'genesis_73',

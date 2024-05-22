@@ -1,4 +1,4 @@
-const names = ['menfei', 'generator_of_lisk', 'xujian', 'jixie', 'elonhan', 'ntelo', 'menfei'];
+const names = ['menfei', 'generator_of_klayr', 'xujian', 'jixie', 'elonhan', 'ntelo', 'menfei'];
 
 const block = (index) => ({
   id: `35998991827805762${index}`,

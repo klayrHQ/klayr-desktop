@@ -1,5 +1,5 @@
 import { screen, fireEvent, waitFor } from '@testing-library/react';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import { smartRender } from 'src/utils/testHelpers';
 import * as hwManager from '@transaction/utils/hwManager';
 import accounts from '@tests/constants/wallets';
@@ -30,14 +30,14 @@ const mockTransaction = {
   numberOfSignatures: 2,
   optionalKeys: [],
 };
-const address = 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
+const address = 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
 
 jest.mock('@transaction/api/index', () => ({
   create: jest.fn(() => Promise.resolve(mockTransaction)),
   computeTransactionId: jest.fn(() => mockTransaction.id),
 }));
 jest.mock('@transaction/utils/hwManager');
-jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 jest.mock('@token/fungible/hooks/queries');
 
 describe('Multisignature Summary component', () => {
@@ -146,7 +146,7 @@ describe('Multisignature Summary component', () => {
       props.transactionJSON.params.mandatoryKeys.length +
         props.transactionJSON.params.optionalKeys.length
     );
-    expect(screen.getByText('0.02 LSK')).toBeInTheDocument();
+    expect(screen.getByText('0.02 KLY')).toBeInTheDocument();
   });
 
   it('Should be in edit mode', () => {

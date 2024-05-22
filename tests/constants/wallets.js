@@ -8,7 +8,7 @@ const wallets = {
     summary: {
       publicKey: '0fe9a3f1a21b5530f27f87a414b549e79a940bf24fdf2b2f05e7f22aeeecc86a',
       serverPublicKey: '0fe9a3f1a21b5530f27f87a414b549e79a940bf24fdf2b2f05e7f22aeeecc86a',
-      address: 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
+      address: 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt',
       balance: '9897000000000000',
       isMigrated: true,
       isMultisignature: false,
@@ -28,7 +28,7 @@ const wallets = {
     summary: {
       publicKey: '86499879448d1b0215d59cbf078836e3d7d9d2782d56a2274a568761bff36f19',
       serverPublicKey: '86499879448d1b0215d59cbf078836e3d7d9d2782d56a2274a568761bff36f19',
-      address: 'lskehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
+      address: 'klyehj8am9afxdz8arztqajy52acnoubkzvmo9cjy',
       balance: 1000e8,
       isValidator: true,
     },
@@ -51,7 +51,7 @@ const wallets = {
     summary: {
       publicKey: '197cf311f678406bc72a8edfdc3dffe6f59f49c4550a860e4b68fb20382211d0',
       serverPublicKey: '197cf311f678406bc72a8edfdc3dffe6f59f49c4550a860e4b68fb20382211d0',
-      address: 'lskgonvfdxt3m6mm7jaeojrj5fnxx7vwmkxq72v79',
+      address: 'klygonvfdxt3m6mm7jaeojrj5fnxx7vwmkxq72v79',
       balance: 0,
       isMigrated: false,
     },
@@ -71,7 +71,7 @@ const wallets = {
     summary: {
       publicKey: '35c6b25520fc868b56c83fed6e1c89bb350fb7994a5da0bcea7a4f621f948c7f',
       serverPublicKey: '35c6b25520fc868b56c83fed6e1c89bb350fb7994a5da0bcea7a4f621f948c7f',
-      address: 'lsksckkjs2c8dnu7vhcku825cp62ed6eyxd8pbt6p',
+      address: 'klysckkjs2c8dnu7vhcku825cp62ed6eyxd8pbt6p',
       isValidator: false,
     },
     token: {},
@@ -85,7 +85,7 @@ const wallets = {
     summary: {
       publicKey: 'a04a60f5f3f9be3a15b121342ba81b7bd66d37e7f3e8cc4f7c03396bd9c1f103',
       serverPublicKey: 'a04a60f5f3f9be3a15b121342ba81b7bd66d37e7f3e8cc4f7c03396bd9c1f103',
-      address: 'lsks6wh4zqfd8wyka3rj243rshcdqyug9gyvehxwz',
+      address: 'klys6wh4zqfd8wyka3rj243rshcdqyug9gyvehxwz',
     },
     token: {},
     sequence: { nonce: 1 },
@@ -99,7 +99,7 @@ const wallets = {
     summary: {
       publicKey: 'a04a60f5f3f9be3a15b121342ba81b7bd66d37e7f3e8cc4f7c03396bd9c1f103',
       serverPublicKey: 'a04a60f5f3f9be3a15b121342ba81b7bd66d37e7f3e8cc4f7c03396bd9c1f103',
-      address: 'lsks6wh4zqfd8wyka3rj243rshcdqyug9gyvehxwz',
+      address: 'klys6wh4zqfd8wyka3rj243rshcdqyug9gyvehxwz',
       balance: '9897000000000000',
       isMigrated: true,
       isMultisignature: true,
@@ -126,7 +126,7 @@ const wallets = {
     summary: {
       publicKey: 'c5e64031407c3ca8d526bf7404f7c78ab60ea0792e90393a73b3b06a8c8841d4',
       serverPublicKey: 'c5e64031407c3ca8d526bf7404f7c78ab60ea0792e90393a73b3b06a8c8841d4',
-      address: 'lskkx46qy3wkwtfbh4gzbq57tx6dzfexu5yufwh5b',
+      address: 'klykx46qy3wkwtfbh4gzbq57tx6dzfexu5yufwh5b',
     },
     token: {},
     sequence: {},
@@ -140,7 +140,7 @@ const wallets = {
       'traffic woman skull forest nerve luggage traffic wrestle ensure organ moon century',
     summary: {
       publicKey: 'a1fa251b368939ed2aa8c620e955cb4537c06a351fa50e928ec21e89372e7494',
-      address: 'lskzazqvqytehnucqos7atc5knsp872dhetz9rchn',
+      address: 'klyzazqvqytehnucqos7atc5knsp872dhetz9rchn',
       balance: 0,
     },
     token: { balance: 0 },
@@ -153,7 +153,7 @@ const wallets = {
   testnet_guy: {
     passphrase: 'call scene goat common morning immune oxygen reunion skirt amazing current hire',
     summary: {
-      address: 'lsk2h73o3bqa4v2u3ehn6c5e787ky38q8wte538mn',
+      address: 'kly2h73o3bqa4v2u3ehn6c5e787ky38q8wte538mn',
       balance: 200000000,
     },
     token: { balance: 200000000 },
@@ -165,7 +165,7 @@ const wallets = {
   },
   non_migrated: {
     summary: {
-      address: 'lsk8dwx2xdagos9v7vq6h2qnv4jnbjc95hxs7nckc',
+      address: 'kly8dwx2xdagos9v7vq6h2qnv4jnbjc95hxs7nckc',
       legacyAddress: '15075513162459295358L',
       balance: '100000000',
       username: '',
@@ -203,7 +203,7 @@ const wallets = {
     secondPass: 'fall audit ankle myself cook gospel common matrix limit load frost stay',
     passphrase: 'steak avoid couple fog ability chalk jacket electric rifle fuel tuition van',
     summary: {
-      address: 'lskwunwxqmss9w3mtuvzgbsfy665cz4eo3rd2mxdp',
+      address: 'klywunwxqmss9w3mtuvzgbsfy665cz4eo3rd2mxdp',
       balance: '5835970000',
       publicKey: '6b40b2c68d52b1532d0374a078974798cff0b59d0a409a8d574378fe2c69daef',
       isMultisignature: true,
@@ -227,7 +227,7 @@ const wallets = {
   wallet2P: {
     passphrase: 'steak avoid couple fog ability chalk jacket electric rifle fuel tuition van',
     summary: {
-      address: 'lskwunwxqmss9w3mtuvzgbsfy665cz4eo3rd2mxdp',
+      address: 'klywunwxqmss9w3mtuvzgbsfy665cz4eo3rd2mxdp',
       balance: '5834556000',
       publicKey: '6b40b2c68d52b1532d0374a078974798cff0b59d0a409a8d574378fe2c69daef',
       isMultisignature: true,
@@ -243,19 +243,19 @@ const wallets = {
       optionalKeys: [],
       members: [
         {
-          address: 'lskadd9hd2kvxusbkqd4mroeeeds59m68v24fsctb',
+          address: 'klyadd9hd2kvxusbkqd4mroeeeds59m68v24fsctb',
           publicKey: '3182b14f4679fcecdfcba89045cdcc770d9acaa6abcfaebe52a40ddb6436b6cc',
           isMandatory: true,
         },
         {
-          address: 'lskwunwxqmss9w3mtuvzgbsfy665cz4eo3rd2mxdp',
+          address: 'klywunwxqmss9w3mtuvzgbsfy665cz4eo3rd2mxdp',
           publicKey: '6b40b2c68d52b1532d0374a078974798cff0b59d0a409a8d574378fe2c69daef',
           isMandatory: true,
         },
       ],
       memberships: [
         {
-          address: 'lskqsh6v8k2d24japgz69t8sbftb932uvwayqwdz5',
+          address: 'klyqsh6v8k2d24japgz69t8sbftb932uvwayqwdz5',
           publicKey: '4329462a6023c7090c3267c86f8dee21ed249fbb3871744422dbe25f3a880365',
           username: '!@$&',
         },
@@ -269,7 +269,7 @@ const wallets = {
   mainnet_guy: {
     passphrase: 'pass umbrella hold deny stumble slab trade fall test noodle royal pluck',
     summary: {
-      address: 'lskaror3zjhrg85edkfemyg7aoq4cq6jqycnxgkr9',
+      address: 'klyaror3zjhrg85edkfemyg7aoq4cq6jqycnxgkr9',
       balance: '0',
       isValidator: false,
       isMigrated: false,

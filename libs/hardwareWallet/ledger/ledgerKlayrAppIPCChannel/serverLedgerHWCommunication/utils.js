@@ -1,6 +1,6 @@
 import { LedgerAccount } from '@zondax/ledger-lisk';
 import TransportNodeHid from '@ledgerhq/hw-transport-node-hid';
-import { getPubKey } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/serverLedgerHWCommunication/index';
+import { getPubKey } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/serverLedgerHWCommunication/index';
 import { LEDGER_CUSTOM_ERRORS } from '@libs/hardwareWallet/ledger/constants';
 
 export const getLedgerAccount = (index = 0) => {

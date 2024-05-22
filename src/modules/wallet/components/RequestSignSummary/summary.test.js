@@ -1,13 +1,13 @@
 import { screen, fireEvent } from '@testing-library/react';
 import { renderWithQueryClient } from 'src/utils/testHelpers';
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import wallets from '@tests/constants/wallets';
 import { mockAuth } from '@auth/__fixtures__';
 import useTxInitiatorAccount from '@transaction/hooks/useTxInitiatorAccount';
 import Summary from './summary';
 
-const address = 'lskdxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
-jest.spyOn(cryptography.address, 'getLisk32AddressFromPublicKey').mockReturnValue(address);
+const address = 'klydxc4ta5j43jp9ro3f8zqbxta9fn6jwzjucw7yt';
+jest.spyOn(cryptography.address, 'getKlayr32AddressFromPublicKey').mockReturnValue(address);
 
 jest.mock('src/utils/searchParams', () => ({
   ...jest.requireActual('src/utils/searchParams'),

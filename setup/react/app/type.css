@@ -23,60 +23,62 @@ avaialble application-wide
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 @font-face {
-  font-family: 'gilroy';
-  src:
-    url('../assets/fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
-    url('../assets/fonts/gilroy/Gilroy-Bold.woff') format('woff'),
-    url('../assets/fonts/gilroy/Gilroy-Bold.ttf')  format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gilroy';
-  src:
-    url('../assets/fonts/gilroy/Gilroy-Extra-Bold.woff2') format('woff2'),
-    url('../assets/fonts/gilroy/Gilroy-Extra-Bold.woff') format('woff'),
-    url('../assets/fonts/gilroy/Gilroy-Extra-Bold.ttf')  format('truetype');
-  font-weight: bolder;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gilroy';
-  src: url('../assets/fonts/gilroy/Gilroy-Medium.otf');
+  font-family: 'Utendo';
+  src: url('../assets/fonts/utendo/Utendo-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'basier-circle';
-  src:
-    url('../assets/fonts/basierCircle/BasierCircle-SemiBold.woff2') format('woff2'),
-    url('../assets/fonts/basierCircle/BasierCircle-SemiBold.woff') format('woff'),
-    url('../assets/fonts/basierCircle/BasierCircle-SemiBold.otf');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'basier-circle';
-  src:
-    url('../assets/fonts/basierCircle/BasierCircle-Medium.woff2') format('woff2'),
-    url('../assets/fonts/basierCircle/BasierCircle-Medium.woff') format('woff'),
-    url('../assets/fonts/basierCircle/BasierCircle-Medium.otf');
+  font-family: 'Utendo';
+  src: url('../assets/fonts/utendo/Utendo-SemiBold.ttf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'basier-circle';
-  src:
-    url('../assets/fonts/basierCircle/BasierCircle-Regular.woff2') format('woff2'),
-    url('../assets/fonts/basierCircle/BasierCircle-Regular.woff') format('woff'),
-    url('../assets/fonts/basierCircle/BasierCircle-Regular.otf');
+  font-family: 'Utendo';
+  src: url('../assets/fonts/utendo/Utendo-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/Inter-Regular.ttf') format('woff2');
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/Inter-SemiBold.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/Inter-Bold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monaco';
+  src: url('../assets/fonts/monaco/Monaco.ttf');
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: url('../assets/fonts/verdana/Verdana.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: url('../assets/fonts/verdana/Verdana Bold.ttf');
+  font-weight: 600;
 }
 
 body {
@@ -124,7 +126,7 @@ i {
 }
 
 a {
-  color: var(--color-ultramarine-blue);
+  color: var(--color-primary);
   cursor: pointer;
   text-decoration: none;
   font-weight: var(--font-weight-bold);
@@ -132,6 +134,10 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+body {
+  color: var(--color-content);
 }
 
 strong {

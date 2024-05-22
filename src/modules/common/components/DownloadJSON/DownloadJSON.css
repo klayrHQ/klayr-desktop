@@ -9,7 +9,7 @@
   & > p {
     @mixin contentLarge bold;
 
-    color: var(--color-maastricht-blue);
+    color: var(--color-content);
     margin: 10px 20px;
     word-spacing: 8px;
     word-break: break-all;

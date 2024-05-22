@@ -30,7 +30,7 @@ const ErrorActions = ({ t, status, message, network, application }) => (
       errorMessage: message,
       networkIdentifier: network?.networkIdentifier,
       serviceUrl: network?.serviceUrl,
-      liskCoreVersion: network?.networkVersion,
+      klayrCoreVersion: network?.networkVersion,
       application,
     })}
     target="_top"

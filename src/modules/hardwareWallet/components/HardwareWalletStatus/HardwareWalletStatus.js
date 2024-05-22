@@ -5,7 +5,7 @@ import Icon from '@theme/Icon';
 import { useSelector } from 'react-redux';
 import { selectCurrentHWDevice } from '@hardwareWallet/store/selectors/hwSelectors';
 import DialogLink from '@theme/dialog/link';
-import { getPubKey } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication';
+import { getPubKey } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
 import { TertiaryButton } from 'src/theme/buttons';
 import classNames from 'classnames';
 import styles from './HardwareWalletStatus.css';

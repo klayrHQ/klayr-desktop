@@ -13,7 +13,7 @@ jest.mock('./actions');
 describe('Middleware: Settings', () => {
   const next = jest.fn();
   const token = {
-    active: 'LSK',
+    active: 'KLY',
   };
   const store = {
     dispatch: jest.fn(),
@@ -39,7 +39,7 @@ describe('Middleware: Settings', () => {
         data: {
           name: 'customNode',
           networks: {
-            LSK: {
+            KLY: {
               serviceUrl: 'http://test.io',
             },
           },

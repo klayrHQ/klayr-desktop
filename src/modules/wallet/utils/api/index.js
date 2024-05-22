@@ -99,7 +99,7 @@ export const getAccounts = async ({ network, params = {}, baseUrl }) => {
   if (requests.length) {
     return ws({
       requests,
-      baseUrl: baseUrl || network.networks.LSK.serviceUrl,
+      baseUrl: baseUrl || network.networks.KLY.serviceUrl,
     });
   }
 

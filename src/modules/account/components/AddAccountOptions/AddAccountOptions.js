@@ -44,7 +44,7 @@ const AddAccountOptions = () => {
         >
           <div className={`${styles.titleHolder} ${grid['col-xs-10']}`}>
             <h1>{t('Add your account')}</h1>
-            <p>{t('Choose an option to add your account to Lisk wallet.')}</p>
+            <p>{t('Choose an option to add your account to Klayr wallet.')}</p>
             <div className={styles.selectRowWrapper}>
               {addAccountOptions(t).map(({ text, iconName, pathname }) => (
                 <AddAccountOptionButton
@@ -56,7 +56,7 @@ const AddAccountOptions = () => {
               ))}
             </div>
             <div className={styles.footer}>
-              {t('Don’t have a Lisk account yet?')}{' '}
+              {t('Don’t have a Klayr account yet?')}{' '}
               <DropdownButton
                 className={`${styles.dropdownWrapper} input-with-dropdown-dropdown`}
                 buttonClassName={`${styles.inputDropdownButton}`}

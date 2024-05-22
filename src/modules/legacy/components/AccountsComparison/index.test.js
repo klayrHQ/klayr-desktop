@@ -85,7 +85,7 @@ describe('Reclaim balance screen', () => {
     wrapper.find('.link').at(0).simulate('click');
     expect(window.open).toHaveBeenNthCalledWith(
       1,
-      'https://lisk.com/blog/posts/reclaiming-a-lisk-account',
+      'https://klayr.xyz/blog/posts/reclaiming-a-klayr-account',
       '_blank',
       'rel=noopener noreferrer'
     );
@@ -95,7 +95,7 @@ describe('Reclaim balance screen', () => {
     useSelector.mockImplementation(
       jest.fn(() => ({
         ...mockNonMigrated,
-        token: [{ name: 'Lisk', symbol: 'LSK', availableBalance: '100000000' }],
+        token: [{ name: 'Klayr', symbol: 'KLY', availableBalance: '100000000' }],
         staking: {},
       }))
     );

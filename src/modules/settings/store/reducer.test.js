@@ -8,9 +8,9 @@ describe('Reducer: settings(state, action)', () => {
   beforeEach(() => {
     initializeState = {
       token: {
-        active: tokenMap.LSK.key,
+        active: tokenMap.KLY.key,
         list: {
-          [tokenMap.LSK.key]: true,
+          [tokenMap.KLY.key]: true,
         },
       },
     };

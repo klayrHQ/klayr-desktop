@@ -3,7 +3,7 @@ import { LEDGER_HW_IPC_CHANNELS } from '@libs/hardwareWallet/ledger/constants';
 import {
   createIpcMainChannel,
   getSequentiallyQueuedData,
-} from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/utils';
+} from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/utils';
 import {
   getPubKey,
   getConnectedDevices,
@@ -21,7 +21,7 @@ const {
   RESET_LEDGER_IPC_QUEUE,
 } = LEDGER_HW_IPC_CHANNELS;
 
-export const ledgerLiskAppIPCChannel = () => {
+export const ledgerKlayrAppIPCChannel = () => {
   let myq = new Queue();
 
   createIpcMainChannel(GET_SIGNED_TRANSACTION, async (data) => {

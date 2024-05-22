@@ -7,7 +7,7 @@ import { getTokenBalances } from './getTokenBalances';
 jest.useRealTimers();
 
 describe('getTokenBalances hook', () => {
-  const address = 'lskyau2yy4993jkbd7kxcsfsrarac8macbbs8saad';
+  const address = 'klyyau2yy4993jkbd7kxcsfsrarac8macbbs8saad';
   const config = {
     params: {
       address,

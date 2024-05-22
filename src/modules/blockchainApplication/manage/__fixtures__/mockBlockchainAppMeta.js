@@ -2,13 +2,13 @@
 export const mockBlockchainAppMeta = {
   data: [
     {
-      chainName: 'Lisk',
+      chainName: 'Klayr',
       chainID: '00000001',
       title: '',
       description: '',
       networkType: 'mainnet',
-      genesisURL: 'https://downloads.lisk.com/lisk/mainnet/genesis_block.json.tar.gz',
-      projectPage: 'https://lisk.com',
+      genesisURL: 'https://downloads.klayr.xyz/klayr/mainnet/genesis_block.json.tar.gz',
+      projectPage: 'https://klayr.xyz',
       logo: {
         png: 'https://lisk-qa.ams3.digitaloceanspaces.com/Artboard%201%20copy%2019.png',
         svg: 'https://lisk-qa.ams3.digitaloceanspaces.com/Logo-20.svg',
@@ -16,28 +16,24 @@ export const mockBlockchainAppMeta = {
       backgroundColor: '#0981D1',
       serviceURLs: [
         {
-          http: 'https://service.lisk.com',
-          ws: 'wss://service.lisk.com',
+          http: 'https://service.klayr.xyz',
+          ws: 'wss://service.klayr.xyz',
         },
       ],
       explorers: [
         {
-          url: 'https://lisk.observer',
-          txnPage: 'https://lisk.observer/transactions',
-        },
-        {
-          url: 'https://liskscan.com',
-          txnPage: 'https://liskscan.com/transactions',
+          url: 'https://explorer.klayr.xyz',
+          txnPage: 'https://explorer.klayr.xyz/transactions',
         },
       ],
       appNodes: [
         {
-          url: 'https://mainnet.lisk.com',
-          maintainer: 'Lightcurve GmbH',
+          url: 'https://mainnet.klayr.xyz',
+          maintainer: 'Klayr Labs BV.',
         },
         {
-          url: 'wss://mainnet.lisk.com',
-          maintainer: 'Lightcurve GmbH',
+          url: 'wss://mainnet.klayr.xyz',
+          maintainer: 'Klayr Labs BV.',
         },
       ],
     },

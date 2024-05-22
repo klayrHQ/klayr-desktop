@@ -20,8 +20,8 @@ jest.mock('@account/hooks/useDeprecatedAccount', () => ({
     isLoading: false,
   }),
 }));
-jest.mock('@liskhq/lisk-client', () => ({
-  ...jest.requireActual('@liskhq/lisk-client'),
+jest.mock('@klayr/client', () => ({
+  ...jest.requireActual('@klayr/client'),
   transactions: {
     computeMinFee: jest.fn().mockReturnValue(10000000000n),
     getBytes: jest.fn().mockReturnValue({ length: 50 }),
@@ -41,7 +41,7 @@ describe('TxComposer', () => {
     formProps: {
       feedback: [],
       moduleCommand: MODULE_COMMANDS_NAME_MAP.transfer,
-      fields: { token: { availableBalance: 10000, symbol: 'LSK' } },
+      fields: { token: { availableBalance: 10000, symbol: 'KLY' } },
     },
     commandParams: {
       recipient: { address: accounts.genesis.summary.address },
@@ -115,12 +115,12 @@ describe('TxComposer', () => {
         fields: {
           token: {
             availableBalance: 100,
-            symbol: 'LSK',
+            symbol: 'KLY',
             denomUnits: [
               {
-                denom: 'lsk',
+                denom: 'kly',
                 decimals: 8,
-                aliases: ['Lisk'],
+                aliases: ['Klayr'],
               },
             ],
           },
@@ -135,7 +135,7 @@ describe('TxComposer', () => {
       },
     };
     const state = {
-      wallet: { info: { LSK: accounts.empty_wallet } },
+      wallet: { info: { KLY: accounts.empty_wallet } },
     };
     const wrapper = mountWithQueryAndProps(TxComposer, newProps, state);
     expect(wrapper.find('TransactionPriority')).toExist();

@@ -18,15 +18,15 @@ const addAboutMenuForMac = ({ template, name }) => {
 };
 
 const addAboutMenuForNonMac = ({ template, electron }) => {
-  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Lisk Foundation`;
+  const copyright = `Copyright © 2024 - ${new Date().getFullYear()} Klayr Holding BV.`;
   template[template.length - 1].submenu.push({
     label: i18n.t('About'),
     click(item, focusedWindow) {
       if (focusedWindow) {
         const options = {
           buttons: ['OK'],
-          icon: `${__dirname}/assets/images/LISK.png`,
-          message: `${i18n.t('Lisk')}\n${i18n.t(
+          icon: `${__dirname}/assets/images/KLAYR.png`,
+          message: `${i18n.t('Klayr')}\n${i18n.t(
             'Version'
           )} ${electron.app.getVersion()}\n${copyright}`,
         };
@@ -118,12 +118,12 @@ const menu = {
       label: i18n.t('Help'),
       submenu: [
         {
-          label: i18n.t('Lisk Website'),
-          click: menu.onClickLink.bind(null, electron, 'https://lisk.com'),
+          label: i18n.t('Klayr Website'),
+          click: menu.onClickLink.bind(null, electron, 'https://klayr.xyz'),
         },
         {
           label: i18n.t('Discord'),
-          click: menu.onClickLink.bind(null, electron, 'https://lisk.chat'),
+          click: menu.onClickLink.bind(null, electron, 'https://klayr.chat'),
         },
         {
           label: i18n.t('Provide Feedback'),
@@ -135,7 +135,7 @@ const menu = {
         },
         {
           label: i18n.t('Explorer'),
-          click: menu.onClickLink.bind(null, electron, 'https://liskscan.com'),
+          click: menu.onClickLink.bind(null, electron, 'https://explorer.klayr.xyz'),
         },
         {
           type: 'separator',
@@ -145,7 +145,7 @@ const menu = {
           click: menu.onClickLink.bind(
             null,
             electron,
-            'https://github.com/LiskHQ/lisk-desktop/releases'
+            'https://github.com/KlayrHQ/klayr-desktop/releases'
           ),
         },
       ],

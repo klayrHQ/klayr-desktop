@@ -17,7 +17,7 @@ jest.spyOn(React, 'useContext').mockImplementation(() => ({
       meta: {
         id: '1',
         params: {
-          requiredNamespaces: { lisk: {} },
+          requiredNamespaces: { klayr: {} },
         },
       },
     },

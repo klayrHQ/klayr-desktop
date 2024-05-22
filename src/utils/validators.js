@@ -1,4 +1,4 @@
-import { cryptography } from '@liskhq/lisk-client';
+import { cryptography } from '@klayr/client';
 import numeral from 'numeral';
 import { regex as reg } from 'src/const/regex';
 import {
@@ -15,7 +15,7 @@ import { MIN_ACCOUNT_BALANCE } from 'src/modules/transaction/configuration/trans
 export const isNumeric = (value) => /^(-?[0-9]+\.?[0-9]*|\.[0-9]+)$/.test(value);
 
 /**
- * Check if address is in Lisk32 format
+ * Check if address is in Klayr32 format
  * @returns {Number} -> 0: valid, 1: invalid, -1: empty
  */
 export const validateAddress = (address) => {
@@ -24,7 +24,7 @@ export const validateAddress = (address) => {
   }
 
   try {
-    return cryptography.address.validateLisk32Address(address) ? 0 : 1;
+    return cryptography.address.validateKlayr32Address(address) ? 0 : 1;
   } catch (e) {
     return 1;
   }
@@ -34,7 +34,7 @@ export const validateAddress = (address) => {
  * Checks the validity of a given publicKey
  * @returns {Number} 0 for valid, 1 for invalid
  */
-export const validateLSKPublicKey = (publicKey) => {
+export const validateKLYPublicKey = (publicKey) => {
   try {
     return reg.publicKey.test(publicKey) ? 0 : 1;
   } catch (e) {
@@ -93,7 +93,7 @@ export const validateAmount = ({
       fn: () => maxDecimals(token).test(amount),
     },
     STAKE_10X: {
-      message: i18n.t('You can only stake in multiplies of 10 LSK.'),
+      message: i18n.t('You can only stake in multiplies of 10 KLY.'),
       fn: () => amount % 10 !== 0,
     },
     INSUFFICIENT_FUNDS: {

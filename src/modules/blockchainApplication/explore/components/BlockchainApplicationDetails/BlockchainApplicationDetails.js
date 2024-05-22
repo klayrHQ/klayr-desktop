@@ -50,7 +50,7 @@ const BlockchainApplicationDetails = ({ history, location }) => {
     lastCertificateHeight,
     lastUpdated,
     logo,
-    escrowedLSK = '0',
+    escrowedKLY = '0',
   } = aggregatedApplicationData;
   const { setApplication, applications } = useApplicationManagement();
 
@@ -76,7 +76,7 @@ const BlockchainApplicationDetails = ({ history, location }) => {
     {
       header: {
         text: t('Chain ID'),
-        toolTipText: t('The chain ID uniquely identifies a chain in the Lisk ecosystem'),
+        toolTipText: t('The chain ID uniquely identifies a chain in the Klayr ecosystem'),
       },
       className: `${styles.detailContentText} chain-id`,
       content: chainId,
@@ -145,7 +145,7 @@ const BlockchainApplicationDetails = ({ history, location }) => {
           ) : (
             <ValueAndLabel label={t('Deposited:')} direction="horizontal">
               <span className={styles.value}>
-                <TokenAmount val={escrowedLSK} isLsk />
+                <TokenAmount val={escrowedKLY} isKly />
               </span>
             </ValueAndLabel>
           )}

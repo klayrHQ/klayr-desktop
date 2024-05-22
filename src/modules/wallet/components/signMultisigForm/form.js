@@ -10,7 +10,7 @@ import UploadJSONInput from 'src/modules/common/components/uploadJSONInput';
 import { PrimaryButton } from 'src/theme/buttons';
 import { useDeprecatedAccount } from 'src/modules/account/hooks';
 import { useSchemas } from '@transaction/hooks/queries/useSchemas';
-import { transactions } from '@liskhq/lisk-client';
+import { transactions } from '@klayr/client';
 import { getParamsSchema } from '@transaction/hooks/useTransactionFee/utils';
 import ProgressBar from '../signMultisigView/progressBar';
 import styles from './styles.css';

@@ -3,14 +3,14 @@ import { getDuplicateNetworkFields } from './index';
 describe('getDuplicateNetworkFields', () => {
   const MAINNET = {
     name: 'Mainnet',
-    serviceUrl: 'https://service.lisk.com',
-    wsServiceUrl: 'wss://service.lisk.com',
+    serviceUrl: 'https://service.klayr.xyz',
+    wsServiceUrl: 'wss://service.klayr.xyz',
   };
 
   const CUSTOM = {
     name: 'Custom',
-    serviceUrl: 'https://custom-service.lisk.com',
-    wsServiceUrl: 'wss://custom-service.lisk.com',
+    serviceUrl: 'https://custom-service.klayr.xyz',
+    wsServiceUrl: 'wss://custom-service.klayr.xyz',
   };
 
   const MOCK_NETWORKS = [MAINNET, CUSTOM];
@@ -22,8 +22,8 @@ describe('getDuplicateNetworkFields', () => {
   it('Should return undefined if no duplicate values', () => {
     const UNIQUE_NETWORK = {
       name: 'New',
-      serviceUrl: 'https://new-service.lisk.com',
-      wsServiceUrl: 'wss://new-service.lisk.com',
+      serviceUrl: 'https://new-service.klayr.xyz',
+      wsServiceUrl: 'wss://new-service.klayr.xyz',
     };
 
     expect(getDuplicateNetworkFields(UNIQUE_NETWORK, MOCK_NETWORKS)).toBeUndefined();

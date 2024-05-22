@@ -6,7 +6,7 @@ import { statusMessages } from '@transaction/configuration/statusConfig';
 import TokenAmount from '@token/fungible/components/tokenAmount';
 import styles from './styles.css';
 
-const LiskAmountFormatted = ({ val, token, message, prefixMessage }) => (
+const KlayrAmountFormatted = ({ val, token, message, prefixMessage }) => (
   <span className={styles.subHeadingBold}>
     {prefixMessage} <TokenAmount val={val} token={token} /> {message}
   </span>
@@ -35,7 +35,7 @@ const getSuccessMessage = (
         {regularUnlockable > BigInt(0) ? (
           <>
             <div className={styles.stakeSection}>
-              <LiskAmountFormatted
+              <KlayrAmountFormatted
                 val={regularUnlockable.toString()}
                 token={token}
                 message={t('will be available to unlock when the locking period ends.')}
@@ -55,7 +55,7 @@ const getSuccessMessage = (
         {selfUnstakeUnlockable > 0 ? (
           <>
             <div className={styles.stakeSection}>
-              <LiskAmountFormatted
+              <KlayrAmountFormatted
                 val={selfUnstakeUnlockable}
                 token={token}
                 message={t('will be available to unlock when the locking period ends.')}
@@ -79,7 +79,7 @@ const getSuccessMessage = (
     return (
       <>
         <div className={styles.stakeSection}>
-          <LiskAmountFormatted
+          <KlayrAmountFormatted
             val={locked}
             token={token}
             message={t('will be locked for staking.')}
@@ -100,14 +100,14 @@ const getSuccessMessage = (
   if (locked && unlockable) {
     return (
       <>
-        <LiskAmountFormatted
+        <KlayrAmountFormatted
           val={locked}
           token={token}
           prefixMessage={t('You have now locked')}
           message={t('for staking and may unlock')}
         />
         <div className={styles.stakeSection}>
-          <LiskAmountFormatted
+          <KlayrAmountFormatted
             val={unlockable}
             token={token}
             message={t('when the locking period ends.')}

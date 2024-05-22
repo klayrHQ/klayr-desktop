@@ -4,7 +4,7 @@
   background-color: var(--color-onboarding-bg);
   border-radius: var(--border-radius-standard);
   box-sizing: border-box;
-  color: var(--color-white);
+  color: var(--color-surface);
   display: flex;
   margin-top: 32px;
   overflow: hidden;
@@ -68,8 +68,8 @@
     }
 
     & > .active {
-      background-color: var(--color-ultramarine-blue);
-      border-color: var(--color-ultramarine-blue);
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
     }
   }
 

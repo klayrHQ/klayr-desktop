@@ -46,7 +46,7 @@
   @mixin contentNormal normal;
 
   align-items: center;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
   display: flex;
   margin-bottom: 8px;
 }

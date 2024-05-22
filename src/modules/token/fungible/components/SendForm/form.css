@@ -118,7 +118,7 @@
     margin: 8px 0;
 
     & > span {
-      color: var(--color-maastricht-blue);
+      color: var(--color-content);
       display: flex;
       margin-left: 5px;
     }
@@ -133,7 +133,7 @@
 
     & > span {
       font-weight: 500;
-      color: var(--color-ultramarine-blue);
+      color: var(--color-primary);
       display: flex;
     }
   }
@@ -164,7 +164,7 @@
   width: 100%;
 
   &:global(.error) {
-    color: var(--color-burnt-sienna);
+    color: var(--color-lobster);
   }
 
   &.show {
@@ -248,5 +248,5 @@
   max-width: 228px;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: var(--color-maastricht-blue);
+  color: var(--color-content);
 }

@@ -60,8 +60,8 @@ body {
   width: 100px;
   height: 100px;
   margin: 1px;
-  border: 1px solid #c5cfe4;
-  border-color: #c5cfe4 transparent transparent transparent;
+  border: 1px solid var(--color-spinner);
+  border-color: var(--color-spinner) transparent transparent transparent;
   border-radius: 50%;
   animation: lds-ring 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 }

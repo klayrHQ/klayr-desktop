@@ -8,7 +8,7 @@ const illustrations = {
     [txStatusTypes.signatureError]: 'transactionError',
     [txStatusTypes.hwRejected]: 'hwRejection',
     [txStatusTypes.hwDisconnected]: 'hwRejection',
-    [txStatusTypes.hwLiskAppClosed]: 'hwRejection',
+    [txStatusTypes.hwKlayrAppClosed]: 'hwRejection',
     [txStatusTypes.hwMemorySizeLimitRejection]: 'hwDataRejection',
   },
   stake: {
@@ -18,7 +18,7 @@ const illustrations = {
     [txStatusTypes.signatureError]: 'transactionError',
     [txStatusTypes.hwRejected]: 'hwRejection',
     [txStatusTypes.hwDisconnected]: 'hwRejection',
-    [txStatusTypes.hwLiskAppClosed]: 'hwRejection',
+    [txStatusTypes.hwKlayrAppClosed]: 'hwRejection',
   },
   registerMultisignature: {
     [txStatusTypes.signatureSuccess]: 'registerMultisignatureSuccess',
@@ -27,7 +27,7 @@ const illustrations = {
     [txStatusTypes.signatureError]: 'registerMultisignatureError',
     [txStatusTypes.hwRejected]: 'hwRejection',
     [txStatusTypes.hwDisconnected]: 'hwRejection',
-    [txStatusTypes.hwLiskAppClosed]: 'hwRejection',
+    [txStatusTypes.hwKlayrAppClosed]: 'hwRejection',
   },
   signMultisignature: {
     [txStatusTypes.multisigSignaturePartialSuccess]: 'multisignaturePartialSuccess',
@@ -38,7 +38,7 @@ const illustrations = {
     [txStatusTypes.broadcastError]: 'transactionError',
     [txStatusTypes.hwRejected]: 'hwRejection',
     [txStatusTypes.hwDisconnected]: 'hwRejection',
-    [txStatusTypes.hwLiskAppClosed]: 'hwRejection',
+    [txStatusTypes.hwKlayrAppClosed]: 'hwRejection',
   },
   registerValidator: {
     [txStatusTypes.broadcastSuccess]: 'validatorRegistrationSuccess',

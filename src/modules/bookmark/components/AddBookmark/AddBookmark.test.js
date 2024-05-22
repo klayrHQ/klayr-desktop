@@ -9,11 +9,11 @@ jest.mock('@auth/hooks/queries');
 
 describe('Add a new bookmark component', () => {
   const bookmarks = {
-    LSK: [],
+    KLY: [],
   };
   const props = {
     token: {
-      active: tokenMap.LSK.key,
+      active: tokenMap.KLY.key,
     },
     bookmarks,
     bookmarkAdded: jest.fn(),
@@ -26,7 +26,7 @@ describe('Add a new bookmark component', () => {
     },
   };
   const bookmarkDetails = {
-    LSK: { address: accounts.genesis.summary.address, title: 'genesis' },
+    KLY: { address: accounts.genesis.summary.address, title: 'genesis' },
   };
 
   let wrapper;
@@ -138,7 +138,7 @@ describe('Add a new bookmark component', () => {
       const updatedProps = {
         ...props,
         bookmarks: {
-          LSK: [bookmarkDetails.LSK],
+          KLY: [bookmarkDetails.KLY],
         },
       };
       wrapper = smartRender(AddBookmark, updatedProps, config).wrapper;

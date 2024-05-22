@@ -34,7 +34,7 @@ const TopBar = ({ stakeCount, location, history }) => {
     <div className={`${styles.wrapper} top-bar`}>
       <div className={styles.group}>
         <div className={`${styles.section} ${menuOpen ? styles.menuOpen : ''} user-menu-section`}>
-          <Icon name="liskLogoWhiteNormalized" className={`${styles.logo} topbar-logo`} />
+          <Icon name="klayrLogoNoText" className={`${styles.logo} topbar-logo`} />
           {!isEmpty(currentAccount) ? (
             <AccountManagementDropdown currentAccount={currentAccount} onMenuClick={onMenuClick} />
           ) : null}

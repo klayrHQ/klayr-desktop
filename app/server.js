@@ -12,8 +12,8 @@ const limiter = rateLimit({
 
 const server = {
   init: (host, port) => {
-    if (process.env.LISK_DESKTOP_URL) {
-      return process.env.LISK_DESKTOP_URL;
+    if (process.env.KLAYR_DESKTOP_URL) {
+      return process.env.KLAYR_DESKTOP_URL;
     }
 
     const app = express();

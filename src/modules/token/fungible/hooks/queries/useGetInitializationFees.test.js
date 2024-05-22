@@ -10,7 +10,7 @@ beforeEach(() => jest.clearAllMocks());
 jest.mock('@token/fungible/hooks/queries/useGetHasUserAccount');
 
 describe('useGetInitializationFees hook', () => {
-  const address = 'lsktzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg';
+  const address = 'klytzb4j7e3knk4mkxckdr3y69gtu2nwmsb3hjbkg';
 
   it('should not call the useInvoke query if useGetHasUserAccount is still loading', () => {
     useGetHasUserAccount.mockReturnValue({ data: { data: { exists: false } }, isLoading: true });

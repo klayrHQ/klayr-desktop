@@ -44,11 +44,11 @@ describe('Dialog Holder Component', () => {
       current: mockSavedAccounts[0],
     },
     token: {
-      active: 'LSK',
+      active: 'KLY',
     },
     wallet: {
       info: {
-        LSK: 'some data',
+        KLY: 'some data',
       },
     },
     network: {

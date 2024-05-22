@@ -5,7 +5,7 @@ import {
   selectHWAccounts,
 } from '@hardwareWallet/store/selectors/hwSelectors';
 import { getNameFromAccount } from '@hardwareWallet/utils/getNameFromAccount';
-import { getMultipleAddresses } from '@libs/hardwareWallet/ledger/ledgerLiskAppIPCChannel/clientLedgerHWCommunication';
+import { getMultipleAddresses } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
 
 function useHWAccounts(nrOfAccounts) {
   const currentHWDevice = useSelector(selectCurrentHWDevice);

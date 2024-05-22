@@ -15,7 +15,7 @@ jest.mock('../../hooks/queries/usePosConstants');
 let wrapper;
 const props = {
   data: {
-    address: 'lskbgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp',
+    address: 'klybgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp',
     username: 'test_del_2',
   },
   className: '',
@@ -26,7 +26,7 @@ const props = {
   blocks: {
     generators: [
       {
-        address: 'lskbgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp',
+        address: 'klybgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp',
         isConsensusParticipant: true,
         minActiveHeight: 14075261,
         nextGeneratingTime: 1654135710,
@@ -36,7 +36,7 @@ const props = {
         username: 'test_del_2',
       },
     ],
-    indexBook: { lskbgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp: 0 },
+    indexBook: { klybgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp: 0 },
   },
 };
 
@@ -59,7 +59,7 @@ describe('ValidatorRow', () => {
     const updatedProps = {
       ...props,
       activeTab: 'watched',
-      watchList: ['lskbgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp'],
+      watchList: ['klybgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp'],
     };
     wrapper = mountWithContext(
       <MemoryRouter>

@@ -20,14 +20,14 @@ const GroupRow = ({ data, className }) => {
         <WalletVisual address={address} className={styles.avatar} />
         <div className={styles.signDetails}>
           <p className={styles.addressTitle}>
-            {name || address.replace(regex.lskAddressTrunk, '$1...$3')}
+            {name || address.replace(regex.klyAddressTrunk, '$1...$3')}
           </p>
-          {key && <p className={styles.key}>{key.replace(regex.lskAddressTrunk, '$1...$3')}</p>}
+          {key && <p className={styles.key}>{key.replace(regex.klyAddressTrunk, '$1...$3')}</p>}
         </div>
       </span>
       <span className={grid['col-xs-4']}>
         <span className={styles.groupBalance}>
-          <TokenAmount val={balance} showRounded token={tokenMap.LSK.key} />
+          <TokenAmount val={balance} showRounded token={tokenMap.KLY.key} />
         </span>
       </span>
     </Link>

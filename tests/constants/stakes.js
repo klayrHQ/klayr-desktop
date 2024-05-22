@@ -19,7 +19,7 @@ const generateStakes = (index) => ({
   params: {
     stakes: [
       {
-        validatorAddress: `lskdwsyfmcko6mcd357446yatromr9vzgu7eb8y${index + 10}`,
+        validatorAddress: `klydwsyfmcko6mcd357446yatromr9vzgu7eb8y${index + 10}`,
         amount: `${index + 10}0000000`,
       },
     ],
@@ -30,7 +30,7 @@ const generateStakes = (index) => ({
     timestamp: 1653519360,
   },
   sender: {
-    address: 'lskd6yo4kkzrbjadh3tx6kz2qt5o3vy5zdnuwycmw',
+    address: 'klyd6yo4kkzrbjadh3tx6kz2qt5o3vy5zdnuwycmw',
     publicKey: 'ea62fbdd5731a748a63b593db2c22129462f47db0f066d4ed3fc70957a456ebc',
     username: `testUsername_${index + 1}`,
   },
