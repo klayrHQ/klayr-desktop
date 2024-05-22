@@ -28,6 +28,10 @@ jobs:
         with:
           node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
 
+      - uses: actions/setup-python@v4 #Install awscli on all platform
+        with:
+          python-version: '3.10'
+
       - name: Update package.json
         if: startsWith(matrix.os, 'macos')
         run: |
