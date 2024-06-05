@@ -1,5 +1,8 @@
 import { transactions } from '@klayr/client';
-import { getSignedTransaction } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
+import {
+  getSignedMessage,
+  getSignedTransaction,
+} from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
 import { signMessageUsingHW } from '@wallet/utils/signMessage';
 import {
   getAccountKeys,
@@ -39,12 +42,13 @@ const signTransaction = async ({ wallet: account, schema, chainID, transaction }
     chainID,
     unsignedBytes
   );
-
-  const signedTransaction = await getSignedTransaction(
+  console.log(account, transaction, chainID)
+  const signedTransaction = await getSignedMessage(
     account.hw.path,
     account.metadata.accountIndex,
     unsignedMessage
   );
+  console.log(signedTransaction)
   let signature = signedTransaction?.signature;
 
   if (signature instanceof Uint8Array) {

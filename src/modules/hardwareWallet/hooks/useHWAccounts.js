@@ -6,6 +6,7 @@ import {
 } from '@hardwareWallet/store/selectors/hwSelectors';
 import { getNameFromAccount } from '@hardwareWallet/utils/getNameFromAccount';
 import { getMultipleAddresses } from '@libs/hardwareWallet/ledger/ledgerKlayrAppIPCChannel/clientLedgerHWCommunication';
+import { extractAddressFromPublicKey } from '@wallet/utils/account';
 
 function useHWAccounts(nrOfAccounts) {
   const currentHWDevice = useSelector(selectCurrentHWDevice);
@@ -25,7 +26,8 @@ function useHWAccounts(nrOfAccounts) {
             accountIndexes
           );
           const accounts = Object.values(addressesAndPubkeys).map((addressAndPubkey, index) => {
-            const { address, pubKey } = addressAndPubkey;
+            const { pubKey } = addressAndPubkey;
+            const address = extractAddressFromPublicKey(Buffer.from(pubKey, 'hex'));
             const accountIndex = index + 1;
             const persistedName = getNameFromAccount(address, persistedHwAccounts);
             const name = persistedName || `Account ${accountIndex}`;

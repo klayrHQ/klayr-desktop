@@ -62,16 +62,16 @@ jobs:
         uses: samuelmeuli/action-electron-builder@v1
         with:
           build_script_name: pack
-#          mac_certs: ${{ secrets.mac_certs }}
-#          mac_certs_password: ${{ secrets.mac_certs_password }}
+          mac_certs: ${{ secrets.mac_certs }}
+          mac_certs_password: ${{ secrets.mac_certs_password }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-#        env:
+        env:
           # macOS for notarization API key
-#          APPLE_ID: ${{ secrets.APPLE_ID }}
-#          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
 
-#      - name: Output Notarization Error Log
-#        if: failure() && startsWith(matrix.os, 'macos')
-#        run: |
-#          echo "Notarization failed. Outputting notarization-error.log..."
-#          cat /Users/runner/work/klayr-desktop/klayr-desktop/notarization-error.log
+      - name: Output Notarization Error Log
+        if: failure() && startsWith(matrix.os, 'macos')
+        run: |
+          echo "Notarization failed. Outputting notarization-error.log..."
+          cat /Users/runner/work/klayr-desktop/klayr-desktop/notarization-error.log
