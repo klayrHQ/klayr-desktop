@@ -40,11 +40,11 @@ jobs:
           pip install --upgrade pip
           pip install setuptools
 
-#      - name: Update package.json
-#        if: startsWith(matrix.os, 'macos')
-#        run: |
-#          jq '.build.mac.notarize.teamId = "${{ secrets.APPLE_TEAM_ID }}"' package.json > package_temp.json
-#          mv package_temp.json package.json
+      - name: Update package.json
+        if: startsWith(matrix.os, 'macos')
+        run: |
+          jq '.build.mac.notarize.teamId = "${{ secrets.APPLE_TEAM_ID }}"' package.json > package_temp.json
+          mv package_temp.json package.json
 
       - name: Install cpx
         if: startsWith(matrix.os, 'windows-latest')
