@@ -1,18 +1,18 @@
 ![Logo](./docs/assets/banner_desktop.png)
 
-# Lisk Desktop
+# Klayr Desktop
 
-[![Build Status](https://jenkins.lisk.com/buildStatus/icon?job=lisk-desktop/development)](https://jenkins.lisk.com/job/lisk-desktop/job/development)
-[![Coverage Status](https://coveralls.io/repos/github/LiskHQ/lisk-desktop/badge.svg?branch=development)](https://coveralls.io/github/LiskHQ/lisk-desktop?branch=development)
+[//]: # ([![Build Status]&#40;https://jenkins.klayr.com/buildStatus/icon?job=klayr-desktop/development&#41;]&#40;https://jenkins.klayr.com/job/klayr-desktop/job/development&#41;)
+[![Coverage Status](https://coveralls.io/repos/github/KlayrHQ/klayr-desktop/badge.svg?branch=development)](https://coveralls.io/github/KlayrHQ/klayr-desktop?branch=development)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/LiskHQ/lisk-desktop)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/KlayrHQ/klayr-desktop)
 [![DeepScan grade](https://deepscan.io/api/teams/6759/projects/8871/branches/113511/badge/grade.svg)](https://deepscan.io/wallet#view=project&tid=6759&pid=8871&bid=113511)
-[![GitHub issues](https://img.shields.io/github/issues/LiskHQ/lisk-desktop)](https://github.com/LiskHQ/lisk-desktop/issues)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/liskhq/lisk-desktop)
+[![GitHub issues](https://img.shields.io/github/issues/KlayrHQ/klayr-desktop)](https://github.com/KlayrHQ/klayr-desktop/issues)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/klayrhq/klayr-desktop)
 
 ## Installation
 
-You can download the latest release from [Lisk.com](https://lisk.com/wallet). The link automatically detects your operating system and downloads the correct app. Currently we are supporting the following operating systems:
+You can download the latest release from [Klayr.xyz](https://klayr.xyz/wallet). The link automatically detects your operating system and downloads the correct app. Currently we are supporting the following operating systems:
 
 - MacOS (individual builds for Apple Silicon and Intel chips)
 - Windows
@@ -35,10 +35,10 @@ If you have licensed copies of `Basier Circle` and `Gilroy`, you can add them to
 The development environment currently depends on:
 
 - [Node.js version 16 (lts/gallium)](https://nodejs.org/download/release/latest-v16.x/). The below instructions assume [nvm](https://github.com/nvm-sh/nvm) is being used to manage Node.js versions.
-- [Python version 2.7.18 is required](https://www.python.org/downloads/release/python-2718/) is being used on encrypt/decrypt by the [lisk-sdk](https://github.com/LiskHQ/lisk-sdk/tree/development/sdk#dependencies).
+- [Python version 2.7.18 is required](https://www.python.org/downloads/release/python-2718/) is being used on encrypt/decrypt by the [klayr-sdk](https://github.com/KlayrHQ/klayr-sdk/tree/development/sdk#dependencies).
 
 _Note_:
-For _Windows_ users, make sure to set the correct [msvs_version](https://www.npmjs.com/package/node-gyp#on-windows) config for installing and packing the Lisk Desktop application.
+For _Windows_ users, make sure to set the correct [msvs_version](https://www.npmjs.com/package/node-gyp#on-windows) config for installing and packing the Klayr Desktop application.
 
 ```
 git clone https://github.com/KlayrHQ/klayr-desktop.git
@@ -190,10 +190,11 @@ Note: The following layout structure may not appear exactly as shown below due t
 
 ## Contributors
 
-See [contributors section](https://github.com/LiskHQ/lisk-desktop/graphs/contributors).
+See [contributors section](https://github.com/KlayrHQ/klayr-desktop/graphs/contributors).
 
 ## License
 
+Copyright © 2024 Klayr Labs B.V.
 Copyright © 2016-2024 Lisk Foundation
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.

@@ -2,6 +2,14 @@ import i18next from 'i18next';
 import routes from 'src/routes/routes';
 
 export const INFO_BANNERS = {
+  klayrLaunch: {
+    infoMessage: (t) => t('Klayr Mainnet Launch Announcement'),
+    infoDescription: (t) =>
+      t(
+        'We are excited to announce the launch of the Klayr Mainnet blockchain on June 25th. Join us in this new era of decentralization, scalability, and energy efficiency. Participate in securing the network and earn rewards based on your stakes.'
+      ),
+    illustrationName: 'expandYourKnowledge',
+  },
   klayrMigration: {
     infoMessage: (t) => t('Klayr v4 Migration'),
     infoLabel: (t) => t('Announcement'),

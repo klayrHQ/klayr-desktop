@@ -43,7 +43,6 @@ export const executeIPCCommand = (action, data) =>
     // Listening for response
     IPC[`${action}.${RESPONSE}`]((_, response) => {
       if (response.success) return resolve(response.data);
-      console.log("response", response, "action", action, data, RESPONSE)
       const errorCode = response.error;
       return reject(
         new IPCLedgerError({

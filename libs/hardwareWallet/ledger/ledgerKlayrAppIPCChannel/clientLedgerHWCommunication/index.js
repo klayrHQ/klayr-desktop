@@ -15,7 +15,6 @@ function sleep(ms) {
 }
 
 export const getSignedTransaction = async (devicePath, accountIndex, unsignedMessage) => {
-  console.log(unsignedMessage, "unsignedMessage")
   const signedTransaction = await executeIPCCommand(GET_SIGNED_TRANSACTION, {
     devicePath,
     accountIndex,

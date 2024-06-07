@@ -8,7 +8,7 @@ jest.mock('@walletconnect/sign-client', () => ({
 describe('connectionCreator', () => {
   it('createSignClient function should call SignClient.init with right params', async () => {
     process.env = {
-      PROJECT_ID: '8f2a5ab63f54b27471714e81d1a49da3',
+      PROJECT_ID: '43f4eccd4d8f7ea3cb05599d397103cd',
     };
     const res = await createSignClient();
     expect(SignClient.init).toHaveBeenCalledWith({
