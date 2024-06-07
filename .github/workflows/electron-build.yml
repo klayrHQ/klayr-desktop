@@ -57,13 +57,6 @@ jobs:
           build_script_name: pack:win
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Prepare for app notarization
-        if: startsWith(matrix.os, 'macos')
-        # Import Apple API key for app notarization on macOS
-        run: |
-          mkdir -p ~/private_keys/
-          echo '${{ secrets.api_key }}' > ~/private_keys/AuthKey_${{ secrets.api_key_id }}.p8
-
       - name: Build and pack mac app
         if: startsWith(matrix.os, 'macos')
         uses: samuelmeuli/action-electron-builder@v1
@@ -74,10 +67,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
         env:
           # macOS for notarization API key
-          API_KEY_ID: ${{ secrets.api_key_id }}
-          API_KEY_ISSUER_ID: ${{ secrets.api_key_issuer_id }}
-#          APPLE_ID: ${{ secrets.APPLE_ID }}
-#          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_APP_SPECIFIC_PASSWORD: ${{ secrets.APPLE_APP_SPECIFIC_PASSWORD }}
 
       - name: Output Notarization Error Log
         if: failure() && startsWith(matrix.os, 'macos')
