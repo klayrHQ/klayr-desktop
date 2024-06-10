@@ -101,7 +101,7 @@ const Request = () => {
               fieldName === 'recipientChain' ? field.value.chainID : field.value
             )}`
           : link;
-      }, `${KLAYR_DOMAIN}/send?recipient=${address}`),
+      }, `klayr://wallet?modal=send&recipient=${address}`),
     [address, state]
   );
   const mainChainApplication = useMemo(

@@ -50,7 +50,7 @@ class PaperWallet {
       `${now.getFullYear()}`,
     ];
 
-    this.doc.addImage(logo, 'PNG', 32, 72, 67, 26);
+    this.doc.addImage(logo, 'PNG', 32, 72, 94, 37);
 
     this.doc
       .setFont('Utendo', 'normal', 'bold')
@@ -119,10 +119,11 @@ class PaperWallet {
     this.doc
       .setFont('Utendo', 'normal', 'bold')
       .setFontSize(18)
-      .text(this.passphrase, 32.5, 464, {
+      .text(this.passphrase, 22.5, 464, {
         ...textOptions,
         align: 'justify',
         lineHeightFactor: 2,
+        maxWidth: 500,
       });
 
     this.doc
