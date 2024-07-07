@@ -2,6 +2,14 @@ import i18next from 'i18next';
 import routes from 'src/routes/routes';
 
 export const INFO_BANNERS = {
+  klayrRewards: {
+    infoMessage: (t) => t('Ready for rewards?'),
+    infoDescription: (t) =>
+      t(
+        'Validator rewards are now live, and it’s time for you to put your tokens to work. With a 7 second block time and high rewards (2 $KLY per block), it’s never been easier to earn staking rewards fast. Start staking now and don’t miss out out on high yields.'
+      ),
+    illustrationName: 'getRewarded',
+  },
   klayrLaunch: {
     infoMessage: (t) => t('Klayr Mainnet Launch Announcement'),
     infoDescription: (t) =>

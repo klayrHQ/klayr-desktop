@@ -1,6 +1,6 @@
 {
   "name": "klayr-desktop",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "productName": "Klayr",
   "description": "Klayr",
   "main": "./build/main.js",

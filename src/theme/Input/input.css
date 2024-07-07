@@ -138,7 +138,7 @@
   @mixin contentNormal bold;
 
   align-items: center;
-  color: var(--color-content);
+  color: var(--color-satin-deep-black);
   display: flex;
   margin: 40px 0 12px;
 
@@ -155,7 +155,7 @@
   border: 1px solid var(--dark-border-color);
   border-radius: var(--border-radius-standard);
   box-sizing: border-box;
-  color: var(--color-content);
+  color: var(--color-satin-deep-black);
   height: var(--height-l);
   outline: none;
   padding: 8px 10px;
