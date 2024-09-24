@@ -14,7 +14,7 @@ export const mockNetworkStatus = {
       maxTransactionsSize: 15360,
       minFeePerByte: 1000,
       blockTime: 10,
-      bftBatchSize: 103,
+      bftBatchSize: 53,
     },
     registeredModules: ['token', 'reward', 'validators', 'auth', 'pos', 'fee', 'random', 'legacy'],
     moduleCommands: [

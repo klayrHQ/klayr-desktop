@@ -4,6 +4,7 @@ export const useTransactionsFromPool = ({ options = {}, customConfig = {} } = {}
   const config = {
     data: {
       endpoint: 'txpool_getTransactionsFromPool',
+      params: {},
     },
     ...customConfig,
   };

@@ -34,3 +34,25 @@ export const requestTokenSchema = {
     },
   },
 };
+
+export const requestConnectSchema = {
+  $id: '/klayr/request-connect',
+  title: 'Request connect params',
+  type: 'object',
+  required: ['modal', 'url', 'tab'],
+  properties: {
+    url: {
+      dataType: 'string',
+      minLength: 1,
+      maxLength: 255,
+    },
+    modal: {
+      dataType: 'string',
+      pattern: 'connectionProposal',
+    },
+    tab: {
+      dataType: 'string',
+      pattern: 'SessionManager',
+    },
+  },
+};

@@ -1,7 +1,7 @@
 @import '../../../../../setup/react/app/mixins.css';
 
 .infoBanner {
-  background-color: var(--color-primary);
+  background-color: var(--color-deep-black);
   border-radius: var(--border-radius-standard);
   color: var(--color-surface);
   display: flex;
@@ -117,6 +117,10 @@
     display: flex;
   }
 
+  & .bannerIllustration {
+    max-height: 280px;
+  }
+
   & .slides {
     height: 100%;
     position: relative;
@@ -203,7 +207,6 @@
 }
 
 .bannerSwiper {
-  background-color: var(--color-primary);
   border-radius: var(--border-radius-standard);
   margin-top: 32px;
 

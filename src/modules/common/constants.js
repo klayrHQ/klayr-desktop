@@ -2,6 +2,16 @@ import i18next from 'i18next';
 import routes from 'src/routes/routes';
 
 export const INFO_BANNERS = {
+  klayrIgnite: {
+    infoMessage: (t) => t('Klayr Ignite Grants are now live!'),
+    infoDescription: (t) =>
+      t(
+        'JavaScript developers can now earn 10,000 $KLY for building a sidechain on our testnet! Will you be one of the first developers in the Klayr ecosystem?'
+      ),
+    illustrationName: 'klayrIgnite',
+    infoLink: 'https://klayr.xyz/ignite-grants?utm_source=klayr_wallet&utm_medium=banner&utm_campaign=ignite&utm_content=v1',
+    infoLinkText: 'Apply Now',
+  },
   klayrRewards: {
     infoMessage: (t) => t('Ready for rewards?'),
     infoDescription: (t) =>

@@ -47,7 +47,7 @@ const FullItem = ({ status, title, children, theme }) => (
 
 const ActiveValidator = ({ theme, t }) => (
   <div className={`${styles.validatorDescription} ${theme}`}>
-    <p>{t('This validator is among the first 101 validators by validator weight.')}</p>
+    <p>{t('This validator is among the first 51 validators by validator weight.')}</p>
 
     <p>{t('Active validators are selected to generate blocks every round.')}</p>
   </div>
@@ -57,7 +57,7 @@ const StandByValidator = ({ theme, t }) => (
   <div className={`${styles.validatorDescription} ${theme}`}>
     <p>
       {t(`The validator has at least 1,000 KLY validator weight, but is not among the
-      top 101 by validator weight.`)}
+      top 51 by validator weight.`)}
     </p>
     <p>
       {t(

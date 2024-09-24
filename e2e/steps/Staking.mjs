@@ -8,7 +8,7 @@ Then('I should see {int} validators in table', async (number) => {
 });
 
 Then('I should select a random validator and see their details', async () => {
-  const randomValidatorIndex = Math.floor(Math.random() * 101);
+  const randomValidatorIndex = Math.floor(Math.random() * 51);
   const validatorRow = fixture.page.getByTestId('validator-row').nth(randomValidatorIndex);
   const randomValidatorName = await validatorRow.locator('.validator-name').innerText();
   await validatorRow.click();

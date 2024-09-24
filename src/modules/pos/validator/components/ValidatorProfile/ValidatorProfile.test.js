@@ -96,7 +96,7 @@ describe('Validator Profile', () => {
     expect(screen.getByText('Consecutive missed blocks')).toBeTruthy();
 
     expect(
-      screen.getByText('This validator is among the first 101 validators by validator weight.')
+      screen.getByText('This validator is among the first 51 validators by validator weight.')
     ).toBeTruthy();
     expect(
       screen.getByText('Active validators are selected to generate blocks every round.')
@@ -159,7 +159,7 @@ describe('Validator Profile', () => {
 
     expect(
       screen.getByText(
-        'The validator has at least 1,000 KLY validator weight, but is not among the top 101 by validator weight.'
+        'The validator has at least 1,000 KLY validator weight, but is not among the top 51 by validator weight.'
       )
     ).toBeTruthy();
     expect(

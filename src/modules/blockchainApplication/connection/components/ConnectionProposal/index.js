@@ -5,7 +5,7 @@ import Box from 'src/theme/box';
 import Dialog from '@theme/dialog/dialog';
 import { useBlockchainApplicationMeta } from '@blockchainApplication/manage/hooks/queries/useBlockchainApplicationMeta';
 import { PrimaryButton } from 'src/theme/buttons';
-import { addSearchParamsToUrl } from 'src/utils/searchParams';
+import { addSearchParamsToUrl, parseSearchParams } from 'src/utils/searchParams';
 import { Input } from 'src/theme';
 import { usePairings } from '@libs/wcm/hooks/usePairings';
 import { useEvents } from '@libs/wcm/hooks/useEvents';
@@ -15,6 +15,7 @@ import styles from './ConnectionProposal.css';
 
 // eslint-disable-next-line max-statements
 const ConnectionProposal = () => {
+
   const history = useHistory();
   const [wcUri, setWCUri] = useState('');
   const [nameSpaceError, setNameSpaceError] = useState('');
@@ -22,6 +23,10 @@ const ConnectionProposal = () => {
   const { events } = useEvents();
   const { setUri } = usePairings();
   const { t } = useTranslation();
+  const initialValue = parseSearchParams(history.location.search);
+  if (initialValue.url && wcUri.length === 0) {
+    setWCUri(initialValue.url);
+  }
   const event = events?.length && events[events.length - 1];
   const requiredNamespaces = event?.meta?.params?.requiredNamespaces;
   const requestingChainIDs = (requiredNamespaces?.klayr?.chains || [])

@@ -1,6 +1,6 @@
 /* eslint-disable max-statements */
 import { validator } from '@klayr/client';
-import { requestTokenSchema } from './validationSchema';
+import { requestConnectSchema, requestTokenSchema } from './validationSchema';
 
 const PERMISSION_WHITE_LIST = ['clipboard-read', 'notifications', 'openExternal'];
 export const WHITE_LISTED_DEEP_LINKS = [
@@ -8,6 +8,10 @@ export const WHITE_LISTED_DEEP_LINKS = [
     pathRegex: /^wallet(\/)?$/,
     validationSchema: requestTokenSchema,
   },
+  {
+    pathRegex: /^applications(\/)?$/,
+    validationSchema: requestConnectSchema,
+  }
 ];
 
 const WHITE_LISTED_URLS = [
@@ -39,20 +43,17 @@ export const canExecuteDeepLinking = (url) => {
   if (hostname.length === 0) urlPath = pathname.replace(/^\/{2}/, '');
 
   const foundLink = WHITE_LISTED_DEEP_LINKS.find(({ pathRegex }) => pathRegex.test(urlPath));
-
   if (!foundLink) return false;
 
   const searchParamObject = [...searchParams.entries()].reduce(
     (result, [key, value]) => ({ ...result, [key]: value }),
     {}
   );
-
   const isSearchParamsValid = Object.keys(searchParamObject).reduce((result, key) => {
     const schemaValue = !!foundLink.validationSchema.properties[key];
     if (!schemaValue || !result) return false;
     return true;
   }, true);
-
   if (!isSearchParamsValid) return false;
 
   try {

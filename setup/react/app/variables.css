@@ -182,6 +182,7 @@ or "warn/action" ineastd of "red/green"
   --color-active-tab: rgba(64, 112, 244, 0.1);
   --tab-border-color: transparent;
   --color-strong-ink-blue: var(--color-azule-dark);
+  --color-deep-black: var(--color-eerie);
   --color-satin-deep-black: #1c1c1e;
   --color-colecti-dark-blue: #0C0C16;
   --color-constant-colecti-dark-blue: #0C0C16;
@@ -287,9 +288,11 @@ or "warn/action" ineastd of "red/green"
   --color-surface-1: rgb(0, 0, 0);
   --color-surface-blue: #fff;
   --color-body-bg: var(--color-surface-1);
+  --color-deep-black: var(--color-eerie);
+  --color-satin-deep-black: var(--color-light-gray);
   --color-platinum: #4d4d50;
   --color-white-smoke: #1c1c1c;
-  --color-ghost-white: var(--color-satin-deep-black);
+  --color-ghost-white: #1c1c1e;
   --color-json-view-bg: #1d1f21;
   --color-black: #fff;
   --dark-border-color: #373739;

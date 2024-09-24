@@ -79,7 +79,7 @@ const InfoBanner = ({
         </div>
       </div>
       <div className={styles.bannerImg}>
-        <Illustration name={illustrationName} />
+        <Illustration className={styles.bannerIllustration} height="282" name={illustrationName} />
       </div>
     </div>
   );

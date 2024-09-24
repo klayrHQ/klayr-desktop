@@ -49,6 +49,7 @@ export const useRegistrations = () => {
   // create monthly number of registration as a dictionary
   const monthStats = registrations.data
     .map((tx) => tx.block.timestamp)
+    .sort((a, b) => a - b)
     .reduce((acc, timestamp) => {
       const date = getDate(timestamp);
       acc[date] = typeof acc[date] === 'number' ? acc[date] + 1 : 1;
@@ -58,17 +59,15 @@ export const useRegistrations = () => {
   const offset = Math.floor(
     validators.meta.total - Object.values(monthStats).reduce((acc, val) => acc + val, 0)
   );
-
   // Create a sorted array of monthly accumulated number of registrations
   const chartData = Object.entries(monthStats)
-    .sort(([d1], [d2]) => d1 > d2)
     .reduce(
       (acc, [date, count]) => {
         const last = acc[acc.length - 1];
         acc.push([date, last[1] + count]);
         return acc;
       },
-      [[getDate(registrations.data[0]?.block.timestamp - monthDuration), offset]]
+      [[getDate(registrations.data[registrations.data.length - 1]?.block.timestamp - monthDuration), offset]]
     )
     .filter(([date]) => date !== 'NaN-NaN');
 
@@ -76,7 +75,6 @@ export const useRegistrations = () => {
   const values = getAmountOfValidatorsInTime(chartData);
   const isLoading = isValidatorsLoading || isRegistrationsLoading;
   const isFetched = isValidatorsFetched && isRegistrationsFetched;
-
   return {
     data: {
       labels,

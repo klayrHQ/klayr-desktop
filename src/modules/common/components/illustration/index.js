@@ -84,6 +84,8 @@ import emptyWalletConnectionsIllustration from '@setup/react/assets/images/illus
 import emptyStakingQueueIllustration from '@setup/react/assets/images/illustrations/emptyStates/staking-queue-empty-illustration.svg';
 import klayrMigrationIllustration from '@setup/react/assets/images/illustrations/klayr_migration_illustration.svg';
 
+import klayrIgnite from '@setup/react/assets/images/klayrIgnite.png';
+
 export const illustrations = {
   welcomeKlayrValidators,
   yourVoiceMatters,
@@ -167,6 +169,7 @@ export const illustrations = {
   emptyWalletConnectionsIllustration,
   emptyStakingQueueIllustration,
   klayrMigrationIllustration,
+  klayrIgnite,
 };
 
 const Illustration = ({ name, className, noTheme, ...props }) => {

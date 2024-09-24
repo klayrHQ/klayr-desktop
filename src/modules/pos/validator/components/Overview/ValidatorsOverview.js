@@ -18,7 +18,7 @@ const Overview = ({ totalBlocks, t }) => {
   const { data: standbyValidators } = useValidators({
     config: { params: { limit: 1, status: 'standby' } },
   });
-  const { data: generatorsData } = useGenerators({ config: { params: { limit: 103 } } });
+  const { data: generatorsData } = useGenerators({ config: { params: { limit: 53 } } });
   const { data: transactions } = useTransactions({ config: { params: { limit: 1 } } });
   const standbyValidatorsCount = standbyValidators?.meta.total ?? 0;
   const generatorsCount = generatorsData?.meta.total ?? 0;

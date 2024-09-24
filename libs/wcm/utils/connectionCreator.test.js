@@ -17,7 +17,7 @@ describe('connectionCreator', () => {
       metadata: {
         name: 'Klayr',
         description: 'Klayr',
-        url: 'https://github.com/klayrHQ/klayr-desktop',
+        url: 'https://github.com/klayrhq/klayr-desktop',
         icons: ['https://klayr.xyz/documentation/_/img/klayr-symbol.svg'],
       },
     });
