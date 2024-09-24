@@ -1,6 +1,6 @@
 {
   "name": "Klayr",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "author": "Klayr Labs <admin@klayr.xyz>, Lisk Foundation <admin@lisk.com>, lightcurve GmbH <admin@lightcurve.io>",
   "license": "GPL-3.0",
   "productName": "Klayr",
@@ -51,7 +51,7 @@
   "build": {
     "asar": true,
     "appId": "io.klayr.hub",
-    "copyright": "Copyright © 2016-2024 Klayr",
+    "copyright": "Copyright © 2016-2024 Klayr Labs",
     "afterSign": "electron-builder-notarize",
     "protocols": {
       "name": "klayr",
@@ -67,6 +67,9 @@
       "target": [
         "AppImage"
       ],
+      "publish": [
+        "github"
+      ],
       "icon": "build/icon.png",
       "desktop": {
         "MimeType": "application/klayr;x-scheme-handler/klayr"
@@ -75,7 +78,10 @@
     },
     "win": {
       "target": "nsis",
-      "publisherName": "Klayr holding"
+      "publisherName": "Klayr holding",
+      "publish": [
+        "github"
+      ]
     },
     "mac": {
       "hardenedRuntime": true,
@@ -88,7 +94,10 @@
           "arm64",
           "x64"
         ]
-      }
+      },
+      "publish": [
+        "github"
+      ]
     },
     "dmg": {
       "background": "build/background@2x.png",

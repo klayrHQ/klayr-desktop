@@ -1,11 +1,11 @@
 {
   "name": "klayr-desktop",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "productName": "Klayr",
   "description": "Klayr",
   "main": "./build/main.js",
   "author": {
-    "name": "Klayr Holding",
+    "name": "Klayr Labs B.V.",
     "email": "admin@klayr.xyz"
   },
   "dependencies": {
