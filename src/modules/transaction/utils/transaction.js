@@ -133,7 +133,10 @@ export const getTransactionValue = (transactionJSON, feeToken, appsMetaTokens) =
     [MODULE_COMMANDS_NAME_MAP.stake]: (data) =>
       getTokenWithSymbol(getTransactionAmount(data), feeToken),
     [MODULE_COMMANDS_NAME_MAP.transfer]: (data) =>
-      getTokenWithSymbol(getTransactionAmount(data), feeToken),
+      getTokenWithSymbol(
+        getTransactionAmount(data),
+        appsMetaTokens?.find((t) => t.tokenID === data.params.tokenID)
+      ),
     [MODULE_COMMANDS_NAME_MAP.transferCrossChain]: (data) =>
       getTokenWithSymbol(
         getTransactionAmount(data),
@@ -143,6 +146,7 @@ export const getTransactionValue = (transactionJSON, feeToken, appsMetaTokens) =
 
   const [module, command] = splitModuleAndCommand(moduleCommand);
 
+  console.log({ module, command });
   return (
     transactionValueMap[moduleCommand]?.({
       module,
