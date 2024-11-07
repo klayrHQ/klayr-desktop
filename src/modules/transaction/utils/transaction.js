@@ -146,7 +146,6 @@ export const getTransactionValue = (transactionJSON, feeToken, appsMetaTokens) =
 
   const [module, command] = splitModuleAndCommand(moduleCommand);
 
-  console.log({ module, command });
   return (
     transactionValueMap[moduleCommand]?.({
       module,
