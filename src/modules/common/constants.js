@@ -2,6 +2,17 @@ import i18next from 'i18next';
 import routes from 'src/routes/routes';
 
 export const INFO_BANNERS = {
+  klayrWalletKeys: {
+    infoMessage: (t) => t('About Your Klayr Wallet'),
+    infoLabel: (t) => t('Important'),
+    infoDescription: (t) =>
+      t(
+        'The Klayr Wallet provides a secure, non-custodial way to manage and transfer KLY tokens. Your keys, your responsibility.'
+      ),
+    illustrationName: 'accountManagement',
+    infoLink: 'https://klayr.xyz/wallet',
+    infoLinkText: 'Learn more about the risks here',
+  },
   klayrIgnite: {
     infoMessage: (t) => t('Klayr Ignite Grants are now live!'),
     infoDescription: (t) =>

@@ -36,9 +36,9 @@ const ConnectionProvider = ({ children }) => {
 
   return (
     <ConnectionContext.Provider value={value}>
-      {!signClient ? null : (
+      {/* {!signClient ? null : ( */}
         <ConnectionEventsManagerWrapper>{children}</ConnectionEventsManagerWrapper>
-      )}
+      {/* )} */}
     </ConnectionContext.Provider>
   );
 };

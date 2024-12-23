@@ -3,6 +3,7 @@ import { INFO_BANNERS } from 'src/modules/common/constants';
 
 const banners = [
   // INFO_BANNERS.klayrMigration,
+  INFO_BANNERS.klayrWalletKeys,
   INFO_BANNERS.klayrIgnite,
   INFO_BANNERS.klayrRewards,
   INFO_BANNERS.klayrLaunch,
